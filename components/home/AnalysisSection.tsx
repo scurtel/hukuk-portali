@@ -7,7 +7,7 @@ export function AnalysisSection() {
   const analysisPosts = getPostsByType("analiz");
 
   return (
-    <section className="py-10">
+    <section className="bg-slate-50 py-12 sm:py-16">
       <Container>
         <SectionTitle>Analizler</SectionTitle>
         <PostList posts={analysisPosts} />

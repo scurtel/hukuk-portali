@@ -7,7 +7,7 @@ export function FeaturedPosts() {
   const featuredPosts = getFeaturedPosts();
 
   return (
-    <section className="py-10">
+    <section className="py-12 sm:py-16">
       <Container>
         <SectionTitle>Öne Çıkan İçerikler</SectionTitle>
         <PostList posts={featuredPosts} />

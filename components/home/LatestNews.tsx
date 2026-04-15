@@ -7,7 +7,7 @@ export function LatestNews() {
   const newsPosts = getPostsByType("haber");
 
   return (
-    <section className="py-10">
+    <section className="bg-slate-50 py-12 sm:py-16">
       <Container>
         <SectionTitle>Son Haberler</SectionTitle>
         <PostList posts={newsPosts} />

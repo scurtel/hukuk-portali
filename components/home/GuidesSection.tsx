@@ -7,7 +7,7 @@ export function GuidesSection() {
   const guidePosts = getPostsByType("rehber");
 
   return (
-    <section className="py-10">
+    <section className="py-12 sm:py-16">
       <Container>
         <SectionTitle>Rehberler</SectionTitle>
         <PostList posts={guidePosts} />
