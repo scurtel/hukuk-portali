@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Hukuk Portalı",
-  url: "https://example.com",
+  url: "https://hukukportali.com",
   description:
     "Türkçe hukuk haberleri, rehberler ve analizler sunan profesyonel içerik portalı."
 };
