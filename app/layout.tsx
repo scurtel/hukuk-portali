@@ -9,7 +9,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: siteConfig.name,
-  description: siteConfig.description
+  description: siteConfig.description,
+  icons: {
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png"
+  }
 };
 
 type RootLayoutProps = {
