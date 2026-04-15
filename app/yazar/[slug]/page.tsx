@@ -14,8 +14,8 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
 
   if (!author) {
     return (
-      <Container className="py-10">
-        <h1 className="text-2xl font-semibold">Yazar bulunamadı</h1>
+      <Container className="py-8 sm:py-10">
+        <h1 className="text-xl font-semibold sm:text-2xl">Yazar bulunamadı</h1>
       </Container>
     );
   }
@@ -23,9 +23,9 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
   const authorPosts = getPostsByAuthor(slug);
 
   return (
-    <Container className="py-10">
+    <Container className="py-8 sm:py-10">
       <AuthorProfile author={author} />
-      <h2 className="mb-4 text-xl font-semibold">Yazarın Yazıları</h2>
+      <h2 className="mb-4 text-lg font-semibold sm:text-xl">Yazarın Yazıları</h2>
       <PostList posts={authorPosts} />
     </Container>
   );

@@ -14,8 +14,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   if (!category) {
     return (
-      <Container className="py-10">
-        <h1 className="text-2xl font-semibold">Kategori bulunamadı</h1>
+      <Container className="py-8 sm:py-10">
+        <h1 className="text-xl font-semibold sm:text-2xl">Kategori bulunamadı</h1>
       </Container>
     );
   }
@@ -23,7 +23,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const categoryPosts = getPostsByCategory(slug);
 
   return (
-    <Container className="py-10">
+    <Container className="py-8 sm:py-10">
       <CategoryHeader category={category} />
       <PostList posts={categoryPosts} />
     </Container>

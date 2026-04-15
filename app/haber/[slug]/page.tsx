@@ -15,15 +15,15 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
 
   if (!post) {
     return (
-      <Container className="py-10">
-        <h1 className="text-2xl font-semibold">İçerik bulunamadı</h1>
-        <p className="mt-2 text-slate-600">Aradığınız haber mevcut değil veya yayından kaldırılmış olabilir.</p>
+      <Container className="py-8 sm:py-10">
+        <h1 className="text-xl font-semibold sm:text-2xl">İçerik bulunamadı</h1>
+        <p className="mt-2 text-sm text-slate-600 sm:text-base">Aradığınız haber mevcut değil veya yayından kaldırılmış olabilir.</p>
       </Container>
     );
   }
 
   return (
-    <Container className="py-10">
+    <Container className="py-8 sm:py-10">
       <PostHeader post={post} />
       <PostContent content={post.content} />
       <hr className="my-10 border-slate-200" />

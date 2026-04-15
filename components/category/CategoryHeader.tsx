@@ -7,8 +7,8 @@ type CategoryHeaderProps = {
 export function CategoryHeader({ category }: CategoryHeaderProps) {
   return (
     <header className="mb-6">
-      <h1 className="text-3xl font-bold text-slate-900">{category.name}</h1>
-      <p className="mt-2 text-slate-700">{category.description}</p>
+      <h1 className="text-2xl font-bold text-slate-900 sm:text-3xl">{category.name}</h1>
+      <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:text-base">{category.description}</p>
     </header>
   );
 }

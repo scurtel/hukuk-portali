@@ -10,13 +10,13 @@ export function PostContent({ content }: PostContentProps) {
       <ReactMarkdown
         components={{
           h2: ({ children }) => (
-            <h2 className="text-2xl font-bold text-slate-900 mt-10 mb-4 pb-2 border-b border-slate-100">
+            <h2 className="mb-4 mt-10 border-b border-slate-100 pb-2 text-xl font-bold text-slate-900 sm:text-2xl">
               {children}
             </h2>
           ),
-          h3: ({ children }) => <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">{children}</h3>,
-          p: ({ children }) => <p className="text-slate-600 leading-relaxed mb-6">{children}</p>,
-          ul: ({ children }) => <ul className="list-disc pl-6 mb-6 text-slate-700 space-y-2">{children}</ul>,
+          h3: ({ children }) => <h3 className="mb-3 mt-8 text-lg font-semibold text-slate-800 sm:text-xl">{children}</h3>,
+          p: ({ children }) => <p className="mb-6 text-sm leading-relaxed text-slate-600 sm:text-base">{children}</p>,
+          ul: ({ children }) => <ul className="mb-6 list-disc space-y-2 pl-6 text-sm text-slate-700 sm:text-base">{children}</ul>,
           li: ({ children }) => <li className="marker:text-slate-700">{children}</li>,
           strong: ({ children }) => <strong className="font-semibold text-slate-900">{children}</strong>
         }}

@@ -83,20 +83,20 @@ export function AdminPanelClient({ adminPassword }: AdminPanelClientProps) {
 
   if (!isAuthenticated) {
     return (
-      <section className="mx-auto w-full max-w-md px-4 py-10">
-        <h1 className="mb-4 text-2xl font-bold text-slate-900">Admin Girişi</h1>
-        <div className="space-y-3 rounded-lg border bg-white p-4">
+      <section className="mx-auto w-full max-w-md px-4 py-8 sm:px-6 sm:py-10">
+        <h1 className="mb-4 text-2xl font-bold text-slate-900 sm:text-3xl">Admin Girişi</h1>
+        <div className="space-y-3 rounded-lg border bg-white p-4 sm:p-5">
           <input
             type="password"
             value={passwordInput}
             onChange={(event) => setPasswordInput(event.target.value)}
             placeholder="Şifre"
-            className="w-full rounded-md border px-3 py-2 text-sm outline-none focus:border-brand-500"
+            className="w-full rounded-md border px-3 py-2 text-base outline-none focus:border-brand-500"
           />
           <button
             type="button"
             onClick={handleLogin}
-            className="rounded-md bg-brand-700 px-4 py-2 text-sm font-medium text-white"
+            className="w-full rounded-md bg-brand-700 px-4 py-2 text-base font-medium text-white sm:text-sm"
           >
             Giriş
           </button>
@@ -107,10 +107,10 @@ export function AdminPanelClient({ adminPassword }: AdminPanelClientProps) {
   }
 
   return (
-    <section className="mx-auto w-full max-w-3xl px-4 py-10">
-      <h1 className="mb-6 text-3xl font-bold text-slate-900">AI İçerik Üretim Paneli</h1>
+    <section className="mx-auto min-h-[calc(100dvh-5rem)] w-full max-w-3xl px-4 py-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] sm:px-6 sm:py-10">
+      <h1 className="mb-6 text-2xl font-bold text-slate-900 sm:text-3xl">AI İçerik Üretim Paneli</h1>
 
-      <div className="space-y-4 rounded-lg border bg-white p-4">
+      <div className="space-y-4 rounded-lg border bg-white p-4 sm:p-5">
         <div>
           <label htmlFor="topic" className="mb-1 block text-sm font-medium text-slate-700">
             Konu
@@ -121,7 +121,7 @@ export function AdminPanelClient({ adminPassword }: AdminPanelClientProps) {
             value={topic}
             onChange={(event) => setTopic(event.target.value)}
             placeholder="Örn: Kira sözleşmesinde tahliye şartları"
-            className="w-full rounded-md border px-3 py-2 text-sm outline-none focus:border-brand-500"
+            className="w-full rounded-md border px-3 py-2 text-base outline-none focus:border-brand-500 sm:text-sm"
           />
         </div>
 
@@ -133,7 +133,7 @@ export function AdminPanelClient({ adminPassword }: AdminPanelClientProps) {
             id="type"
             value={type}
             onChange={(event) => setType(event.target.value as PromptContentType)}
-            className="w-full rounded-md border px-3 py-2 text-sm outline-none focus:border-brand-500"
+            className="w-full rounded-md border px-3 py-2 text-base outline-none focus:border-brand-500 sm:text-sm"
           >
             <option value="haber">Haber</option>
             <option value="rehber">Rehber</option>
@@ -145,7 +145,7 @@ export function AdminPanelClient({ adminPassword }: AdminPanelClientProps) {
           type="button"
           onClick={handleGenerate}
           disabled={loading}
-          className="rounded-md bg-brand-700 px-4 py-2 text-sm font-medium text-white disabled:cursor-not-allowed disabled:opacity-60"
+          className="w-full rounded-md bg-brand-700 px-4 py-2 text-base font-medium text-white disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:text-sm"
         >
           {loading ? "Üretiliyor..." : "İçerik Üret"}
         </button>
@@ -156,17 +156,17 @@ export function AdminPanelClient({ adminPassword }: AdminPanelClientProps) {
       <div className="mt-6">
         <label className="mb-1 block text-sm font-medium text-slate-700">Sonuç</label>
         <textarea
-          rows={14}
+          rows={12}
           readOnly
           value={result}
           placeholder="Üretilen içerik burada görünecek."
-          className="w-full rounded-md border bg-slate-50 px-3 py-2 text-sm text-slate-800"
+          className="max-h-[60dvh] min-h-[44dvh] w-full rounded-md border bg-slate-50 px-3 py-3 text-sm leading-relaxed text-slate-800"
         />
         <button
           type="button"
           onClick={handleCopy}
           disabled={!result}
-          className="mt-3 rounded-md border px-4 py-2 text-sm font-medium text-slate-700 disabled:cursor-not-allowed disabled:opacity-50"
+          className="mt-3 w-full rounded-md border px-4 py-2 text-base font-medium text-slate-700 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:text-sm"
         >
           Kopyala
         </button>

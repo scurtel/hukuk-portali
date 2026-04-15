@@ -2,10 +2,10 @@ import { Container } from "@/components/layout/Container";
 
 export default function ContactPage() {
   return (
-    <Container className="py-10">
+    <Container className="py-8 sm:py-10">
       <div className="mx-auto max-w-3xl">
-        <h1 className="text-3xl font-bold text-slate-900">İletişim</h1>
-        <p className="mt-4 text-slate-600">
+        <h1 className="text-2xl font-bold text-slate-900 sm:text-3xl">İletişim</h1>
+        <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
           Hukuk Portalı üzerindeki içerikler, güncel mevzuat analizleri ve yayınlarımız hakkında
           soru veya görüşlerinizi iletmek için aşağıdaki kanalları kullanabilirsiniz.
         </p>
@@ -29,7 +29,7 @@ export default function ContactPage() {
             <h2 className="text-lg font-semibold text-slate-900">E-posta</h2>
             <a
               href="mailto:info@hukukportali.com"
-              className="mt-2 inline-block text-slate-600 underline underline-offset-4 hover:text-slate-900"
+              className="mt-2 inline-flex min-h-11 items-center text-slate-600 underline underline-offset-4 hover:text-slate-900"
             >
               info@hukukportali.com
             </a>
@@ -52,7 +52,7 @@ export default function ContactPage() {
             <h2 className="text-lg font-semibold text-slate-900">Telefon</h2>
             <a
               href="tel:+905411411989"
-              className="mt-2 inline-block text-slate-600 underline underline-offset-4 hover:text-slate-900"
+              className="mt-2 inline-flex min-h-11 items-center text-slate-600 underline underline-offset-4 hover:text-slate-900"
             >
               0 (541) 141 19 89
             </a>
