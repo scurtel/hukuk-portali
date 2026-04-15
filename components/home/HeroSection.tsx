@@ -1,6 +1,5 @@
-import Image from "next/image";
-
 import { Container } from "@/components/layout/Container";
+import { SafeImage } from "@/components/ui/SafeImage";
 import { siteConfig } from "@/lib/site";
 
 export function HeroSection() {
@@ -19,12 +18,13 @@ export function HeroSection() {
           </div>
 
           <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
-            <Image
-              src="https://source.unsplash.com/featured/?law,justice,courtroom&sig=hero"
+            <SafeImage
+              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80"
               alt="Hukuk temalı profesyonel çalışma alanı"
               width={900}
               height={600}
               className="h-56 w-full object-cover sm:h-64 lg:h-72"
+              fallbackSrc="/images/placeholder-post.jpg"
               priority
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/75 to-transparent p-4 text-white">
