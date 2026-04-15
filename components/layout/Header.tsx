@@ -24,7 +24,7 @@ export function Header() {
           <Link
             href="/"
             onClick={closeMenu}
-            className="inline-flex shrink-0 items-center rounded-md px-1 py-1 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
+            className="inline-flex shrink-0 items-center rounded-md p-0.5 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
           >
             <Image
               src="/images/logo.png"
@@ -32,8 +32,8 @@ export function Header() {
               width={300}
               height={100}
               priority
-              sizes="(max-width: 640px) 160px, 220px"
-              className="h-10 w-auto max-w-[160px] object-contain sm:h-[50px] sm:max-w-[220px]"
+              sizes="(max-width: 640px) 192px, 220px"
+              className="h-12 w-auto max-w-[192px] object-contain sm:h-[50px] sm:max-w-[220px]"
             />
           </Link>
 
