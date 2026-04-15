@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import { Container } from "@/components/layout/Container";
-import { navItems, siteConfig } from "@/lib/site";
+import { navItems } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -23,9 +24,17 @@ export function Header() {
           <Link
             href="/"
             onClick={closeMenu}
-            className="rounded-md px-1 py-2 text-base font-bold leading-tight text-brand-700 transition hover:text-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 sm:text-lg"
+            className="inline-flex shrink-0 items-center rounded-md px-1 py-1 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
           >
-            {siteConfig.name}
+            <Image
+              src="/images/logo.png"
+              alt="Hukuk Portalı - Avukat Ceren Sümer Cilli Logo"
+              width={300}
+              height={100}
+              priority
+              sizes="(max-width: 640px) 160px, 220px"
+              className="h-10 w-auto max-w-[160px] object-contain sm:h-[50px] sm:max-w-[220px]"
+            />
           </Link>
 
           <button
