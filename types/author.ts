@@ -5,4 +5,8 @@ export type Author = {
   title: string;
   bio: string;
   avatar: string;
+  /** Resmî büro sitesi — E-E-A-T kartı ve danışmanlık CTA hedefi */
+  officialWebsite?: string;
+  /** Uzmanlık etiketleri (makale altı profil) */
+  expertise?: string[];
 };

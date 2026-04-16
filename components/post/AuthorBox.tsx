@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { LawyerEeatAuthorCard } from "@/components/post/LawyerEeatAuthorCard";
 import { getAuthorBySlug } from "@/lib/authors";
 
 type AuthorBoxProps = {
@@ -11,6 +12,10 @@ export function AuthorBox({ authorSlug }: AuthorBoxProps) {
 
   if (!author) {
     return null;
+  }
+
+  if (author.officialWebsite) {
+    return <LawyerEeatAuthorCard author={author} />;
   }
 
   return (

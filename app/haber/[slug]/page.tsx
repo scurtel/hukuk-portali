@@ -1,4 +1,5 @@
 import { Container } from "@/components/layout/Container";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { AuthorBox } from "@/components/post/AuthorBox";
 import { PostContent } from "@/components/post/PostContent";
 import { PostHeader } from "@/components/post/PostHeader";
@@ -24,6 +25,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
 
   return (
     <Container className="py-8 sm:py-10">
+      <ArticleJsonLd post={post} />
       <PostHeader post={post} />
       <PostContent content={post.content} />
       <hr className="my-10 border-slate-200" />

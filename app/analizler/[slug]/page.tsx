@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { Container } from "@/components/layout/Container";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { AuthorBox } from "@/components/post/AuthorBox";
 import { PostContent } from "@/components/post/PostContent";
 import { PostHeader } from "@/components/post/PostHeader";
@@ -61,6 +62,7 @@ export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) 
 
   return (
     <Container className="py-8 sm:py-10">
+      <ArticleJsonLd post={post} />
       <div className="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
         <SafeImage
           src={coverImage}
