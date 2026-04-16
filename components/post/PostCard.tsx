@@ -11,6 +11,7 @@ type PostCardProps = {
 
 export function PostCard({ post }: PostCardProps) {
   const author = getAuthorBySlug(post.authorSlug);
+  const href = post.type === "analiz" ? `/analizler/${post.slug}` : `/${post.type}/${post.slug}`;
   const unsplashImages = [
     "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1000&q=80",
     "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=80",
@@ -39,13 +40,21 @@ export function PostCard({ post }: PostCardProps) {
         </div>
         <h3 className="text-lg font-semibold">
           <Link
-            href={`/${post.type}/${post.slug}`}
+            href={href}
             className="inline-flex min-h-11 items-center text-slate-900 hover:text-blue-700"
           >
             {post.title}
           </Link>
         </h3>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">{post.excerpt}</p>
+        <div className="mt-4">
+          <Link
+            href={href}
+            className="inline-flex min-h-11 items-center justify-center rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white transition hover:bg-blue-700"
+          >
+            Devamını Oku
+          </Link>
+        </div>
         <p className="mt-3 text-xs text-slate-500">
           {author?.name ?? "Bilinmeyen Yazar"} - {new Date(post.publishedAt).toLocaleDateString("tr-TR")}
         </p>

@@ -16,6 +16,11 @@ export function PostContent({ content }: PostContentProps) {
           ),
           h3: ({ children }) => <h3 className="mb-3 mt-8 text-lg font-semibold text-slate-800 sm:text-xl">{children}</h3>,
           p: ({ children }) => <p className="mb-6 text-sm leading-relaxed text-slate-600 sm:text-base">{children}</p>,
+          blockquote: ({ children }) => (
+            <blockquote className="my-8 rounded-xl border border-slate-200 bg-slate-50 p-5 text-slate-800 shadow-sm">
+              <div className="text-sm leading-relaxed sm:text-base">{children}</div>
+            </blockquote>
+          ),
           ul: ({ children }) => <ul className="mb-6 list-disc space-y-2 pl-6 text-sm text-slate-700 sm:text-base">{children}</ul>,
           li: ({ children }) => <li className="marker:text-slate-700">{children}</li>,
           strong: ({ children }) => <strong className="font-semibold text-slate-900">{children}</strong>

@@ -103,6 +103,19 @@ export const posts: Post[] = [
     categorySlug: "analiz",
     authorSlug: "av-ceren-sumer-cilli",
     publishedAt: "2026-03-21"
+  },
+  {
+    id: "p10",
+    slug: "yapay-zeka-avukat-sorumlulugu",
+    title: "Algoritmanın Hatası, Avukatın Sorumluluğu: ABD’den Dikkat Çeken Karar",
+    excerpt:
+      "ABD’deki emsal karar, yapay zekâ destekli dilekçelerde doğrulama zorunluluğunu ve avukatın mesleki özen yükümlülüğünü yeniden gündeme taşıyor.",
+    content: generatedPostContents["yapay-zeka-avukat-sorumlulugu"],
+    type: "analiz",
+    categorySlug: "analiz",
+    authorSlug: "av-ceren-sumer-cilli",
+    publishedAt: "2026-04-16",
+    featured: true
   }
 ];
 

@@ -746,4 +746,47 @@ Hukuki düzenlemeler ve teknolojik gelişmeler hızla değiştiğinden, açık r
 Açık rıza metinlerinde yeterlilik sorunu, kişisel verilerin korunması hukukunun en hassas ve en çok ihlal edilen alanlarından birini oluşturmaktadır. KVKK'nın getirdiği ilkeler, Kişisel Verileri Koruma Kurulu'nun 2026/347 sayılı İlke Kararı gibi güncel düzenlemeler ve sınırlı sayıdaki Yargıtay içtihatları, veri sorumlularının bu alandaki yükümlülüklerini net bir şekilde ortaya koymaktadır. "Belirli bir konuya ilişkin, bilgilendirmeye dayalı ve özgür iradeyle açıklanan" bir rızanın alınması, aydınlatma metinlerinden ayrıştırılması ve şeffaf bir şekilde yönetilmesi, sadece idari para cezalarından kaçınmak için değil, aynı zamanda ilgili kişilerin temel hak ve özgürlüklerine saygı duyan ve güven inşa eden bir kurum kültürü oluşturmak için de elzemdir. Veri sorumlularının bu alanda göstereceği özen, kişisel verilerin korunması ekosisteminin sağlıklı işleyişi açısından büyük önem taşımaktadır.
 
 Yazan: Avukat Ceren Sumer Cilli`,
+  "yapay-zeka-avukat-sorumlulugu": `Yapay zekâ hukuk dünyasına bayağı hızlı girdi. Dilekçe yazıyor, araştırma yapıyor, özet çıkarıyor, zaman kazandırıyor. Güzel. Ama tam da burada küçük bir ayrıntı var: bu sistemler bazen dümdüz olmayan şeyi varmış gibi yazabiliyor. Ve siz buna kontrol etmeden güveniyorsanız, onun adı artık teknoloji kullanımı değil, bildiğin risk kumarı.
+
+ABD’de bir temyiz mahkemesinin verdiği karar da tam bu meseleye çarpıcı bir örnek oldu. Bir avukat, hazırladığı dilekçede yapay zekâdan yararlanıyor. Ancak metinde geçen bazı dava örnekleriyle içtihatların gerçekte var olmadığı ortaya çıkıyor. Yani sistem, hukuk literatüründe bulunmayan kararlar üretmiş. Avukat da bunları kontrol etmeden mahkemeye sunmuş. Sonuç olarak **2.500 dolar para cezasıyla** karşılaşmış.
+
+Mahkeme bunu “ufak bir teknik aksaklık” gibi değerlendirmedi. Tam tersine, olayın merkezine doğrudan **mesleki özen yükümlülüğünü** koydu. Çünkü ortada sadece yanlış bilgi yok; o yanlış bilginin, bir hukukçunun imzasıyla resmî olarak mahkemeye sunulması var.
+
+## “Yapay zekâ yazdı” demek kurtarmıyor
+
+Kararın verdiği mesaj aslında gayet net:
+
+> Yapay zekâ bir araç olabilir ama sorumluluğu üstlenmez. Onu kullanan kişi üstlenir.
+
+Mahkemenin yaklaşımına göre bir avukat, altına imza attığı metindeki her bilginin doğruluğundan sorumludur. O cümleyi kendi kurmuş olması ya da bir yazılımın önüne getirmiş olması, sonucu değiştirmiyor. Çünkü mahkemeye sunulan şey sonuçta bir “taslak” değil, hukuki bir beyan.
+
+Dolayısıyla “onu ben yazmadım, yapay zekâ yazdı” savunması, kulağa modern gelse de hukuken pek bir şey ifade etmiyor. Hatta biraz şey gibi kalıyor: direksiyonu navigasyona bıraktım, yanlış yola girdik ama suç benim değil.
+
+## Asıl mesele teknoloji değil, denetimsizlik
+
+Burada tartışılması gereken şey sadece yapay zekânın hata yapması değil. Asıl mesele, bu hatanın neden fark edilmediği. Cevap da çok yabancı değil: hız.
+
+Herkes daha hızlı üretmek istiyor. Daha kısa sürede daha çok iş çıkarmak istiyor. Yapay zekâ da tam bu noktada inanılmaz cazip geliyor. Ama mesele şu: hız arttıkça dikkat azalırsa, özellikle hukuk gibi hata kaldırmayan alanlarda sonuç ağır oluyor.
+
+Bu olay, teknolojinin sunduğu kolaylığın mesleki dikkatin yerine geçemeyeceğini açık biçimde gösterdi. Çünkü hukukta “yaklaşık doğru” diye bir lüks yok. Ya vardır ya yoktur. Ya o içtihat gerçektir ya değildir.
+
+## Hukukta yeni dönem: kullanan değil, kontrol eden kazanacak
+
+Bu karar yalnızca bir avukata verilen ceza olarak okunmamalı. Daha geniş bir uyarı niteliği taşıyor. Özellikle önümüzdeki dönemde hukuk dünyasında şu başlıkların daha çok tartışılacağı açık:
+
+- Yapay zekâ kullanımının sınırları
+- Doğrulama yükümlülüğünün kapsamı
+- Meslek etiğinin teknoloji karşısında nasıl yeniden tanımlanacağı
+
+Yani bundan sonra fark yaratacak olan, yapay zekâyı açıp metin ürettiren kişi değil; o metni hukuk süzgecinden geçirip gerçekten denetleyen kişi olacak.
+
+## Sonuç: hatayı algoritma yapar, faturayı insan öder
+
+Bu olayın özeti aslında çok basit:
+
+Yapay zekâ yanlış bilgi üretebilir. Uydurabilir. Karıştırabilir. Emin gibi konuşup tamamen boş da atabilir.
+
+Ama hukukta asıl önemli olan, o yanlışın kimin eliyle sisteme sokulduğudur. Mahkemenin de söylediği şey tam olarak bu: hata makineden çıkmış olabilir, fakat sorumluluk insanda kalır.
+
+Ve iş hukuka geldiğinde, bu sorumluluk bazen doğrudan para cezası, bazen itibar kaybı, bazen de mesleki güven erozyonu olarak geri döner.`,
 };
