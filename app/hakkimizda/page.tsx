@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import { Container } from "@/components/layout/Container";
-import { ConsultationCtaLink } from "@/components/ui/ConsultationCtaLink";
 import {
   buildCerenAboutPageSchemaGraph,
   buildFaqPageSchema,
@@ -50,9 +49,6 @@ export default function AboutPage() {
             Avukat Ceren Sümer Cilli&apos;nin mesleki deneyimi ve editoryal denetimiyle şekillenir. Somut dosya ve
             strateji için kişiye özel değerlendirme yalnızca avukatlık hizmeti kapsamındadır.
           </p>
-          <div className="mt-6">
-            <ConsultationCtaLink href={CEREN_OFFICIAL_SITE}>Hukuki Danışmanlık Al</ConsultationCtaLink>
-          </div>
         </header>
 
         <div className="mt-8 space-y-10 text-sm leading-relaxed text-slate-700 sm:text-base">
@@ -72,12 +68,6 @@ export default function AboutPage() {
               yönetimi öne çıkar. Her iki yolda da mahkeme takvimi ve dosyanın özellikleri sonucu doğrudan etkiler.
             </p>
           </section>
-
-          <div className="flex justify-center sm:justify-start">
-            <ConsultationCtaLink href={CEREN_OFFICIAL_SITE} className="w-full max-w-xs sm:w-auto">
-              Hukuki Danışmanlık Al
-            </ConsultationCtaLink>
-          </div>
 
           <section aria-labelledby="h-miras">
             <h2 id="h-miras" className="text-xl font-semibold tracking-tight text-blue-900 sm:text-2xl">
@@ -126,18 +116,19 @@ export default function AboutPage() {
               Adana Barosu kayıtlı{" "}
               <strong className="font-semibold text-slate-900">Avukat Ceren Sümer Cilli</strong>, içeriklerin hukuki
               çerçevesini ve güvenilirliğini güçlendirir. Kişisel verileriniz ve dosya mahremiyeti için doğrudan resmî
-              iletişim kanallarını kullanmanızı öneririz.
+              iletişim kanallarını kullanmanızı öneririz. Bireysel danışmanlık ve dava temsili talepleri için resmî web
+              sitesi:{" "}
+              <a
+                href={CEREN_OFFICIAL_SITE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-brand-700 underline decoration-brand-200 underline-offset-2 hover:text-brand-900"
+              >
+                cerensumer.av.tr
+              </a>
+              .
             </p>
           </section>
-
-          <div className="rounded-xl border border-brand-100 bg-brand-50/50 p-5 sm:flex sm:items-center sm:justify-between sm:gap-4">
-            <p className="text-sm text-slate-800 sm:text-base">
-              Bireysel hukuki danışmanlık ve dava temsili için resmî web sitesi üzerinden iletişime geçebilirsiniz.
-            </p>
-            <ConsultationCtaLink href={CEREN_OFFICIAL_SITE} className="mt-4 w-full shrink-0 sm:mt-0 sm:w-auto">
-              Hukuki Danışmanlık Al
-            </ConsultationCtaLink>
-          </div>
 
           <section aria-labelledby="h-faq" className="border-t border-slate-200 pt-10">
             <h2 id="h-faq" className="text-xl font-semibold tracking-tight text-blue-900 sm:text-2xl">
