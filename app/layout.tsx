@@ -7,6 +7,8 @@ import { siteConfig } from "@/lib/site";
 
 import "./globals.css";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,

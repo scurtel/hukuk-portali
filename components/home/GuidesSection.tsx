@@ -3,8 +3,8 @@ import { PostList } from "@/components/post/PostList";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { getPostsByType } from "@/lib/posts";
 
-export function GuidesSection() {
-  const guidePosts = getPostsByType("rehber");
+export async function GuidesSection() {
+  const guidePosts = await getPostsByType("rehber");
 
   return (
     <section className="py-12 sm:py-16">

@@ -1,4 +1,3 @@
-import { getAuthorBySlug } from "@/lib/authors";
 import {
   CEREN_KNOWS_ABOUT,
   CEREN_PERSON_ID,
@@ -7,6 +6,7 @@ import {
   PRIMARY_AUTHOR_SLUG
 } from "@/lib/seo/cerenLawyer";
 import { siteConfig } from "@/lib/site";
+import type { Author } from "@/types/author";
 import type { Post } from "@/types/post";
 
 /** Kart ve iç linklerle uyumlu kanonik yol (analiz → `/analizler/...`) */
@@ -25,9 +25,8 @@ function publishedToIso(publishedAt: string): string {
 
 const publisherId = `${siteConfig.url}/#organization`;
 
-export function buildArticlePageSchema(post: Post): Record<string, unknown> {
+export function buildArticlePageSchema(post: Post, author: Author | undefined): Record<string, unknown> {
   const pageUrl = getPostCanonicalUrl(post);
-  const author = getAuthorBySlug(post.authorSlug);
   const isPrimaryAuthor = post.authorSlug === PRIMARY_AUTHOR_SLUG && Boolean(author?.officialWebsite);
 
   const articleType = post.type === "haber" ? "NewsArticle" : "Article";

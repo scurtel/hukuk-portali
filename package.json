@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prisma:generate": "prisma generate"
+    "postinstall": "prisma generate",
+    "prisma:generate": "prisma generate",
+    "prisma:seed": "node prisma/seed.mjs",
+    "content:crawl": "python automation/crawler.py",
+    "content:daily": "python automation/content_manager.py --daily"
   },
   "dependencies": {
     "@google/genai": "^1.50.1",

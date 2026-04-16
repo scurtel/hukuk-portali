@@ -2,16 +2,17 @@ import Link from "next/link";
 
 import { CategoryBadge } from "@/components/post/CategoryBadge";
 import { SafeImage } from "@/components/ui/SafeImage";
-import { getAuthorBySlug } from "@/lib/authors";
+import { getPostHref } from "@/lib/post-urls";
+import type { Author } from "@/types/author";
 import type { Post } from "@/types/post";
 
 type PostCardProps = {
   post: Post;
+  author?: Author;
 };
 
-export function PostCard({ post }: PostCardProps) {
-  const author = getAuthorBySlug(post.authorSlug);
-  const href = post.type === "analiz" ? `/analizler/${post.slug}` : `/${post.type}/${post.slug}`;
+export function PostCard({ post, author }: PostCardProps) {
+  const href = getPostHref(post);
   const unsplashImages = [
     "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1000&q=80",
     "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=80",
@@ -23,11 +24,12 @@ export function PostCard({ post }: PostCardProps) {
     .split("")
     .reduce((sum, char) => sum + char.charCodeAt(0), 0) % unsplashImages.length;
   const cardImage = unsplashImages[imageIndex];
+  const displayImage = post.imageUrl && post.imageUrl.length > 0 ? post.imageUrl : cardImage;
 
   return (
     <article className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-lg transition duration-200 hover:scale-105 hover:shadow-xl">
       <SafeImage
-        src={cardImage}
+        src={displayImage}
         alt={`${post.title} görseli`}
         width={720}
         height={420}

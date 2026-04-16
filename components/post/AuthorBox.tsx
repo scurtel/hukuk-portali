@@ -1,15 +1,13 @@
 import Link from "next/link";
 
 import { LawyerEeatAuthorCard } from "@/components/post/LawyerEeatAuthorCard";
-import { getAuthorBySlug } from "@/lib/authors";
+import type { Author } from "@/types/author";
 
 type AuthorBoxProps = {
-  authorSlug: string;
+  author: Author | undefined;
 };
 
-export function AuthorBox({ authorSlug }: AuthorBoxProps) {
-  const author = getAuthorBySlug(authorSlug);
-
+export function AuthorBox({ author }: AuthorBoxProps) {
   if (!author) {
     return null;
   }

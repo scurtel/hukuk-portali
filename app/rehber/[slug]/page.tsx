@@ -4,6 +4,7 @@ import { AuthorBox } from "@/components/post/AuthorBox";
 import { PostContent } from "@/components/post/PostContent";
 import { PostHeader } from "@/components/post/PostHeader";
 import { RelatedPosts } from "@/components/post/RelatedPosts";
+import { getAuthorBySlug } from "@/lib/authors";
 import { getPostBySlug } from "@/lib/posts";
 
 type GuideDetailPageProps = {
@@ -12,7 +13,7 @@ type GuideDetailPageProps = {
 
 export default async function GuideDetailPage({ params }: GuideDetailPageProps) {
   const { slug } = await params;
-  const post = getPostBySlug(slug, "rehber");
+  const post = await getPostBySlug(slug, "rehber");
 
   if (!post) {
     return (
@@ -23,14 +24,16 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
     );
   }
 
+  const author = await getAuthorBySlug(post.authorSlug);
+
   return (
     <Container className="py-8 sm:py-10">
-      <ArticleJsonLd post={post} />
-      <PostHeader post={post} />
+      <ArticleJsonLd post={post} author={author} />
+      <PostHeader post={post} author={author} />
       <PostContent content={post.content} />
       <hr className="my-10 border-slate-200" />
       <div className="mt-8">
-        <AuthorBox authorSlug={post.authorSlug} />
+        <AuthorBox author={author} />
       </div>
       <RelatedPosts currentSlug={post.slug} categorySlug={post.categorySlug} />
     </Container>

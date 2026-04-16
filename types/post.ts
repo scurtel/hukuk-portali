@@ -11,4 +11,6 @@ export type Post = {
   authorSlug: string;
   publishedAt: string;
   featured?: boolean;
+  /** Prisma / kapak: /images/covers/... */
+  imageUrl?: string | null;
 };

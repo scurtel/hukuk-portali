@@ -1,20 +1,24 @@
 import type { Post } from "@/types/post";
 
+import { getAuthorsBySlugs } from "@/lib/authors";
+
 import { PostCard } from "./PostCard";
 
 type PostListProps = {
   posts: Post[];
 };
 
-export function PostList({ posts }: PostListProps) {
+export async function PostList({ posts }: PostListProps) {
   if (!posts.length) {
     return <p className="text-sm text-slate-500">Bu bölümde henüz içerik bulunmuyor.</p>;
   }
 
+  const authorMap = await getAuthorsBySlugs(posts.map((p) => p.authorSlug));
+
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => (
-        <PostCard key={post.id} post={post} />
+        <PostCard key={post.id} post={post} author={authorMap.get(post.authorSlug)} />
       ))}
     </div>
   );

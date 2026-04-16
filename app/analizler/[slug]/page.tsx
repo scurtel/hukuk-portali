@@ -7,6 +7,7 @@ import { PostContent } from "@/components/post/PostContent";
 import { PostHeader } from "@/components/post/PostHeader";
 import { RelatedPosts } from "@/components/post/RelatedPosts";
 import { SafeImage } from "@/components/ui/SafeImage";
+import { getAuthorBySlug } from "@/lib/authors";
 import { getPostBySlug } from "@/lib/posts";
 
 const DEFAULT_COVER_IMAGE =
@@ -22,7 +23,7 @@ type AnalysisSeoPageProps = {
 
 export async function generateMetadata({ params }: AnalysisSeoPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const post = getPostBySlug(slug, "analiz");
+  const post = await getPostBySlug(slug, "analiz");
 
   if (!post) {
     return {
@@ -47,7 +48,7 @@ export async function generateMetadata({ params }: AnalysisSeoPageProps): Promis
 
 export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) {
   const { slug } = await params;
-  const post = getPostBySlug(slug, "analiz");
+  const post = await getPostBySlug(slug, "analiz");
 
   if (!post) {
     return (
@@ -58,11 +59,16 @@ export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) 
     );
   }
 
-  const coverImage = COVER_IMAGES_BY_SLUG[slug] ?? DEFAULT_COVER_IMAGE;
+  const author = await getAuthorBySlug(post.authorSlug);
+
+  const coverImage =
+    post.imageUrl && post.imageUrl.length > 0
+      ? post.imageUrl
+      : COVER_IMAGES_BY_SLUG[slug] ?? DEFAULT_COVER_IMAGE;
 
   return (
     <Container className="py-8 sm:py-10">
-      <ArticleJsonLd post={post} />
+      <ArticleJsonLd post={post} author={author} />
       <div className="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
         <SafeImage
           src={coverImage}
@@ -74,11 +80,11 @@ export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) 
         />
       </div>
 
-      <PostHeader post={post} />
+      <PostHeader post={post} author={author} />
       <PostContent content={post.content} />
       <hr className="my-10 border-slate-200" />
       <div className="mt-8">
-        <AuthorBox authorSlug={post.authorSlug} />
+        <AuthorBox author={author} />
       </div>
       <RelatedPosts currentSlug={post.slug} categorySlug={post.categorySlug} />
     </Container>

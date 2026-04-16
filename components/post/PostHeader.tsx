@@ -1,14 +1,13 @@
 import { CategoryBadge } from "@/components/post/CategoryBadge";
-import { getAuthorBySlug } from "@/lib/authors";
+import type { Author } from "@/types/author";
 import type { Post } from "@/types/post";
 
 type PostHeaderProps = {
   post: Post;
+  author?: Author;
 };
 
-export function PostHeader({ post }: PostHeaderProps) {
-  const author = getAuthorBySlug(post.authorSlug);
-
+export function PostHeader({ post, author }: PostHeaderProps) {
   return (
     <header className="mb-6 space-y-3">
       <CategoryBadge slug={post.categorySlug} />

@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 
-import { authors } from "@/lib/authors";
-import { categories } from "@/lib/categories";
-import { posts } from "@/lib/posts";
+import { getAllAuthors } from "@/lib/authors";
+import { getAllCategories } from "@/lib/categories";
+import { getAllPosts } from "@/lib/posts";
+import { getPostHref } from "@/lib/post-urls";
 import { siteConfig } from "@/lib/site";
 
 function getBaseUrl() {
@@ -12,9 +13,23 @@ function getBaseUrl() {
   return configuredUrl.replace(/\/$/, "");
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = getBaseUrl();
   const now = new Date();
+
+  let posts: Awaited<ReturnType<typeof getAllPosts>> = [];
+  let categories: Awaited<ReturnType<typeof getAllCategories>> = [];
+  let authors: Awaited<ReturnType<typeof getAllAuthors>> = [];
+  try {
+    posts = await getAllPosts();
+    categories = await getAllCategories();
+    authors = await getAllAuthors();
+  } catch {
+    // Örn. build ortamında DATABASE_URL henüz Postgres değilse veya DB kapalıysa
+    posts = [];
+    categories = [];
+    authors = [];
+  }
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
@@ -34,6 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.6
+    },
+    {
+      url: `${baseUrl}/haberler`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.85
     }
   ];
 
@@ -52,7 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const postRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${baseUrl}/${post.type}/${post.slug}`,
+    url: `${baseUrl}${getPostHref(post)}`,
     lastModified: new Date(post.publishedAt),
     changeFrequency: "monthly",
     priority: 0.9

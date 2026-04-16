@@ -8,3 +8,11 @@ out
 .DS_Store
 *.log
 coverage
+prisma/dev.db
+automation/data/rss_items.json
+automation/data/used_sources.json
+public/images/covers/cover-*.png
+
+# Python
+__pycache__/
+*.pyc

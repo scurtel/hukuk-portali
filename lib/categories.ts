@@ -1,29 +1,28 @@
-import type { Category } from "@/types/category";
+import type { Category, CategoryType } from "@/types/category";
+import { prisma } from "@/lib/prisma";
 
-export const categories: Category[] = [
-  {
-    id: "c1",
-    slug: "haber",
-    name: "Haber",
-    description: "Güncel hukuk gündemi, düzenlemeler ve kararlar.",
-    type: "haber"
-  },
-  {
-    id: "c2",
-    slug: "rehber",
-    name: "Rehber",
-    description: "Hukuki süreçleri adım adım anlatan içerikler.",
-    type: "rehber"
-  },
-  {
-    id: "c3",
-    slug: "analiz",
-    name: "Analiz",
-    description: "Karar ve mevzuat değerlendirmeleri.",
-    type: "analiz"
-  }
-];
+function mapRow(row: {
+  id: string;
+  slug: string;
+  name: string;
+  description: string;
+  type: string;
+}): Category {
+  return {
+    id: row.id,
+    slug: row.slug,
+    name: row.name,
+    description: row.description,
+    type: row.type as CategoryType
+  };
+}
 
-export function getCategoryBySlug(slug: string): Category | undefined {
-  return categories.find((category) => category.slug === slug);
+export async function getCategoryBySlug(slug: string): Promise<Category | undefined> {
+  const row = await prisma.category.findUnique({ where: { slug } });
+  return row ? mapRow(row) : undefined;
+}
+
+export async function getAllCategories(): Promise<Category[]> {
+  const rows = await prisma.category.findMany({ orderBy: { slug: "asc" } });
+  return rows.map(mapRow);
 }
