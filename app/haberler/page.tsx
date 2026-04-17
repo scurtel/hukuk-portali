@@ -18,7 +18,7 @@ export default async function HaberlerPage() {
       <header className="mb-8">
         <h1 className="text-2xl font-bold text-slate-900 sm:text-3xl">Haberler</h1>
         <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:text-base">
-          Güncel hukuk gündemi ve haber içerikleri veritabanından listelenir.
+          Güncel hukuk gündemi ve haber içerikleri statik içerik havuzundan listelenir.
         </p>
       </header>
       <SectionTitle>Tüm haberler</SectionTitle>

@@ -11,6 +11,6 @@ export type Post = {
   authorSlug: string;
   publishedAt: string;
   featured?: boolean;
-  /** Prisma / kapak: /images/covers/... */
+  /** Kapak görseli yolu: /images/covers/... */
   imageUrl?: string | null;
 };

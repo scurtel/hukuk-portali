@@ -17,19 +17,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = getBaseUrl();
   const now = new Date();
 
-  let posts: Awaited<ReturnType<typeof getAllPosts>> = [];
-  let categories: Awaited<ReturnType<typeof getAllCategories>> = [];
-  let authors: Awaited<ReturnType<typeof getAllAuthors>> = [];
-  try {
-    posts = await getAllPosts();
-    categories = await getAllCategories();
-    authors = await getAllAuthors();
-  } catch {
-    // Örn. build ortamında DATABASE_URL henüz Postgres değilse veya DB kapalıysa
-    posts = [];
-    categories = [];
-    authors = [];
-  }
+  const posts = await getAllPosts();
+  const categories = await getAllCategories();
+  const authors = await getAllAuthors();
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {

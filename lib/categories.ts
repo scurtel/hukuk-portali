@@ -1,5 +1,5 @@
 import type { Category, CategoryType } from "@/types/category";
-import { prisma } from "@/lib/prisma";
+import { staticCategories } from "@/lib/staticData";
 
 function mapRow(row: {
   id: string;
@@ -18,11 +18,11 @@ function mapRow(row: {
 }
 
 export async function getCategoryBySlug(slug: string): Promise<Category | undefined> {
-  const row = await prisma.category.findUnique({ where: { slug } });
+  const row = staticCategories.find((category) => category.slug === slug);
   return row ? mapRow(row) : undefined;
 }
 
 export async function getAllCategories(): Promise<Category[]> {
-  const rows = await prisma.category.findMany({ orderBy: { slug: "asc" } });
+  const rows = [...staticCategories].sort((a, b) => a.slug.localeCompare(b.slug, "tr"));
   return rows.map(mapRow);
 }
