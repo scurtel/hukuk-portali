@@ -131,6 +131,17 @@ const postMetas = [
     categorySlug: "analiz",
     featured: false,
     publishedAt: "2025-12-10"
+  },
+  {
+    id: "post-10",
+    slug: "yapay-zeka-avukat-sorumlulugu",
+    title: "Yapay Zeka ve Avukatın Hukuki Sorumluluğu",
+    excerpt:
+      "LegalTech dönüşümünde yapay zeka kullanımının avukat sorumluluğu, vekalet görevi ve meslek etiği üzerindeki etkileri.",
+    type: "analiz",
+    categorySlug: "analiz",
+    featured: true,
+    publishedAt: "2026-04-17"
   }
 ] as const;
 

@@ -746,47 +746,33 @@ Hukuki düzenlemeler ve teknolojik gelişmeler hızla değiştiğinden, açık r
 Açık rıza metinlerinde yeterlilik sorunu, kişisel verilerin korunması hukukunun en hassas ve en çok ihlal edilen alanlarından birini oluşturmaktadır. KVKK'nın getirdiği ilkeler, Kişisel Verileri Koruma Kurulu'nun 2026/347 sayılı İlke Kararı gibi güncel düzenlemeler ve sınırlı sayıdaki Yargıtay içtihatları, veri sorumlularının bu alandaki yükümlülüklerini net bir şekilde ortaya koymaktadır. "Belirli bir konuya ilişkin, bilgilendirmeye dayalı ve özgür iradeyle açıklanan" bir rızanın alınması, aydınlatma metinlerinden ayrıştırılması ve şeffaf bir şekilde yönetilmesi, sadece idari para cezalarından kaçınmak için değil, aynı zamanda ilgili kişilerin temel hak ve özgürlüklerine saygı duyan ve güven inşa eden bir kurum kültürü oluşturmak için de elzemdir. Veri sorumlularının bu alanda göstereceği özen, kişisel verilerin korunması ekosisteminin sağlıklı işleyişi açısından büyük önem taşımaktadır.
 
 Yazan: Avukat Ceren Sumer Cilli`,
-  "yapay-zeka-avukat-sorumlulugu": `Yapay zekâ hukuk dünyasına bayağı hızlı girdi. Dilekçe yazıyor, araştırma yapıyor, özet çıkarıyor, zaman kazandırıyor. Güzel. Ama tam da burada küçük bir ayrıntı var: bu sistemler bazen dümdüz olmayan şeyi varmış gibi yazabiliyor. Ve siz buna kontrol etmeden güveniyorsanız, onun adı artık teknoloji kullanımı değil, bildiğin risk kumarı.
+  "yapay-zeka-avukat-sorumlulugu": `# Yapay Zeka ve Avukatın Hukuki Sorumluluğu: Dijital Dönüşüm Çağında Mesleki İlkeler
 
-ABD’de bir temyiz mahkemesinin verdiği karar da tam bu meseleye çarpıcı bir örnek oldu. Bir avukat, hazırladığı dilekçede yapay zekâdan yararlanıyor. Ancak metinde geçen bazı dava örnekleriyle içtihatların gerçekte var olmadığı ortaya çıkıyor. Yani sistem, hukuk literatüründe bulunmayan kararlar üretmiş. Avukat da bunları kontrol etmeden mahkemeye sunmuş. Sonuç olarak **2.500 dolar para cezasıyla** karşılaşmış.
+## Giriş: Hukuk Teknolojilerinin Yükselişi ve Avukatlık Mesleği
 
-Mahkeme bunu “ufak bir teknik aksaklık” gibi değerlendirmedi. Tam tersine, olayın merkezine doğrudan **mesleki özen yükümlülüğünü** koydu. Çünkü ortada sadece yanlış bilgi yok; o yanlış bilginin, bir hukukçunun imzasıyla resmî olarak mahkemeye sunulması var.
+Günümüz dünyası, dijital çağın getirdiği hızlı ve köklü değişimlerle karakterize edilmektedir. Bu dönüşümden hukuk sektörü de payını almakta, LegalTech adı verilen hukuk teknolojileri giderek daha fazla önem kazanmaktadır. LegalTech uygulamaları, hukuki süreçlerin otomasyonu, sözleşme incelemesi, dava yönetimi ve danışmanlık gibi zaman alıcı işlemleri hızlandırarak verimliliği artırmaktadır. Özellikle yapay zeka (YZ) teknolojileri, hukuki araştırma, metin analizi ve içtihat tarama gibi alanlarda avukatlık mesleğine önemli avantajlar sunmaktadır. Türkiye'de de Apilex ve Leagle gibi yerli LegalTech girişimleri, milyonlarca ulusal yargı kararı ve mevzuatı analiz ederek avukatlara semantik arama, sözleşme analizi ve otomatik dilekçe oluşturma gibi kapsamlı dijital destekler sağlamaktadır. Bu gelişmeler, avukatlık mesleğinin geleceğini şekillendirmekte, ancak beraberinde bir dizi hukuki ve etik sorumlulukları da getirmektedir.
 
-## “Yapay zekâ yazdı” demek kurtarmıyor
+## Hukuki Çerçeve: Yapay Zeka Kullanımında Avukatın Özen Yükümlülüğü
 
-Kararın verdiği mesaj aslında gayet net:
+Avukatlık mesleği, 1136 sayılı Avukatlık Kanunu ve Türkiye Barolar Birliği (TBB) Meslek Kuralları ile düzenlenen kutsal bir görevdir. Avukatlar, yüklendikleri görevleri "özen, doğruluk ve onur içinde" yerine getirmekle yükümlüdürler (Avukatlık Kanunu madde 34). Yapay zeka araçlarının hukuk pratiğine entegrasyonu, bu özen yükümlülüğünün kapsamını yeniden belirlemektedir. Yapay zeka sistemleri, bazen "halüsinasyon görme" olarak adlandırılan, yanıltıcı ve hatalı bilgiler üretebilir. Bu durum göz önüne alındığında, avukatların yapay zeka çıktılarının doğruluğunu teyit etmeden kullanmaları, özen yükümlülüğünün ihlali potansiyeli taşımaktadır. Ankara Barosu tarafından yayımlanan "Avukatlıkta Yapay Zeka Araçlarının Kullanımı Rehberi" de avukatların bu teknolojileri kullanırken özen ve dikkatle hareket etmesi gerektiğini vurgulamaktadır. Uluslararası düzeyde yayımlanan rehberler ve düzenlemeler de hukuk alanında güvenilir yapay zeka araçlarının kullanımında bir sakınca olmadığını belirtmekle birlikte, bu araçların avukatlar tarafından derinlemesine anlaşılması ve sorumlu bir şekilde kullanılması gerektiğinin altını çizmektedir.
 
-> Yapay zekâ bir araç olabilir ama sorumluluğu üstlenmez. Onu kullanan kişi üstlenir.
+## Sorumluluk Alanları: Yapay Zeka Kaynaklı Hatalarda Avukatın Vekalet Görevi Kapsamındaki Sorumluluğu
 
-Mahkemenin yaklaşımına göre bir avukat, altına imza attığı metindeki her bilginin doğruluğundan sorumludur. O cümleyi kendi kurmuş olması ya da bir yazılımın önüne getirmiş olması, sonucu değiştirmiyor. Çünkü mahkemeye sunulan şey sonuçta bir “taslak” değil, hukuki bir beyan.
+Yapay zeka araçlarının sunduğu avantajlara rağmen, bu sistemlerin hatalı analizler yapması veya yanlış içtihatlar paylaşması durumunda ortaya çıkan hukuki sorumluluk, Türk hukuku açısından önemli bir tartışma konusudur. Mevcut durumda, yapay zeka kaynaklı hatalardan doğan hukuki ve disipliner sorumluluk, nihai değerlendirme yetkisi avukata ait olduğu için her halükarda avukata yüklenmektedir. "Yapay zeka kullandım" savunması, ne etik ne de hukuki açıdan geçerli bir mazeret oluşturmamaktadır, zira yapay zeka hukuki hizmet sözleşmesinin tarafı değildir ve hukuki ehliyeti bulunmamaktadır.
 
-Dolayısıyla “onu ben yazmadım, yapay zekâ yazdı” savunması, kulağa modern gelse de hukuken pek bir şey ifade etmiyor. Hatta biraz şey gibi kalıyor: direksiyonu navigasyona bıraktım, yanlış yola girdik ama suç benim değil.
+Avukatın müvekkiline karşı sorumluluğu, Türk Borçlar Kanunu'ndaki vekalet sözleşmesi hükümlerine dayanmaktadır. Vekil, vekalet borcunu sadakat ve özenle yerine getirmekle yükümlüdür. Eğer bir avukat, yapay zekadan aldığı hatalı bir bilgi veya analiz nedeniyle müvekkiline zarar verirse, Türk Borçlar Kanunu'nun 112. maddesi uyarınca bu zararı gidermekle yükümlü olabilir. Yapay zeka sistemlerindeki sorumsuzluk kaydı ve teknik sınırlamalar göz önüne alındığında, avukatın bu sorumluluğu başka bir tarafa devretmesi mümkün değildir. Özellikle Yargıtay kararlarında, Danıştay kararlarında veya bölgesel mahkeme kararlarında hatalı veya uydurma içtihatların kullanılması, avukatın müvekkilinin menfaatlerini ihlal etmesine ve dava sürecinin olumsuz etkilenmesine yol açabilir. Bu noktada avukatın, yapay zeka tarafından üretilen içeriğin güvenilirliğini diğer kaynaklardan teyit ederek doğrulaması ve müvekkilinin menfaatine uygun olup olmadığını değerlendirmesi büyük önem taşımaktadır.
 
-## Asıl mesele teknoloji değil, denetimsizlik
+## Etik Boyut: TBB Meslek Kuralları Çerçevesinde Gizlilik ve Sır Saklama Yükümlülüğü
 
-Burada tartışılması gereken şey sadece yapay zekânın hata yapması değil. Asıl mesele, bu hatanın neden fark edilmediği. Cevap da çok yabancı değil: hız.
+Avukatlık mesleğinin temel etik ilkelerinden biri, Avukatlık Kanunu'nun 36. maddesi ve TBB Meslek Kuralları'nın 37. maddesi kapsamında düzenlenen sır saklama yükümlülüğüdür. Avukatlar, müvekkilleriyle ilgili öğrendikleri bilgileri açığa vuramayacakları gibi, bu bilgilerin gizliliğini her koşulda korumakla yükümlüdürler. Yapay zeka araçlarının kullanımı, özellikle büyük miktarda veri işleyen sistemlerin doğurabileceği gizlilik riskleri nedeniyle bu yükümlülüğün korunmasını kritik hale getirmektedir.
 
-Herkes daha hızlı üretmek istiyor. Daha kısa sürede daha çok iş çıkarmak istiyor. Yapay zekâ da tam bu noktada inanılmaz cazip geliyor. Ama mesele şu: hız arttıkça dikkat azalırsa, özellikle hukuk gibi hata kaldırmayan alanlarda sonuç ağır oluyor.
+Yapay zeka araçları, genellikle müvekkillerin kişisel bilgilerinin de içinde bulunabileceği büyük miktarda verinin işlenmesini gerektirdiğinden, bu verilerin güvenliği ve gizliliği büyük önem taşımaktadır. Avukatların, yapay zeka sistemleriyle paylaşılan bilgilerin güvenliğini sağlamak amacıyla makul önlemler alması gerekmektedir. Müvekkillere ilişkin her türlü kişisel bilgi anonim hale getirilmeli ve müvekkillerin kimliğinin saptanmasında kullanılabilecek veriler, yapay zeka girdisinde yer almamalıdır. Ayrıca, yapay zeka aracına avukat tarafından girilen verilerin üçüncü taraflarla paylaşılması veya başka amaçlarla kullanılması riskleri de bulunmaktadır. Bu bağlamda, avukatların hukuki hizmetin sağlanması amacıyla yapay zekayı kullanırken, gizlilik ve güvenlik önlemlerinin yeterliliğinden emin olması şarttır. Kişisel verilerin hukuka aykırı olarak üçüncü taraf bir bulut sistemine (yapay zeka sağlayıcısı) aktarılması, Türk Ceza Kanunu Madde 136 kapsamında kişisel verileri hukuka aykırı olarak verme veya ele geçirme suçunu gündeme getirebilir. Bu nedenle, avukatların müvekkillerini kullandıkları yapay zeka araçları hakkında açık ve doğru şekilde bilgilendirmesi, potansiyel faydalarını ve risklerini detaylı bir şekilde açıklaması gerekmektedir.
 
-Bu olay, teknolojinin sunduğu kolaylığın mesleki dikkatin yerine geçemeyeceğini açık biçimde gösterdi. Çünkü hukukta “yaklaşık doğru” diye bir lüks yok. Ya vardır ya yoktur. Ya o içtihat gerçektir ya değildir.
+## Sonuç: Gelecekteki Düzenlemeler ve Avukatların Adaptasyonu
 
-## Hukukta yeni dönem: kullanan değil, kontrol eden kazanacak
+Yapay zeka teknolojilerinin hukuk alanındaki yükselişi, kaçınılmaz bir dönüşümü beraberinde getirmektedir. Türkiye'de de bu alanda hukuki düzenlemeler için adımlar atılmaktadır. 2024 Haziran ayında TBMM'ye ilk kez "Yapay Zeka Kanun Tasarısı" sunulmuş ancak henüz yasama sürecindedir. Türkiye Barolar Birliği (TBB) de 2026 Şubat ayında "Yapay Zeka ve Avukatlık Çalıştayı" düzenleyerek teknolojinin hukuk mesleğine entegrasyonu, etik ilkeler, veri güvenliği ve mevzuat önerileri gibi kritik başlıkları ele almıştır.
 
-Bu karar yalnızca bir avukata verilen ceza olarak okunmamalı. Daha geniş bir uyarı niteliği taşıyor. Özellikle önümüzdeki dönemde hukuk dünyasında şu başlıkların daha çok tartışılacağı açık:
+Bu gelişmeler, yapay zekanın avukatlık mesleğini sona erdiren bir tehdit değil, onu dönüştüren ve güçlendiren bir araç olduğunu göstermektedir. Yapay zeka, hukuki muhakemeyi ikame eden değil, onu destekleyen bir yardımcı olarak konumlandırılmalıdır. Avukatlık mesleğinin geleceği, teknolojinin merkezde olduğu bir modelde değil, insan merkezli ve etik temelli bir anlayışta şekillenmektedir. Müvekkil ile kurulan güven ilişkisi, empati yeteneği, stratejik karar verme ve insani sezgi gibi unsurlar, yapay zekanın sağlayamayacağı temel insan becerileridir.
 
-- Yapay zekâ kullanımının sınırları
-- Doğrulama yükümlülüğünün kapsamı
-- Meslek etiğinin teknoloji karşısında nasıl yeniden tanımlanacağı
-
-Yani bundan sonra fark yaratacak olan, yapay zekâyı açıp metin ürettiren kişi değil; o metni hukuk süzgecinden geçirip gerçekten denetleyen kişi olacak.
-
-## Sonuç: hatayı algoritma yapar, faturayı insan öder
-
-Bu olayın özeti aslında çok basit:
-
-Yapay zekâ yanlış bilgi üretebilir. Uydurabilir. Karıştırabilir. Emin gibi konuşup tamamen boş da atabilir.
-
-Ama hukukta asıl önemli olan, o yanlışın kimin eliyle sisteme sokulduğudur. Mahkemenin de söylediği şey tam olarak bu: hata makineden çıkmış olabilir, fakat sorumluluk insanda kalır.
-
-Ve iş hukuka geldiğinde, bu sorumluluk bazen doğrudan para cezası, bazen itibar kaybı, bazen de mesleki güven erozyonu olarak geri döner.`,
+Dolayısıyla, avukatların bu sürece adaptasyonu, yapay zeka araçlarını etkin, etik ve sorumlu bir şekilde kullanabilme yeteneğini geliştirmelerinden geçmektedir. Bu adaptasyon, teknolojik araçların sunduğu hız ve verimlilik avantajlarından faydalanırken, mesleki özen yükümlülüğü, sır saklama görevi ve vekalet görevi gibi temel hukuki ve etik ilkelerden ödün vermemeyi gerektirmektedir. Gelecekteki düzenlemelerin de bu dengeyi gözeterek, "yapay zeka" ve "avukat sorumluluğu" arasındaki ilişkiyi netleştirmesi, "hukuki teknoloji" kullanımında "vekalet görevi"nin kapsamını belirlemesi ve mesleğin temel değerlerini koruması beklenmektedir.`,
 };

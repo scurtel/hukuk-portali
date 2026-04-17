@@ -1,6 +1,11 @@
 import { GoogleGenAI } from "@google/genai";
 
-const GEMINI_MODEL = "gemini-3-flash";
+const DEFAULT_GEMINI_MODEL = "gemini-3.1-flash";
+
+function getGeminiModel(): string {
+  const model = process.env.GEMINI_MODEL?.trim();
+  return model && model.length > 0 ? model : DEFAULT_GEMINI_MODEL;
+}
 
 function getGeminiClient(): GoogleGenAI {
   const apiKey = process.env.GEMINI_API_KEY;
@@ -22,7 +27,7 @@ export async function generateContent(prompt: string): Promise<string> {
   try {
     const client = getGeminiClient();
     const response = await client.models.generateContent({
-      model: GEMINI_MODEL,
+      model: getGeminiModel(),
       contents: normalizedPrompt,
       config: {
         tools: [{ googleSearch: {} }]
