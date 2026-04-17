@@ -14,7 +14,8 @@ const DEFAULT_COVER_IMAGE =
   "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200";
 
 const COVER_IMAGES_BY_SLUG: Record<string, string> = {
-  "yapay-zeka-avukat-sorumlulugu": DEFAULT_COVER_IMAGE
+  "yapay-zeka-avukat-sorumlulugu": DEFAULT_COVER_IMAGE,
+  "adana-bosanma-arabuluculugu": DEFAULT_COVER_IMAGE
 };
 
 type AnalysisSeoPageProps = {
@@ -37,6 +38,14 @@ export async function generateMetadata({ params }: AnalysisSeoPageProps): Promis
       title: "Yapay Zeka ve Avukatın Sorumluluğu | Hukuk Portalı",
       description:
         "ABD’deki dikkat çeken karar, yapay zekâ destekli dilekçelerde doğrulama zorunluluğunu ve avukatın mesleki özen yükümlülüğünü yeniden gündeme getiriyor."
+    };
+  }
+
+  if (slug === "adana-bosanma-arabuluculugu") {
+    return {
+      title: "Adana Boşanma Arabuluculuğu ve Avukatın Rolü | Hukuk Portalı",
+      description:
+        "Adana boşanma arabuluculuğu sürecinde avukatın rolünü, aile hukuku uygulamasındaki kritik adımları ve vekalet sorumluluğunu kapsamlı biçimde inceliyoruz."
     };
   }
 

@@ -142,6 +142,17 @@ const postMetas = [
     categorySlug: "analiz",
     featured: true,
     publishedAt: "2026-04-17"
+  },
+  {
+    id: "post-11",
+    slug: "adana-bosanma-arabuluculugu",
+    title: "Adana Boşanma Arabuluculuğu ve Avukatın Rolü",
+    excerpt:
+      "Adana boşanma arabuluculuğu sürecinde avukatın vekalet görevi, yerel uygulama pratiği ve aile hukuku odaklı çözüm stratejileri.",
+    type: "analiz",
+    categorySlug: "analiz",
+    featured: true,
+    publishedAt: "2026-04-17"
   }
 ] as const;
 
