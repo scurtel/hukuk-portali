@@ -13,7 +13,7 @@ export const staticAuthors: Author[] = [
     name: "Avukat Ceren Sumer Cilli",
     title: "Aile, Miras ve Gayrimenkul Hukuku Avukatı — Hukuk Portalı editörlüğü",
     bio: "Hukuk Portalı içeriklerinin hukuki çerçevesini ve güncelliğini yönlendirir.",
-    avatar: "/images/placeholder-author.jpg"
+    avatar: "/images/avukat-ceren-sumer-cilli.webp"
   }
 ];
 

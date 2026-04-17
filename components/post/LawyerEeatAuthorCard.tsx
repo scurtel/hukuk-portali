@@ -1,7 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { ConsultationCtaLink } from "@/components/ui/ConsultationCtaLink";
-import { SafeImage } from "@/components/ui/SafeImage";
 import { CEREN_OFFICIAL_SITE, CEREN_SAME_AS, PRIMARY_AUTHOR_SLUG } from "@/lib/seo/cerenLawyer";
 import { cn } from "@/lib/utils";
 import type { Author } from "@/types/author";
@@ -35,13 +35,12 @@ export function LawyerEeatAuthorCard({ author, className }: LawyerEeatAuthorCard
         Yazar ve avukat profili (E-E-A-T)
       </p>
       <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:items-start">
-        <SafeImage
-          src={author.avatar}
-          alt={`${author.name} — yazar fotoğrafı`}
+        <Image
+          src="/images/avukat-ceren-sumer-cilli.webp"
+          alt="Avukat Ceren Sümer Cilli"
           width={96}
           height={96}
           className="h-24 w-24 flex-none rounded-full border border-slate-200 object-cover"
-          fallbackSrc="/images/placeholder-author.jpg"
         />
         <div className="min-w-0 flex-1 space-y-3">
           <div>

@@ -9,7 +9,7 @@ function toAuthor(author: Author): Author {
     name: author.name,
     title: author.title,
     bio: author.bio,
-    avatar: author.avatar ?? "/images/placeholder-author.jpg"
+    avatar: author.avatar ?? "/images/avukat-ceren-sumer-cilli.webp"
   };
   if (author.slug === PRIMARY_AUTHOR_SLUG) {
     return {
