@@ -10,7 +10,7 @@ type AuthorPageProps = {
 
 export default async function AuthorPage({ params }: AuthorPageProps) {
   const { slug } = await params;
-  const author = await getAuthorBySlug(slug);
+  const author = getAuthorBySlug(slug);
 
   if (!author) {
     return (
@@ -20,7 +20,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
     );
   }
 
-  const authorPosts = await getPostsByAuthor(slug);
+  const authorPosts = getPostsByAuthor(slug);
 
   return (
     <Container className="py-8 sm:py-10">

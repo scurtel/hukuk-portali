@@ -1,5 +1,5 @@
 import type { Category, CategoryType } from "@/types/category";
-import { staticCategories } from "@/lib/staticData";
+import { staticCategories } from "@/lib/posts";
 
 function mapRow(row: {
   id: string;
@@ -17,12 +17,12 @@ function mapRow(row: {
   };
 }
 
-export async function getCategoryBySlug(slug: string): Promise<Category | undefined> {
+export function getCategoryBySlug(slug: string): Category | undefined {
   const row = staticCategories.find((category) => category.slug === slug);
   return row ? mapRow(row) : undefined;
 }
 
-export async function getAllCategories(): Promise<Category[]> {
+export function getAllCategories(): Category[] {
   const rows = [...staticCategories].sort((a, b) => a.slug.localeCompare(b.slug, "tr"));
   return rows.map(mapRow);
 }

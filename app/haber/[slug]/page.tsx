@@ -13,7 +13,7 @@ type NewsDetailPageProps = {
 
 export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   const { slug } = await params;
-  const post = await getPostBySlug(slug, "haber");
+  const post = getPostBySlug(slug, "haber");
 
   if (!post) {
     return (
@@ -24,7 +24,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
     );
   }
 
-  const author = await getAuthorBySlug(post.authorSlug);
+  const author = getAuthorBySlug(post.authorSlug);
 
   return (
     <Container className="py-8 sm:py-10">

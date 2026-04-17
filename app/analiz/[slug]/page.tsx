@@ -13,7 +13,7 @@ type AnalysisDetailPageProps = {
 
 export default async function AnalysisDetailPage({ params }: AnalysisDetailPageProps) {
   const { slug } = await params;
-  const post = await getPostBySlug(slug, "analiz");
+  const post = getPostBySlug(slug, "analiz");
 
   if (!post) {
     return (
@@ -24,7 +24,7 @@ export default async function AnalysisDetailPage({ params }: AnalysisDetailPageP
     );
   }
 
-  const author = await getAuthorBySlug(post.authorSlug);
+  const author = getAuthorBySlug(post.authorSlug);
 
   return (
     <Container className="py-8 sm:py-10">

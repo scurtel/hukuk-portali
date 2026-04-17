@@ -10,7 +10,7 @@ type CategoryPageProps = {
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { slug } = await params;
-  const category = await getCategoryBySlug(slug);
+  const category = getCategoryBySlug(slug);
 
   if (!category) {
     return (
@@ -20,7 +20,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     );
   }
 
-  const categoryPosts = await getPostsByCategory(slug);
+  const categoryPosts = getPostsByCategory(slug);
 
   return (
     <Container className="py-8 sm:py-10">

@@ -1,5 +1,5 @@
 import type { Author } from "@/types/author";
-import { staticAuthors } from "@/lib/staticData";
+import { staticAuthors } from "@/lib/posts";
 import { CEREN_OFFICIAL_SITE, PRIMARY_AUTHOR_SLUG } from "@/lib/seo/cerenLawyer";
 
 function toAuthor(author: Author): Author {
@@ -27,13 +27,13 @@ function toAuthor(author: Author): Author {
   return base;
 }
 
-export async function getAuthorBySlug(slug: string): Promise<Author | undefined> {
+export function getAuthorBySlug(slug: string): Author | undefined {
   const author = staticAuthors.find((item) => item.slug === slug);
   return author ? toAuthor(author) : undefined;
 }
 
 /** Post listelerinde N+1 sorguyu önlemek için */
-export async function getAuthorsBySlugs(slugs: string[]): Promise<Map<string, Author>> {
+export function getAuthorsBySlugs(slugs: string[]): Map<string, Author> {
   if (slugs.length === 0) return new Map();
   const unique = [...new Set(slugs)];
   const matchedAuthors = staticAuthors.filter((author) => unique.includes(author.slug));
@@ -44,6 +44,6 @@ export async function getAuthorsBySlugs(slugs: string[]): Promise<Map<string, Au
   return map;
 }
 
-export async function getAllAuthors(): Promise<Author[]> {
+export function getAllAuthors(): Author[] {
   return [...staticAuthors].sort((a, b) => a.name.localeCompare(b.name, "tr")).map(toAuthor);
 }

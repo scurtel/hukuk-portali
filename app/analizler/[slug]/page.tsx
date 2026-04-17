@@ -23,7 +23,7 @@ type AnalysisSeoPageProps = {
 
 export async function generateMetadata({ params }: AnalysisSeoPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const post = await getPostBySlug(slug, "analiz");
+  const post = getPostBySlug(slug, "analiz");
 
   if (!post) {
     return {
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: AnalysisSeoPageProps): Promis
 
 export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) {
   const { slug } = await params;
-  const post = await getPostBySlug(slug, "analiz");
+  const post = getPostBySlug(slug, "analiz");
 
   if (!post) {
     return (
@@ -59,7 +59,7 @@ export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) 
     );
   }
 
-  const author = await getAuthorBySlug(post.authorSlug);
+  const author = getAuthorBySlug(post.authorSlug);
 
   const coverImage =
     post.imageUrl && post.imageUrl.length > 0

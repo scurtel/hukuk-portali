@@ -7,8 +7,8 @@ type RelatedPostsProps = {
   categorySlug: string;
 };
 
-export async function RelatedPosts({ currentSlug, categorySlug }: RelatedPostsProps) {
-  const allInCat = await getPostsByCategory(categorySlug);
+export function RelatedPosts({ currentSlug, categorySlug }: RelatedPostsProps) {
+  const allInCat = getPostsByCategory(categorySlug);
   const related = allInCat.filter((post) => post.slug !== currentSlug).slice(0, 3);
 
   if (!related.length) {

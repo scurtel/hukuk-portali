@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   description: "Güncel hukuk haberleri, düzenlemeler ve yargı gündemi."
 };
 
-export default async function HaberlerPage() {
-  const posts = await getPostsByType("haber");
+export default function HaberlerPage() {
+  const posts = getPostsByType("haber");
 
   return (
     <Container className="py-8 sm:py-10">

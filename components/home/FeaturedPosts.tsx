@@ -3,8 +3,8 @@ import { PostList } from "@/components/post/PostList";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { getFeaturedPosts } from "@/lib/posts";
 
-export async function FeaturedPosts() {
-  const featuredPosts = await getFeaturedPosts();
+export function FeaturedPosts() {
+  const featuredPosts = getFeaturedPosts();
 
   return (
     <section className="py-12 sm:py-16">

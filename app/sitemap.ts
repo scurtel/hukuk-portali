@@ -13,13 +13,13 @@ function getBaseUrl() {
   return configuredUrl.replace(/\/$/, "");
 }
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getBaseUrl();
   const now = new Date();
 
-  const posts = await getAllPosts();
-  const categories = await getAllCategories();
-  const authors = await getAllAuthors();
+  const posts = getAllPosts();
+  const categories = getAllCategories();
+  const authors = getAllAuthors();
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {

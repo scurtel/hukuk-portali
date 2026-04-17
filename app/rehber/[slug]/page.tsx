@@ -13,7 +13,7 @@ type GuideDetailPageProps = {
 
 export default async function GuideDetailPage({ params }: GuideDetailPageProps) {
   const { slug } = await params;
-  const post = await getPostBySlug(slug, "rehber");
+  const post = getPostBySlug(slug, "rehber");
 
   if (!post) {
     return (
@@ -24,7 +24,7 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
     );
   }
 
-  const author = await getAuthorBySlug(post.authorSlug);
+  const author = getAuthorBySlug(post.authorSlug);
 
   return (
     <Container className="py-8 sm:py-10">

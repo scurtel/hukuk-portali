@@ -8,12 +8,12 @@ type PostListProps = {
   posts: Post[];
 };
 
-export async function PostList({ posts }: PostListProps) {
+export function PostList({ posts }: PostListProps) {
   if (!posts.length) {
     return <p className="text-sm text-slate-500">Bu bölümde henüz içerik bulunmuyor.</p>;
   }
 
-  const authorMap = await getAuthorsBySlugs(posts.map((p) => p.authorSlug));
+  const authorMap = getAuthorsBySlugs(posts.map((p) => p.authorSlug));
 
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
