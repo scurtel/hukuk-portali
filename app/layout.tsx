@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Analytics } from "@vercel/analytics/next";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { siteConfig } from "@/lib/site";
 
 import "./globals.css";
-
-export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -31,7 +28,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Header />
         <main>{children}</main>
         <Footer />
-        <Analytics />
       </body>
     </html>
   );

@@ -6,10 +6,15 @@ import { PostHeader } from "@/components/post/PostHeader";
 import { RelatedPosts } from "@/components/post/RelatedPosts";
 import { getAuthorBySlug } from "@/lib/authors";
 import { getPostBySlug } from "@/lib/posts";
+import { staticParamsForPostType } from "@/lib/static-paths";
 
 type GuideDetailPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export function generateStaticParams() {
+  return staticParamsForPostType("rehber");
+}
 
 export default async function GuideDetailPage({ params }: GuideDetailPageProps) {
   const { slug } = await params;

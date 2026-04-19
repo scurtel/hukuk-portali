@@ -3,10 +3,15 @@ import { Container } from "@/components/layout/Container";
 import { PostList } from "@/components/post/PostList";
 import { getCategoryBySlug } from "@/lib/categories";
 import { getPostsByCategory } from "@/lib/posts";
+import { staticParamsForCategories } from "@/lib/static-paths";
 
 type CategoryPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export function generateStaticParams() {
+  return staticParamsForCategories();
+}
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { slug } = await params;

@@ -9,6 +9,7 @@ import { RelatedPosts } from "@/components/post/RelatedPosts";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { getAuthorBySlug } from "@/lib/authors";
 import { getPostBySlug } from "@/lib/posts";
+import { staticParamsForPostType } from "@/lib/static-paths";
 
 const DEFAULT_COVER_IMAGE =
   "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200";
@@ -21,6 +22,10 @@ const COVER_IMAGES_BY_SLUG: Record<string, string> = {
 type AnalysisSeoPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export function generateStaticParams() {
+  return staticParamsForPostType("analiz");
+}
 
 export async function generateMetadata({ params }: AnalysisSeoPageProps): Promise<Metadata> {
   const { slug } = await params;

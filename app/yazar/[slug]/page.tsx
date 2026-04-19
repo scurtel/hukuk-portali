@@ -3,10 +3,15 @@ import { Container } from "@/components/layout/Container";
 import { PostList } from "@/components/post/PostList";
 import { getAuthorBySlug } from "@/lib/authors";
 import { getPostsByAuthor } from "@/lib/posts";
+import { staticParamsForAuthors } from "@/lib/static-paths";
 
 type AuthorPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export function generateStaticParams() {
+  return staticParamsForAuthors();
+}
 
 export default async function AuthorPage({ params }: AuthorPageProps) {
   const { slug } = await params;

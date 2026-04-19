@@ -6,10 +6,15 @@ import { PostHeader } from "@/components/post/PostHeader";
 import { RelatedPosts } from "@/components/post/RelatedPosts";
 import { getAuthorBySlug } from "@/lib/authors";
 import { getPostBySlug } from "@/lib/posts";
+import { staticParamsForPostType } from "@/lib/static-paths";
 
 type NewsDetailPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export function generateStaticParams() {
+  return staticParamsForPostType("haber");
+}
 
 export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   const { slug } = await params;
