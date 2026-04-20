@@ -1,7 +1,7 @@
 export const generatedPostContents: Record<string, string> = {
-  "trump-bilim-insanlari-inceleme": `# Trump’tan Dikkat Çeken Talimat: ABD’de 11 Bilim İnsanın Ölümü İnceleme Altında
+  "trump-bilim-insanlari-inceleme": `# Trump’tan Dikkat Çeken Talimat: ABD’de 11 Bilim İnsanının Ölümü İnceleme Altında
 
-Trump’tan Dikkat Çeken Talimat: ABD’de Kritik Projelerde Görev Alan 11 Bilim İnsanın Ölümü ve Kaybolması İnceleme Altında
+Trump’tan Dikkat Çeken Talimat: ABD’de Kritik Projelerde Görev Alan 11 Bilim İnsanının Ölümü ve Kaybolması İnceleme Altında
 
 ABD’de havacılık, nükleer enerji ve tanımlanamayan hava olayları alanında çalışan bazı bilim insanlarının peş peşe yaşamını yitirmesi ya da kaybolması, kamuoyunda ciddi soru işaretlerine yol açtı. Amerikan basınında yer alan iddialara göre, savunma ve yüksek gizlilik dereceli projelerde görev alan toplam 11 isme ilişkin gelişmeler, federal makamların dikkatini çekti. Konunun, ABD Başkanı Donald Trump’ın talimatıyla yeniden ve kapsamlı biçimde incelendiği öne sürülüyor.
 

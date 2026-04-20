@@ -45,7 +45,7 @@ const postMetas = [
   {
     id: "post-12",
     slug: "trump-bilim-insanlari-inceleme",
-    title: "Trump’tan Dikkat Çeken Talimat: ABD’de 11 Bilim İnsanın Ölümü İnceleme Altında",
+    title: "Trump’tan Dikkat Çeken Talimat: ABD’de 11 Bilim İnsanının Ölümü İnceleme Altında",
     excerpt:
       "ABD’de kritik projelerde görev aldığı belirtilen 11 bilim insanının ölümü ve kaybolması, Trump’ın talimatıyla federal düzeyde yeniden inceleme gündemine taşındı.",
     type: "haber",
