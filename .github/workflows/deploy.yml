@@ -17,8 +17,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_BASE_PATH: /hukuk-portali
-      NEXT_PUBLIC_SITE_URL: https://scurtel.github.io/hukuk-portali
+      NEXT_PUBLIC_BASE_PATH: ""
+      NEXT_PUBLIC_SITE_URL: https://hukukportali.com
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
