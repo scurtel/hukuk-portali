@@ -43,6 +43,17 @@ export const staticCategories: Category[] = [
 
 const postMetas = [
   {
+    id: "post-12",
+    slug: "trump-bilim-insanlari-inceleme",
+    title: "Trump’tan Dikkat Çeken Talimat: ABD’de 11 Bilim İnsanın Ölümü İnceleme Altında",
+    excerpt:
+      "ABD’de kritik projelerde görev aldığı belirtilen 11 bilim insanının ölümü ve kaybolması, Trump’ın talimatıyla federal düzeyde yeniden inceleme gündemine taşındı.",
+    type: "haber",
+    categorySlug: "haber",
+    featured: true,
+    publishedAt: "2026-04-20"
+  },
+  {
     id: "post-1",
     slug: "anayasa-mahkemesi-yeni-karar",
     title: "Anayasa Mahkemesi'nden Bireysel Başvuruya İlişkin Yeni Karar",
@@ -156,11 +167,15 @@ const postMetas = [
   }
 ] as const;
 
+const postImages: Record<string, string> = {
+  "trump-bilim-insanlari-inceleme": "https://images.unsplash.com/photo-1581093588401-fbb62a02f120"
+};
+
 export const staticPosts: Post[] = postMetas.map((meta) => ({
   ...meta,
   authorSlug: PRIMARY_AUTHOR_SLUG,
   content: generatedPostContents[meta.slug] ?? "Bu içerik yakında eklenecek.",
-  imageUrl: null
+  imageUrl: postImages[meta.slug] ?? null
 }));
 
 function sortByDateDesc(posts: Post[]): Post[] {
