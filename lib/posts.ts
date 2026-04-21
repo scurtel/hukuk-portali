@@ -45,9 +45,9 @@ const postMetas = [
   {
     id: "post-12",
     slug: "trump-bilim-insanlari-inceleme",
-    title: "Trump’tan Dikkat Çeken Talimat: ABD’de 11 Bilim İnsanının Ölümü İnceleme Altında",
+    title: "Trump yönetimi incelemede, Kongre bilgi peşinde; ölümler ve kayıplar UFO iddialarını yeniden alevlendirdi",
     excerpt:
-      "ABD’de kritik projelerde görev aldığı belirtilen 11 bilim insanının ölümü ve kaybolması, Trump’ın talimatıyla federal düzeyde yeniden inceleme gündemine taşındı.",
+      "ABD’de bilim insanlarının şüpheli ölümleri ve kayıpları, Kongre’nin resmi bilgi talebiyle ulusal güvenlik ve UFO/UAP tartışmalarını yeniden gündeme taşıdı.",
     type: "haber",
     categorySlug: "haber",
     featured: true,
