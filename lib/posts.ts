@@ -278,9 +278,9 @@ const postMetas = [
 const postImages: Record<string, string> = {
   "trump-bilim-insanlari-inceleme": "https://images.unsplash.com/photo-1581093588401-fbb62a02f120",
   "tapuda-yeni-donem-guvenli-odeme-dijital-yetkilendirme":
-    "/images/placeholder-post.jpg",
+    "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200",
   "bosanmada-mal-paylasimi-gayrimenkuller-ev-arsa-arac":
-    "/images/placeholder-post.jpg"
+    "https://images.unsplash.com/photo-1453873623425-02f3b6c32b4a?auto=format&fit=crop&q=80&w=1200"
 };
 
 export const staticPosts: Post[] = postMetas.map((meta) => ({
