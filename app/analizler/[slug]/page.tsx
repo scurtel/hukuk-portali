@@ -55,8 +55,9 @@ export async function generateMetadata({ params }: AnalysisSeoPageProps): Promis
   }
 
   return {
-    title: `${post.title} | Hukuk Portalı`,
-    description: post.excerpt
+    title: `${post.seo?.metaTitle ?? post.title} | Hukuk Portalı`,
+    description: post.seo?.metaDescription ?? post.excerpt,
+    keywords: [post.seo?.focusKeyword, ...(post.seo?.secondaryKeywords ?? [])].filter(Boolean) as string[]
   };
 }
 

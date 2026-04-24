@@ -71,7 +71,7 @@ export function buildArticlePageSchema(post: Post, author: Author | undefined): 
     "@type": articleType,
     "@id": `${pageUrl}#article`,
     headline: post.title,
-    description: post.excerpt,
+    description: post.seo?.metaDescription ?? post.excerpt,
     datePublished: published,
     dateModified: published,
     author: authorRef,
@@ -81,6 +81,21 @@ export function buildArticlePageSchema(post: Post, author: Author | undefined): 
     inLanguage: "tr-TR",
     articleSection: post.categorySlug
   });
+
+  if (post.faq?.length) {
+    graph.push({
+      "@type": "FAQPage",
+      "@id": `${pageUrl}#faq`,
+      mainEntity: post.faq.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer
+        }
+      }))
+    });
+  }
 
   return {
     "@context": "https://schema.org",

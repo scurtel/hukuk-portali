@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import { Container } from "@/components/layout/Container";
 import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { AuthorBox } from "@/components/post/AuthorBox";
@@ -14,6 +16,24 @@ type NewsDetailPageProps = {
 
 export function generateStaticParams() {
   return staticParamsForPostType("haber");
+}
+
+export async function generateMetadata({ params }: NewsDetailPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPostBySlug(slug, "haber");
+
+  if (!post) {
+    return {
+      title: "İçerik bulunamadı | Hukuk Portalı",
+      description: "Aradığınız haber mevcut değil veya yayından kaldırılmış olabilir."
+    };
+  }
+
+  return {
+    title: `${post.seo?.metaTitle ?? post.title} | Hukuk Portalı`,
+    description: post.seo?.metaDescription ?? post.excerpt,
+    keywords: [post.seo?.focusKeyword, ...(post.seo?.secondaryKeywords ?? [])].filter(Boolean) as string[]
+  };
 }
 
 export default async function NewsDetailPage({ params }: NewsDetailPageProps) {

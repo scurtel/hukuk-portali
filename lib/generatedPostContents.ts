@@ -856,4 +856,215 @@ Anlaşmalı boşanma davalarında, tarafların duruşmaya bizzat katılması zor
 Avukat, hukuki bilgi birikimiyle tarafların haklarını korurken, müzakerelerin etkin bir şekilde yürütülmesini sağlar ve özellikle **Anlaşmalı boşanma** protokolünün eksiksiz ve geleceğe yönelik olarak hazırlanmasında kritik bir rol üstlenir. Adana'da aile mahkemeleri pratiği ve yerel dinamikler göz önüne alındığında, boşanma süreçlerinde avukat desteği almak, olası hak kayıplarını önlemenin ve sürecin en sağlıklı şekilde tamamlanmasının teminatıdır. Arabuluculuk kurumu, ailelerdeki ayrılık süreçlerinin daha az yıpratıcı geçmesine önemli katkı sağlamakta, bu katkı avukat desteğiyle maksimize edilmektedir.
 
 Yazan: Avukat Ceren Sumer Cilli`,
+  "tapuda-yeni-donem-guvenli-odeme-dijital-yetkilendirme": `# Tapuda Yeni Dönem: Gayrimenkul Satışlarında Güvenli Ödeme ve Dijital Yetkilendirme Süreci
+
+Gayrimenkul satışları, yüksek bedelli işlem niteliği nedeniyle hem alıcı hem satıcı açısından ciddi bir güven ilişkisi gerektirir. Son dönemde gündeme gelen güvenli ödeme altyapıları, dijital doğrulama mekanizmaları ve e-Devlet tabanlı yetkilendirme uygulamaları, bu güven ihtiyacına kurumsal bir yanıt üretmeyi hedefliyor. Özellikle şehirleşmenin hızlandığı, konut ve arsa alım satım trafiğinin arttığı dönemlerde, süreçlerin sadece "hızlı" değil "doğrulanabilir" olması öne çıkıyor.
+
+## Gayrimenkul satışında neden yeni bir güven modeline ihtiyaç duyuldu?
+
+Klasik uygulamada taraflar çoğu zaman bir emlak ofisi, banka dekontu ve tapu müdürlüğü sıralamasıyla süreci tamamlamaya çalışıyor. Ancak işlem adımlarının farklı noktalarda dağılması; kapora, ön protokol, ödeme ve devir safhalarında kopukluk yaratabiliyor. Bu kopukluk da uyuşmazlıkların temel kaynağı haline geliyor.
+
+Bugün öne çıkan yaklaşım, tapu güvenli ödeme sistemi gibi modellerle para transferi ile mülkiyet devrini daha eş zamanlı hale getirmek. Amaç, "para gitti fakat devir olmadı" veya "devir yapıldı fakat ödeme tamamlanmadı" gibi iki yönlü riski azaltmak. Teknik sistemin varlığı tek başına yeterli olmasa da, hukuki denetimle birlikte kullanıldığında riskleri belirgin şekilde düşürebiliyor.
+
+## Tapu işlemlerinde alıcı ve satıcının dikkat etmesi gereken temel noktalar
+
+### Alıcı bakımından temel kontrol listesi
+
+- Satışa konu taşınmazın tapu bilgileri ile ilandaki bilgilerin birebir uyuştuğu teyit edilmeli.
+- Taşınmaz üzerinde ipotek, haciz, şerh veya intifa gibi takyidatlar bulunup bulunmadığı kontrol edilmeli.
+- Taşınmazın fiili durumu ile hukuki durumunun aynı olup olmadığı araştırılmalı.
+- Ön ödeme veya kapora verilecekse, gerekçe ve iade şartları yazılı belgede açıkça düzenlenmeli.
+
+### Satıcı bakımından temel kontrol listesi
+
+- Alıcının kimlik ve ödeme kaynağına ilişkin temel doğrulamalar, işlem güvenliği açısından ihmal edilmemeli.
+- Yetkiyle işlem yapılıyorsa vekaletnamenin kapsamı güncel ve açık biçimde incelenmeli.
+- Devir anı ile ödeme anı arasında boşluk bırakmayacak bir işlem planı oluşturulmalı.
+- Tapu devir iradesini etkileyebilecek sözlü mutabakatlar mutlaka yazılı hale getirilmeli.
+
+## Güvenli ödeme sistemi neden kritik?
+
+Gayrimenkul satışında ödeme çoğu zaman tek kalemde ve yüksek tutarda yapıldığından, en küçük hatanın maliyeti çok yüksektir. Güvenli ödeme modelleri, bedelin belirli bir doğrulama tamamlanana kadar kontrollü tutulmasını sağlayarak tarafları ani risklerden korur. Bu sistemler, tek başına dolandırıcılığı sıfırlamaz; ancak suistimale açık boşlukları daraltır.
+
+Uygulamada en çok görülen risklerden biri, işlemin farklı günlere yayılmasıdır. Ödeme bir gün önce yapılır, tapu devri ertesi güne kalırsa taraflardan biri beklenmeyen zararla karşılaşabilir. Güvenli ödeme yaklaşımı bu zamansal boşluğu azaltmayı amaçlar. Bu yüzden sistemin bankacılık adımı ile tapu adımının birlikte değerlendirilmesi gerekir.
+
+## Sahte emlak ilanları, yetkisiz ilanlar ve dijital yetkilendirme
+
+Sahte emlak ilanları son yıllarda ciddi bir tüketici sorunu haline geldi. Özellikle piyasa fiyatının altında gösterilen ilanlar üzerinden kapora toplanması, ardından satıcıya ulaşılamaması, en sık raporlanan riskler arasında. Bir diğer sorun da taşınmaz sahibinin bilgisi dışında üçüncü kişilerin ilan yayımlaması.
+
+Bu noktada dijital yetkilendirme yaklaşımı devreye giriyor. Temel mantık, ilanı yayımlayan kişinin taşınmaz üzerinde işlem yapmaya yetkili olup olmadığının sistem tarafından doğrulanmasıdır. Böylece tüketicinin "ilan gerçek mi, yetki var mı?" sorusuna işlem öncesi bir kontrol katmanı eklenir.
+
+## e-Devlet üzerinden taşınmaz ilan yetkilendirme nasıl çalışır?
+
+e-Devlet taşınmaz ilan yetkilendirme modelinin ana fikri, taşınmaz sahibinin veya yetkili temsilcisinin ilan iznini dijital olarak tanımlamasıdır. Bu yaklaşım üç açıdan önemlidir:
+
+1. İlan verenin yetkisiz olma ihtimalini azaltır.
+2. Taşınmaz sahibinin iradesini görünür hale getirir.
+3. İlan platformları için doğrulama standardı oluşturur.
+
+Sistem uygulamada farklı teknik katmanlar içerebilir; ancak hukuki açıdan kritik nokta, yetkinin açık ve denetlenebilir biçimde ortaya konmasıdır. Alıcıların da sadece ilanın varlığına değil, ilanın dayandığı yetkinin doğrulanabilir olmasına bakması gerekir.
+
+## Alıcılar için öne çıkan riskler
+
+### Kapora dolandırıcılığı
+
+Gerçek dışı ilanlar üzerinden "yoğun talep var" baskısıyla hızlı kapora istenmesi, en yaygın yöntemlerden biridir. Yazılı taahhüt ve iade şartı olmadan yapılan ödemeler ciddi kayıp doğurabilir.
+
+### Sahte ilan ve kimlik belirsizliği
+
+İlan sahibinin kimliği, taşınmazla ilişkisi ve temsil yetkisi net değilse alıcı sürecin başında hukuki güvenceyi kaybeder.
+
+### Eksik tapu bilgisi
+
+Metrekare, bağımsız bölüm, kat irtifakı/kat mülkiyeti gibi teknik unsurlarda eksiklik varsa devir sonrası ihtilaflar doğabilir.
+
+### Borç ve takyidat incelemesinin atlanması
+
+Tapu kaydındaki takyidatlar kontrol edilmeden yapılan işlemler, sonradan beklenmeyen mali ve hukuki yük yaratabilir.
+
+## Satıcılar için öne çıkan riskler
+
+### Ödeme alınmadan devir yapılması
+
+Devir tamamlandıktan sonra bedelin tahsil edilememesi satıcı açısından geri dönüşü en zor sorunlardan biridir.
+
+### Sahte alıcı ve belge manipülasyonu
+
+Kimlik, ödeme dekontu veya finansman belgesine ilişkin manipülasyonlar nedeniyle satıcı yanıltılabilir.
+
+### Vekaletname ile işlem riski
+
+Temsil yetkisinin sınırı iyi okunmazsa, satıcının iradesi dışında sonuçlar doğabilir. Vekaletnamenin kapsamı, süresi ve özel yetkileri dikkatle incelenmelidir.
+
+## Hukuki kontrol neden önemli?
+
+Gayrimenkul satışı sadece ekonomik bir işlem değil, aynı zamanda mülkiyet hakkını doğrudan etkileyen hukuki bir işlemdir. Bu nedenle teknik doğrulama adımları ile hukuki kontrolün birlikte yürütülmesi gerekir. Tapu güvenli ödeme sistemi, dijital ilan yetkisi ve kimlik doğrulama gibi mekanizmalar süreci güçlendirir; ancak sözleşme dili, temsil yetkisi, takyidat ve borç incelemesi gibi başlıklar yine hukuki değerlendirme gerektirir.
+
+Tarafsız bir perspektiften bakıldığında, işlem taraflarının "hızlı sonuç" baskısı yerine "kontrollü süreç" yaklaşımını benimsemesi hem uyuşmazlık hem de dolandırıcılık riskini azaltır. Kısacası güvenli satış, tek bir adımın değil; teknik doğrulama, doğru belge yönetimi ve hukuki incelemenin birlikte çalışmasıyla sağlanır.
+
+## Kısa FAQ
+
+### 1) Gayrimenkul satışında güvenli ödeme sistemi nedir?
+Satış bedelinin, tapu devriyle uyumlu şekilde kontrollü aktarılmasını sağlayan ve taraflar arasındaki ödeme-devir dengesini koruyan sistem yaklaşımıdır.
+
+### 2) Tapu devrinden önce ödeme yapmak riskli midir?
+Evet. Devir gerçekleşmeden tam ödeme yapmak, işlem tamamlanmadığında iade ve ispat sorunları doğurabilir. Sürecin belgeli ve kontrollü ilerlemesi gerekir.
+
+### 3) e-Devlet taşınmaz ilan yetkilendirme ne işe yarar?
+İlanı veren kişinin taşınmaz için yetkili olup olmadığının dijital olarak doğrulanmasına yardımcı olur; yetkisiz ilan riskini azaltır.
+
+### 4) Sahte emlak ilanlarından korunmak için ne yapılmalı?
+İlan sahibinin yetkisi doğrulanmalı, tapu ve takyidat kayıtları kontrol edilmeli, kapora ve ön ödeme yazılı güvenceye bağlanmalıdır.
+
+### 5) Tapu satışında hukuki kontrol neden önemlidir?
+Hukuki kontrol, işlem öncesinde mülkiyet devrini etkileyebilecek şerh, ipotek, borç ve yetki sorunlarını tespit ederek olası uyuşmazlıkları azaltır.`,
+  "bosanmada-mal-paylasimi-gayrimenkuller-ev-arsa-arac": `# Boşanmada Mal Paylaşımı ve Gayrimenkuller: Ev, Arsa ve Araçlar Nasıl Paylaşılır?
+
+Boşanma davalarında en çok tartışılan konuların başında mal paylaşımı gelir. Evlilik birliğinin sona ermesiyle birlikte taraflar yalnızca kişisel ilişki ve velayet başlıklarında değil; ev, arsa, araç, banka hesabı ve borçların nasıl değerlendirileceği konusunda da ciddi görüş ayrılıkları yaşayabilir. Özellikle taşınmazların yüksek ekonomik değer taşıması, uyuşmazlıkların teknik ve uzun soluklu hale gelmesine neden olur.
+
+Bu içerikte boşanmada mal paylaşımı süreci, mal rejimi tasfiyesi ilkeleri ve gayrimenkul odaklı uyuşmazlıklar sade bir dille ele alınmaktadır.
+
+## Boşanmada mal paylaşımı ne zaman gündeme gelir?
+
+Mal paylaşımı, boşanma kararının kesinleşmesiyle somutlaşan bir tasfiye alanıdır. Uygulamada taraflar çoğu zaman boşanma davası sürerken mal varlığına ilişkin talepleri de konuşmaya başlar; ancak teknik olarak mal rejiminin sona ermesi, boşanma hükmünün hukuki sonucuyla birlikte değerlendirilir.
+
+Anlaşmalı boşanma süreçlerinde taraflar protokole malvarlığına ilişkin hükümler koyabilir. Çekişmeli boşanma dosyalarında ise mal paylaşımına ilişkin alacak ve tasfiye talepleri çoğu zaman daha ayrıntılı delil incelemesi gerektirdiğinden ayrıca yürütülür. Bu nedenle "boşanma davası bitti ama mal paylaşımı devam ediyor" durumu uygulamada sık görülür.
+
+## Edinilmiş mallara katılma rejimi nedir?
+
+Türk hukukunda yasal mal rejimi, aksi kararlaştırılmadıkça edinilmiş mallara katılma rejimidir. Basit anlatımla:
+
+- Evlilik içinde emek ve gelirle edinilen değerler "edinilmiş mal" kabul edilir.
+- Evlilik öncesi kişisel varlıklar veya kişisel nitelikli bazı değerler "kişisel mal" olarak ayrı tutulur.
+- Tasfiye aşamasında esas tartışma, hangi malın hangi kategoriye girdiği ve diğer eşin alacak hakkının hesaplanmasıdır.
+
+Bu ayrım özellikle boşanmada ev paylaşımı, boşanmada arsa paylaşımı ve boşanmada araç paylaşımı konularında belirleyicidir. Tapu veya ruhsatın tek eş adına olması tek başına sonucu belirlemez; edinim tarihi, ödeme kaynağı ve katkı ilişkisi birlikte değerlendirilir.
+
+## Ev, arsa ve araçlar nasıl paylaşılır?
+
+### Ev (konut) bakımından
+
+Evin ne zaman alındığı, hangi kaynakla finanse edildiği, kredi taksitlerinin hangi dönemde ödendiği ve tapu kaydındaki durum birlikte incelenir. Evlilik içinde alınmış bir konut bakımından diğer eşin katılma alacağı gündeme gelebilir.
+
+### Arsa bakımından
+
+Arsanın edinim tarihi kadar, evlilik süresince yapılan yatırım ve değer artışı da önem taşır. Üzerine yapı yapılmışsa veya imar/ruhsat süreçleri işletilmişse tasfiye hesabı daha teknik hale gelir.
+
+### Araç bakımından
+
+Araçların değer kaybı ve piyasa koşulları nedeniyle değerlendirme tarihi kritik önem taşır. Ruhsat kaydı tek başına yeterli olmaz; ödeme belgeleri, kredi kayıtları ve fiili kullanım bilgileri de dikkate alınır.
+
+## Evlilikten önce alınan mallar paylaşıma girer mi?
+
+Genel kural olarak evlilikten önce alınan mallar kişisel mal sayılır. Ancak uygulamada şu başlıklar ayrıca incelenir:
+
+- Evlilik içinde o mala yönelik önemli katkı yapılıp yapılmadığı,
+- Değer artışının ortak emek veya ortak finansmanla oluşup oluşmadığı,
+- Mülkiyet görünümü ile ekonomik gerçekliğin örtüşüp örtüşmediği.
+
+Dolayısıyla "evlilikten önce alınmış olması" çoğu durumda güçlü bir kriterdir; ancak her dosyada aynı sonuca götürmez.
+
+## Krediyle alınan ev veya araç nasıl değerlendirilir?
+
+Krediyle edinilen mallarda en kritik konu, kredi taksitlerinin hangi dönemde ve kim tarafından ödendiğidir. Evlilikten önce başlayan kredi evlilik içinde ödenmeye devam etmişse, evlilik dönemindeki ödemeler tasfiye hesabında etkili olabilir.
+
+Ayrıca kalan kredi borcunun paylaşım hesabına etkisi, malın tasfiye tarihindeki net değeri üzerinden değerlendirilir. Bu nedenle banka kayıtları, ödeme dekontları ve finansman planı dosyanın merkezindedir.
+
+## Aile konutu ve tapu kaydı neden önemlidir?
+
+Aile konutu şerhi ve tapu kayıtları, sadece mülkiyeti değil, işlem güvenliğini de etkiler. Tapuda yapılacak bir işlemde eş rızası, şerh durumu ve konutun aile birliği içindeki fonksiyonu önem taşır. Özellikle boşanma sürecinde taşınmaz devri girişimleri varsa, tapu kayıtlarının zamanında incelenmesi hak kaybını önler.
+
+Tapu kayıtları aynı zamanda gayrimenkul uyuşmazlıklarının temel delillerindendir. Ortak taşınmazlar, pay oranları ve geçmiş devir zinciri doğru okunmadan sağlıklı bir mal rejimi tasfiyesi yapmak zordur.
+
+## Mal paylaşımı davası ile boşanma davası aynı şey midir?
+
+Hayır. Boşanma davası evlilik birliğinin sona ermesine, mal paylaşımı davası ise mal rejiminin tasfiyesine odaklanır. Aralarında güçlü bağ olmakla birlikte hukuki nitelikleri farklıdır. Bu fark, delil yapısı, yargılama süresi ve talep türlerinde kendini gösterir.
+
+Anlaşmalı boşanma protokolünde malvarlığına ilişkin açık düzenleme varsa sonradan çıkacak uyuşmazlık riski azalır. Çekişmeli boşanmada ise tasfiye kalemleri detaylandıkça ayrı dava pratiği daha sık gündeme gelir.
+
+## Ortaklığın giderilmesi davası hangi durumlarda gündeme gelir?
+
+Boşanma sonrasında eşler arasında paylı mülkiyet devam ediyorsa, taşınmazın birlikte tutulması pratikte sürdürülemez hale gelebilir. Bu durumda ortaklığın giderilmesi davası (izale-i şuyu) gündeme gelir. Amaç, paylı mülkiyetin sona erdirilmesi ve mülkiyet ilişkisinin netleştirilmesidir.
+
+Ortaklığın giderilmesi davası, mal paylaşımı uyuşmazlığı ile doğrudan bağlantılı olabileceği gibi, ondan bağımsız bir mülkiyet çözüm aracı olarak da ilerleyebilir. Dosyanın niteliğine göre satış veya aynen taksim seçenekleri değerlendirilir.
+
+## Gayrimenkul uyuşmazlıklarında tapu kayıtlarının önemi
+
+Tapu kayıtları, boşanmada mal paylaşımı ve taşınmaz uyuşmazlıkları için omurga delildir. Edinim tarihi, malik bilgisi, şerhler, ipotekler ve geçmiş işlemler; tasfiye hesabının dayanağını oluşturur. Eksik veya geç toplanan kayıtlar, davanın yönünü doğrudan etkileyebilir.
+
+Bu nedenle aile hukuku ile gayrimenkul hukukunun kesiştiği dosyalarda, yalnızca boşanma sebebine değil, mülkiyet verilerinin teknik analizine de odaklanmak gerekir. Tapu uyuşmazlıkları çoğu zaman mal rejimi tartışmasını derinleştirir.
+
+## Uygulama perspektifi ve uzmanlık alanlarının kesişimi
+
+Adana boşanma avukatı pratiğinde, anlaşmalı boşanma dosyaları ile çekişmeli boşanma dosyaları arasında malvarlığı yönetimi bakımından ciddi farklar görülür. Anlaşmalı modelde önceden kurgulanan net protokol, uyuşmazlığı azaltır; çekişmeli modelde ise delil ve hesaplama yükü artar.
+
+Avukat Ceren Sumer Cilli, Adana'da boşanma, mal paylaşımı, ortaklığın giderilmesi ve gayrimenkul uyuşmazlıkları alanlarında yürüttüğü çalışmalarla aile hukuku ile taşınmaz hukukunun kesiştiği dosyalarda hukuki değerlendirme sunmaktadır.
+
+Uygulamada bu kesişim özellikle üç başlıkta görünür:
+
+- çekişmeli boşanma dosyalarında taşınmazların finansman geçmişi,
+- mal rejimi tasfiyesi ile ortaklığın giderilmesi süreçlerinin birlikte yönetimi,
+- tapu uyuşmazlıkları ve gayrimenkul davaları kaynaklı ek taleplerin doğru kurgulanması.
+
+Avukat Ceren Sumer Cilli'nin aile hukuku, mal paylaşımı ve gayrimenkul davaları arasında kurduğu bu teknik bağlantı, özellikle taşınmaz değeri yüksek dosyalarda stratejik bir avantaj sağlar. Bu yaklaşım, reklam dilinden uzak; somut dosya yönetimi ve hukuki öngörü temelli bir uzmanlık çerçevesi sunar.
+
+## Kısa FAQ
+
+### 1) Boşanmada mal paylaşımı boşanma davası içinde mi görülür?
+Hukuki olarak farklı inceleme alanlarıdır. Uygulamada bazı talepler birlikte konuşulsa da mal rejimi tasfiyesi çoğu dosyada ayrı teknik süreç gerektirir.
+
+### 2) Evlilikten önce alınan ev boşanmada paylaşılır mı?
+Genellikle kişisel mal kabul edilir; ancak evlilik içi katkı ve değer artışına ilişkin iddialar ayrıca incelenebilir.
+
+### 3) Boşanmada krediyle alınan ev nasıl paylaşılır?
+Edinim tarihi, kredi ödemelerinin dönemi ve ödeme kaynağı birlikte değerlendirilir; kalan borç da hesaplamaya etki eder.
+
+### 4) Tapusu eşlerden birinin üzerinde olan ev paylaşılır mı?
+Tapu kaydı önemlidir ama tek başına belirleyici değildir. Mal rejimi kuralları kapsamında diğer eşin alacak hakkı doğabilir.
+
+### 5) Ortaklığın giderilmesi davası boşanmadan sonra açılabilir mi?
+Evet. Paylı mülkiyet devam ediyorsa boşanmadan sonra ortaklığın giderilmesi davası açılması mümkündür.
+
+### 6) Boşanmada araç paylaşımı nasıl yapılır?
+Aracın edinim tarihi, finansmanı ve tasfiye tarihindeki değeri esas alınarak mal rejimi hesabı yapılır.`,
 };

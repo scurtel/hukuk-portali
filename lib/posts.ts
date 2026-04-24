@@ -164,11 +164,123 @@ const postMetas = [
     categorySlug: "analiz",
     featured: true,
     publishedAt: "2026-04-17"
+  },
+  {
+    id: "post-13",
+    slug: "tapuda-yeni-donem-guvenli-odeme-dijital-yetkilendirme",
+    title: "Tapuda Yeni Dönem: Gayrimenkul Satışlarında Güvenli Ödeme ve Dijital Yetkilendirme Süreci",
+    excerpt:
+      "Gayrimenkul satışlarında güvenli ödeme sistemi, tapu devri öncesi risk kontrolleri ve e-Devlet taşınmaz ilan yetkilendirme uygulamasının alıcı-satıcı dengesi üzerindeki etkilerini inceliyoruz.",
+    type: "haber",
+    categorySlug: "haber",
+    featured: true,
+    publishedAt: "2026-04-24",
+    seo: {
+      metaTitle: "Tapuda Yeni Dönem: Güvenli Ödeme ve Dijital Yetkilendirme",
+      metaDescription:
+        "Gayrimenkul satışlarında güvenli ödeme, tapu işlemleri ve e-Devlet üzerinden taşınmaz ilan yetkilendirme süreci hakkında güncel hukuki değerlendirme.",
+      focusKeyword: "tapu güvenli ödeme sistemi",
+      secondaryKeywords: [
+        "gayrimenkul satışında güvenli ödeme",
+        "e-devlet taşınmaz ilan yetkilendirme",
+        "tapu işlemleri 2026",
+        "sahte emlak ilanları"
+      ]
+    },
+    faq: [
+      {
+        question: "Gayrimenkul satışında güvenli ödeme sistemi nedir?",
+        answer:
+          "Güvenli ödeme sistemi, satış bedelinin tapu devriyle eş zamanlı ve doğrulanabilir şekilde aktarılmasını amaçlayan kontrollü ödeme modelidir."
+      },
+      {
+        question: "Tapu devrinden önce ödeme yapmak riskli midir?",
+        answer:
+          "Evet. Devir tamamlanmadan yapılan ödeme, devir gerçekleşmezse iade ve ispat sorunlarına yol açabilir. Süreç mutlaka yazılı ve kontrollü ilerlemelidir."
+      },
+      {
+        question: "e-Devlet taşınmaz ilan yetkilendirme ne işe yarar?",
+        answer:
+          "Taşınmazın ilanının gerçekten yetkili kişi veya kurumca verildiğinin dijital olarak doğrulanmasına yardımcı olur ve yetkisiz ilan riskini azaltır."
+      },
+      {
+        question: "Sahte emlak ilanlarından korunmak için ne yapılmalı?",
+        answer:
+          "İlan verenin yetkisi doğrulanmalı, tapu ve takyidat kayıtları kontrol edilmeli, kapora ve ön ödeme süreçleri belgeli ve kontrollü yürütülmelidir."
+      },
+      {
+        question: "Tapu satışında hukuki kontrol neden önemlidir?",
+        answer:
+          "Hukuki kontrol, mülkiyet devrini etkileyebilecek borç, şerh, ipotek ve temsil yetkisi sorunlarını önceden tespit ederek uyuşmazlık riskini düşürür."
+      }
+    ]
+  },
+  {
+    id: "post-14",
+    slug: "bosanmada-mal-paylasimi-gayrimenkuller-ev-arsa-arac",
+    title: "Boşanmada Mal Paylaşımı ve Gayrimenkuller: Ev, Arsa ve Araçlar Nasıl Paylaşılır?",
+    excerpt:
+      "Boşanmada mal paylaşımı davasında ev, arsa ve araçların hangi rejime göre değerlendirildiğini; tapu kayıtları, kredi borçları ve ortaklığın giderilmesi başlıklarıyla ele alıyoruz.",
+    type: "analiz",
+    categorySlug: "analiz",
+    featured: true,
+    publishedAt: "2026-04-24",
+    seo: {
+      metaTitle: "Boşanmada Mal Paylaşımı ve Gayrimenkuller Nasıl Paylaşılır?",
+      metaDescription:
+        "Boşanmada ev, arsa, araç ve diğer malvarlığı değerlerinin nasıl paylaşıldığını; mal rejimi, edinilmiş mallar ve gayrimenkul uyuşmazlıkları yönünden açıklıyoruz.",
+      focusKeyword: "boşanmada mal paylaşımı",
+      secondaryKeywords: [
+        "boşanmada ev paylaşımı",
+        "boşanmada arsa paylaşımı",
+        "boşanmada araç paylaşımı",
+        "mal rejimi tasfiyesi",
+        "Adana mal paylaşımı avukatı",
+        "Adana gayrimenkul avukatı",
+        "ortaklığın giderilmesi davası"
+      ]
+    },
+    faq: [
+      {
+        question: "Boşanmada mal paylaşımı boşanma davası içinde mi görülür?",
+        answer:
+          "Kural olarak boşanma hükmü ile mal rejimi tasfiyesi ayrı hukuki inceleme alanlarıdır; uygulamada çoğu zaman farklı dava süreçleri yürütülür."
+      },
+      {
+        question: "Evlilikten önce alınan ev boşanmada paylaşılır mı?",
+        answer:
+          "Genellikle kişisel mal sayılır; ancak evlilik içinde yapılan katkılar veya değer artış payı iddiası varsa ayrıca değerlendirme gerekir."
+      },
+      {
+        question: "Boşanmada krediyle alınan ev nasıl paylaşılır?",
+        answer:
+          "Evin edinim tarihi, kredi ödemelerinin hangi dönemde ve kim tarafından yapıldığı ile kalan borç durumu birlikte incelenir."
+      },
+      {
+        question: "Tapusu eşlerden birinin üzerinde olan ev paylaşılır mı?",
+        answer:
+          "Tapu tek başına belirleyici değildir. Mal rejimi kuralları ve katkı/pay alacağı iddialarıyla paylaşım veya alacak talebi gündeme gelebilir."
+      },
+      {
+        question: "Ortaklığın giderilmesi davası boşanmadan sonra açılabilir mi?",
+        answer:
+          "Evet. Paylı veya elbirliği mülkiyeti devam eden taşınmazlarda, şartlar oluştuğunda boşanmadan sonra ortaklığın giderilmesi davası açılabilir."
+      },
+      {
+        question: "Boşanmada araç paylaşımı nasıl yapılır?",
+        answer:
+          "Aracın edinim tarihi, ödeme kaynağı ve mevcut piyasa değeri dikkate alınarak mal rejimi kapsamında tasfiye hesabı yapılır."
+      }
+    ]
   }
 ] as const;
 
 const postImages: Record<string, string> = {
-  "trump-bilim-insanlari-inceleme": "https://images.unsplash.com/photo-1581093588401-fbb62a02f120"
+  "trump-bilim-insanlari-inceleme": "https://images.unsplash.com/photo-1581093588401-fbb62a02f120",
+  "tapuda-yeni-donem-guvenli-odeme-dijital-yetkilendirme":
+    "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200",
+  "bosanmada-mal-paylasimi-gayrimenkuller-ev-arsa-arac":
+    "https://images.unsplash.com/photo-1453873623425-02f3b6c32b4a?auto=format&fit=crop&q=80&w=1200"
 };
 
 export const staticPosts: Post[] = postMetas.map((meta) => ({

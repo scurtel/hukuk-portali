@@ -13,4 +13,14 @@ export type Post = {
   featured?: boolean;
   /** Kapak görseli yolu: /images/covers/... */
   imageUrl?: string | null;
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
+    focusKeyword?: string;
+    secondaryKeywords?: readonly string[];
+  };
+  faq?: ReadonlyArray<{
+    question: string;
+    answer: string;
+  }>;
 };
