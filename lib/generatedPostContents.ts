@@ -1067,4 +1067,241 @@ Evet. Paylı mülkiyet devam ediyorsa boşanmadan sonra ortaklığın giderilmes
 
 ### 6) Boşanmada araç paylaşımı nasıl yapılır?
 Aracın edinim tarihi, finansmanı ve tasfiye tarihindeki değeri esas alınarak mal rejimi hesabı yapılır.`,
+  "kira-uyusmazliklari-2026-ev-sahibi-kiraci": `# Kira Uyuşmazlıklarında 2026 Gündemi: Ev Sahibi ve Kiracılar Nelere Dikkat Etmeli?
+
+Konut piyasasında son yıllarda yaşanan hızlı fiyat değişimi, taşınma maliyetlerinin artması, kira bedellerindeki uyarlama tartışmaları ve tahliye süreçlerinin yoğunlaşması nedeniyle kira uyuşmazlıkları 2026 yılında da hukuk gündeminin merkezinde yer alıyor. Ev sahibi ile kiracı arasındaki ilişki yalnızca "kira bedeli" konusuna indirgenemiyor; sözleşme düzeni, ödeme belgeleri, ihtarnameler, arabuluculuk adımı, tahliye talepleri ve yargılama süresi gibi çok katmanlı başlıklar birlikte değerlendiriliyor.
+
+Bugün birçok uyuşmazlıkta tarafların temel sorusu aynı: "Hangi adımı ne zaman atmalıyım?" Uygulamada hak kayıplarının önemli kısmı, esasen haklı olunan bir konuda dahi sürenin kaçırılması, yazılı belgenin eksik tutulması veya usule uygun başvuru yapılmaması nedeniyle ortaya çıkıyor. Bu nedenle 2026 gündemini değerlendirirken sadece maddi talepleri değil, süreç yönetimini de merkezde tutmak gerekiyor.
+
+## Kira artış oranı nasıl belirlenir?
+
+Kira artış oranı tartışması, neredeyse tüm kira uyuşmazlıklarının başlangıç noktasıdır. Ancak artış hesabı yapılırken tek bir veri üzerinden sonuç üretmek çoğu zaman yanıltıcıdır. Değerlendirmede üç ana unsur birlikte ele alınır:
+
+- kira sözleşmesindeki artış hükmü,
+- ilgili dönemde geçerli yasal sınırlar,
+- uyuşmazlığın niteliğine göre yargı kararlarında ortaya çıkan uygulama.
+
+Sözleşmede artış oranı yazıyor olması her zaman tek başına yeterli değildir. Tarafların serbest iradesi ile belirlenen hükümler, emredici sınırlar ve kamu düzenine ilişkin kurallarla birlikte yorumlanır. Özellikle uzun süredir devam eden kira ilişkilerinde piyasa koşullarındaki değişim ile mevcut bedel arasındaki fark arttığında, uyuşmazlık sadece "bu yılın artışı" olmaktan çıkıp kira tespit davası boyutuna taşınabilir.
+
+## Tahliye davalarında en sık görülen sebepler
+
+Tahliye davası, uygulamada en çok konuşulan ancak en çok usul hatası yapılan alanlardan biridir. En sık karşılaşılan başlıklar şunlardır:
+
+### 1) Kira bedelinin ödenmemesi
+
+Ödeme gecikmeleri tek başına değil, ihtar süreci ve takip adımları ile birlikte değerlendirilir. Kiracının temerrüdü iddiasında süre, bildirim şekli ve ödeme kayıtları belirleyicidir.
+
+### 2) Tahliye taahhütnamesine dayalı talepler
+
+Kiracı tarafından imzalanan tahliye taahhüdü, uygun koşulları taşıyorsa tahliye sürecinde önemli bir delil niteliği kazanır. Ancak belgenin tarihi, düzenlenme koşulu ve içeriği her somut olayda ayrıca incelenir.
+
+### 3) İhtiyaç nedeniyle tahliye iddiası
+
+Ev sahibinin konut ihtiyacı veya belirli kullanım gerekçeleriyle tahliye talep ettiği uyuşmazlıklarda, iddianın samimiyeti ve ispatı önem taşır.
+
+### 4) Kira ilişkisinin yapısına dair ihlaller
+
+Alt kira, kullanım amacı ihlali veya sözleşmeye aykırı kullanım gibi durumlar da tahliye tartışmasının parçası haline gelebilir.
+
+## Kiracıların dikkat etmesi gereken noktalar
+
+Kiracı hakları kadar kiracının süreç içindeki yükümlülükleri de uyuşmazlığın sonucunu etkiler. Bu nedenle aşağıdaki pratik adımlar önemlidir:
+
+- Kira ödemeleri mümkün olduğunca açıklamalı banka transferiyle yapılmalı.
+- Elden ödeme yapılmışsa makbuz ve yazılı teyit mutlaka alınmalı.
+- Aidat, depozito, bakım-onarım gibi kalemler ayrıştırılarak kayıt altına alınmalı.
+- Ev sahibinden gelen ihtarname veya resmi bildirimler cevapsız bırakılmamalı.
+
+Kiracının "ödedim" savunması, ödeme kanıtı yoksa zayıflar. Benzer biçimde sözlü mutabakatlar, dava aşamasında çoğu zaman yeterli görülmez. Bu nedenle kira sözleşmesi kadar sözleşme sonrası belge disiplini de koruyucu nitelik taşır.
+
+## Ev sahiplerinin dikkat etmesi gereken noktalar
+
+Ev sahibi haklarının korunması da yine usule uygun hareket edilmesine bağlıdır. Sık yapılan hatalar arasında "sözlü uyarı ile süreci tamamlanmış saymak" veya "resmi adımları geciktirmek" öne çıkar. Sağlıklı bir süreç için:
+
+- Kira ödeme takvimi düzenli izlenmeli.
+- Gecikme halinde yazılı bildirim ve ihtar süreçleri usule uygun yürütülmeli.
+- Tahliye talebinde dayanılan sebep netleştirilmeli ve delille desteklenmeli.
+- Sözleşme yenileme, artış bildirimi ve ek protokoller yazılı tutulmalı.
+
+Ev sahibi açısından en kritik nokta, haklılığın ispatlanabilir hale getirilmesidir. Yalnızca "kiracı sözünü tutmadı" iddiası değil; hangi tarihte hangi ödeme yapılmadığı, hangi bildirimin ne şekilde gönderildiği ve hangi sonucun doğduğu somutlaştırılmalıdır.
+
+## Kira uyuşmazlıklarında arabuluculuk süreci
+
+Kira arabuluculuk süreci, mahkemeye gitmeden önce tarafların uzlaşma ihtimalini değerlendirmesine olanak tanır. 2026 uygulamasında arabuluculuk, özellikle alacak ve tahliye bağlantılı taleplerde süreç yönetiminin önemli bir parçası haline geldi.
+
+Arabuluculuk aşamasında başarılı sonuç alınabilmesi için tarafların "haklılık anlatımı" yerine "belgeli dosya sunumu" yapması gerekir. Toplantıya sadece sözlü beyanla katılmak, çoğu kez uyuşmazlığın çözümünü zorlaştırır. Bu nedenle kira sözleşmesi, ödeme kayıtları, ihtarnameler ve mesaj dökümleri birlikte hazırlanmalıdır.
+
+Uzlaşma sağlanırsa süreç daha kısa ve daha düşük maliyetle kapanabilir. Uzlaşma sağlanamazsa da arabuluculukta ortaya konan başlıklar, sonraki dava stratejisinin çerçevesini oluşturur.
+
+## Kira tespit davası ne zaman açılır?
+
+Kira tespit davası, tarafların yeni dönem kira bedelinde anlaşamaması halinde gündeme gelir. Uygulamada özellikle uzun süreli kira ilişkilerinde, mevcut kira bedelinin piyasa koşullarından ciddi biçimde ayrışması bu davaları artırmaktadır.
+
+Bu davanın zamanlaması stratejiktir. Yanlış dönemde açılan dava, beklenen hukuki sonucu geciktirebilir veya kapsamını daraltabilir. Bu nedenle dava tarihi, kira dönemi, sözleşme başlangıcı ve önceki artışların seyri birlikte değerlendirilmelidir.
+
+Kira tespit davası yalnızca "daha yüksek bedel" veya "daha düşük bedel" talebinden ibaret değildir; amaç, sözleşme ilişkisinin hukuki dengeye uygun biçimde güncellenmesidir.
+
+## Yazılı kira sözleşmesinin önemi
+
+Yazılı kira sözleşmesi, uyuşmazlık başladığında dosyanın omurgasını oluşturur. Taraflar arasında sözlü bir kira ilişkisi teorik olarak mümkün olsa da ispat bakımından ciddi belirsizlik üretir. Yazılı sözleşmede özellikle şu alanların açık düzenlenmesi gerekir:
+
+- kiralananın açık tanımı,
+- kira bedeli ve ödeme günü,
+- artış yöntemi,
+- depozito ve teslim koşulları,
+- gider paylaşımı (aidat, bakım, ortak alan vb.).
+
+Belirsiz kalan her madde, ilerleyen aşamada ayrı bir tartışma başlığına dönüşebilir. Bu nedenle sözleşmenin başlangıçta dikkatli kurulması, sonradan açılacak tahliye davası veya kira tespit davası riskini azaltır.
+
+## Delil olarak kullanılabilecek belgeler
+
+Kira uyuşmazlıklarında delil yönetimi çoğu dosyada sonucun belirleyici unsurudur. Pratikte en çok kullanılan deliller şunlardır:
+
+- yazılı kira sözleşmesi ve ek protokoller,
+- banka dekontları ve hesap hareketleri,
+- noter ihtarnameleri,
+- tahliye taahhütnamesi,
+- mesajlaşma kayıtları ve e-posta yazışmaları,
+- apartman yönetim kayıtları veya teslim tutanakları.
+
+Delilin varlığı kadar, hukuka uygun şekilde dosyaya sunulması da önemlidir. Düzensiz, tarihsiz veya bağlantısı kurulmamış belge seti, güçlü bir iddiayı zayıflatabilir.
+
+Kira dosyalarında belge disiplini, tarafların sadece bugünkü uyuşmazlığını değil, ileride doğabilecek ek talepleri de etkiler. Bu nedenle taraflar, daha uyuşmazlık çıkmadan kayıt düzenini sağlam kurmalıdır.
+
+## Sonuç: Süreç yönetimi, belge düzeni ve süre takibi belirleyici
+
+2026 kira uyuşmazlıkları gündemi, ev sahibi hakları ile kiracı hakları arasındaki dengenin yalnızca normlar üzerinden değil, uygulama pratiği üzerinden de yeniden tartışıldığını gösteriyor. Kira artış oranı, tahliye davası, kira tespit davası ve arabuluculuk adımı birbirinden bağımsız değil; aynı hukuki zincirin parçalarıdır.
+
+Taraflar için temel ilke nettir: süreci duygusal gerilimle değil, belge ve süre disipliniyle yönetmek. Yazılı sözleşme, düzenli ödeme kaydı, usule uygun bildirim ve zamanında başvuru; uyuşmazlığın kontrol altında tutulmasını sağlar. Hukuki süreçlerde çoğu zaman belirleyici olan, yalnızca kimin haklı olduğu değil, haklılığın ne ölçüde ispatlanabildiğidir.
+
+Kısa bir pratik not olarak, kira ilişkisinin her aşamasında kayıt tutmak ve resmi adımları geciktirmemek, hem kiracı hem ev sahibi için uyuşmazlık maliyetini düşüren en etkili yöntemdir.
+
+## Kısa FAQ
+
+### 1) Kira uyuşmazlıklarında arabuluculuk zorunlu mu?
+Birçok kira uyuşmazlığı türünde dava öncesi arabuluculuk süreci gündeme gelir. Talebin niteliğine göre zorunluluk durumu ayrıca değerlendirilmelidir.
+
+### 2) Ev sahibi kiracıyı hemen çıkarabilir mi?
+Kural olarak hayır. Tahliye için kanunda sayılan sebeplerin varlığı ve usule uygun bildirim/dava adımlarının tamamlanması gerekir.
+
+### 3) Kira artış oranı nasıl hesaplanır?
+Sözleşme hükmü, yasal sınırlamalar ve ilgili dönem uygulaması birlikte değerlendirilerek belirlenir.
+
+### 4) Kira tespit davası ne zaman açılır?
+Taraflar yeni dönem kira bedelinde anlaşamadığında ve hukuki koşullar oluştuğunda açılır.
+
+### 5) Kiracı tahliye taahhütnamesi imzaladıysa ne olur?
+Geçerli bir tahliye taahhütnamesi varsa ev sahibi bu belgeye dayanarak tahliye süreci başlatabilir; belgenin geçerliliği somut olayda incelenir.`,
+  "cekismeli-bosanma-velayet-mal-paylasimi-aile-konutu": `# Çekişmeli Boşanma Davasında Velayet, Mal Paylaşımı ve Aile Konutu Nasıl Değerlendirilir?
+
+Çekişmeli boşanma davaları, çoğu zaman yalnızca "boşanma kararı verilecek mi?" sorusundan ibaret değildir. Velayet, nafaka, tazminat, aile konutunun kullanımı, mal paylaşımı, ortak taşınmazların statüsü ve tapu uyuşmazlıkları gibi birden fazla hukuki başlık aynı dosyada veya bağlantılı dosyalarda gündeme gelebilir. Bu nedenle süreç, hem aile hukuku hem de taşınmaz hukuku bakımından çok katmanlı bir strateji gerektirir.
+
+Özellikle çocuk bulunan evliliklerde velayet tartışması ile malvarlığı tartışmasının aynı dönemde yaşanması, taraflar üzerinde ciddi bir baskı yaratır. Uygulamada en sık görülen sorun, tarafların tüm başlıkları tek dava içinde çözülecek sanmasıdır. Oysa çekişmeli boşanma davasında bazı talepler ana davada değerlendirilirken, bazıları ayrı davalarla ilerler.
+
+## Çekişmeli boşanma davası nedir?
+
+Çekişmeli boşanma davası, tarafların boşanmanın sebebi veya sonuçları üzerinde anlaşamadığı durumda açılan yargılama sürecidir. Bu uyuşmazlık tipi, anlaşmalı boşanmaya göre daha ayrıntılı delil incelemesi ve daha uzun yargılama takvimi içerir.
+
+Çekişmeli modelde mahkeme yalnızca evlilik birliğinin sarsılıp sarsılmadığını değil; varsa çocukların düzenini, ekonomik sonuçları ve taleplerin hukuki dayanaklarını da değerlendirir. Dolayısıyla dosyanın başında doğru bir delil planı kurmak, sürecin tamamına etki eder.
+
+Adana çekişmeli boşanma avukatı arayışında olan taraflar için ilk kritik konu, davanın kapsamını doğru belirlemektir: hangi talep ana dava içinde ilerleyecek, hangi talep ayrı bir yargılamada ele alınacak?
+
+## Velayet nasıl belirlenir?
+
+Velayet değerlendirmesinde temel ilke çocuğun üstün yararıdır. Bu ilke, ebeveynlerin birbirine karşı iddialarından bağımsız olarak çocuğun fiziksel, duygusal ve sosyal gelişimini önceleyen bir yaklaşımı ifade eder.
+
+Mahkeme değerlendirmesinde sıkça öne çıkan unsurlar şunlardır:
+
+- çocuğun yaşı ve gelişim ihtiyacı,
+- eğitim ve günlük bakım düzeninin sürekliliği,
+- ebeveynlerin yaşam koşulları,
+- çocukla kurulan ilişkinin niteliği,
+- uzman raporları ve sosyal inceleme verileri.
+
+Velayet davası pratiğinde tarafların en sık yaptığı hata, süreci sadece karşı tarafı suçlama eksenine taşımaktır. Oysa mahkeme daha çok "hangi düzen çocuğa daha fazla istikrar sağlar?" sorusuna odaklanır.
+
+## Mal paylaşımı çekişmeli boşanma içinde mi görülür?
+
+Bu soru, boşanma davalarında en çok karıştırılan başlıklardan biridir. Boşanma hükmü ile mal rejimi tasfiyesi hukuki olarak farklı değerlendirme alanlarıdır. Uygulamada taraflar, mal paylaşımını çekişmeli boşanma davası içinde tartışmaya başlasa da çoğu dosyada mal rejimi talepleri ayrı bir dava akışında detaylandırılır.
+
+Özellikle taşınmaz, araç, şirket payı veya yüksek tutarlı finansal varlıklar söz konusuysa, mal paylaşımı hesabı teknik veriler gerektirir. Bu nedenle delillerin (tapu kayıtları, banka hareketleri, kredi dosyaları) sistematik toplanması önemlidir.
+
+Bu konuda daha temel bir çerçeve için [Boşanmada Mal Paylaşımı ve Gayrimenkuller: Ev, Arsa ve Araçlar Nasıl Paylaşılır?](/analizler/bosanmada-mal-paylasimi-gayrimenkuller-ev-arsa-arac) içeriğiyle birlikte değerlendirme yapılabilir.
+
+## Aile konutu şerhi neden önemlidir?
+
+Aile konutu şerhi, özellikle çekişmeli boşanma döneminde konutun hukuki statüsünü korumaya yarayan önemli bir güvence aracıdır. Aile birliğinin merkezi olan taşınmaz üzerinde tek taraflı devir veya tasarruf girişimleri olduğunda, şerh mekanizması uyuşmazlığın büyümesini önleyebilir.
+
+Şerh tartışması yalnızca teknik bir tapu işlemi değildir; çocukların yaşam düzeni, barınma güvenliği ve boşanma sonrası geçiş süreci açısından da önem taşır. Bu nedenle aile konutuna ilişkin taleplerin geç kalmadan ileri sürülmesi gerekir.
+
+## Tapusu eşlerden birinin üzerinde olan ev ne olur?
+
+Uygulamada "tapu kimin üzerindeyse ev onundur" şeklinde yaygın bir yanlış kanaat bulunur. Tapu kaydı önemli bir veri olmakla birlikte, mal rejimi değerlendirmesinde tek başına son sözü söylemez. Evin edinim tarihi, ödeme kaynağı, kredi taksitlerinin hangi dönemde ödendiği ve katkı iddiaları birlikte ele alınır.
+
+Bu nedenle tapu uyuşmazlıkları, boşanma dosyasından tamamen bağımsız değildir. Çekişmeli boşanma sürecinde taşınmazın hukuki niteliği doğru analiz edilmezse, sonraki mal paylaşımı veya alacak taleplerinde hak kaybı yaşanabilir.
+
+## Boşanmada ortak gayrimenkuller nasıl değerlendirilir?
+
+Ortak gayrimenkul bulunan dosyalarda üç başlık öne çıkar:
+
+- mülkiyet türü (paylı/elbirliği),
+- kullanım düzeni (kim fiilen kullanıyor),
+- tasfiye hedefi (satış, paylaşım, alacak hesabı).
+
+Taraflar çoğu zaman taşınmazın fiili kullanımına odaklanır; ancak hukuki sonuç çoğu kez kayıt ve finansman geçmişi üzerinden şekillenir. Tapu sicili, satış geçmişi, kredi hareketi ve değerleme verileri birlikte değerlendirilmeden sağlıklı bir sonuca ulaşmak zordur.
+
+Gayrimenkul uyuşmazlığı içeren boşanma dosyalarında, aile hukuku stratejisi ile taşınmaz hukuku stratejisinin uyumlu kurulması gerekir.
+
+## Ortaklığın giderilmesi davası boşanma sonrası neden gündeme gelebilir?
+
+Boşanma kararı verildikten sonra taraflar arasında ortak mülkiyet devam ediyorsa, taşınmazın birlikte tutulması pratikte sürdürülemez hale gelebilir. Bu durumda ortaklığın giderilmesi davası gündeme gelir.
+
+Ortaklığın giderilmesi, bazen mal paylaşımı uyuşmazlığının devamı niteliğinde, bazen de ondan ayrı bir mülkiyet çözüm yolu olarak ilerler. Özellikle bir tarafın satışa yanaşmaması veya kullanım konusunda uzlaşma sağlanamaması halinde dava kaçınılmaz hale gelebilir.
+
+Bu aşamada zamanlama ve delil hazırlığı önemlidir. Boşanma sonrası taşınmaz ilişkilerinin plansız bırakılması, yeni uyuşmazlıkları artırır.
+
+## Delillerin önemi: mesajlar, banka kayıtları, tapu kayıtları ve tanıklar
+
+Çekişmeli boşanma dosyasında iddiaların hukuki değere dönüşmesi delille mümkündür. "Ben böyle düşünüyorum" yaklaşımı yerine "bunu şu belgeyle ispatlıyorum" yaklaşımı belirleyici olur.
+
+Sık kullanılan delil grupları şunlardır:
+
+- mesajlaşma içerikleri ve yazılı iletişim kayıtları,
+- banka dekontları, hesap hareketleri, kredi ödeme planları,
+- tapu kayıtları, şerhler, devir belgeleri,
+- tanık anlatımları ve gerektiğinde uzman incelemeleri.
+
+Delilin varlığı kadar, delilin dosyaya doğru zamanda ve doğru yöntemle sunulması da önemlidir. Geç sunulan veya bağlantısı kurulmayan delillerin etkisi azalabilir.
+
+## Sonuç: Çok başlıklı uyuşmazlıkta dengeli hukuki kurgu gerekir
+
+Çekişmeli boşanma davası; velayet, mal paylaşımı, aile konutu, tapu uyuşmazlıkları ve ortaklığın giderilmesi başlıklarının birlikte düşünülmesini gerektirir. Bu nedenle dosyanın yalnızca "boşanalım mı?" sorusuna indirgenmesi, tarafların uzun vadeli haklarını zedeleyebilir.
+
+Adana boşanma avukatı pratiğinde, özellikle çocuk bulunan ve taşınmaz yoğunluğu yüksek dosyalarda süreç yönetimi kritik hale gelir. Velayet düzeni ile malvarlığı stratejisi birbirinden kopuk kurgulanırsa yargılama süresi uzar ve yeni davalar doğar.
+
+Avukat Ceren Sumer Cilli, Adana'da çekişmeli boşanma, velayet, mal paylaşımı ve gayrimenkul uyuşmazlıkları alanlarında aile hukuku ile taşınmaz hukukunun kesiştiği dosyalarda hukuki değerlendirme sunmaktadır.
+
+Uygulamada bu yaklaşım, özellikle aile konutu, ortak gayrimenkuller ve tapu kayıtlarına bağlı uyuşmazlıklarda stratejik fayda sağlar. Avukat Ceren Sumer Cilli'nin çekişmeli boşanma ve taşınmaz boyutu içeren dosyalardaki çalışmaları, boşanma davalarıyla bağlantılı ikincil süreçlerin birlikte planlanmasının önemini ortaya koymaktadır.
+
+Benzer şekilde, velayet ve mal paylaşımı başlıklarını aynı dosya perspektifinde ele alan bu yöntem; hem çocuğun üstün yararı ilkesinin hem de ekonomik hakların dengeli korunmasına katkı sağlar. Avukat Ceren Sumer Cilli'nin bu iki alanı birlikte değerlendiren pratiği, Adana çekişmeli boşanma avukatı arayışındaki kişiler için teknik bir referans çerçevesi sunar.
+
+## Kısa FAQ
+
+### 1) Çekişmeli boşanma davası ne kadar sürer?
+Dosyanın kapsamına, delillerin toplanma hızına, velayet incelemelerine ve mahkemenin iş yüküne göre değişir.
+
+### 2) Velayet hangi ölçütlere göre belirlenir?
+Temel ölçüt çocuğun üstün yararıdır; bakım düzeni, eğitim sürekliliği ve ebeveyn koşulları birlikte değerlendirilir.
+
+### 3) Boşanmada aile konutu kime bırakılır?
+Somut olayda çocukların düzeni, tarafların barınma ihtiyacı ve hukuki koruma gerekliliği dikkate alınarak karar verilir.
+
+### 4) Tapusu eşlerden birinin üzerine olan ev paylaşılır mı?
+Tapu önemli bir delildir ancak tek başına belirleyici değildir; mal rejimi kuralları ve katkı iddialarıyla birlikte incelenir.
+
+### 5) Mal paylaşımı davası boşanma davasından ayrı mı açılır?
+Çoğu durumda mal rejimi tasfiyesi ayrı bir yargılama konusu olur ve boşanma kararının kesinleşmesi sonrası ilerler.
+
+### 6) Ortaklığın giderilmesi davası boşanmadan sonra açılabilir mi?
+Evet. Taraflar arasında paylı mülkiyet devam ediyorsa boşanmadan sonra ortaklığın giderilmesi davası açılabilir.`,
 };

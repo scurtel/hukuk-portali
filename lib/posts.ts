@@ -272,6 +272,117 @@ const postMetas = [
           "Aracın edinim tarihi, ödeme kaynağı ve mevcut piyasa değeri dikkate alınarak mal rejimi kapsamında tasfiye hesabı yapılır."
       }
     ]
+  },
+  {
+    id: "post-15",
+    slug: "kira-uyusmazliklari-2026-ev-sahibi-kiraci",
+    title: "Kira Uyuşmazlıklarında 2026 Gündemi: Ev Sahibi ve Kiracılar Nelere Dikkat Etmeli?",
+    excerpt:
+      "2026 yılında kira uyuşmazlıkları, tahliye süreçleri, kira artış oranı tartışmaları ve arabuluculuk uygulamaları bakımından ev sahibi-kiracı dengesini yeniden gündeme taşıyor.",
+    type: "haber",
+    categorySlug: "haber",
+    featured: true,
+    publishedAt: "2026-04-24",
+    seo: {
+      metaTitle: "Kira Uyuşmazlıklarında 2026 Gündemi",
+      metaDescription:
+        "2026 yılında kira uyuşmazlıkları, tahliye davaları, kira artış oranları ve arabuluculuk sürecinde ev sahibi ile kiracıların dikkat etmesi gereken hukuki noktalar.",
+      focusKeyword: "kira uyuşmazlıkları 2026",
+      secondaryKeywords: [
+        "kira artış oranı",
+        "tahliye davası",
+        "kiracı hakları",
+        "ev sahibi hakları",
+        "kira arabuluculuk",
+        "kira tespit davası",
+        "kira sözleşmesi"
+      ]
+    },
+    faq: [
+      {
+        question: "Kira uyuşmazlıklarında arabuluculuk zorunlu mu?",
+        answer:
+          "Kira alacağı, tahliye ve benzeri birçok kira uyuşmazlığında dava öncesi arabuluculuk şartı gündeme gelebilir; somut talep türüne göre değerlendirme yapılmalıdır."
+      },
+      {
+        question: "Ev sahibi kiracıyı hemen çıkarabilir mi?",
+        answer:
+          "Kural olarak hayır. Tahliye için kanunda sayılan sebepler ve usule uygun bildirim/dava süreçlerinin tamamlanması gerekir."
+      },
+      {
+        question: "Kira artış oranı nasıl hesaplanır?",
+        answer:
+          "Kira artışında sözleşme hükmü, yasal sınırlamalar ve ilgili dönemdeki resmi oranlar birlikte dikkate alınır."
+      },
+      {
+        question: "Kira tespit davası ne zaman açılır?",
+        answer:
+          "Taraflar yeni dönem kira bedelinde anlaşamadığında ve yasal koşullar oluştuğunda kira tespit davası açılması gündeme gelir."
+      },
+      {
+        question: "Kiracı tahliye taahhütnamesi imzaladıysa ne olur?",
+        answer:
+          "Geçerli bir tahliye taahhütnamesi varsa ev sahibi bu belgeye dayanarak tahliye süreci başlatabilir; belgenin geçerliliği somut olayda incelenir."
+      }
+    ]
+  },
+  {
+    id: "post-16",
+    slug: "cekismeli-bosanma-velayet-mal-paylasimi-aile-konutu",
+    title: "Çekişmeli Boşanma Davasında Velayet, Mal Paylaşımı ve Aile Konutu Nasıl Değerlendirilir?",
+    excerpt:
+      "Çekişmeli boşanma davasında velayet, aile konutu, mal paylaşımı, tapu uyuşmazlıkları ve ortaklığın giderilmesi başlıklarının nasıl birlikte değerlendirildiğini ele alıyoruz.",
+    type: "analiz",
+    categorySlug: "analiz",
+    featured: true,
+    publishedAt: "2026-04-24",
+    seo: {
+      metaTitle: "Çekişmeli Boşanmada Velayet, Mal Paylaşımı ve Aile Konutu",
+      metaDescription:
+        "Çekişmeli boşanma davalarında velayet, mal paylaşımı, aile konutu, gayrimenkul uyuşmazlıkları ve boşanma sürecinde dikkat edilmesi gereken hukuki noktalar.",
+      focusKeyword: "çekişmeli boşanma davası",
+      secondaryKeywords: [
+        "Adana çekişmeli boşanma avukatı",
+        "velayet davası",
+        "boşanmada mal paylaşımı",
+        "aile konutu",
+        "gayrimenkul uyuşmazlığı",
+        "ortaklığın giderilmesi",
+        "Adana boşanma avukatı"
+      ]
+    },
+    faq: [
+      {
+        question: "Çekişmeli boşanma davası ne kadar sürer?",
+        answer:
+          "Süre; delil durumu, taleplerin kapsamı, velayet incelemeleri ve mahkemenin iş yüküne göre değişir."
+      },
+      {
+        question: "Velayet hangi ölçütlere göre belirlenir?",
+        answer:
+          "Temel ölçüt çocuğun üstün yararıdır; bakım düzeni, eğitim sürekliliği ve ebeveynlerin koşulları birlikte değerlendirilir."
+      },
+      {
+        question: "Boşanmada aile konutu kime bırakılır?",
+        answer:
+          "Somut olayın özelliklerine göre kullanım hakkı, çocukların düzeni ve tarafların korunma ihtiyacı dikkate alınarak karar verilir."
+      },
+      {
+        question: "Tapusu eşlerden birinin üzerine olan ev paylaşılır mı?",
+        answer:
+          "Tapu tek başına belirleyici değildir; mal rejimi kuralları, edinim tarihi ve katkı iddiaları birlikte incelenir."
+      },
+      {
+        question: "Mal paylaşımı davası boşanma davasından ayrı mı açılır?",
+        answer:
+          "Çoğu uyuşmazlıkta mal rejimi tasfiyesi ayrı yargılama konusu olur ve boşanma hükmünün kesinleşmesi sonrasında ilerler."
+      },
+      {
+        question: "Ortaklığın giderilmesi davası boşanmadan sonra açılabilir mi?",
+        answer:
+          "Evet. Paylı mülkiyet devam ediyorsa boşanma sonrasında ortaklığın giderilmesi davası açılması mümkündür."
+      }
+    ]
   }
 ] as const;
 
@@ -280,7 +391,11 @@ const postImages: Record<string, string> = {
   "tapuda-yeni-donem-guvenli-odeme-dijital-yetkilendirme":
     "https://images.unsplash.com/photo-1436450412740-6b988f486c6b?auto=format&fit=crop&w=1200&q=80",
   "bosanmada-mal-paylasimi-gayrimenkuller-ev-arsa-arac":
-    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
+  "kira-uyusmazliklari-2026-ev-sahibi-kiraci":
+    "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
+  "cekismeli-bosanma-velayet-mal-paylasimi-aile-konutu":
+    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80"
 };
 
 export const staticPosts: Post[] = postMetas.map((meta) => ({
