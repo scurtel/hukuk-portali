@@ -13,6 +13,8 @@ export type Post = {
   featured?: boolean;
   /** Kapak görseli yolu: /images/covers/... */
   imageUrl?: string | null;
+  /** Kart/liste görselleri için alt metin */
+  imageAlt?: string;
   seo?: {
     metaTitle?: string;
     metaDescription?: string;

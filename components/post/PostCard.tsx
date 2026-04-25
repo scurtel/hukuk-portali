@@ -30,7 +30,7 @@ export function PostCard({ post, author }: PostCardProps) {
     <article className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-lg transition duration-200 hover:scale-105 hover:shadow-xl">
       <SafeImage
         src={displayImage}
-        alt={`${post.title} görseli`}
+        alt={post.imageAlt ?? `${post.title} görseli`}
         width={720}
         height={420}
         className="h-44 w-full object-cover"

@@ -1304,4 +1304,77 @@ Tapu önemli bir delildir ancak tek başına belirleyici değildir; mal rejimi k
 
 ### 6) Ortaklığın giderilmesi davası boşanmadan sonra açılabilir mi?
 Evet. Taraflar arasında paylı mülkiyet devam ediyorsa boşanmadan sonra ortaklığın giderilmesi davası açılabilir.`,
+  "yapay-zeka-avukatsiz-dava-dilekcesi": `# Yargıya Güven Tartışılırken Yapay Zekâ ile Avukatsız Dava Açmak Riskli Bir Adım
+
+Adalet Bakanı Akın Gürlek, Edirne’de tarihi Peykler Medresesi’nde düzenlenen "Gençlerle Buluşma" programında, hem anayasa değişikliği hem de yapay zekânın adalet sisteminde kullanımı hakkında dikkat çekici açıklamalarda bulundu.
+
+Programın en çok tartışılan bölümü, vatandaşların hukuki sorunları için yapay zekâ destekli bir platform planına ilişkin ifadeler oldu. Gürlek, vatandaşın sisteme "kira davası, nafaka davası, alacak davası" gibi başlıkları yazması halinde örnek bir şablon üretilebileceğini ve "avukat olmadan bir dava dilekçesi çıkabileceğini" belirtti.
+
+Gürlek ayrıca, vatandaşların dava açmak için adliyeye gitme zorunluluğunun artık bulunmadığını, çevrim içi başvuru imkanlarının mevcut olduğunu hatırlattı. Açıklamaya göre, üzerinde çalışılan sistemin cevap dilekçesi, delillerin sunulması ve olası karar türleri gibi başlıklarda da yönlendirme yapması hedefleniyor.
+
+## Bakan Gürlek'in Açıklaması Neyi Gündeme Getirdi?
+
+İlk bakışta proje, adalete erişimi kolaylaştıracak bir dijital kamu hizmeti gibi görülebilir. Ancak "yapay zekâ destekli avukatsız dava dilekçesi" yaklaşımı, hukuk hizmetinin doğasını fazlasıyla basitleştiren ciddi bir risk taşıyor.
+
+Çünkü hukuk, yalnızca metin üretiminden ibaret değildir. Dava dilekçesindeki tek bir ifade, görevli ve yetkili mahkeme seçimi, süre hesapları, delil stratejisi ve talep sonucunun kurulumu davanın kaderini doğrudan etkileyebilir.
+
+## Yargıya Güven Tartışması ve Mesleki Gerçeklik
+
+Türkiye'de yargıya güvenin tartışıldığı, avukat sayısının 2026 itibarıyla 206.678'e ulaştığı, hukuk fakülteleri ve mezun sayısının uzun süredir yoğun biçimde arttığı bir dönemde bu modelin "avukatsız dava" vurgusuyla sunulması ayrıca eleştiriliyor.
+
+Özellikle genç hukukçuların ekonomik ve mesleki baskı altında olduğu, mesleğin sürdürülebilirliğinin kamuoyunda tartışıldığı bir atmosferde; savunma mesleğinin dışarıda bırakıldığı bir hukuk teknolojisi dili, kamu yararından çok yeni kırılganlıklar üretebilir.
+
+## Neden "Dilekçe Üretmek" Tek Başına Çözüm Değil?
+
+Kira, nafaka veya alacak gibi dava türleri dışarıdan standart görünebilir. Oysa her somut olay:
+
+- tarafların kişisel ve ekonomik durumuna,
+- sözleşme ilişkisine,
+- yazışma ve ödeme kayıtlarına,
+- tanık ve diğer delillere,
+- usul ve süre kurallarına
+
+göre birbirinden tamamen farklı sonuçlar doğurur.
+
+Yanlış mahkemede açılan dava, eksik delil, hatalı talep sonucu veya kaçırılan süre nedeniyle vatandaşın telafisi güç hak kaybı yaşaması mümkündür.
+
+## Dünyada Hukukta Yapay Zekâya Sınırsız Güven Yok
+
+Hukukta yapay zekâ kullanımı dünya genelinde de tartışmalıdır. Özellikle hukuki metinlerde:
+
+- gerçekte var olmayan karar atıfları,
+- uydurma içtihatlar,
+- hatalı mevzuat referansları,
+- yanlış yönlendirmeler
+
+üretilmesi ihtimali, yalnızca teorik değil pratik bir risk olarak kabul edilmektedir.
+
+Nitekim bazı ülkelerde, yapay zekâ ile hazırlanmış metinlerde sahte karar atıfları nedeniyle yaptırım uygulanan somut vakalar kamuoyuna yansımıştır.
+
+## En Temel Soru: Sorumluluk Kimde Olacak?
+
+Sistemin tartışmalı yönlerinden biri de hukuki sorumluluk rejimidir:
+
+- Yapay zekâ yanlış yönlendirme yaparsa kim sorumlu olacak?
+- Vatandaş yanlış mahkemede dava açarsa zararı kim karşılayacak?
+- Eksik veya hatalı talep sonucu nedeniyle hak kaybı doğarsa bu nasıl telafi edilecek?
+- Sistem hatalı dilekçe üretirse yük tamamen vatandaşa mı bırakılacak?
+
+Bu sorulara açık, denetlenebilir ve güven verici yanıtlar üretilmeden sistemin yaygınlaştırılması, hukuk güvenliği açısından sakıncalı görülüyor.
+
+## Adalete Erişim Ne Demektir?
+
+Teknolojinin yargı süreçlerinde kullanılması elbette önemlidir. UYAP, e-Duruşma, e-Tebligat ve çevrim içi başvuru mekanizmaları vatandaşın işlemlerini kolaylaştırabilir.
+
+Yapay zekâ da başvuru yollarını anlatan, süreçleri sadeleştiren, temel bilgilendirme yapan yardımcı bir araç olarak değerlidir. Ancak bu araç, avukatın yerini alan bir "otomatik dava açma mekanizması" olarak konumlandırıldığında savunma hakkı bakımından yeni riskler oluşturur.
+
+Adalete erişim, vatandaşı hukuki süreçte yalnız bırakmak değil; doğru hukuki desteğe erişimi güçlendirmektir.
+
+## Sonuç: Kolay Dava Açma Vaadi, Kolay Hak Kaybına Dönüşmemeli
+
+Adalet Bakanlığı'nın hukukta dijitalleşme ve yapay zekâ çalışmaları tek başına yanlış değildir. Asıl belirleyici olan; bu sistemlerin hangi sınırlarla, hangi denetim mekanizmasıyla ve insan kontrolü altında nasıl işletileceğidir.
+
+Türkiye'de yargıya güven, savunma hakkı, mesleki sürdürülebilirlik ve vatandaşın hak güvenliği aynı anda korunmalıdır. Bu nedenle yapılması gereken; avukatı devreden çıkarmak değil, adli yardım sistemini güçlendirmek, nitelikli hukuki destek mekanizmalarını yaygınlaştırmak ve teknolojiyi yardımcı bir araç olarak konumlandırmaktır.
+
+Aksi halde "kolay dava açma" söylemi, yarın binlerce kişi için "kolay hak kaybı" gerçeğine dönüşebilir.`,
 };

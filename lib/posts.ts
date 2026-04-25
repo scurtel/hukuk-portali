@@ -383,6 +383,37 @@ const postMetas = [
           "Evet. Paylı mülkiyet devam ediyorsa boşanma sonrasında ortaklığın giderilmesi davası açılması mümkündür."
       }
     ]
+  },
+  {
+    id: "post-17",
+    slug: "yapay-zeka-avukatsiz-dava-dilekcesi",
+    title: "Yargıya Güven Tartışılırken Yapay Zekâ ile Avukatsız Dava Açmak Riskli Bir Adım",
+    excerpt:
+      "Adalet Bakanı Akın Gürlek’in yapay zekâ destekli vatandaş platformu açıklaması, hukuk dünyasında avukatsız dava açma, hak kaybı riski ve yargıya güven tartışmalarını yeniden gündeme taşıdı.",
+    type: "haber",
+    categorySlug: "haber",
+    featured: true,
+    publishedAt: "2026-04-25",
+    imageAlt: "Yapay zekâ destekli dava dilekçesi ve hukukta dijital dönüşüm tartışması",
+    seo: {
+      metaTitle: "Yapay Zekâ ile Avukatsız Dava Dilekçesi Tartışması",
+      metaDescription:
+        "Adalet Bakanı Akın Gürlek’in yapay zekâ destekli dava dilekçesi açıklaması, yargıya güven, avukatlık mesleği ve vatandaşın hak kaybı riski açısından tartışma yarattı.",
+      focusKeyword: "yapay zeka avukatsız dava dilekçesi",
+      secondaryKeywords: [
+        "yapay zeka dava dilekçesi",
+        "yapay zeka avukat",
+        "avukatsız dava açma",
+        "adalet bakanlığı yapay zeka",
+        "hukukta yapay zeka",
+        "yargıya güven",
+        "Yapay Zekâ",
+        "Avukatlık",
+        "Dava Dilekçesi",
+        "Adalet Bakanlığı",
+        "Hukukta Dijitalleşme"
+      ]
+    }
   }
 ] as const;
 
@@ -395,7 +426,9 @@ const postImages: Record<string, string> = {
   "kira-uyusmazliklari-2026-ev-sahibi-kiraci":
     "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
   "cekismeli-bosanma-velayet-mal-paylasimi-aile-konutu":
-    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80",
+  "yapay-zeka-avukatsiz-dava-dilekcesi":
+    "/images/covers/yapay-zeka-avukatsiz-dava-dilekcesi.jpg"
 };
 
 export const staticPosts: Post[] = postMetas.map((meta) => ({
