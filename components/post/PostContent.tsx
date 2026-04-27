@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import type { ReactNode } from "react";
+import rehypeRaw from "rehype-raw";
 
 type PostContentProps = {
   content: string;
@@ -54,8 +55,22 @@ function buildToc(content: string): TocItem[] {
   return items;
 }
 
+function normalizeContentForRender(content: string): string {
+  let normalized = content.trim();
+
+  // Prevent duplicate H1 because page header already renders title.
+  normalized = normalized.replace(/^\s*#\s+.+?(?:\r?\n){1,2}/, "");
+  normalized = normalized.replace(/^\s*<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
+
+  // Some generated items may include escaped newline sequences.
+  normalized = normalized.replace(/\\n/g, "\n");
+
+  return normalized;
+}
+
 export function PostContent({ content }: PostContentProps) {
-  const toc = buildToc(content);
+  const normalizedContent = normalizeContentForRender(content);
+  const toc = buildToc(normalizedContent);
   const headingIds = new Map<string, number>();
 
   const resolveHeadingId = (title: string): string => {
@@ -84,6 +99,7 @@ export function PostContent({ content }: PostContentProps) {
 
       <div className={toc.length > 1 ? "lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:items-start lg:gap-8" : ""}>
         <ReactMarkdown
+          rehypePlugins={[rehypeRaw]}
           components={{
             h2: ({ children }) => {
               const text = extractText(children);
@@ -118,7 +134,7 @@ export function PostContent({ content }: PostContentProps) {
             strong: ({ children }) => <strong className="font-semibold text-slate-900">{children}</strong>
           }}
         >
-          {content}
+          {normalizedContent}
         </ReactMarkdown>
 
         {toc.length > 1 ? (
