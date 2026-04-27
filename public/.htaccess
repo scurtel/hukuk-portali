@@ -1,0 +1,6 @@
+RedirectMatch 410 ^/showthread\.php$
+RedirectMatch 410 ^/search\.php$
+RedirectMatch 410 ^/ratethread\.php$
+RedirectMatch 410 ^/misc\.php$
+RedirectMatch 410 ^/printthread\.php$
+RedirectMatch 410 ^/archive/index\.php$
