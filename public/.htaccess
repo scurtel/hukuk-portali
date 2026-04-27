@@ -1,6 +1,6 @@
-RedirectMatch 410 ^/showthread\.php$
-RedirectMatch 410 ^/search\.php$
-RedirectMatch 410 ^/ratethread\.php$
-RedirectMatch 410 ^/misc\.php$
-RedirectMatch 410 ^/printthread\.php$
-RedirectMatch 410 ^/archive/index\.php$
+RewriteEngine On
+
+# Legacy forum endpoints have no content replacement.
+# Return 410 (Gone) to speed up deindexing and avoid soft-404 behavior.
+RewriteRule ^(showthread|search|ratethread|misc|printthread)\.php$ - [G,L,NC]
+RewriteRule ^archive/index\.php$ - [G,L,NC]
