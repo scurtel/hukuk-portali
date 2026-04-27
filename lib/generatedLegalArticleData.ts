@@ -8,8 +8,8 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "excerpt": "Adana'da gayrimenkul alım satım süreçleri, özellikle tapu kayıtlarının detaylı incelenmesini gerektiren karmaşık hukuki adımlar içerir. Bu rehber, Adana'da bir ev, arsa, tarla, iş yeri veya ticari taşınmaz alırken tapu kaydında nelere dikkat etmeniz gerektiğini, olası riskleri ve alınması gereken önlemleri kapsamlı bir şekilde ele almaktadır.",
     "type": "rehber",
     "categorySlug": "rehber",
-    "featured": false,
-    "publishedAt": "2026-04-27",
+    "featured": true,
+    "publishedAt": "2026-04-26",
     "seo": {
       "metaTitle": "Adana Gayrimenkul Alırken Tapu Kaydı İncelemesi: Kapsamlı Rehber",
       "metaDescription": "Adana'da ev, arsa, iş yeri alırken tapu kaydında ipotek, haciz, şerh, hisseli tapu gibi risklere karşı kapsamlı bir kontrol listesi. Güvenli gayrimenkul alımı için uzman rehberliği.",
@@ -56,7 +56,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "type": "rehber",
     "categorySlug": "rehber",
     "featured": false,
-    "publishedAt": "2026-04-27",
+    "publishedAt": "2026-04-23",
     "seo": {
       "metaTitle": "Aile Konutu Şerhi Olmadan Ev Satışı: Hukuki Sonuçları ve Çözüm Yolları | hukukportali.com",
       "metaDescription": "Aile konutu şerhi olmadan evin satılması durumunda eşlerin karşılaşabileceği hukuki sorunlar, tapu iptal davası ve diğer çözüm yolları hakkında kapsamlı bir rehber. Eş rızası olmadan yapılan satışlarda haklarınızı öğrenin.",
@@ -100,7 +100,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "type": "analiz",
     "categorySlug": "analiz",
     "featured": false,
-    "publishedAt": "2026-04-27",
+    "publishedAt": "2026-04-22",
     "seo": {
       "metaTitle": "Boşanmadan Önce Ev Satışı Mal Kaçırma Sayılır mı? | Adana Boşanma Avukatı Ceren Sümer Cilli",
       "metaDescription": "Boşanma sürecinde evin satılması mal kaçırma mıdır? Tapu iptal ve tescil davası, mal paylaşımı davası ve aile konutu şerhi ile haklarınızı koruyun. Adana'da boşanmada mal kaçırma davaları hakkında Avukat Ceren Sümer Cilli'den bilgi alın.",
@@ -145,7 +145,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "type": "rehber",
     "categorySlug": "rehber",
     "featured": false,
-    "publishedAt": "2026-04-27",
+    "publishedAt": "2026-04-21",
     "seo": {
       "metaTitle": "Hisseli Tapu Almak Riskli mi? Alıcılar İçin Kapsamlı Hukuki Kontrol Listesi | hukukportali.com",
       "metaDescription": "Hisseli tapu alımı riskli mi? Paydaş uyuşmazlıkları, önalım hakkı, ortaklığın giderilmesi gibi potansiyel riskleri öğrenin. Hisseli tapu alıcıları için Adana gayrimenkul avukatı rehberliğinde kapsamlı hukuki kontrol listesi ve dikkat edilmesi gerekenler.",
@@ -191,7 +191,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "type": "rehber",
     "categorySlug": "rehber",
     "featured": false,
-    "publishedAt": "2026-04-27",
+    "publishedAt": "2026-04-20",
     "seo": {
       "metaTitle": "Miras Kalan Ev Satışı, Ortaklığın Giderilmesi ve Hisseli Tapu Rehberi | Hukukportali.com",
       "metaDescription": "Miras kalan bir evin satışı nasıl yapılır? Mirasçılar arasında anlaşma sağlanamazsa ortaklığın giderilmesi (izale-i şuyu) davası süreci ve hisseli tapu sorunlarına dair kapsamlı hukuki rehber. Adana miras avukatı danışmanlığı.",
@@ -236,7 +236,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "type": "rehber",
     "categorySlug": "rehber",
     "featured": false,
-    "publishedAt": "2026-04-27",
+    "publishedAt": "2026-04-19",
     "seo": {
       "metaTitle": "Ortaklığın Giderilmesi Davasında Ev Açık Artırmaya Gider mi? - Hukuk Rehberi",
       "metaDescription": "Hisseli tapulu eviniz açık artırmaya çıkar mı? Ortaklığın giderilmesi (izale-i şuyu) davasında aynen taksim ve satış yolu, açık artırma süreci, satış memurluğu ve paydaşların ihaleye katılım detayları bu kapsamlı hukuk rehberinde. Adana bölgesinde Avukat Ceren Sümer Cilli'den hukuki destek alın.",
@@ -292,8 +292,8 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "excerpt": "Tapu iptal ve tescil davası, taşınmaz mülkiyetinin hukuka aykırı olarak el değiştirmesi durumunda tapu kaydının düzeltilmesi ve gerçek hak sahibine iadesini amaçlayan kritik bir hukuki süreçtir. Bu dava, sahte vekaletname, muvazaa, ehliyetsizlik, mirastan mal kaçırma veya aile konutu gibi pek çok farklı sebeple gündeme gelebilir. Taşınmaz malların değeri ve hukuki karmaşıklığı göz önüne alındığında, bu tür davalarda doğru adımların atılması büyük önem taşır.",
     "type": "analiz",
     "categorySlug": "analiz",
-    "featured": false,
-    "publishedAt": "2026-04-27",
+    "featured": true,
+    "publishedAt": "2026-04-25",
     "seo": {
       "metaTitle": "Tapu İptal ve Tescil Davası: Muvazaa, Sahte Vekaletname, Miras ve Aile Konutu Durumları | Hukukportali.com",
       "metaDescription": "Tapu iptal ve tescil davasının hangi durumlarda açılabileceğini detaylı bir hukuk rehberiyle öğrenin. Muvazaa, sahte vekaletname, ehliyetsizlik, mirastan mal kaçırma ve aile konutu nedenleriyle tapu iptali süreçlerini uzman bakış açısıyla inceleyin.",
@@ -350,7 +350,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "excerpt": "Türkiye'de gayrimenkul alım satım süreçleri, özellikle 12. Yargı Paketi ile gündeme gelen 30 milyon TL üzeri tapu işlemlerinde avukat bulundurma zorunluluğu ihtimaliyle yeni bir boyut kazanıyor. Bu rehber, planlanan düzenlemenin vatandaşlar için ne anlama geldiğini, alıcı ve satıcıların haklarını nasıl koruyabileceğini ve süreçte nelere dikkat etmeleri gerektiğini açıklıyor.",
     "type": "haber",
     "categorySlug": "haber",
-    "featured": false,
+    "featured": true,
     "publishedAt": "2026-04-27",
     "seo": {
       "metaTitle": "Tapuda Avukat Zorunluluğu: 12. Yargı Paketi ve 30 Milyon TL Üzeri İşlemler İçin Rehber",
@@ -394,8 +394,8 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "excerpt": "Vekaletname ile tapu satışı, pratik bir çözüm sunsa da beraberinde ciddi riskler barındırır. Bu rehber, sahte vekaletname dolandırıcılığından korunma yollarını, alıcı ve satıcının haklarını ve hukuki danışmanlığın önemini detaylıca ele alıyor.",
     "type": "rehber",
     "categorySlug": "rehber",
-    "featured": false,
-    "publishedAt": "2026-04-27",
+    "featured": true,
+    "publishedAt": "2026-04-24",
     "seo": {
       "metaTitle": "Vekaletname ile Tapu Satışı Güvenli mi? Sahte Vekaletname Risklerine Karşı Kapsamlı Rehber",
       "metaDescription": "Vekaletname ile tapu satışında alıcı ve satıcılar için riskleri ve korunma yollarını öğrenin. Sahte vekaletname, dolandırıcılık ve yasal süreçler hakkında uzman rehberliği. Adana'da Avukat Ceren Sümer Cilli'den bilgiler.",
@@ -448,7 +448,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "type": "rehber",
     "categorySlug": "rehber",
     "featured": false,
-    "publishedAt": "2026-04-27",
+    "publishedAt": "2026-04-18",
     "seo": {
       "metaTitle": "Yabancıların Türkiye'de Ev Alımı: Avukat Desteğinin Önemi | Hukukportali.com",
       "metaDescription": "Türkiye'de gayrimenkul edinmek isteyen yabancılar için tapu, sözleşme, ödeme ve vatandaşlık süreçlerinde avukat desteğinin neden kritik olduğunu öğrenin. Avukat Ceren Sümer Cilli'nin uzman bakış açısıyla güvenli alım yapın.",
