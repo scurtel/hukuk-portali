@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CategoryBadge } from "@/components/post/CategoryBadge";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { getPostHref } from "@/lib/post-urls";
+import { truncatePostCardExcerpt } from "@/lib/utils";
 import type { Author } from "@/types/author";
 import type { Post } from "@/types/post";
 
@@ -26,6 +27,7 @@ export function PostCard({ post, author, excerptSingleLine = false }: PostCardPr
     .reduce((sum, char) => sum + char.charCodeAt(0), 0) % unsplashImages.length;
   const cardImage = unsplashImages[imageIndex];
   const displayImage = post.imageUrl && post.imageUrl.length > 0 ? post.imageUrl : cardImage;
+  const excerptPreview = truncatePostCardExcerpt(post.excerpt);
 
   return (
     <article className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-lg transition duration-200 hover:scale-105 hover:shadow-xl">
@@ -50,7 +52,7 @@ export function PostCard({ post, author, excerptSingleLine = false }: PostCardPr
           </Link>
         </h3>
         <p className={`mt-2 text-sm text-slate-600 ${excerptSingleLine ? "truncate" : "leading-relaxed"}`} title={post.excerpt}>
-          {post.excerpt}
+          {excerptPreview}
         </p>
         <div className="mt-4">
           <Link
