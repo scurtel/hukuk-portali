@@ -1,5 +1,6 @@
 import type { Post } from "@/types/post";
 import { generatedPostContents } from "@/lib/generatedPostContents";
+import { generatedLegalArticleContents, generatedLegalArticleMetas } from "@/lib/generatedLegalArticleData";
 import { PRIMARY_AUTHOR_SLUG } from "@/lib/seo/cerenLawyer";
 import type { Author } from "@/types/author";
 import type { Category } from "@/types/category";
@@ -417,6 +418,11 @@ const postMetas = [
   }
 ] as const;
 
+const allPostMetas: ReadonlyArray<Omit<Post, "authorSlug" | "content" | "imageUrl">> = [
+  ...postMetas,
+  ...generatedLegalArticleMetas
+];
+
 const postImages: Record<string, string> = {
   "trump-bilim-insanlari-inceleme": "https://images.unsplash.com/photo-1581093588401-fbb62a02f120",
   "tapuda-yeni-donem-guvenli-odeme-dijital-yetkilendirme":
@@ -431,10 +437,13 @@ const postImages: Record<string, string> = {
     "/images/covers/yapay-zeka-avukatsiz-dava-dilekcesi.jpg"
 };
 
-export const staticPosts: Post[] = postMetas.map((meta) => ({
+export const staticPosts: Post[] = allPostMetas.map((meta) => ({
   ...meta,
   authorSlug: PRIMARY_AUTHOR_SLUG,
-  content: generatedPostContents[meta.slug] ?? "Bu içerik yakında eklenecek.",
+  content:
+    generatedLegalArticleContents[meta.slug] ??
+    generatedPostContents[meta.slug] ??
+    "Bu içerik yakında eklenecek.",
   imageUrl: postImages[meta.slug] ?? null
 }));
 
