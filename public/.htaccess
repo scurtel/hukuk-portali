@@ -4,3 +4,12 @@ RewriteEngine On
 # Return 410 (Gone) to speed up deindexing and avoid soft-404 behavior.
 RewriteRule ^(showthread|search|ratethread|misc|printthread)\.php$ - [G,L,NC]
 RewriteRule ^archive/index\.php$ - [G,L,NC]
+
+# Common hacked/spam endpoints with no legitimate counterpart on this site.
+# Keep rules strict to avoid impacting real content URLs.
+RewriteRule ^(wp-admin|wp-content|wp-includes)(/|$) - [G,L,NC]
+RewriteRule ^(xmlrpc|wp-login|wp-signup|wp-config|wp-cron|adminer|phpmyadmin)\.php$ - [G,L,NC]
+RewriteRule ^(index|home|default|main)\.php$ - [G,L,NC]
+RewriteRule ^(shell|cmd|upload|uploader|filemanager|backdoor|mailer|wso)\.php$ - [G,L,NC]
+RewriteRule ^vendor/phpunit/phpunit/src/Util/PHP/eval-stdin\.php$ - [G,L,NC]
+RewriteRule ^\.env$ - [G,L]
