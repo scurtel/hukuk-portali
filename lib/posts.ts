@@ -472,6 +472,52 @@ export function getPostsByAuthor(authorSlug: string): Post[] {
   return sortByDateDesc(staticPosts.filter((post) => post.authorSlug === authorSlug));
 }
 
+function tokenize(value: string): string[] {
+  return value
+    .toLocaleLowerCase("tr")
+    .replace(/[^\p{L}\p{N}\s]/gu, " ")
+    .split(/\s+/)
+    .filter((token) => token.length > 2);
+}
+
+function getKeywordSet(post: Post): Set<string> {
+  const seoKeywords = [post.seo?.focusKeyword, ...(post.seo?.secondaryKeywords ?? [])]
+    .filter(Boolean)
+    .join(" ");
+  const bag = `${post.title} ${post.excerpt} ${seoKeywords}`;
+  return new Set(tokenize(bag));
+}
+
+export function getRelatedPosts(currentPost: Post, take = 3): Post[] {
+  const pool = staticPosts.filter((post) => post.slug !== currentPost.slug);
+  const currentKeywords = getKeywordSet(currentPost);
+  const currentType = currentPost.type;
+  const currentCategory = currentPost.categorySlug;
+
+  const scored = pool.map((candidate) => {
+    const candidateKeywords = getKeywordSet(candidate);
+    let overlap = 0;
+    for (const token of candidateKeywords) {
+      if (currentKeywords.has(token)) overlap += 1;
+    }
+
+    const sameType = candidate.type === currentType ? 1 : 0;
+    const sameCategory = candidate.categorySlug === currentCategory ? 1 : 0;
+    const freshness = new Date(candidate.publishedAt).getTime();
+
+    return {
+      post: candidate,
+      score: overlap * 3 + sameType * 4 + sameCategory * 2,
+      freshness
+    };
+  });
+
+  return scored
+    .sort((a, b) => b.score - a.score || b.freshness - a.freshness)
+    .slice(0, take)
+    .map((item) => item.post);
+}
+
 /** Sitemap ve toplu işlemler için */
 export function getAllPosts(): Post[] {
   return sortByDateDesc(staticPosts);

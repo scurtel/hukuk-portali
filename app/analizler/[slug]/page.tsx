@@ -101,7 +101,7 @@ export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) 
       <div className="mt-8">
         <AuthorBox author={author} />
       </div>
-      <RelatedPosts currentSlug={post.slug} categorySlug={post.categorySlug} />
+      <RelatedPosts currentPost={post} />
     </Container>
   );
 }

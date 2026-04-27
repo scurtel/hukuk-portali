@@ -1,15 +1,14 @@
+import type { Post } from "@/types/post";
 import { PostList } from "@/components/post/PostList";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { getPostsByCategory } from "@/lib/posts";
+import { getRelatedPosts } from "@/lib/posts";
 
 type RelatedPostsProps = {
-  currentSlug: string;
-  categorySlug: string;
+  currentPost: Post;
 };
 
-export function RelatedPosts({ currentSlug, categorySlug }: RelatedPostsProps) {
-  const allInCat = getPostsByCategory(categorySlug);
-  const related = allInCat.filter((post) => post.slug !== currentSlug).slice(0, 3);
+export function RelatedPosts({ currentPost }: RelatedPostsProps) {
+  const related = getRelatedPosts(currentPost, 3);
 
   if (!related.length) {
     return null;

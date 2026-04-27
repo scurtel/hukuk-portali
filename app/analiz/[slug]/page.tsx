@@ -40,7 +40,7 @@ export default async function AnalysisDetailPage({ params }: AnalysisDetailPageP
       <div className="mt-8">
         <AuthorBox author={author} />
       </div>
-      <RelatedPosts currentSlug={post.slug} categorySlug={post.categorySlug} />
+      <RelatedPosts currentPost={post} />
     </Container>
   );
 }
