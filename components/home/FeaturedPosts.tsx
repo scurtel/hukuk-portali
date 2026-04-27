@@ -10,7 +10,7 @@ export function FeaturedPosts() {
     <section className="py-12 sm:py-16">
       <Container>
         <SectionTitle>Öne Çıkan İçerikler</SectionTitle>
-        <PostList posts={featuredPosts} />
+        <PostList posts={featuredPosts} excerptSingleLine />
       </Container>
     </section>
   );

@@ -9,9 +9,10 @@ import type { Post } from "@/types/post";
 type PostCardProps = {
   post: Post;
   author?: Author;
+  excerptSingleLine?: boolean;
 };
 
-export function PostCard({ post, author }: PostCardProps) {
+export function PostCard({ post, author, excerptSingleLine = false }: PostCardProps) {
   const href = getPostHref(post);
   const unsplashImages = [
     "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1000&q=80",
@@ -48,7 +49,9 @@ export function PostCard({ post, author }: PostCardProps) {
             {post.title}
           </Link>
         </h3>
-        <p className="mt-2 text-sm leading-relaxed text-slate-600">{post.excerpt}</p>
+        <p className={`mt-2 text-sm text-slate-600 ${excerptSingleLine ? "truncate" : "leading-relaxed"}`} title={post.excerpt}>
+          {post.excerpt}
+        </p>
         <div className="mt-4">
           <Link
             href={href}
