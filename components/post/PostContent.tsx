@@ -68,11 +68,11 @@ export function PostContent({ content }: PostContentProps) {
   return (
     <div className="prose-none max-w-none">
       {toc.length > 1 ? (
-        <nav className="mb-8 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:p-5" aria-label="İçindekiler">
+        <nav className="mb-8 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:p-5 lg:hidden" aria-label="İçindekiler">
           <p className="mb-3 text-sm font-semibold text-slate-900 sm:text-base">İçindekiler</p>
           <ul className="space-y-2 text-sm text-slate-700">
             {toc.map((item) => (
-              <li key={item.id} className={item.level === 3 ? "ml-4" : ""}>
+              <li key={`mobile-${item.id}`} className={item.level === 3 ? "ml-4" : ""}>
                 <a href={`#${item.id}`} className="hover:text-slate-900 hover:underline">
                   {item.text}
                 </a>
@@ -81,43 +81,63 @@ export function PostContent({ content }: PostContentProps) {
           </ul>
         </nav>
       ) : null}
-      <ReactMarkdown
-        components={{
-          h2: ({ children }) => {
-            const text = extractText(children);
-            const id = resolveHeadingId(text);
-            return (
-              <h2 id={id} className="mb-4 mt-10 scroll-mt-24 border-b border-slate-100 pb-2 text-xl font-bold text-slate-900 sm:text-2xl">
-                <a href={`#${id}`} className="hover:underline">
-                  {children}
-                </a>
-              </h2>
-            );
-          },
-          h3: ({ children }) => {
-            const text = extractText(children);
-            const id = resolveHeadingId(text);
-            return (
-              <h3 id={id} className="mb-3 mt-8 scroll-mt-24 text-lg font-semibold text-slate-800 sm:text-xl">
-                <a href={`#${id}`} className="hover:underline">
-                  {children}
-                </a>
-              </h3>
-            );
-          },
-          p: ({ children }) => <p className="mb-6 text-sm leading-relaxed text-slate-600 sm:text-base">{children}</p>,
-          blockquote: ({ children }) => (
-            <blockquote className="my-8 rounded-xl border border-slate-200 bg-slate-50 p-5 text-slate-800 shadow-sm">
-              <div className="text-sm leading-relaxed sm:text-base">{children}</div>
-            </blockquote>
-          ),
-          ul: ({ children }) => <ul className="mb-6 list-disc space-y-2 pl-6 text-sm text-slate-700 sm:text-base">{children}</ul>,
-          li: ({ children }) => <li className="marker:text-slate-700">{children}</li>,
-          strong: ({ children }) => <strong className="font-semibold text-slate-900">{children}</strong>
-        }}
-      >
-        {content}
-      </ReactMarkdown>
+
+      <div className={toc.length > 1 ? "lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:items-start lg:gap-8" : ""}>
+        <ReactMarkdown
+          components={{
+            h2: ({ children }) => {
+              const text = extractText(children);
+              const id = resolveHeadingId(text);
+              return (
+                <h2 id={id} className="mb-4 mt-10 scroll-mt-24 border-b border-slate-100 pb-2 text-xl font-bold text-slate-900 sm:text-2xl">
+                  <a href={`#${id}`} className="hover:underline">
+                    {children}
+                  </a>
+                </h2>
+              );
+            },
+            h3: ({ children }) => {
+              const text = extractText(children);
+              const id = resolveHeadingId(text);
+              return (
+                <h3 id={id} className="mb-3 mt-8 scroll-mt-24 text-lg font-semibold text-slate-800 sm:text-xl">
+                  <a href={`#${id}`} className="hover:underline">
+                    {children}
+                  </a>
+                </h3>
+              );
+            },
+            p: ({ children }) => <p className="mb-6 text-sm leading-relaxed text-slate-600 sm:text-base">{children}</p>,
+            blockquote: ({ children }) => (
+              <blockquote className="my-8 rounded-xl border border-slate-200 bg-slate-50 p-5 text-slate-800 shadow-sm">
+                <div className="text-sm leading-relaxed sm:text-base">{children}</div>
+              </blockquote>
+            ),
+            ul: ({ children }) => <ul className="mb-6 list-disc space-y-2 pl-6 text-sm text-slate-700 sm:text-base">{children}</ul>,
+            li: ({ children }) => <li className="marker:text-slate-700">{children}</li>,
+            strong: ({ children }) => <strong className="font-semibold text-slate-900">{children}</strong>
+          }}
+        >
+          {content}
+        </ReactMarkdown>
+
+        {toc.length > 1 ? (
+          <aside className="sticky top-24 hidden lg:block">
+            <nav className="rounded-xl border border-slate-200 bg-slate-50 p-4" aria-label="İçindekiler (Masaüstü)">
+              <p className="mb-3 text-sm font-semibold text-slate-900">İçindekiler</p>
+              <ul className="space-y-2 text-sm text-slate-700">
+                {toc.map((item) => (
+                  <li key={`desktop-${item.id}`} className={item.level === 3 ? "ml-3" : ""}>
+                    <a href={`#${item.id}`} className="hover:text-slate-900 hover:underline">
+                      {item.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </aside>
+        ) : null}
+      </div>
     </div>
   );
 }
