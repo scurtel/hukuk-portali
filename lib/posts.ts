@@ -435,11 +435,16 @@ const postImages: Record<string, string> = {
     "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80",
   "yapay-zeka-avukatsiz-dava-dilekcesi":
     "/images/covers/yapay-zeka-avukatsiz-dava-dilekcesi.jpg",
-  "bosanmada-mal-paylasimi-2026-rehber": "/images/covers/bosanmada-mal-paylasimi-2026-rehber.jpg",
-  "velayet-davasinda-hakim-kriterleri": "/images/covers/velayet-davasinda-hakim-kriterleri.jpg",
-  "tapu-iptal-tescil-davasi-sik-sebepler": "/images/covers/tapu-iptal-tescil-davasi-sik-sebepler.jpg",
-  "bosanma-davasi-surerken-olum": "/images/covers/bosanma-davasi-surerken-olum.jpg",
-  "whatsapp-mesaji-mahkemede-delil": "/images/covers/whatsapp-mesaji-mahkemede-delil.jpg"
+  "bosanmada-mal-paylasimi-2026-rehber":
+    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=85",
+  "velayet-davasinda-hakim-kriterleri":
+    "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1200&q=85",
+  "tapu-iptal-tescil-davasi-sik-sebepler":
+    "https://images.unsplash.com/photo-1436450412740-6b988f486c6b?auto=format&fit=crop&w=1200&q=85",
+  "bosanma-davasi-surerken-olum":
+    "https://images.unsplash.com/photo-1505664063603-28e48ca204eb?auto=format&fit=crop&w=1200&q=85",
+  "whatsapp-mesaji-mahkemede-delil":
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
 };
 
 export const staticPosts: Post[] = allPostMetas.map((meta) => ({
