@@ -1,6 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import type { ReactNode } from "react";
 import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
 
 type PostContentProps = {
   content: string;
@@ -82,6 +83,7 @@ export function PostContent({ content }: PostContentProps) {
 
   const markdown = (
     <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
       rehypePlugins={[rehypeRaw]}
       components={{
         h2: ({ children }) => {
@@ -113,8 +115,23 @@ export function PostContent({ content }: PostContentProps) {
           </blockquote>
         ),
         ul: ({ children }) => <ul className="mb-6 list-disc space-y-2 pl-6 text-sm text-slate-700 sm:text-base">{children}</ul>,
+        ol: ({ children }) => <ol className="mb-6 list-decimal space-y-2 pl-6 text-sm text-slate-700 sm:text-base">{children}</ol>,
         li: ({ children }) => <li className="marker:text-slate-700">{children}</li>,
-        strong: ({ children }) => <strong className="font-semibold text-slate-900">{children}</strong>
+        strong: ({ children }) => <strong className="font-semibold text-slate-900">{children}</strong>,
+        table: ({ children }) => (
+          <div className="mb-8 w-full overflow-x-auto rounded-lg border border-slate-200 shadow-sm">
+            <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">{children}</table>
+          </div>
+        ),
+        thead: ({ children }) => <thead className="bg-slate-50">{children}</thead>,
+        tbody: ({ children }) => <tbody className="divide-y divide-slate-100 bg-white">{children}</tbody>,
+        tr: ({ children }) => <tr>{children}</tr>,
+        th: ({ children }) => (
+          <th className="whitespace-nowrap px-4 py-3 text-xs font-semibold uppercase tracking-wide text-slate-800 sm:px-5 sm:text-sm">
+            {children}
+          </th>
+        ),
+        td: ({ children }) => <td className="px-4 py-3 align-top sm:px-5">{children}</td>
       }}
     >
       {normalizedContent}
