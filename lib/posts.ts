@@ -435,11 +435,11 @@ const postImages: Record<string, string> = {
     "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80",
   "yapay-zeka-avukatsiz-dava-dilekcesi":
     "/images/covers/yapay-zeka-avukatsiz-dava-dilekcesi.jpg",
-  "bosanmada-mal-paylasimi-2026-rehber": "/images/placeholder-post.jpg",
-  "velayet-davasinda-hakim-kriterleri": "/images/placeholder-post.jpg",
-  "tapu-iptal-tescil-davasi-sik-sebepler": "/images/placeholder-post.jpg",
-  "bosanma-davasi-surerken-olum": "/images/placeholder-post.jpg",
-  "whatsapp-mesaji-mahkemede-delil": "/images/placeholder-post.jpg"
+  "bosanmada-mal-paylasimi-2026-rehber": "/images/covers/bosanmada-mal-paylasimi-2026-rehber.jpg",
+  "velayet-davasinda-hakim-kriterleri": "/images/covers/velayet-davasinda-hakim-kriterleri.jpg",
+  "tapu-iptal-tescil-davasi-sik-sebepler": "/images/covers/tapu-iptal-tescil-davasi-sik-sebepler.jpg",
+  "bosanma-davasi-surerken-olum": "/images/covers/bosanma-davasi-surerken-olum.jpg",
+  "whatsapp-mesaji-mahkemede-delil": "/images/covers/whatsapp-mesaji-mahkemede-delil.jpg"
 };
 
 export const staticPosts: Post[] = allPostMetas.map((meta) => ({
