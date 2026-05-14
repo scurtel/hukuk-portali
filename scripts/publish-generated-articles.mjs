@@ -7,8 +7,24 @@ const OUTPUT_FILE = resolve("lib/generatedLegalArticleData.ts");
 const TYPE_BY_SLUG = {
   "tapuda-avukat-zorunlulugu-gelirse-vatandas-ne-yapacak": "haber",
   "bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi": "analiz",
-  "tapu-iptal-ve-tescil-davasi-hangi-durumlarda-acilir": "analiz"
+  "tapu-iptal-ve-tescil-davasi-hangi-durumlarda-acilir": "analiz",
+  "bosanma-davasi-surerken-olum": "analiz",
+  "whatsapp-mesaji-mahkemede-delil": "analiz",
+  "bosanmada-mal-paylasimi-2026-rehber": "rehber",
+  "velayet-davasinda-hakim-kriterleri": "rehber",
+  "tapu-iptal-tescil-davasi-sik-sebepler": "rehber"
 };
+
+/** Anasayfa öne çıkan + güncel tarih (placeholder kapak posts.ts postImages ile) */
+const PROMOTED_LEGAL_SLUGS = new Set([
+  "bosanmada-mal-paylasimi-2026-rehber",
+  "velayet-davasinda-hakim-kriterleri",
+  "tapu-iptal-tescil-davasi-sik-sebepler",
+  "bosanma-davasi-surerken-olum",
+  "whatsapp-mesaji-mahkemede-delil"
+]);
+
+const PROMOTED_PUBLISH_DATE = "2026-05-14";
 
 function getPostType(slug) {
   return TYPE_BY_SLUG[slug] || "rehber";
@@ -18,6 +34,20 @@ function getCategorySlug(type) {
   if (type === "haber") return "haber";
   if (type === "analiz") return "analiz";
   return "rehber";
+}
+
+function isLegalArticleJson(data) {
+  return (
+    data &&
+    typeof data === "object" &&
+    !Array.isArray(data) &&
+    typeof data.slug === "string" &&
+    data.slug.length > 0 &&
+    typeof data.title === "string" &&
+    typeof data.content === "string" &&
+    typeof data.metaTitle === "string" &&
+    typeof data.metaDescription === "string"
+  );
 }
 
 function buildMeta(article, index) {
@@ -30,6 +60,18 @@ function buildMeta(article, index) {
       }))
     : [];
 
+  const publishedAt =
+    typeof article.publishedAt === "string"
+      ? article.publishedAt
+      : PROMOTED_LEGAL_SLUGS.has(article.slug)
+        ? PROMOTED_PUBLISH_DATE
+        : "2026-04-27";
+  const updatedAt = typeof article.updatedAt === "string" ? article.updatedAt : publishedAt;
+
+  const imageAlt =
+    (typeof article.featuredImageSuggestion === "string" && article.featuredImageSuggestion.trim()) ||
+    `${article.title} — kapak görseli`;
+
   return {
     id: `post-${200 + index}`,
     slug: article.slug,
@@ -37,12 +79,14 @@ function buildMeta(article, index) {
     excerpt: article.excerpt,
     type,
     categorySlug: getCategorySlug(type),
-    featured: false,
-    publishedAt: "2026-04-27",
+    featured: PROMOTED_LEGAL_SLUGS.has(article.slug),
+    publishedAt,
+    updatedAt,
+    imageAlt,
     seo: {
       metaTitle: article.metaTitle,
       metaDescription: article.metaDescription,
-      focusKeyword: keywords[0] || "",
+      focusKeyword: (typeof article.focusKeyword === "string" && article.focusKeyword) || keywords[0] || "",
       secondaryKeywords: keywords.slice(1)
     },
     faq
@@ -51,17 +95,30 @@ function buildMeta(article, index) {
 
 function main() {
   const files = readdirSync(GENERATED_DIR)
-    .filter((name) => name.endsWith(".json") && name !== "generation-report.json")
+    .filter((name) => name.endsWith(".json"))
+    .filter((name) => !name.startsWith("generation-report"))
     .sort();
 
   if (files.length === 0) {
     throw new Error("generated-articles içinde yayınlanacak JSON bulunamadı.");
   }
 
-  const articles = files.map((file) => {
+  const articles = [];
+  for (const file of files) {
     const raw = readFileSync(resolve(GENERATED_DIR, file), "utf8");
-    return JSON.parse(raw);
-  });
+    const data = JSON.parse(raw);
+    if (!isLegalArticleJson(data)) {
+      console.warn(`Atlandı (makale JSON değil): ${file}`);
+      continue;
+    }
+    articles.push(data);
+  }
+
+  articles.sort((a, b) => a.slug.localeCompare(b.slug, "tr"));
+
+  if (articles.length === 0) {
+    throw new Error("generated-articles içinde geçerli makale JSON bulunamadı (generation-report dışı).");
+  }
 
   const metas = articles.map((article, index) => buildMeta(article, index));
   const contents = Object.fromEntries(articles.map((article) => [article.slug, article.content]));

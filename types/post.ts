@@ -10,6 +10,10 @@ export type Post = {
   categorySlug: string;
   authorSlug: string;
   publishedAt: string;
+  /** İçerik güncellendiyse gerçek güncelleme tarihi (ISO) */
+  updatedAt?: string;
+  /** false ise listelerde ve sitemap'te gizlenir */
+  isPublic?: boolean;
   featured?: boolean;
   /** Kapak görseli yolu: /images/covers/... */
   imageUrl?: string | null;

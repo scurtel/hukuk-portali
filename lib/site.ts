@@ -5,6 +5,12 @@ export const siteConfig = {
     "Türkçe hukuk haberleri, rehberler ve analizler sunan profesyonel içerik portalı."
 };
 
+export function getSiteUrl(): string {
+  const envUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  const configuredUrl = envUrl && envUrl.trim().length > 0 ? envUrl : siteConfig.url;
+  return configuredUrl.replace(/\/$/, "");
+}
+
 export const navItems = [
   { label: "Ana Sayfa", href: "/" },
   { label: "Haberler", href: "/kategori/haber" },

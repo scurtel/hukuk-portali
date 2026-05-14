@@ -1,28 +1,19 @@
 import type { MetadataRoute } from "next";
 
-import { siteConfig } from "@/lib/site";
+import { getSiteUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
 
-function getBaseUrl() {
-  const envUrl = process.env.NEXT_PUBLIC_SITE_URL;
-  const configuredUrl = envUrl && envUrl.trim().length > 0 ? envUrl : siteConfig.url;
-
-  return configuredUrl.replace(/\/$/, "");
-}
-
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = getBaseUrl();
+  const baseUrl = getSiteUrl();
 
   return {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
-        disallow: ["/admin"]
+        allow: "/"
       }
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
-    host: baseUrl
+    sitemap: `${baseUrl}/sitemap.xml`
   };
 }

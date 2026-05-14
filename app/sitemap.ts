@@ -4,19 +4,12 @@ import { getAllAuthors } from "@/lib/authors";
 import { getAllCategories } from "@/lib/categories";
 import { getAllPosts } from "@/lib/posts";
 import { getPostHref } from "@/lib/post-urls";
-import { siteConfig } from "@/lib/site";
+import { getSiteUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
 
-function getBaseUrl() {
-  const envUrl = process.env.NEXT_PUBLIC_SITE_URL;
-  const configuredUrl = envUrl && envUrl.trim().length > 0 ? envUrl : siteConfig.url;
-
-  return configuredUrl.replace(/\/$/, "");
-}
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = getBaseUrl();
+  const baseUrl = getSiteUrl();
   const now = new Date();
 
   const posts = getAllPosts();
@@ -64,12 +57,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7
   }));
 
-  const postRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${baseUrl}${getPostHref(post)}`,
-    lastModified: new Date(post.publishedAt),
-    changeFrequency: "monthly",
-    priority: 0.9
-  }));
+  const postRoutes: MetadataRoute.Sitemap = posts.map((post) => {
+    const lastModifiedSource = post.updatedAt ?? post.publishedAt;
+
+    return {
+      url: `${baseUrl}${getPostHref(post)}`,
+      lastModified: new Date(lastModifiedSource),
+      changeFrequency: "monthly",
+      priority: 0.9
+    };
+  });
 
   return [...staticRoutes, ...categoryRoutes, ...authorRoutes, ...postRoutes];
 }

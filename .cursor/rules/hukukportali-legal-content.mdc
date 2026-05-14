@@ -1,0 +1,25 @@
+---
+description: Hukuk Portalı Gemini ile hukuk içeriği üretimi ve yayına alma
+alwaysApply: true
+---
+
+# Hukuk Portalı — hukuk içeriği ve Gemini
+
+## Varsayılan üretim paketi (Avukat Ceren Sümer Cilli / hukukportali.com)
+
+Yeni Türkçe hukuk makaleleri (SEO + bilgilendirme, uydurma karar yasağı, 900–1400 kelime, sabit CTA) **elle sohbette uzun metin yazmak yerine** şu pipeline ile üretilir:
+
+1. Proje kökünde `.env` içinde `GEMINI_API_KEY` (veya `GOOGLE_GEMINI_API_KEY` / `GOOGLE_GENERATIVE_AI_API_KEY`) ve isteğe bağlı `GEMINI_MODEL` tanımlı olsun.
+2. Üretim: `npm run content:gemini:ceren-5` — çıktı `generated-articles/<slug>.json` ve `.md`.
+3. Siteye gömme (Next `lib/generatedLegalArticleData.ts`): `npm run content:legal:publish`
+4. Tek seferde: `npm run content:legal:sync` (üret + yayın). Mevcut JSON’ların üzerine yazarak yeniden üretmek: `npm run content:legal:sync:force`
+
+Script: `scripts/generate-gemini-ceren-5.mjs` (iki aşama: önce meta+SSS JSON, sonra gövde Markdown — büyük tek JSON hatalarını azaltır). Eski / geniş taslak listesi: `scripts/generate-gemini-drafts.mjs` (farklı kelime aralığı ve konu seti).
+
+## Hukuki içerik kuralları (tüm kanallar)
+
+- Uydurma Yargıtay / AYM kararı, sahte tarih veya doğrulanmamış “kesin yürürlük” iddiası kullanma.
+- Avukatlık reklamı sınırı: “en iyi avukat”, “garanti / kesin kazanılır” vb. yok.
+- Somut dosya tavsiyesi her zaman “genel bilgilendirme / somut olay değişir” çerçevesinde.
+
+Yayınlayıcı: `scripts/publish-generated-articles.mjs` — yalnızca geçerli makale JSON’larını okur; `generation-report*.json` dosyalarını dışlar.

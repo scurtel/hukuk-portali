@@ -434,7 +434,12 @@ const postImages: Record<string, string> = {
   "cekismeli-bosanma-velayet-mal-paylasimi-aile-konutu":
     "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80",
   "yapay-zeka-avukatsiz-dava-dilekcesi":
-    "/images/covers/yapay-zeka-avukatsiz-dava-dilekcesi.jpg"
+    "/images/covers/yapay-zeka-avukatsiz-dava-dilekcesi.jpg",
+  "bosanmada-mal-paylasimi-2026-rehber": "/images/placeholder-post.jpg",
+  "velayet-davasinda-hakim-kriterleri": "/images/placeholder-post.jpg",
+  "tapu-iptal-tescil-davasi-sik-sebepler": "/images/placeholder-post.jpg",
+  "bosanma-davasi-surerken-olum": "/images/placeholder-post.jpg",
+  "whatsapp-mesaji-mahkemede-delil": "/images/placeholder-post.jpg"
 };
 
 export const staticPosts: Post[] = allPostMetas.map((meta) => ({
@@ -451,25 +456,29 @@ function sortByDateDesc(posts: Post[]): Post[] {
   return [...posts].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 }
 
+function isPublicPost(post: Post): boolean {
+  return post.isPublic !== false;
+}
+
 export function getPostBySlug(slug: string, type?: Post["type"]): Post | undefined {
   return staticPosts.find((post) => post.slug === slug && (!type || post.type === type));
 }
 
 export function getPostsByType(type: Post["type"], take?: number): Post[] {
-  const posts = sortByDateDesc(staticPosts.filter((post) => post.type === type));
+  const posts = sortByDateDesc(staticPosts.filter((post) => post.type === type && isPublicPost(post)));
   return typeof take === "number" ? posts.slice(0, take) : posts;
 }
 
 export function getFeaturedPosts(): Post[] {
-  return sortByDateDesc(staticPosts.filter((post) => post.featured));
+  return sortByDateDesc(staticPosts.filter((post) => post.featured && isPublicPost(post)));
 }
 
 export function getPostsByCategory(categorySlug: string): Post[] {
-  return sortByDateDesc(staticPosts.filter((post) => post.categorySlug === categorySlug));
+  return sortByDateDesc(staticPosts.filter((post) => post.categorySlug === categorySlug && isPublicPost(post)));
 }
 
 export function getPostsByAuthor(authorSlug: string): Post[] {
-  return sortByDateDesc(staticPosts.filter((post) => post.authorSlug === authorSlug));
+  return sortByDateDesc(staticPosts.filter((post) => post.authorSlug === authorSlug && isPublicPost(post)));
 }
 
 function tokenize(value: string): string[] {
@@ -489,7 +498,7 @@ function getKeywordSet(post: Post): Set<string> {
 }
 
 export function getRelatedPosts(currentPost: Post, take = 3): Post[] {
-  const pool = staticPosts.filter((post) => post.slug !== currentPost.slug);
+  const pool = staticPosts.filter((post) => post.slug !== currentPost.slug && isPublicPost(post));
   const currentKeywords = getKeywordSet(currentPost);
   const currentType = currentPost.type;
   const currentCategory = currentPost.categorySlug;
@@ -520,5 +529,5 @@ export function getRelatedPosts(currentPost: Post, take = 3): Post[] {
 
 /** Sitemap ve toplu işlemler için */
 export function getAllPosts(): Post[] {
-  return sortByDateDesc(staticPosts);
+  return sortByDateDesc(staticPosts.filter(isPublicPost));
 }

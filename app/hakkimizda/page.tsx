@@ -7,9 +7,9 @@ import {
   CEREN_ABOUT_FAQ,
   CEREN_OFFICIAL_SITE
 } from "@/lib/seo/cerenLawyer";
-import { siteConfig } from "@/lib/site";
+import { getSiteUrl, siteConfig } from "@/lib/site";
 
-const pageUrl = `${siteConfig.url}/hakkimizda`;
+const pageUrl = `${getSiteUrl()}/hakkimizda`;
 
 export const metadata: Metadata = {
   title: "Hakkımızda | Boşanma Avukatı, Miras ve Gayrimenkul — Avukat Ceren Sümer Cilli",
