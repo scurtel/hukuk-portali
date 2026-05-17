@@ -1,6 +1,5 @@
 import type { Post } from "@/types/post";
 import { generatedPostContents } from "@/lib/generatedPostContents";
-import { aiLawyerPillarContents } from "@/lib/generatedAiLawyerPillarContents";
 import { generatedLegalArticleContents, generatedLegalArticleMetas } from "@/lib/generatedLegalArticleData";
 import { PRIMARY_AUTHOR_SLUG } from "@/lib/seo/cerenLawyer";
 import type { Author } from "@/types/author";
@@ -416,103 +415,6 @@ const postMetas = [
         "Hukukta Dijitalleşme"
       ]
     }
-  },
-  {
-    id: "post-18",
-    slug: "avukatlar-icin-yapay-zeka-hukuk-rehberi",
-    title: "Avukatlar İçin Yapay Zekâ: Hukuki Çerçeve, Riskler ve Uygulama Rehberi",
-    excerpt:
-      "LegalTech döneminde yapay zekâ araçlarını ofiste güvenle kullanmak: mesleki özen, vekâlet görevi, kişisel veri ve dilekçe süreçlerinde genel hukuki çerçeve ve pillar okumalar.",
-    type: "rehber",
-    categorySlug: "rehber",
-    featured: true,
-    publishedAt: "2026-05-15",
-    seo: {
-      metaTitle: "Avukatlar İçin Yapay Zekâ Rehberi | Hukuk Portalı",
-      metaDescription:
-        "Avukatlıkta yapay zekâ kullanımı: riskler, ofis politikası, meslekî sırrın korunması ve dilekçe süreçleri. İki pillar makaleyle desteklenen genel hukuki bilgilendirme.",
-      focusKeyword: "avukatlar için yapay zeka",
-      secondaryKeywords: [
-        "legaltech avukat",
-        "yapay zeka dilekçe",
-        "mesleki sır yapay zeka",
-        "hukukta yapay zeka",
-        "avukatlık meslek etiği yapay zeka"
-      ]
-    },
-    faq: [
-      {
-        question: "Yapay zekâ çıktısı doğrudan mahkemeye sunulabilir mi?",
-        answer:
-          "Taslak olarak değerlendirilebilir; ancak içerik, delil ve usul açısından avukatın mesleki denetiminden geçmeden sunulmamalıdır."
-      },
-      {
-        question: "Müvekkil bilgisi üçüncü taraf araca aktarılabilir mi?",
-        answer:
-          "Her olayda ayrıca değerlendirilmelidir. Veri minimizasyonu, amaç ve güvenlik önlemleri birlikte düşünülmelidir."
-      },
-      {
-        question: "Ofiste politika şart mıdır?",
-        answer:
-          "Yazılı bir kullanım politikası; riskleri azaltır, personele net sınır koyar ve ihtilâf halinde izlenebilirlik sağlar."
-      },
-      {
-        question: "Mevzuat atıflarını nasıl doğrulamalıyım?",
-        answer:
-          "Resmî mevzuat veri tabanları ve güncel metin üzerinden teyit edilmelidir; model çıktısı tek başına yeterli değildir."
-      },
-      {
-        question: "Bu rehber somut dosya tavsiyesi midir?",
-        answer:
-          "Hayır; genel bilgilendirme sunar. Somut vekâlet ve uyuşmazlık için ayrı hukuki değerlendirme gerekir."
-      }
-    ]
-  },
-  {
-    id: "post-19",
-    slug: "yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri",
-    title: "Yapay Zekâ Çıktıları: Meslekî Sır, Kişisel Veri ve Baro Perspektifinden Genel Çerçeve",
-    excerpt:
-      "Avukatlık örgütlerinde yapay zekâya veri aktarımı: meslekî sırrın korunması, kişisel veri işleme ilkeleri ve ofis içi uyum için genel hukuki değerlendirme.",
-    type: "analiz",
-    categorySlug: "analiz",
-    featured: true,
-    publishedAt: "2026-05-15",
-    seo: {
-      metaTitle: "Yapay Zekâ, Meslekî Sır ve Kişisel Veri | Analiz",
-      metaDescription:
-        "Yapay zekâ çıktıları ve üçüncü taraf araçlar: meslekî sırrın korunması, veri minimizasyonu ve avukatlık uygulamasında dikkat edilecek başlıklar.",
-      focusKeyword: "yapay zeka mesleki sir",
-      secondaryKeywords: [
-        "avukat kişisel veri",
-        "yapay zeka KVKK",
-        "hukuk bürosu veri güvenliği",
-        "müvekkil gizliliği"
-      ]
-    }
-  },
-  {
-    id: "post-20",
-    slug: "dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi",
-    title: "Dilekçe ve Araştırmada Yapay Zekâ: Avukat Kontrol Listesi",
-    excerpt:
-      "Yapay zekâ ile üretilen dilekçe taslağını dosyaya bağlamak: olay–talep uyumu, delil listesi, usul ve etik için uygulanabilir kontrol listesi.",
-    type: "rehber",
-    categorySlug: "rehber",
-    featured: true,
-    publishedAt: "2026-05-15",
-    seo: {
-      metaTitle: "Dilekçede Yapay Zekâ: Avukat Kontrol Listesi",
-      metaDescription:
-        "Araştırma ve dilekçede yapay zekâ kullanan avukatlar için pratik kontrol listesi: doğrulama, delil ve meslek etiği adımları.",
-      focusKeyword: "yapay zeka dilekçe",
-      secondaryKeywords: [
-        "dilekçe taslağı yapay zeka",
-        "hukuki araştırma yapay zeka",
-        "avukat kontrol listesi",
-        "usul kontrolü"
-      ]
-    }
   }
 ] as const;
 
@@ -557,7 +459,6 @@ export const staticPosts: Post[] = allPostMetas.map((meta) => ({
   content:
     generatedLegalArticleContents[meta.slug] ??
     generatedPostContents[meta.slug] ??
-    aiLawyerPillarContents[meta.slug] ??
     "Bu içerik yakında eklenecek.",
   imageUrl: postImages[meta.slug] ?? null
 }));

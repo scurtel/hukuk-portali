@@ -10,6 +10,9 @@
     "content:crawl": "python automation/crawler.py",
     "content:gemini:ceren-5": "node scripts/generate-gemini-ceren-5.mjs",
     "content:gemini:ceren-5:force": "node scripts/generate-gemini-ceren-5.mjs --force",
+    "content:gemini:ai-lawyer": "node scripts/generate-gemini-ceren-5.mjs --ai-lawyer-only",
+    "content:gemini:ai-lawyer:force": "node scripts/generate-gemini-ceren-5.mjs --ai-lawyer-only --force",
+    "content:legal:ai-lawyer:sync:force": "node scripts/generate-gemini-ceren-5.mjs --ai-lawyer-only --force && node scripts/publish-generated-articles.mjs",
     "content:legal:publish": "node scripts/publish-generated-articles.mjs",
     "content:legal:sync": "node scripts/generate-gemini-ceren-5.mjs && node scripts/publish-generated-articles.mjs",
     "content:legal:sync:force": "node scripts/generate-gemini-ceren-5.mjs --force && node scripts/publish-generated-articles.mjs"

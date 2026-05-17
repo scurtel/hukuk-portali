@@ -6,8 +6,11 @@ export const siteConfig = {
 };
 
 export function getSiteUrl(): string {
-  const envUrl = process.env.NEXT_PUBLIC_SITE_URL;
-  const configuredUrl = envUrl && envUrl.trim().length > 0 ? envUrl : siteConfig.url;
+  const envUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  let configuredUrl = envUrl && envUrl.length > 0 ? envUrl : siteConfig.url;
+  if (!/^https?:\/\//i.test(configuredUrl)) {
+    configuredUrl = `https://${configuredUrl}`;
+  }
   return configuredUrl.replace(/\/$/, "");
 }
 

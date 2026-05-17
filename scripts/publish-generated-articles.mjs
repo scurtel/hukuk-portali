@@ -12,7 +12,10 @@ const TYPE_BY_SLUG = {
   "whatsapp-mesaji-mahkemede-delil": "analiz",
   "bosanmada-mal-paylasimi-2026-rehber": "rehber",
   "velayet-davasinda-hakim-kriterleri": "rehber",
-  "tapu-iptal-tescil-davasi-sik-sebepler": "rehber"
+  "tapu-iptal-tescil-davasi-sik-sebepler": "rehber",
+  "avukatlar-icin-yapay-zeka-hukuk-rehberi": "rehber",
+  "yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri": "analiz",
+  "dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi": "rehber"
 };
 
 /** Anasayfa öne çıkan + güncel tarih (placeholder kapak posts.ts postImages ile) */
@@ -21,10 +24,14 @@ const PROMOTED_LEGAL_SLUGS = new Set([
   "velayet-davasinda-hakim-kriterleri",
   "tapu-iptal-tescil-davasi-sik-sebepler",
   "bosanma-davasi-surerken-olum",
-  "whatsapp-mesaji-mahkemede-delil"
+  "whatsapp-mesaji-mahkemede-delil",
+  "avukatlar-icin-yapay-zeka-hukuk-rehberi",
+  "yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri",
+  "dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi"
 ]);
 
 const PROMOTED_PUBLISH_DATE = "2026-05-14";
+const AI_LAWYER_PUBLISH_DATE = "2026-05-15";
 
 function getPostType(slug) {
   return TYPE_BY_SLUG[slug] || "rehber";
@@ -63,9 +70,13 @@ function buildMeta(article, index) {
   const publishedAt =
     typeof article.publishedAt === "string"
       ? article.publishedAt
-      : PROMOTED_LEGAL_SLUGS.has(article.slug)
-        ? PROMOTED_PUBLISH_DATE
-        : "2026-04-27";
+      : article.slug === "avukatlar-icin-yapay-zeka-hukuk-rehberi" ||
+          article.slug === "yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri" ||
+          article.slug === "dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi"
+        ? AI_LAWYER_PUBLISH_DATE
+        : PROMOTED_LEGAL_SLUGS.has(article.slug)
+          ? PROMOTED_PUBLISH_DATE
+          : "2026-04-27";
   const updatedAt = typeof article.updatedAt === "string" ? article.updatedAt : publishedAt;
 
   const imageAlt =

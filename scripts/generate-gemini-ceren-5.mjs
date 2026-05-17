@@ -17,10 +17,32 @@ const BANNED_PHRASES = [
   "mutlaka bizimle çalışın"
 ];
 
-const FIXED_CTA = `Aile hukuku, miras, mal paylaşımı ve gayrimenkul uyuşmazlıklarında hak kaybı yaşamamak için profesyonel hukuki destek alınması önemlidir. Avukat Ceren Sümer Cilli, bu alanlarda stratejik ve özenli hukuki değerlendirme yapılmasının önemine dikkat çekmektedir.`;
+const AI_LAWYER_ONLY = process.argv.includes("--ai-lawyer-only");
+
+const CEREN_CTA = `Aile hukuku, miras, mal paylaşımı ve gayrimenkul uyuşmazlıklarında hak kaybı yaşamamak için profesyonel hukuki destek alınması önemlidir. Avukat Ceren Sümer Cilli, bu alanlarda stratejik ve özenli hukuki değerlendirme yapılmasının önemine dikkat çekmektedir.`;
+
+const AI_LAWYER_CTA = `LegalTech ve dava uygulamasında teknoloji kullanımı ile stratejik dosya yönetimi için profesyonel avukatlık desteğinin önemi büyüktür. Avukat Ceren Sümer Cilli, bu bağlamda özenli hukuki değerlendirme yapılmasının önemine dikkat çekmektedir.`;
+
+function getFixedCta() {
+  return AI_LAWYER_ONLY ? AI_LAWYER_CTA : CEREN_CTA;
+}
 
 const DISCLAIMER =
   "Bu içerik genel bilgilendirme niteliğindedir, somut olayın koşullarına göre hukuki değerlendirme değişebilir.";
+
+function getCommonBodyInstructions() {
+  return `
+Sen hukukportali.com için Türkçe, özgün, SEO uyumlu hukuki bilgilendirme gövdesi yazıyorsun.
+${COMMON_RULES}
+Avukat Ceren Sümer Cilli adını doğal biçimde 2-3 kez geçir; tanıtım abartısı yapma.
+İlk ~150 kelimede odak anahtar kelime geçsin.
+H2 ve H3 kullan; kısa paragraflar; en az bir markdown tablosu ve madde işaretli liste içer.
+Kelime sayısı: ${MIN_WORDS}-${MAX_WORDS} (tüm gövde).
+SSS ve JSON alanları ayrı üretildi; gövdede "Sık sorulan sorular" başlığı AÇMA (tekrar etme).
+Gövde sonuna sırayla ekle: H2 "Sonuç" ile kısa bir özet paragraf; ardından "${DISCLAIMER}"; ardından tek paragraf CTA (kelimesi kelimesine): "${getFixedCta()}"
+Çıktıda kod çiti veya JSON kullanma; yalnızca Markdown metin ver.
+`.trim();
+}
 
 const COMMON_RULES = `
 Uydurma Yargıtay/AYM kararı numarası, tarihi veya sahte Resmî Gazete/kanun değişikliği yazma. Kaynak doğrulanamıyorsa "genel hukuki değerlendirme" çerçevesinde yaz.
@@ -35,20 +57,7 @@ metaTitle en fazla 60 karakter; metaDescription en fazla 155 karakter.
 SSS cevapları öz ama yeterli olsun (her biri yaklaşık 3-6 cümle).
 `.trim();
 
-/** Gövde: düz Markdown (JSON dışı; kaçış hatası riskini azaltır) */
-const COMMON_BODY_INSTRUCTIONS = `
-Sen hukukportali.com için Türkçe, özgün, SEO uyumlu hukuki bilgilendirme gövdesi yazıyorsun.
-${COMMON_RULES}
-Avukat Ceren Sümer Cilli adını doğal biçimde 2-3 kez geçir; tanıtım abartısı yapma.
-İlk ~150 kelimede odak anahtar kelime geçsin.
-H2 ve H3 kullan; kısa paragraflar; en az bir markdown tablosu ve madde işaretli liste içer.
-Kelime sayısı: ${MIN_WORDS}-${MAX_WORDS} (tüm gövde).
-SSS ve JSON alanları ayrı üretildi; gövdede "Sık sorulan sorular" başlığı AÇMA (tekrar etme).
-Gövde sonuna sırayla ekle: H2 "Sonuç" ile kısa bir özet paragraf; ardından "${DISCLAIMER}"; ardından tek paragraf CTA (kelimesi kelimesine): "${FIXED_CTA}"
-Çıktıda kod çiti veya JSON kullanma; yalnızca Markdown metin ver.
-`.trim();
-
-const ARTICLES = [
+const CEREN_ARTICLES = [
   {
     title: "Boşanma Davasında Mal Paylaşımı Nasıl Yapılır? 2026 Güncel Rehber",
     slug: "bosanmada-mal-paylasimi-2026-rehber",
@@ -147,6 +156,68 @@ const ARTICLES = [
   }
 ];
 
+const AI_LAWYER_ARTICLES = [
+  {
+    title: "Avukatlar İçin Yapay Zekâ: Hukuki Çerçeve, Riskler ve Uygulama Rehberi",
+    slug: "avukatlar-icin-yapay-zeka-hukuk-rehberi",
+    focusKeywords: [
+      "avukatlar için yapay zeka",
+      "legaltech avukat",
+      "yapay zeka hukuk",
+      "avukatlık meslek etiği yapay zeka",
+      "Avukat Ceren Sümer Cilli"
+    ],
+    internalLinks: [
+      "/analizler/yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri",
+      "/rehber/dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi",
+      "/analizler/yapay-zeka-avukat-sorumlulugu",
+      "/haber/yapay-zeka-avukatsiz-dava-dilekcesi",
+      "/rehber/"
+    ],
+    objective: `Ana hub makale: avukatlıkta yapay zekâ kullanımı, mesleki özen, ofis politikası, riskler. İki pillar makaleye iç link ver: mesleki sır/KVKK analizi ve dilekçe kontrol listesi rehberi. LegalTech dilinde bilgilendirme; uydurma karar yok.`
+  },
+  {
+    title: "Yapay Zekâ Çıktıları: Meslekî Sır, Kişisel Veri ve Baro Perspektifinden Genel Çerçeve",
+    slug: "yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri",
+    focusKeywords: [
+      "yapay zeka mesleki sır",
+      "avukat kişisel veri",
+      "yapay zeka KVKK",
+      "hukuk bürosu veri güvenliği",
+      "Avukat Ceren Sümer Cilli"
+    ],
+    internalLinks: [
+      "/rehber/avukatlar-icin-yapay-zeka-hukuk-rehberi",
+      "/rehber/dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi",
+      "/analizler/yapay-zeka-avukat-sorumlulugu",
+      "/aile-hukuku/",
+      "/rehber/"
+    ],
+    objective: `Pillar analiz: üçüncü taraf AI araçlarına veri aktarımı, mesleki sırrın korunması, KVKK, anonimleştirme sınırları. Hub makaleye geri link.`
+  },
+  {
+    title: "Dilekçe ve Araştırmada Yapay Zekâ: Avukat Kontrol Listesi",
+    slug: "dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi",
+    focusKeywords: [
+      "yapay zeka dilekçe",
+      "dilekçe taslağı yapay zeka",
+      "hukuki araştırma yapay zeka",
+      "avukat kontrol listesi",
+      "Avukat Ceren Sümer Cilli"
+    ],
+    internalLinks: [
+      "/rehber/avukatlar-icin-yapay-zeka-hukuk-rehberi",
+      "/analizler/yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri",
+      "/analizler/yapay-zeka-avukat-sorumlulugu",
+      "/delil-hukuku/",
+      "/rehber/"
+    ],
+    objective: `Pillar rehber: AI taslak dilekçe ve araştırmada olay-talep uyumu, delil, mevzuat doğrulama, etik. Tablo ve madde listesi. Hub ve analiz pillar'a link.`
+  }
+];
+
+const ARTICLES = AI_LAWYER_ONLY ? AI_LAWYER_ARTICLES : CEREN_ARTICLES;
+
 function loadEnvFile() {
   let source = "";
   try {
@@ -204,8 +275,16 @@ function ensureNoBannedPhrases(text) {
   }
 }
 
+function stripFixedTail(text) {
+  let body = String(text || "");
+  const cta = getFixedCta();
+  if (body.includes(cta)) body = body.replace(cta, "");
+  if (body.includes(DISCLAIMER)) body = body.replace(DISCLAIMER, "");
+  return body;
+}
+
 function countNameMentions(text) {
-  const matches = text.match(/Avukat Ceren Sümer Cilli/g);
+  const matches = stripFixedTail(text).match(/Avukat Ceren Sümer Cilli/g);
   return matches ? matches.length : 0;
 }
 
@@ -388,7 +467,7 @@ faq en az 5 öğe olsun.
 
 function buildBodyMarkdownPrompt(spec, meta) {
   return `
-${COMMON_BODY_INSTRUCTIONS}
+${getCommonBodyInstructions()}
 
 BAĞLAM (meta veriden; tutarlı ol):
 Başlık: ${meta.title}
@@ -640,7 +719,10 @@ async function main() {
     console.log(`Kaydedildi: ${spec.slug} (${words} kelime)`);
   }
 
-  const reportPath = resolve(OUTPUT_DIR, "generation-report-ceren-5.json");
+  const reportPath = resolve(
+    OUTPUT_DIR,
+    AI_LAWYER_ONLY ? "generation-report-ai-lawyer.json" : "generation-report-ceren-5.json"
+  );
   writeFileSync(`${reportPath}`, `${JSON.stringify(report, null, 2)}\n`, "utf8");
   console.log(`\nRapor: ${reportPath}`);
 }

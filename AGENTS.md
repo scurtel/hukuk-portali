@@ -5,8 +5,10 @@
 | Amaç | Komut |
 |------|--------|
 | Ceren 5’li paketi üret (`generated-articles/`) | `npm run content:gemini:ceren-5` |
+| Avukat + yapay zekâ 3’lü paket üret | `npm run content:gemini:ai-lawyer` |
 | Üret + `lib/generatedLegalArticleData.ts` güncelle | `npm run content:legal:sync` |
 | Mevcut JSON üstüne yazarak yeniden üret + yayın | `npm run content:legal:sync:force` |
+| AI-lawyer paketi üret + yayın (force) | `npm run content:legal:ai-lawyer:sync:force` |
 | Sadece yayın (JSON zaten var) | `npm run content:legal:publish` |
 
 Gerekli ortam: kök `.env` içinde `GEMINI_API_KEY`; isteğe bağlı `GEMINI_MODEL`.
