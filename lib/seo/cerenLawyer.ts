@@ -63,22 +63,32 @@ export const CEREN_ABOUT_FAQ: FaqItem[] = [
   {
     question: "Anlaşmalı boşanma ne kadar sürer?",
     answer:
-      "Anlaşmalı boşanmada süre; protokolün hazırlanması, gerekli belgelerin tamamlanması, mahkeme takvimi ve duruşma planına göre değişir. Tarafların uzlaşması ve evrakların eksiksiz olması süreci hızlandırır. Kesin süre için dosyanın ayrıntılarına göre değerlendirme yapılması gerekir."
+      "Anlaşmalı boşanmanın süresi; tarafların boşanma protokolü üzerinde uzlaşmasına, gerekli belgelerin eksiksiz hazırlanmasına, mahkemenin iş yoğunluğuna ve duruşma tarihine göre değişir. Tarafların tüm konularda anlaşmış olması süreci hızlandırabilir. Ancak kesin süre, dosyanın bulunduğu mahkeme ve somut olayın özelliklerine göre değerlendirilmelidir."
   },
   {
-    question: "İzale-i şuyu davası nasıl açılır?",
+    question: "Çekişmeli boşanma davasında hangi deliller önemlidir?",
     answer:
-      "İzale-i şuyu (ortaklığın giderilmesi) genellikle paylı mülkiyetteki taşınmazın paydaşları arasında, payın satışı veya diğer çözüm yolları üzerinden ortaklığın sona erdirilmesi amacıyla açılır. Usule uygun dilekçe, tapu kayıtları ve dayanak belgelerle yetkili mahkemeye başvuru yapılır. Pay oranları ve kayıt durumu dava yolunu ve talep konusunu doğrudan etkiler."
+      "Çekişmeli boşanma davalarında tanık beyanları, mesaj kayıtları, sosyal medya içerikleri, banka kayıtları, kolluk tutanakları, sağlık raporları ve tarafların iddialarını destekleyen diğer hukuka uygun deliller önem taşıyabilir. Delillerin hukuka uygun şekilde elde edilmesi ve mahkemeye doğru zamanda sunulması gerekir."
   },
   {
     question: "Mal paylaşımı davasında nelere dikkat edilir?",
     answer:
-      "Edinilmiş mallara katılma rejimi veya seçilmiş başka bir rejim, evlilik süresi, malların kaynağı ve borçlar gibi unsurlar mal rejimi tasfiyesinin omurgasını oluşturur. Belgelerin sistematik biçimde toplanması ve hukuki sürelerin izlenmesi sürecin güvenli yürütülmesi için önemlidir."
+      "Mal paylaşımı davasında evlilik tarihi, malın edinilme zamanı, tapu kayıtları, ödeme kaynakları, kredi borçları, tarafların katkıları ve uygulanacak mal rejimi dikkate alınır. Eksik belge veya hatalı talep, hak kaybına yol açabileceğinden mal rejimi tasfiyesi sürecinde profesyonel hukuki destek alınması önemlidir."
   },
   {
-    question: "Miras hukukunda mirasçılık belgesi ne işe yarar?",
+    question: "İzale-i şuyu davası nasıl açılır?",
     answer:
-      "Mirasçılık belgesi, miras bırakanın mirasçılarını ve paylarını gösteren resmi bir kayıttır. Birçok işlemde (örneğin tapu ve banka süreçlerinde) yetkinin ve payların ispatında başvurulan temel belgelerden biridir."
+      "İzale-i şuyu, yani ortaklığın giderilmesi davası; paylı veya elbirliği mülkiyetine konu taşınmazlarda ortaklığın sona erdirilmesi amacıyla açılır. Dava dilekçesi, tapu kayıtları ve ilgili belgelerle görevli ve yetkili mahkemeye başvuru yapılır. Taşınmazın niteliği, pay oranları ve aynen taksimin mümkün olup olmadığı dava sürecinde değerlendirilir."
+  },
+  {
+    question: "Mirasçılık belgesi ne işe yarar?",
+    answer:
+      "Mirasçılık belgesi, miras bırakanın yasal mirasçılarını ve miras paylarını gösteren resmi belgedir. Tapu işlemleri, banka işlemleri, tereke işlemleri ve miras paylaşımı süreçlerinde mirasçılık sıfatının ispatı için kullanılır."
+  },
+  {
+    question: "Mirasın reddi ne zaman gündeme gelir?",
+    answer:
+      "Mirasın reddi, miras bırakanın borçlarının mal varlığından fazla olduğu veya mirasçının mirası kabul etmek istemediği durumlarda gündeme gelebilir. Bu işlem belirli süre ve usul kurallarına tabidir. Bu nedenle mirasın reddi konusunda gecikmeden hukuki değerlendirme alınması gerekir."
   }
 ];
 
