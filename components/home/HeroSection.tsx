@@ -8,7 +8,7 @@ export function HeroSection() {
       <Container>
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">Güncel Hukuki İçerik Platformu</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">{siteConfig.tagline}</p>
             <h1 className="mt-3 text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
               {siteConfig.name}
             </h1>
@@ -28,7 +28,7 @@ export function HeroSection() {
               priority
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/75 to-transparent p-4 text-white">
-              <p className="text-sm font-medium">Aile Hukuku, Miras ve Güncel İçtihat Analizleri</p>
+              <p className="text-sm font-medium">Yapay Zekâ, Hukuk Haberleri ve Dijital Dönüşüm</p>
             </div>
           </div>
         </div>

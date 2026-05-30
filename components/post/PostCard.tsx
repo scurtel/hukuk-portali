@@ -4,16 +4,14 @@ import { CategoryBadge } from "@/components/post/CategoryBadge";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { getPostHref } from "@/lib/post-urls";
 import { truncatePostCardExcerpt } from "@/lib/utils";
-import type { Author } from "@/types/author";
 import type { Post } from "@/types/post";
 
 type PostCardProps = {
   post: Post;
-  author?: Author;
   excerptSingleLine?: boolean;
 };
 
-export function PostCard({ post, author, excerptSingleLine = false }: PostCardProps) {
+export function PostCard({ post, excerptSingleLine = false }: PostCardProps) {
   const href = getPostHref(post);
   const unsplashImages = [
     "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1000&q=80",
@@ -63,7 +61,7 @@ export function PostCard({ post, author, excerptSingleLine = false }: PostCardPr
           </Link>
         </div>
         <p className="mt-3 text-xs text-slate-500">
-          {author?.name ?? "Bilinmeyen Yazar"} - {new Date(post.publishedAt).toLocaleDateString("tr-TR")}
+          <time dateTime={post.publishedAt}>{new Date(post.publishedAt).toLocaleDateString("tr-TR")}</time>
         </p>
       </div>
     </article>

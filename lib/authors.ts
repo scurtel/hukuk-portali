@@ -1,40 +1,25 @@
 import type { Author } from "@/types/author";
 import { staticAuthors } from "@/lib/posts";
-import { CEREN_OFFICIAL_SITE, PRIMARY_AUTHOR_SLUG } from "@/lib/seo/cerenLawyer";
+import { PRIMARY_AUTHOR_SLUG } from "@/lib/seo/cerenLawyer";
 
 function toAuthor(author: Author): Author {
-  const base: Author = {
+  return {
     id: author.id,
     slug: author.slug,
     name: author.name,
     title: author.title,
     bio: author.bio,
-    avatar: author.avatar ?? "/images/avukat-ceren-sumer-cilli.webp"
+    avatar: author.avatar
   };
-  if (author.slug === PRIMARY_AUTHOR_SLUG) {
-    return {
-      ...base,
-      officialWebsite: CEREN_OFFICIAL_SITE,
-      expertise: [
-        "Anlaşmalı / çekişmeli boşanma",
-        "Mal paylaşımı",
-        "İzale-i şuyu",
-        "Gayrimenkul hukuku",
-        "Miras hukuku"
-      ]
-    };
-  }
-  return base;
 }
 
+/** Dahili authorSlug çözümlemesi; arayüzde kişisel yazar gösterilmez. */
 export function getAuthorBySlug(slug: string): Author | undefined {
   const author = staticAuthors.find((item) => item.slug === slug);
   return author ? toAuthor(author) : undefined;
 }
 
-/** Post listelerinde N+1 sorguyu önlemek için */
 export function getAuthorsBySlugs(slugs: string[]): Map<string, Author> {
-  if (slugs.length === 0) return new Map();
   const unique = [...new Set(slugs)];
   const matchedAuthors = staticAuthors.filter((author) => unique.includes(author.slug));
   const map = new Map<string, Author>();
@@ -47,3 +32,5 @@ export function getAuthorsBySlugs(slugs: string[]): Map<string, Author> {
 export function getAllAuthors(): Author[] {
   return [...staticAuthors].sort((a, b) => a.name.localeCompare(b.name, "tr")).map(toAuthor);
 }
+
+export { PRIMARY_AUTHOR_SLUG };

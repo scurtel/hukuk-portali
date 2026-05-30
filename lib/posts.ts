@@ -7,14 +7,15 @@ import type { Category } from "@/types/category";
 
 export { getPostHref } from "@/lib/post-urls";
 
+/** Dahili authorSlug; arayüzde kişisel yazar adı gösterilmez. */
 export const staticAuthors: Author[] = [
   {
-    id: "author-ceren",
+    id: "author-editorial",
     slug: PRIMARY_AUTHOR_SLUG,
-    name: "Avukat Ceren Sumer Cilli",
-    title: "Aile, Miras ve Gayrimenkul Hukuku Avukatı — Hukuk Portalı editörlüğü",
-    bio: "Hukuk Portalı içeriklerinin hukuki çerçevesini ve güncelliğini yönlendirir.",
-    avatar: "/images/avukat-ceren-sumer-cilli.webp"
+    name: "Hukukportali Editör Ekibi",
+    title: "Hukuk Portalı editöryal ekibi",
+    bio: "Hukuk, yapay zekâ ve dijital dönüşüm odaklı içerik üretimi.",
+    avatar: "/images/logo.png"
   }
 ];
 

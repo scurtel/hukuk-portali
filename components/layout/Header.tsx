@@ -28,7 +28,7 @@ export function Header() {
           >
             <Image
               src="/images/logo.png"
-              alt="Hukuk Portalı - Avukat Ceren Sümer Cilli Logo"
+              alt="Hukuk Portalı — Hukuk, Yapay Zekâ ve Dijital Dönüşüm"
               width={300}
               height={100}
               priority

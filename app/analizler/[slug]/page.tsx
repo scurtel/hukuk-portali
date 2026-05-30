@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 
 import { Container } from "@/components/layout/Container";
-import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
-import { AuthorBox } from "@/components/post/AuthorBox";
+import { ArticlePlatformCta } from "@/components/post/ArticlePlatformCta";
 import { PostContent } from "@/components/post/PostContent";
 import { PostHeader } from "@/components/post/PostHeader";
 import { RelatedPosts } from "@/components/post/RelatedPosts";
 import { SafeImage } from "@/components/ui/SafeImage";
-import { getAuthorBySlug } from "@/lib/authors";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { getPostBySlug } from "@/lib/posts";
 import { staticParamsForPostType } from "@/lib/static-paths";
 
@@ -74,8 +73,6 @@ export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) 
     );
   }
 
-  const author = getAuthorBySlug(post.authorSlug);
-
   const coverImage =
     post.imageUrl && post.imageUrl.length > 0
       ? post.imageUrl
@@ -83,7 +80,7 @@ export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) 
 
   return (
     <Container className="py-8 sm:py-10">
-      <ArticleJsonLd post={post} author={author} />
+      <ArticleJsonLd post={post} />
       <div className="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
         <SafeImage
           src={coverImage}
@@ -95,14 +92,11 @@ export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) 
         />
       </div>
 
-      <PostHeader post={post} author={author} />
+      <PostHeader post={post} />
       <PostContent content={post.content} />
       <hr className="my-10 border-slate-200" />
-      <div className="mt-8">
-        <AuthorBox author={author} />
-      </div>
+      <ArticlePlatformCta className="mt-8" />
       <RelatedPosts currentPost={post} />
     </Container>
   );
 }
-

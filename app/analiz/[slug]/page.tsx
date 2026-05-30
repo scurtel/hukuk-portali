@@ -1,10 +1,11 @@
+import type { Metadata } from "next";
+
 import { Container } from "@/components/layout/Container";
-import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
-import { AuthorBox } from "@/components/post/AuthorBox";
+import { ArticlePlatformCta } from "@/components/post/ArticlePlatformCta";
 import { PostContent } from "@/components/post/PostContent";
 import { PostHeader } from "@/components/post/PostHeader";
 import { RelatedPosts } from "@/components/post/RelatedPosts";
-import { getAuthorBySlug } from "@/lib/authors";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { getPostBySlug } from "@/lib/posts";
 import { staticParamsForPostType } from "@/lib/static-paths";
 
@@ -16,6 +17,24 @@ export function generateStaticParams() {
   return staticParamsForPostType("analiz");
 }
 
+export async function generateMetadata({ params }: AnalysisDetailPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPostBySlug(slug, "analiz");
+
+  if (!post) {
+    return {
+      title: "İçerik bulunamadı | Hukuk Portalı",
+      description: "Aradığınız analiz mevcut değil veya yayından kaldırılmış olabilir."
+    };
+  }
+
+  return {
+    title: `${post.seo?.metaTitle ?? post.title} | Hukuk Portalı`,
+    description: post.seo?.metaDescription ?? post.excerpt,
+    keywords: [post.seo?.focusKeyword, ...(post.seo?.secondaryKeywords ?? [])].filter(Boolean) as string[]
+  };
+}
+
 export default async function AnalysisDetailPage({ params }: AnalysisDetailPageProps) {
   const { slug } = await params;
   const post = getPostBySlug(slug, "analiz");
@@ -24,22 +43,18 @@ export default async function AnalysisDetailPage({ params }: AnalysisDetailPageP
     return (
       <Container className="py-8 sm:py-10">
         <h1 className="text-xl font-semibold sm:text-2xl">İçerik bulunamadı</h1>
-        <p className="mt-2 text-sm text-slate-600 sm:text-base">Aradığınız analiz içeriğine ulaşılamadı.</p>
+        <p className="mt-2 text-sm text-slate-600 sm:text-base">Aradığınız analiz mevcut değil veya yayından kaldırılmış olabilir.</p>
       </Container>
     );
   }
 
-  const author = getAuthorBySlug(post.authorSlug);
-
   return (
     <Container className="py-8 sm:py-10">
-      <ArticleJsonLd post={post} author={author} />
-      <PostHeader post={post} author={author} />
+      <ArticleJsonLd post={post} />
+      <PostHeader post={post} />
       <PostContent content={post.content} />
       <hr className="my-10 border-slate-200" />
-      <div className="mt-8">
-        <AuthorBox author={author} />
-      </div>
+      <ArticlePlatformCta className="mt-8" />
       <RelatedPosts currentPost={post} />
     </Container>
   );

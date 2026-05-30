@@ -1,12 +1,19 @@
-import { AuthorProfile } from "@/components/author/AuthorProfile";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+
 import { Container } from "@/components/layout/Container";
 import { PostList } from "@/components/post/PostList";
-import { getAuthorBySlug } from "@/lib/authors";
 import { getPostsByAuthor } from "@/lib/posts";
 import { staticParamsForAuthors } from "@/lib/static-paths";
 
 type AuthorPageProps = {
   params: Promise<{ slug: string }>;
+};
+
+export const metadata: Metadata = {
+  title: "İçerik Arşivi | Hukuk Portalı",
+  description: "Hukukportali.com üzerinde yayımlanan haber, rehber ve analiz içerikleri.",
+  robots: { index: false, follow: true }
 };
 
 export function generateStaticParams() {
@@ -15,22 +22,21 @@ export function generateStaticParams() {
 
 export default async function AuthorPage({ params }: AuthorPageProps) {
   const { slug } = await params;
-  const author = getAuthorBySlug(slug);
-
-  if (!author) {
-    return (
-      <Container className="py-8 sm:py-10">
-        <h1 className="text-xl font-semibold sm:text-2xl">Yazar bulunamadı</h1>
-      </Container>
-    );
-  }
-
   const authorPosts = getPostsByAuthor(slug);
+
+  if (!authorPosts.length) {
+    notFound();
+  }
 
   return (
     <Container className="py-8 sm:py-10">
-      <AuthorProfile author={author} />
-      <h2 className="mb-4 text-lg font-semibold sm:text-xl">Yazarın Yazıları</h2>
+      <header className="mb-8 max-w-3xl">
+        <h1 className="text-2xl font-bold text-slate-900 sm:text-3xl">İçerik Arşivi</h1>
+        <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
+          Hukukportali.com&apos;da yayımlanan seçilmiş haber, rehber ve analiz içerikleri. Platform bağımsız bir
+          dijital yayın ve teknoloji yayınıdır; kişisel avukatlık tanıtımı içermez.
+        </p>
+      </header>
       <PostList posts={authorPosts} />
     </Container>
   );

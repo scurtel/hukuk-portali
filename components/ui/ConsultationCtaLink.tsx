@@ -18,7 +18,7 @@ export function ConsultationCtaLink({ href, className, children, ...rest }: Cons
       )}
       {...rest}
     >
-      {children ?? "Hukuki Danışmanlık Al"}
+      {children ?? "Hukuk Haberlerini Oku"}
     </a>
   );
 }

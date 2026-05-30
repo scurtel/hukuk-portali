@@ -1,8 +1,9 @@
 export const siteConfig = {
   name: "Hukuk Portalı",
   url: "https://hukukportali.com",
+  tagline: "Hukuk, Yapay Zekâ ve Dijital Dönüşüm Portalı",
   description:
-    "Türkçe hukuk haberleri, rehberler ve analizler sunan profesyonel içerik portalı."
+    "Avukatlar ve hukuk büroları için yapay zekâ, dijital dönüşüm ve hukuk haberleri. Mevzuat, yargı kararları ve teknoloji gündemi."
 };
 
 export function getSiteUrl(): string {

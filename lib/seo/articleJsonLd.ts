@@ -1,12 +1,5 @@
-import {
-  CEREN_KNOWS_ABOUT,
-  CEREN_PERSON_ID,
-  CEREN_OFFICIAL_SITE,
-  CEREN_SAME_AS,
-  PRIMARY_AUTHOR_SLUG
-} from "@/lib/seo/cerenLawyer";
+import { PLATFORM_EDITORIAL_ID, PLATFORM_ORGANIZATION_ID } from "@/lib/seo/platform";
 import { siteConfig } from "@/lib/site";
-import type { Author } from "@/types/author";
 import type { Post } from "@/types/post";
 
 /** Kart ve iç linklerle uyumlu kanonik yol (analiz → `/analizler/...`) */
@@ -23,17 +16,14 @@ function publishedToIso(publishedAt: string): string {
   return `${publishedAt}T08:00:00+03:00`;
 }
 
-const publisherId = `${siteConfig.url}/#organization`;
-
-export function buildArticlePageSchema(post: Post, author: Author | undefined): Record<string, unknown> {
+export function buildArticlePageSchema(post: Post): Record<string, unknown> {
   const pageUrl = getPostCanonicalUrl(post);
-  const isPrimaryAuthor = post.authorSlug === PRIMARY_AUTHOR_SLUG && Boolean(author?.officialWebsite);
 
   const articleType = post.type === "haber" ? "NewsArticle" : "Article";
 
   const organization = {
     "@type": "Organization",
-    "@id": publisherId,
+    "@id": PLATFORM_ORGANIZATION_ID,
     name: siteConfig.name,
     url: siteConfig.url,
     logo: {
@@ -42,28 +32,15 @@ export function buildArticlePageSchema(post: Post, author: Author | undefined): 
     }
   };
 
-  const authorRef =
-    isPrimaryAuthor && author
-      ? { "@id": CEREN_PERSON_ID }
-      : {
-          "@type": "Person",
-          name: author?.name ?? siteConfig.name,
-          ...(author ? { url: `${siteConfig.url}/yazar/${author.slug}` } : {})
-        };
+  const editorialTeam = {
+    "@type": "Organization",
+    "@id": PLATFORM_EDITORIAL_ID,
+    name: "Hukukportali Editör Ekibi",
+    url: siteConfig.url,
+    parentOrganization: { "@id": PLATFORM_ORGANIZATION_ID }
+  };
 
-  const graph: Record<string, unknown>[] = [organization];
-
-  if (isPrimaryAuthor && author) {
-    graph.push({
-      "@type": "Person",
-      "@id": CEREN_PERSON_ID,
-      name: author.name,
-      url: CEREN_OFFICIAL_SITE,
-      jobTitle: author.title,
-      sameAs: [...CEREN_SAME_AS],
-      knowsAbout: [...CEREN_KNOWS_ABOUT]
-    });
-  }
+  const graph: Record<string, unknown>[] = [organization, editorialTeam];
 
   const published = publishedToIso(post.publishedAt);
 
@@ -74,8 +51,8 @@ export function buildArticlePageSchema(post: Post, author: Author | undefined): 
     description: post.seo?.metaDescription ?? post.excerpt,
     datePublished: published,
     dateModified: published,
-    author: authorRef,
-    publisher: { "@id": publisherId },
+    author: { "@id": PLATFORM_EDITORIAL_ID },
+    publisher: { "@id": PLATFORM_ORGANIZATION_ID },
     mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
     url: pageUrl,
     inLanguage: "tr-TR",

@@ -2,28 +2,22 @@ import type { Metadata } from "next";
 
 import { Container } from "@/components/layout/Container";
 import {
-  buildCerenAboutPageSchemaGraph,
   buildFaqPageSchema,
-  CEREN_ABOUT_FAQ,
-  CEREN_OFFICIAL_SITE,
-  CEREN_SAME_AS
-} from "@/lib/seo/cerenLawyer";
+  buildPlatformAboutPageSchemaGraph,
+  PLATFORM_ABOUT_FAQ
+} from "@/lib/seo/platform";
 import { getSiteUrl, siteConfig } from "@/lib/site";
 
 const pageUrl = `${getSiteUrl()}/hakkimizda`;
 
-const linkClass =
-  "font-medium text-brand-700 underline decoration-brand-200 underline-offset-2 hover:text-brand-900";
-
 export const metadata: Metadata = {
-  title: "Hakkımızda | Boşanma Avukatı, Miras ve Gayrimenkul — Avukat Ceren Sümer Cilli",
+  title: "Hakkımızda | Hukuk, Yapay Zekâ ve Dijital Dönüşüm",
   description:
-    "hukukportali.com, Avukat Ceren Sümer Cilli denetiminde boşanma, mal paylaşımı, izale-i şuyu, gayrimenkul ve miras hukukunda güvenilir Türkçe içerik sunar. Resmî danışmanlık için cerensumer.av.tr.",
+    "Hukukportali.com; hukuk profesyonellerine yapay zekâ ve dijital dönüşüm odaklı bilgi sunan, hukuk haberleri yayımlayan bağımsız bir dijital yayın ve teknoloji platformudur.",
   alternates: { canonical: pageUrl },
   openGraph: {
-    title: "Hakkımızda | Hukuk Portalı ve Avukat Ceren Sümer Cilli",
-    description:
-      "Boşanma avukatlığı, miras hukuku ve gayrimenkul davalarında güncel rehberlik. hukukportali.com hakkında.",
+    title: "Hakkımızda | Hukuk Portalı",
+    description: siteConfig.description,
     url: pageUrl,
     siteName: siteConfig.name,
     locale: "tr_TR",
@@ -33,48 +27,53 @@ export const metadata: Metadata = {
 
 const aboutSchemaJson = JSON.stringify({
   "@context": "https://schema.org",
-  "@graph": buildCerenAboutPageSchemaGraph()
+  "@graph": buildPlatformAboutPageSchemaGraph()
 });
 
-const faqSchemaJson = JSON.stringify(buildFaqPageSchema(CEREN_ABOUT_FAQ));
+const faqSchemaJson = JSON.stringify(buildFaqPageSchema(PLATFORM_ABOUT_FAQ));
 
 export default function AboutPage() {
   return (
     <Container className="py-8 sm:py-10">
       <article className="mx-auto max-w-4xl rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/60 via-white to-white p-5 shadow-sm sm:p-8">
         <header className="border-b border-blue-100 pb-6">
-          <h1 className="text-2xl font-bold tracking-tight text-blue-900 sm:text-3xl lg:text-4xl">Hakkımızda</h1>
+          <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">{siteConfig.tagline}</p>
+          <h1 className="mt-2 text-2xl font-bold tracking-tight text-blue-900 sm:text-3xl lg:text-4xl">Hakkımızda</h1>
         </header>
 
         <div className="mt-8 space-y-10 text-sm leading-relaxed text-slate-700 sm:text-base">
-          <section aria-labelledby="h-portal">
-            <h2 id="h-portal" className="text-xl font-semibold tracking-tight text-blue-900 sm:text-2xl">
-              Hukuk Portalı Nedir?
+          <section aria-labelledby="h-platform">
+            <h2 id="h-platform" className="text-xl font-semibold tracking-tight text-blue-900 sm:text-2xl">
+              Hukukportali.com Nedir?
             </h2>
             <p className="mt-3">
-              hukukportali.com, özellikle aile hukuku, boşanma hukuku, miras hukuku ve gayrimenkul davaları alanlarında
-              okuyuculara güvenilir, anlaşılır ve güncel hukuki bilgi sunmayı amaçlayan bir içerik platformudur.
+              Hukukportali.com, hukuk ile yapay zekâyı bir araya getiren bağımsız bir dijital yayın ve teknoloji
+              platformudur. Avukatlar, hukuk büroları ve hukuk alanında çalışan profesyonellere; yapay zekâ destekli
+              içerik, analiz, doküman, otomasyon ve dijital dönüşüm çözümleri hakkında güncel ve anlaşılır bilgi sunmayı
+              amaçlar.
             </p>
             <p className="mt-3">
-              Platformda yayımlanan içerikler; mevzuat değişiklikleri, Yargıtay kararları ve uygulamada sık karşılaşılan
-              sorunlar dikkate alınarak hazırlanır. Amaç, hukuki süreçlerle karşılaşan kişilerin temel kavramları daha
-              kolay anlamasını ve hak kaybı yaşamamak için hangi konulara dikkat etmesi gerektiğini görmesini
-              sağlamaktır.
+              Platform aynı zamanda hukuk gündemi, mevzuat gelişmeleri, yargı kararları, teknoloji, yapay zekâ ve hukuk
+              haberleri yayımlar. İçerikler; mevzuat değişiklikleri ve uygulamada sık karşılaşılan sorunlar dikkate
+              alınarak hazırlanır.
             </p>
             <p className="mt-3">
-              Adana Barosu&apos;na kayıtlı{" "}
-              <strong className="font-semibold text-slate-900">Avukat Ceren Sümer Cilli</strong>, Hukuk Portalı&apos;nın
-              aile hukuku, boşanma, miras ve gayrimenkul hukuku alanlarındaki içeriklerinin hukuki çerçevesini
-              güçlendiren mesleki katkılar sunar.
+              <strong className="font-semibold text-slate-900">Hukukportali.com bir hukuk bürosunun reklam sitesi değildir.</strong>{" "}
+              Kişisel avukatlık tanıtımı veya bireysel hukuki danışmanlık hizmeti sunmaz. Sitedeki tüm içerikler genel
+              bilgilendirme amaçlıdır; somut dosyalar için doğrudan hukuki danışmanlık yerine geçmez.
             </p>
-            <p className="mt-3">
-              Bireysel danışmanlık, dava takibi, belge incelemesi ve kişiye özel hukuki değerlendirme talepleri için
-              Avukat Ceren Sümer Cilli&apos;nin resmî web sitesi olan{" "}
-              <a href={CEREN_OFFICIAL_SITE} target="_blank" rel="noopener noreferrer" className={linkClass}>
-                cerensumer.av.tr
-              </a>{" "}
-              üzerinden iletişim kurulabilir.
-            </p>
+          </section>
+
+          <section aria-labelledby="h-focus">
+            <h2 id="h-focus" className="text-xl font-semibold tracking-tight text-blue-900 sm:text-2xl">
+              Odak Alanlarımız
+            </h2>
+            <ul className="mt-3 list-disc space-y-2 pl-6">
+              <li>Hukuk profesyonelleri için yapay zekâ araçları ve uygulama rehberleri</li>
+              <li>Hukuk büroları için dijital dönüşüm ve otomasyon</li>
+              <li>Mevzuat, yargı kararları ve hukuk teknolojisi gündemi</li>
+              <li>Hukuk haberleri ve derinlemesine analizler</li>
+            </ul>
           </section>
 
           <section aria-labelledby="h-faq" className="border-t border-slate-200 pt-10">
@@ -82,63 +81,17 @@ export default function AboutPage() {
               Sıkça Sorulan Sorular
             </h2>
             <p className="mt-2 text-xs text-slate-500 sm:text-sm">
-              Aşağıdaki yanıtlar genel bilgilendirme amaçlıdır; kesin hukuki sonuç için dosyanız avukatınızca
+              Aşağıdaki yanıtlar genel bilgilendirme amaçlıdır; kesin hukuki sonuç için dosyanız uzmanlarca
               değerlendirilmelidir.
             </p>
             <div className="mt-6 space-y-8">
-              {CEREN_ABOUT_FAQ.map((item) => (
+              {PLATFORM_ABOUT_FAQ.map((item) => (
                 <div key={item.question}>
                   <h3 className="text-base font-semibold text-slate-900 sm:text-lg">{item.question}</h3>
                   <p className="mt-2 text-sm leading-relaxed sm:text-base">{item.answer}</p>
                 </div>
               ))}
             </div>
-          </section>
-
-          <section aria-labelledby="h-kaynaklar" className="border-t border-slate-200 pt-10">
-            <h2 id="h-kaynaklar" className="text-xl font-semibold tracking-tight text-blue-900 sm:text-2xl">
-              Resmî Kaynaklar ve Dijital Varlıklar
-            </h2>
-            <p className="mt-3">
-              Avukat Ceren Sümer Cilli&apos;nin mesleki kimliği, iletişim kanalları ve dijital varlığı aşağıdaki resmî
-              kaynaklar üzerinden incelenebilir:
-            </p>
-            <ul className="mt-6 space-y-4">
-              <li>
-                <span className="font-semibold text-slate-900">Resmî Web Sitesi:</span>{" "}
-                <a href={CEREN_OFFICIAL_SITE} target="_blank" rel="noopener noreferrer" className={linkClass}>
-                  cerensumer.av.tr
-                </a>
-              </li>
-              <li>
-                <span className="font-semibold text-slate-900">Google Haritalar:</span>{" "}
-                <a href={CEREN_SAME_AS[3]} target="_blank" rel="noopener noreferrer" className={linkClass}>
-                  Avukat Ceren Sümer Cilli Google Haritalar Kaydı
-                </a>
-              </li>
-              <li>
-                <span className="font-semibold text-slate-900">LinkedIn:</span>{" "}
-                <a href={CEREN_SAME_AS[2]} target="_blank" rel="noopener noreferrer" className={linkClass}>
-                  Avukat Ceren Sümer Cilli LinkedIn Profili
-                </a>
-              </li>
-              <li>
-                <span className="font-semibold text-slate-900">Instagram:</span>{" "}
-                <a href={CEREN_SAME_AS[1]} target="_blank" rel="noopener noreferrer" className={linkClass}>
-                  Av. Ceren Sümer Cilli Instagram Hesabı
-                </a>
-              </li>
-              <li>
-                <span className="font-semibold text-slate-900">Facebook:</span>{" "}
-                <a href={CEREN_SAME_AS[0]} target="_blank" rel="noopener noreferrer" className={linkClass}>
-                  Avukat Ceren Sümer Cilli Facebook Sayfası
-                </a>
-              </li>
-            </ul>
-            <p className="mt-6">
-              Bu kaynaklar, Avukat Ceren Sümer Cilli&apos;nin mesleki görünürlüğünü, dijital varlığını ve hukuk
-              alanındaki yayın/iletişim kanallarını destekleyen referans bağlantılar niteliğindedir.
-            </p>
           </section>
         </div>
       </article>

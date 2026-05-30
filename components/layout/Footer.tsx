@@ -8,7 +8,10 @@ export function Footer() {
         <p>
           {new Date().getFullYear()} {siteConfig.name}. Tüm hakları saklıdır.
         </p>
-        <p>Hukuk alanında güncel, güvenilir ve anlaşılır Türkçe içerikler sunar.</p>
+        <p>{siteConfig.tagline}</p>
+        <p className="text-xs text-slate-500">
+          Bağımsız dijital yayın platformu; içerikler genel bilgilendirme amaçlıdır.
+        </p>
       </Container>
     </footer>
   );
