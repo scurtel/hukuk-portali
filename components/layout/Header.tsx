@@ -20,6 +20,32 @@ function SearchIcon({ className }: { className?: string }) {
 
 const MOBILE_HEADER_PX = 88;
 
+function NavLink({
+  item,
+  active,
+  onClick,
+  className
+}: {
+  item: { label: string; href: string };
+  active: boolean;
+  onClick?: () => void;
+  className?: string;
+}) {
+  return (
+    <Link
+      href={item.href}
+      onClick={onClick}
+      className={cn(
+        "transition",
+        active ? "text-gold" : "text-white/75 hover:text-white",
+        className
+      )}
+    >
+      {item.label}
+    </Link>
+  );
+}
+
 export function Header() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,8 +70,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50">
       <TopBar />
+
       <div className="border-b border-navy-light bg-navy shadow-sm">
-        <div className="mx-auto flex max-w-portal items-center gap-1 px-3 py-1 sm:px-6 sm:py-2">
+        {/* Mobil */}
+        <div className="mx-auto flex max-w-portal items-center gap-1 px-3 py-1 lg:hidden sm:px-6 sm:py-2">
           <Link
             href="/"
             onClick={closeMenu}
@@ -57,23 +85,21 @@ export function Header() {
               width={480}
               height={144}
               priority
-              sizes="(max-width: 1024px) min(72vw, 320px), 360px"
-              className="h-20 w-auto max-w-[min(78vw,340px)] object-contain object-left brightness-0 invert sm:h-[4.5rem] sm:max-w-[380px] lg:h-[5rem]"
+              sizes="(max-width: 1024px) min(78vw, 340px)"
+              className="h-20 w-auto max-w-[min(78vw, 340px)] object-contain object-left brightness-0 invert"
             />
           </Link>
-
           <div className="flex shrink-0 items-center">
             <Link
               href="/arama"
-              className="touch-target rounded-full text-white/90 transition hover:text-gold active:bg-white/10 lg:hidden"
+              className="touch-target rounded-full text-white/90 transition active:bg-white/10 active:text-gold"
               aria-label="Ara"
             >
               <SearchIcon className="h-[1.35rem] w-[1.35rem]" />
             </Link>
-
             <button
               type="button"
-              className="touch-target rounded-full text-white/90 transition hover:text-gold active:bg-white/10 lg:hidden"
+              className="touch-target rounded-full text-white/90 transition active:bg-white/10 active:text-gold"
               onClick={() => setIsMenuOpen((prev) => !prev)}
               aria-expanded={isMenuOpen}
               aria-controls="mobile-navigation"
@@ -90,39 +116,45 @@ export function Header() {
                 )}
               </svg>
             </button>
-
-            <Link
-              href="/arama"
-              className="ml-2 hidden min-h-11 items-center gap-2 rounded-sm border border-white/15 px-3 text-sm font-medium text-white/90 transition hover:border-gold/60 hover:text-gold lg:inline-flex"
-              aria-label="Site içinde ara"
-            >
-              <SearchIcon className="h-4 w-4" />
-              <span className="hidden xl:inline">Ara</span>
-            </Link>
           </div>
         </div>
 
-        <nav className="hidden border-t border-white/10 lg:block" aria-label="Ana menü">
-          <div className="mx-auto flex max-w-portal flex-wrap items-stretch px-6">
-            {navItems.map((item) => {
-              const active = isNavActive(item.href);
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={cn(
-                    "inline-flex min-h-10 items-center border-b-2 px-3 text-[11px] font-bold uppercase tracking-wider transition",
-                    active
-                      ? "border-gold text-gold"
-                      : "border-transparent text-white/70 hover:border-gold/40 hover:text-white"
-                  )}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
-          </div>
-        </nav>
+        {/* Masaüstü — tek satır, kompakt */}
+        <div className="mx-auto hidden max-w-portal items-center gap-6 px-6 py-3 lg:flex">
+          <Link href="/" className="shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold">
+            <Image
+              src="/images/logo.png"
+              alt="Hukuk Portalı"
+              width={320}
+              height={96}
+              priority
+              className="h-11 w-auto max-w-[200px] object-contain object-left brightness-0 invert"
+            />
+          </Link>
+
+          <nav className="flex min-w-0 flex-1 flex-wrap items-center justify-center gap-x-1 gap-y-1" aria-label="Ana menü">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.href}
+                item={item}
+                active={isNavActive(item.href)}
+                className={cn(
+                  "inline-flex min-h-9 items-center px-2.5 text-[11px] font-semibold uppercase tracking-wide",
+                  isNavActive(item.href) && "border-b border-gold"
+                )}
+              />
+            ))}
+          </nav>
+
+          <Link
+            href="/arama"
+            className="inline-flex min-h-10 shrink-0 items-center gap-2 border border-white/20 px-4 text-sm font-medium text-white/90 transition hover:border-gold/50 hover:text-gold"
+            aria-label="Site içinde ara"
+          >
+            <SearchIcon className="h-4 w-4" />
+            Ara
+          </Link>
+        </div>
       </div>
 
       {isMenuOpen ? (
@@ -143,16 +175,12 @@ export function Header() {
             <ul className="divide-y divide-white/10">
               {navItems.map((item) => (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
+                  <NavLink
+                    item={item}
+                    active={isNavActive(item.href)}
                     onClick={closeMenu}
-                    className={cn(
-                      "flex min-h-12 items-center px-1 text-[15px] font-medium tracking-tight transition active:text-gold",
-                      isNavActive(item.href) ? "text-gold" : "text-white/90"
-                    )}
-                  >
-                    {item.label}
-                  </Link>
+                    className="flex min-h-12 items-center px-1 text-[15px] font-medium tracking-tight active:text-gold"
+                  />
                 </li>
               ))}
             </ul>
