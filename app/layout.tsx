@@ -57,7 +57,7 @@ const siteSchemaJson = JSON.stringify({
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="tr" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="min-h-screen bg-white font-sans text-ink antialiased">
+      <body className="min-h-screen overflow-x-hidden bg-white font-sans text-ink antialiased">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: siteSchemaJson }} />
         <Header />
         <main>{children}</main>

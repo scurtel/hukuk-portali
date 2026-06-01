@@ -1,24 +1,19 @@
 "use client";
 
-/* Static export: native <img> avoids next/image + local/remote edge cases. */
 /* eslint-disable @next/next/no-img-element */
 
 import type { ImgHTMLAttributes } from "react";
 import { useState } from "react";
 
+import { cn } from "@/lib/utils";
+
 type SafeImageProps = Omit<ImgHTMLAttributes<HTMLImageElement>, "src" | "alt" | "onError"> & {
   src: string;
   alt: string;
   fallbackSrc?: string;
-  /** LCP: eager yükleme ve yüksek öncelik (next/image `priority` ile aynı amaç) */
   priority?: boolean;
 };
 
-/**
- * Static export (output: "export") ortamında next/image + yerel /public yolları
- * bazı barındırıcılarda güvenilir şekilde yüklenmeyebiliyor. Bu yüzden doğrudan
- * <img> kullanılır; uzak URL ve yerel dosya aynı şekilde çalışır.
- */
 export function SafeImage({
   src,
   alt,
@@ -36,30 +31,35 @@ export function SafeImage({
   const resolvedLoading = priority ? "eager" : loading ?? "lazy";
   const resolvedFetchPriority = priority ? "high" : fetchPriority;
 
+  if (hasError) {
+    return (
+      <div
+        className={cn(
+          "flex h-full min-h-[4rem] w-full items-center justify-center bg-slate-200 text-xs text-slate-500",
+          className
+        )}
+      >
+        Görsel yok
+      </div>
+    );
+  }
+
   return (
-    <div className="relative overflow-hidden bg-slate-200">
-      {!hasError ? (
-        <img
-          {...rest}
-          src={imageSrc}
-          alt={alt}
-          className={className}
-          loading={resolvedLoading}
-          decoding={decoding}
-          fetchPriority={resolvedFetchPriority}
-          onError={() => {
-            if (imageSrc !== fallbackSrc) {
-              setImageSrc(fallbackSrc);
-              return;
-            }
-            setHasError(true);
-          }}
-        />
-      ) : (
-        <div className="flex h-full w-full min-h-[11rem] items-center justify-center bg-slate-200 text-sm font-medium text-slate-500">
-          Görsel yüklenemedi
-        </div>
-      )}
-    </div>
+    <img
+      {...rest}
+      src={imageSrc}
+      alt={alt}
+      className={cn("block h-full w-full object-cover", className)}
+      loading={resolvedLoading}
+      decoding={decoding}
+      fetchPriority={resolvedFetchPriority}
+      onError={() => {
+        if (imageSrc !== fallbackSrc) {
+          setImageSrc(fallbackSrc);
+          return;
+        }
+        setHasError(true);
+      }}
+    />
   );
 }

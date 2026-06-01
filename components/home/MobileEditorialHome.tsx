@@ -14,8 +14,7 @@ function getLeadStory() {
 
 export function MobileEditorialHome() {
   const lead = getLeadStory();
-  const pool = getHotNewsPosts(12);
-  const headlinePool = pool.filter((p) => p.slug !== lead?.slug);
+  const headlinePool = getHotNewsPosts(12).filter((p) => p.slug !== lead?.slug);
   const topHeadlines = headlinePool.slice(0, 4);
 
   const usedSlugs = new Set<string>();
@@ -23,15 +22,15 @@ export function MobileEditorialHome() {
   topHeadlines.forEach((p) => usedSlugs.add(p.slug));
 
   return (
-    <div className="bg-white">
+    <div className="overflow-x-hidden bg-white">
       <BreakingNewsBar />
 
-      <div className="mx-auto max-w-portal lg:px-6">
+      <div className="mx-auto w-full max-w-portal lg:px-6">
         <div className="lg:grid lg:grid-cols-12 lg:gap-10 lg:pt-2">
           <div className="min-w-0 lg:col-span-8">
             {lead ? <TopStories featured={lead} headlines={topHeadlines} /> : null}
 
-            <div className="border-t border-slate-200 px-4 lg:border-t-0 lg:px-0">
+            <div className="lg:space-y-1">
               {EDITORIAL_HOME_SECTIONS.map((section) => {
                 const posts = section.getPosts(6).filter((p) => !usedSlugs.has(p.slug));
                 posts.slice(0, 4).forEach((p) => usedSlugs.add(p.slug));
@@ -42,9 +41,9 @@ export function MobileEditorialHome() {
             </div>
           </div>
 
-          <div className="hidden border-t border-slate-200 px-4 py-6 lg:col-span-4 lg:block lg:border-t-0 lg:px-0 lg:py-8">
+          <aside className="hidden lg:col-span-4 lg:block lg:py-6">
             <HomeSidebar />
-          </div>
+          </aside>
         </div>
       </div>
     </div>
