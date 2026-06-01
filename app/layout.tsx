@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { Footer } from "@/components/layout/Footer";
@@ -15,9 +15,9 @@ const inter = Inter({
   display: "swap"
 });
 
-const sourceSerif = Source_Serif_4({
+const playfair = Playfair_Display({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-source-serif",
+  variable: "--font-editorial",
   display: "swap"
 });
 
@@ -56,7 +56,7 @@ const siteSchemaJson = JSON.stringify({
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="tr" className={`${inter.variable} ${sourceSerif.variable}`}>
+    <html lang="tr" className={`${inter.variable} ${playfair.variable}`}>
       <body className="min-h-screen bg-white font-sans text-ink antialiased">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: siteSchemaJson }} />
         <Header />

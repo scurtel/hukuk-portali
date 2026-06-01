@@ -53,15 +53,15 @@ a {
   }
 
   .editorial-hero-title {
-    @apply font-serif text-[1.35rem] font-bold leading-[1.15] tracking-tight sm:text-3xl lg:text-4xl;
+    @apply font-editorial text-[1.2rem] font-bold leading-[1.2] tracking-tight sm:text-2xl;
   }
 
   .editorial-title {
-    @apply font-serif font-bold leading-snug tracking-tight text-navy;
+    @apply font-editorial font-bold leading-snug tracking-tight text-navy;
   }
 
   .editorial-section-title {
-    @apply font-serif text-xl font-bold tracking-tight sm:text-2xl;
+    @apply font-editorial text-base font-bold tracking-tight sm:text-lg;
   }
 
   .editorial-kicker {
@@ -73,10 +73,10 @@ a {
   }
 
   .news-headline {
-    @apply font-serif text-2xl font-bold leading-[1.12] tracking-tight sm:text-4xl;
+    @apply font-editorial text-2xl font-bold leading-[1.12] tracking-tight sm:text-4xl;
   }
 
   .news-subhead {
-    @apply font-serif font-bold leading-snug tracking-tight text-navy;
+    @apply font-editorial font-bold leading-snug tracking-tight text-navy;
   }
 }

@@ -35,7 +35,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        serif: ["var(--font-source-serif)", "Georgia", "serif"]
+        serif: ["var(--font-editorial)", "Georgia", "serif"],
+        editorial: ["var(--font-editorial)", "Georgia", "serif"]
       },
       boxShadow: {
         editorial: "0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.08)",
