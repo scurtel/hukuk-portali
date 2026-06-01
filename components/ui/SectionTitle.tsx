@@ -21,7 +21,7 @@ export function SectionTitle({ children, href, linkLabel = "Tümünü gör", cla
       {href ? (
         <Link
           href={href}
-          className="shrink-0 text-xs font-semibold uppercase tracking-wide text-brand-500 transition hover:text-accent-red sm:text-sm"
+          className="shrink-0 text-xs font-semibold uppercase tracking-wide text-navy transition active:text-gold sm:text-sm"
         >
           {linkLabel} →
         </Link>

@@ -38,7 +38,7 @@ export function SiteSearch({ index, initialQuery = "" }: SiteSearchProps) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Haber, rehber veya analiz ara…"
-          className="min-h-12 flex-1 rounded-sm border border-slate-300 bg-white px-4 text-base text-ink shadow-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30"
+          className="min-h-12 flex-1 rounded-sm border border-slate-300 bg-white px-4 text-base text-ink shadow-sm focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/30"
           autoComplete="off"
         />
       </form>
@@ -62,7 +62,7 @@ export function SiteSearch({ index, initialQuery = "" }: SiteSearchProps) {
       {query.trim() && results.length === 0 ? (
         <p className="mt-8 rounded-sm border border-slate-200 bg-slate-50 p-6 text-sm text-ink-muted">
           Eşleşen içerik bulunamadı. Farklı anahtar kelimeler deneyin veya{" "}
-          <Link href="/kategori/haber" className="font-semibold text-brand-500 hover:underline">
+          <Link href="/kategori/haber" className="font-semibold text-navy active:text-gold">
             haberler
           </Link>{" "}
           bölümüne göz atın.
@@ -82,7 +82,7 @@ function SearchResultItem({ item }: { item: SearchIndexEntry }) {
         </time>
       </div>
       <h2 className="font-serif text-lg font-bold text-ink">
-        <Link href={item.href} className="hover:text-brand-500">
+        <Link href={item.href} className="active:text-gold">
           {item.title}
         </Link>
       </h2>

@@ -4,17 +4,18 @@
 
 :root {
   color-scheme: light;
-  --portal-border: #e2e8f0;
-  --portal-navy: #0a1f3d;
+  --navy: #0f172a;
+  --gold: #d4af37;
 }
 
 body {
   margin: 0;
-  background: #f8fafc;
-  color: var(--portal-navy);
+  background: #ffffff;
+  color: var(--navy);
   font-family: var(--font-inter), system-ui, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(212, 175, 55, 0.15);
 }
 
 a {
@@ -34,26 +35,48 @@ a {
   select {
     min-height: 44px;
   }
+}
 
-  textarea {
-    min-height: 120px;
+@layer utilities {
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
   }
 }
 
 @layer components {
   .portal-section {
-    @apply border-b border-slate-200/80 bg-white py-8 sm:py-10;
+    @apply border-b border-slate-200/80 bg-white py-5 sm:py-8;
   }
 
-  .portal-section-alt {
-    @apply border-b border-slate-200/80 bg-slate-50/80 py-8 sm:py-10;
+  .editorial-hero-title {
+    @apply font-serif text-[1.35rem] font-bold leading-[1.15] tracking-tight sm:text-3xl lg:text-4xl;
+  }
+
+  .editorial-title {
+    @apply font-serif font-bold leading-snug tracking-tight text-navy;
+  }
+
+  .editorial-section-title {
+    @apply font-serif text-xl font-bold tracking-tight sm:text-2xl;
+  }
+
+  .editorial-kicker {
+    @apply text-[10px] font-bold uppercase tracking-[0.2em] text-gold;
+  }
+
+  .touch-target {
+    @apply inline-flex min-h-11 min-w-11 items-center justify-center;
   }
 
   .news-headline {
-    @apply font-serif text-2xl font-bold leading-tight tracking-tight text-ink sm:text-3xl lg:text-4xl;
+    @apply font-serif text-2xl font-bold leading-[1.12] tracking-tight sm:text-4xl;
   }
 
   .news-subhead {
-    @apply font-serif text-lg font-bold leading-snug text-ink sm:text-xl;
+    @apply font-serif font-bold leading-snug tracking-tight text-navy;
   }
 }

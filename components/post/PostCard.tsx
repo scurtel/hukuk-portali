@@ -30,7 +30,7 @@ function PostTitle({
 }) {
   return (
     <Tag className={className}>
-      <Link href={href} className="transition hover:text-brand-500">
+      <Link href={href} className="transition hover:text-gold active:text-gold">
         {post.title}
       </Link>
     </Tag>
@@ -132,7 +132,7 @@ export function PostCard({
           </p>
           <Link
             href={href}
-            className="mt-3 inline-flex min-h-10 items-center text-sm font-semibold text-brand-500 transition hover:text-accent-red"
+            className="mt-3 inline-flex min-h-10 items-center text-sm font-semibold text-navy transition active:text-gold"
           >
             Devamını Oku →
           </Link>
@@ -170,7 +170,7 @@ export function PostCard({
           </time>
           <Link
             href={href}
-            className="text-xs font-bold uppercase tracking-wide text-brand-700 transition hover:text-accent-red"
+            className="text-xs font-bold uppercase tracking-wide text-gold transition active:text-gold-light"
           >
             Oku
           </Link>

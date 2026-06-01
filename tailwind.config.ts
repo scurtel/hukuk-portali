@@ -10,21 +10,27 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          50: "#f0f4fa",
-          100: "#dce6f5",
-          500: "#1e4a8c",
-          700: "#0f2d5c",
-          900: "#0a1f3d"
+        navy: {
+          DEFAULT: "#0F172A",
+          light: "#1E293B",
+          muted: "#334155"
         },
-        accent: {
-          red: "#c41e3a",
-          "red-dark": "#9e1830"
+        gold: {
+          DEFAULT: "#D4AF37",
+          light: "#E5C76B",
+          dark: "#B8962E"
+        },
+        brand: {
+          50: "#f8fafc",
+          100: "#f1f5f9",
+          500: "#334155",
+          700: "#1E293B",
+          900: "#0F172A"
         },
         ink: {
-          DEFAULT: "#0c1222",
-          muted: "#4a5568",
-          subtle: "#718096"
+          DEFAULT: "#0F172A",
+          muted: "#475569",
+          subtle: "#64748B"
         }
       },
       fontFamily: {
@@ -32,8 +38,8 @@ const config: Config = {
         serif: ["var(--font-source-serif)", "Georgia", "serif"]
       },
       boxShadow: {
-        card: "0 1px 3px rgba(12, 18, 34, 0.08), 0 4px 12px rgba(12, 18, 34, 0.06)",
-        "card-hover": "0 4px 20px rgba(12, 18, 34, 0.12)"
+        editorial: "0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.08)",
+        "editorial-lg": "0 4px 24px rgba(15, 23, 42, 0.12)"
       },
       maxWidth: {
         portal: "80rem"
