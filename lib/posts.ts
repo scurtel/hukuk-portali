@@ -451,7 +451,9 @@ const postImages: Record<string, string> = {
   "yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri":
     "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=85",
   "dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi":
-    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=85"
+    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=85",
+  "turkiyede-avukat-sayilari-2025":
+    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85"
 };
 
 export const staticPosts: Post[] = allPostMetas.map((meta) => ({

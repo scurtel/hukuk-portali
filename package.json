@@ -16,7 +16,8 @@
     "content:legal:publish": "node scripts/publish-generated-articles.mjs",
     "content:legal:sync": "node scripts/generate-gemini-ceren-5.mjs && node scripts/publish-generated-articles.mjs",
     "content:legal:sync:force": "node scripts/generate-gemini-ceren-5.mjs --force && node scripts/publish-generated-articles.mjs",
-    "content:meta:neutralize": "node scripts/neutralize-legal-article-meta.mjs"
+    "content:meta:neutralize": "node scripts/neutralize-legal-article-meta.mjs",
+    "content:haber:avukat-sayilari-2025": "node scripts/generate-haber-avukat-sayilari-2025.mjs && node scripts/publish-generated-articles.mjs"
   },
   "dependencies": {
     "@google/genai": "^1.50.1",

@@ -5,6 +5,7 @@ const GENERATED_DIR = resolve("generated-articles");
 const OUTPUT_FILE = resolve("lib/generatedLegalArticleData.ts");
 
 const TYPE_BY_SLUG = {
+  "turkiyede-avukat-sayilari-2025": "haber",
   "tapuda-avukat-zorunlulugu-gelirse-vatandas-ne-yapacak": "haber",
   "bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi": "analiz",
   "tapu-iptal-ve-tescil-davasi-hangi-durumlarda-acilir": "analiz",
@@ -32,6 +33,7 @@ const PROMOTED_LEGAL_SLUGS = new Set([
 
 const PROMOTED_PUBLISH_DATE = "2026-05-14";
 const AI_LAWYER_PUBLISH_DATE = "2026-05-15";
+const HOT_HABER_SLUGS = new Set(["turkiyede-avukat-sayilari-2025"]);
 
 function getPostType(slug) {
   return TYPE_BY_SLUG[slug] || "rehber";
@@ -58,7 +60,9 @@ function isLegalArticleJson(data) {
 }
 
 function buildMeta(article, index) {
-  const type = getPostType(article.slug);
+  const type = article.type === "haber" || article.type === "analiz" || article.type === "rehber"
+    ? article.type
+    : getPostType(article.slug);
   const keywords = Array.isArray(article.focusKeywords) ? article.focusKeywords : [];
   const faq = Array.isArray(article.faq)
     ? article.faq.map((item) => ({
@@ -70,7 +74,9 @@ function buildMeta(article, index) {
   const publishedAt =
     typeof article.publishedAt === "string"
       ? article.publishedAt
-      : article.slug === "avukatlar-icin-yapay-zeka-hukuk-rehberi" ||
+      : HOT_HABER_SLUGS.has(article.slug)
+        ? "2026-06-01"
+        : article.slug === "avukatlar-icin-yapay-zeka-hukuk-rehberi" ||
           article.slug === "yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri" ||
           article.slug === "dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi"
         ? AI_LAWYER_PUBLISH_DATE
@@ -90,7 +96,7 @@ function buildMeta(article, index) {
     excerpt: article.excerpt,
     type,
     categorySlug: getCategorySlug(type),
-    featured: PROMOTED_LEGAL_SLUGS.has(article.slug),
+    featured: article.featured === true || PROMOTED_LEGAL_SLUGS.has(article.slug) || HOT_HABER_SLUGS.has(article.slug),
     publishedAt,
     updatedAt,
     imageAlt,
