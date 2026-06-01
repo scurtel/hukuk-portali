@@ -1,6 +1,17 @@
 import type { Post } from "@/types/post";
 
-import { getPostBySlug, getPostsByType, staticPosts } from "@/lib/posts";
+import { getPostBySlug, getFeaturedPosts, getPostsByType, staticPosts } from "@/lib/posts";
+
+/** Ana sayfada gösterilmeyecek; doğrudan URL ile erişilebilir kalır */
+export const HOME_EXCLUDED_SLUGS = new Set<string>(["yapay-zeka-avukatsiz-dava-dilekcesi"]);
+
+export function isHomepageVisible(post: Pick<Post, "slug">): boolean {
+  return !HOME_EXCLUDED_SLUGS.has(post.slug);
+}
+
+export function filterHomepagePosts<T extends Pick<Post, "slug">>(posts: T[]): T[] {
+  return posts.filter(isHomepageVisible);
+}
 
 /** Ana sayfa “Avukatlar İçin Yapay Zekâ” alanı */
 export const AI_LAWYER_SLUGS = [
@@ -20,12 +31,16 @@ export function getAiLawyerPosts(): Post[] {
 }
 
 export function getHotNewsPosts(take = 8): Post[] {
-  return getPostsByType("haber", take);
+  return filterHomepagePosts(getPostsByType("haber")).slice(0, take);
+}
+
+export function getHomeFeaturedPosts(): Post[] {
+  return filterHomepagePosts(getFeaturedPosts());
 }
 
 export function getMevzuatHighlightPosts(take = 4): Post[] {
   const keywords = ["mevzuat", "kanun", "yargı", "mahkeme", "paket", "tbb", "kvkk", "tapu"];
-  const pool = staticPosts.filter((p) => p.isPublic !== false);
+  const pool = staticPosts.filter((p) => p.isPublic !== false && isHomepageVisible(p));
   const scored = pool
     .map((post) => {
       const bag = `${post.title} ${post.excerpt}`.toLocaleLowerCase("tr");
@@ -36,12 +51,12 @@ export function getMevzuatHighlightPosts(take = 4): Post[] {
     .sort((a, b) => b.score - a.score || new Date(b.post.publishedAt).getTime() - new Date(a.post.publishedAt).getTime());
 
   if (scored.length >= take) return scored.slice(0, take).map((x) => x.post);
-  return getPostsByType("haber", take);
+  return getHotNewsPosts(take);
 }
 
 export function getTechLawPosts(take = 4): Post[] {
   const keywords = ["yapay", "dijital", "teknoloji", "legaltech", "otomasyon", "yz"];
-  const pool = staticPosts.filter((p) => p.isPublic !== false);
+  const pool = staticPosts.filter((p) => p.isPublic !== false && isHomepageVisible(p));
   const scored = pool
     .map((post) => {
       const bag = `${post.title} ${post.excerpt}`.toLocaleLowerCase("tr");

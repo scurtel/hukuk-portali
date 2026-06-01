@@ -3,12 +3,11 @@ import { BreakingNewsBar } from "@/components/home/BreakingNewsBar";
 import { HomeSidebar } from "@/components/home/HomeSidebar";
 import { TopStories } from "@/components/home/TopStories";
 import { EDITORIAL_HOME_SECTIONS } from "@/lib/editorial-sections";
-import { getHotNewsPosts } from "@/lib/home";
-import { getFeaturedPosts, getPostsByType } from "@/lib/posts";
+import { getHomeFeaturedPosts, getHotNewsPosts } from "@/lib/home";
 
 function getLeadStory() {
-  const featured = getFeaturedPosts();
-  const news = getPostsByType("haber");
+  const featured = getHomeFeaturedPosts();
+  const news = getHotNewsPosts(12);
   return featured[0] ?? news[0];
 }
 

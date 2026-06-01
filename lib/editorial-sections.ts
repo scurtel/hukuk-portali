@@ -1,6 +1,6 @@
 import type { Post } from "@/types/post";
 
-import { getAiLawyerPosts, getHotNewsPosts, getTechLawPosts } from "@/lib/home";
+import { getAiLawyerPosts, getHotNewsPosts, getTechLawPosts, isHomepageVisible } from "@/lib/home";
 import { getPostsByType, staticPosts } from "@/lib/posts";
 
 export type EditorialSectionConfig = {
@@ -11,7 +11,7 @@ export type EditorialSectionConfig = {
 };
 
 function scoreByKeywords(keywords: string[], take: number, fallback: () => Post[]): Post[] {
-  const pool = staticPosts.filter((p) => p.isPublic !== false);
+  const pool = staticPosts.filter((p) => p.isPublic !== false && isHomepageVisible(p));
   const scored = pool
     .map((post) => {
       const bag = `${post.title} ${post.excerpt}`.toLocaleLowerCase("tr");
