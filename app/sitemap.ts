@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { getAllCategories } from "@/lib/categories";
 import { getAllPosts } from "@/lib/posts";
+import { TOPICS } from "@/lib/topics";
 import { getPostHref } from "@/lib/post-urls";
 import { getSiteUrl } from "@/lib/site";
 
@@ -38,8 +39,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.85
+    },
+    {
+      url: `${baseUrl}/arama`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.5
     }
   ];
+
+  const topicRoutes: MetadataRoute.Sitemap = TOPICS.map((topic) => ({
+    url: `${baseUrl}/konu/${topic.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.85
+  }));
 
   const categoryRoutes: MetadataRoute.Sitemap = categories.map((category) => ({
     url: `${baseUrl}/kategori/${category.slug}`,
@@ -59,5 +73,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...staticRoutes, ...categoryRoutes, ...postRoutes];
+  return [...staticRoutes, ...topicRoutes, ...categoryRoutes, ...postRoutes];
 }

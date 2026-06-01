@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { buildPlatformAboutPageSchemaGraph } from "@/lib/seo/platform";
 import { getSiteUrl, siteConfig } from "@/lib/site";
 
 import "./globals.css";
@@ -48,10 +49,16 @@ type RootLayoutProps = {
   children: ReactNode;
 };
 
+const siteSchemaJson = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": buildPlatformAboutPageSchemaGraph()
+});
+
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="tr" className={`${inter.variable} ${sourceSerif.variable}`}>
       <body className="min-h-screen bg-slate-50 font-sans text-ink antialiased">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: siteSchemaJson }} />
         <Header />
         <main>{children}</main>
         <Footer />

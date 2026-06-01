@@ -51,7 +51,15 @@ export function buildPlatformAboutPageSchemaGraph(): Record<string, unknown>[] {
       name: siteConfig.name,
       url: siteUrl,
       publisher: { "@id": PLATFORM_ORGANIZATION_ID },
-      inLanguage: "tr-TR"
+      inLanguage: "tr-TR",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `${siteUrl}/arama?q={search_term_string}`
+        },
+        "query-input": "required name=search_term_string"
+      }
     }
   ];
 }

@@ -23,11 +23,11 @@ export type NavItem = {
 export const navItems: NavItem[] = [
   { label: "Ana Sayfa", href: "/" },
   { label: "Haberler", href: "/kategori/haber" },
-  { label: "Yapay Zekâ", href: "/#yapay-zeka" },
+  { label: "Yapay Zekâ", href: "/konu/yapay-zeka" },
   { label: "Hukuk Teknolojileri", href: "/#hukuk-teknolojileri" },
   { label: "Rehberler", href: "/kategori/rehber" },
   { label: "Analizler", href: "/kategori/analiz" },
-  { label: "Mevzuat", href: "/#mevzuat" },
+  { label: "Mevzuat", href: "/konu/mevzuat" },
   { label: "İletişim", href: "/iletisim" }
 ];
 
@@ -38,7 +38,8 @@ export const footerNavGroups = [
       { label: "Haberler", href: "/kategori/haber" },
       { label: "Rehberler", href: "/kategori/rehber" },
       { label: "Analizler", href: "/kategori/analiz" },
-      { label: "Yapay Zekâ", href: "/#yapay-zeka" }
+      { label: "Yapay Zekâ", href: "/konu/yapay-zeka" },
+      { label: "Arama", href: "/arama" }
     ]
   },
   {

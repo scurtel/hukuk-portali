@@ -15,7 +15,8 @@
     "content:legal:ai-lawyer:sync:force": "node scripts/generate-gemini-ceren-5.mjs --ai-lawyer-only --force && node scripts/publish-generated-articles.mjs",
     "content:legal:publish": "node scripts/publish-generated-articles.mjs",
     "content:legal:sync": "node scripts/generate-gemini-ceren-5.mjs && node scripts/publish-generated-articles.mjs",
-    "content:legal:sync:force": "node scripts/generate-gemini-ceren-5.mjs --force && node scripts/publish-generated-articles.mjs"
+    "content:legal:sync:force": "node scripts/generate-gemini-ceren-5.mjs --force && node scripts/publish-generated-articles.mjs",
+    "content:meta:neutralize": "node scripts/neutralize-legal-article-meta.mjs"
   },
   "dependencies": {
     "@google/genai": "^1.50.1",

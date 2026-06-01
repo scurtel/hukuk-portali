@@ -20,7 +20,7 @@ export function AiLawyerSection() {
   return (
     <section id="yapay-zeka" className="scroll-mt-28 portal-section-alt">
       <Container wide>
-        <SectionTitle href="/kategori/rehber" linkLabel="Tüm rehberler">
+        <SectionTitle href="/konu/yapay-zeka" linkLabel="Tüm yapay zekâ içerikleri">
           Avukatlar İçin Yapay Zekâ
         </SectionTitle>
         <p className="-mt-3 mb-6 max-w-3xl text-sm leading-relaxed text-ink-muted sm:text-base">

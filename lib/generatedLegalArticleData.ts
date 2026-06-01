@@ -15,16 +15,15 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "seo": {
       "metaTitle": "Adana Gayrimenkul Alırken Tapu Kaydı İncelemesi: Kapsamlı Rehber",
       "metaDescription": "Adana'da ev, arsa, iş yeri alırken tapu kaydında ipotek, haciz, şerh, hisseli tapu gibi risklere karşı kapsamlı bir kontrol listesi. Güvenli gayrimenkul alımı için uzman rehberliği.",
-      "focusKeyword": "Adana gayrimenkul avukatı",
+      "focusKeyword": "Adana tapu kaydı inceleme",
       "secondaryKeywords": [
-        "Adana tapu avukatı",
+        "Adana tapu işlemleri",
         "tapu kaydı inceleme",
         "ipotek",
         "haciz",
         "şerh",
         "hisseli tapu",
         "vekaletname ile tapu satışı",
-        "Avukat Ceren Sümer Cilli"
       ]
     },
     "faq": [
@@ -70,7 +69,6 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
         "aile konutu satışı",
         "tapu iptal davası",
         "boşanmada ev satışı",
-        "Avukat Ceren Sümer Cilli"
       ]
     },
     "faq": [
@@ -115,7 +113,6 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
         "legaltech avukat",
         "yapay zeka hukuk",
         "avukatlık meslek etiği yapay zeka",
-        "Avukat Ceren Sümer Cilli"
       ]
     },
     "faq": [
@@ -203,13 +200,12 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "imageAlt": "Boşanma sonrası mal paylaşımını simgeleyen, ikiye ayrılmış bir ev veya anahtar figürü, adalet terazisi detaylarıyla",
     "seo": {
       "metaTitle": "Boşanmada Mal Paylaşımı Nasıl Yapılır? 2026 Güncel Rehber",
-      "metaDescription": "Boşanma sonrası mal paylaşımı, edinilmiş mallara katılma rejimi kapsamında nasıl yapılır? Ev, araba, şirket hissesi, ziynet ve borç paylaşımında hukuki süreci öğrenin. Avukat Ceren Sümer Cilli'den stratejik destek.",
+      "metaDescription": "Boşanma sonrası mal paylaşımı, edinilmiş mallara katılma rejimi kapsamında nasıl yapılır? Ev, araba, şirket hissesi, ziynet ve borç paylaşımında hukuki süreci öğrenin. Hukukportali rehberi.",
       "focusKeyword": "boşanmada mal paylaşımı",
       "secondaryKeywords": [
         "mal paylaşımı davası",
         "edinilmiş mallara katılma rejimi",
-        "boşanma avukatı",
-        "Avukat Ceren Sümer Cilli"
+        "boşanma mal paylaşımı",
       ]
     },
     "faq": [
@@ -230,8 +226,8 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
         "answer": "Evlilik birliği içinde çekilen ve ortak ihtiyaçlar doğrultusunda kullanılan kredi borçları, edinilmiş mallara katılma rejiminin tasfiyesinde aktif ve pasif değerler olarak değerlendirilir. Bu tür borçlar, edinilmiş malların değerinden düşülerek hesaplamaya dahil edilir. Borcun kimin adına çekildiği değil, hangi amaçla ve kimin yararına kullanıldığı önem taşır. Kişisel harcamalar için çekilen borçlar ise genellikle kişisel borç olarak kabul edilir. Hukuki strateji, bu borçların doğru şekilde tasfiyeye dahil edilmesini sağlamalıdır."
       },
       {
-        "question": "Avukat Ceren Sümer Cilli'nin rolü mal paylaşımında neden önemlidir?",
-        "answer": "Avukat Ceren Sümer Cilli gibi deneyimli bir aile hukuku avukatı, boşanmada mal paylaşımı sürecinde müvekkillerine stratejik ve kapsamlı hukuki destek sunar. Malvarlığının doğru tespiti, kişisel ve edinilmiş malların ayrımı, değer artış payı ve katılma alacağının hesaplanması gibi karmaşık konularda profesyonel rehberlik sağlar. Hukuki süreç boyunca müvekkillerinin haklarını koruyarak, adil bir mal paylaşımının gerçekleşmesi için gerekli adımları atar ve olası uyuşmazlıkların çözümünde etkili bir rol oynar."
+        "question": "Mal paylaşımında profesyonel değerlendirme neden önemlidir?",
+        "answer": "Mal paylaşımında malvarlığının doğru tespiti, kişisel ve edinilmiş malların ayrımı ile katılma alacağının hesaplanması karmaşık olabilir. Somut dosyada uzman değerlendirme hak kaybı riskini azaltabilir; bu metin genel bilgilendirme sunar."
       },
       {
         "question": "Aile konutu nasıl paylaşılır?",
@@ -251,16 +247,15 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "updatedAt": "2026-04-27",
     "imageAlt": "Boşanmadan Önce Evin Satılması Mal Kaçırma Sayılır mı? — kapak görseli",
     "seo": {
-      "metaTitle": "Boşanmadan Önce Ev Satışı Mal Kaçırma Sayılır mı? | Adana Boşanma Avukatı Ceren Sümer Cilli",
-      "metaDescription": "Boşanma sürecinde evin satılması mal kaçırma mıdır? Tapu iptal ve tescil davası, mal paylaşımı davası ve aile konutu şerhi ile haklarınızı koruyun. Adana'da boşanmada mal kaçırma davaları hakkında Avukat Ceren Sümer Cilli'den bilgi alın.",
+      "metaTitle": "Boşanmadan Önce Ev Satışı Mal Kaçırma Sayılır mı?",
+      "metaDescription": "Boşanma sürecinde evin satılması mal kaçırma mıdır? Tapu iptal ve tescil davası, mal paylaşımı davası ve aile konutu şerhi ile haklarınızı koruyun. Adana'da boşanmada mal kaçırma davaları hakkında ",
       "focusKeyword": "boşanmada mal kaçırma",
       "secondaryKeywords": [
         "eşten mal kaçırma",
         "tapu iptal ve tescil davası",
         "mal paylaşımı davası",
         "aile konutu şerhi",
-        "Adana boşanma avukatı",
-        "Avukat Ceren Sümer Cilli"
+        "boşanma hukuku",
       ]
     },
     "faq": [
@@ -305,7 +300,6 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
         "dilekçe taslağı yapay zeka",
         "hukuki araştırma yapay zeka",
         "avukat kontrol listesi",
-        "Avukat Ceren Sümer Cilli"
       ]
     },
     "faq": [
@@ -348,7 +342,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "imageAlt": "Hisseli Tapu Almak Riskli mi? Alıcılar İçin Hukuki Kontrol Listesi — kapak görseli",
     "seo": {
       "metaTitle": "Hisseli Tapu Almak Riskli mi? Alıcılar İçin Kapsamlı Hukuki Kontrol Listesi | hukukportali.com",
-      "metaDescription": "Hisseli tapu alımı riskli mi? Paydaş uyuşmazlıkları, önalım hakkı, ortaklığın giderilmesi gibi potansiyel riskleri öğrenin. Hisseli tapu alıcıları için Adana gayrimenkul avukatı rehberliğinde kapsamlı hukuki kontrol listesi ve dikkat edilmesi gerekenler.",
+      "metaDescription": "Hisseli tapu alımı riskli mi? Paydaş uyuşmazlıkları, önalım hakkı, ortaklığın giderilmesi gibi potansiyel riskleri öğrenin. Hisseli tapu alıcıları için kapsamlı hukuki kontrol listesi ve dikkat edilmesi gerekenler.",
       "focusKeyword": "hisseli tapu",
       "secondaryKeywords": [
         "hisseli tapu almak",
@@ -357,7 +351,6 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
         "ortaklığın giderilmesi",
         "önalım hakkı",
         "Adana gayrimenkul avukatı",
-        "Avukat Ceren Sümer Cilli"
       ]
     },
     "faq": [
@@ -396,15 +389,14 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "imageAlt": "Miras Kalan Ev Satılabilir mi? Mirasçılar Arasında Satış ve Ortaklığın Giderilmesi — kapak görseli",
     "seo": {
       "metaTitle": "Miras Kalan Ev Satışı, Ortaklığın Giderilmesi ve Hisseli Tapu Rehberi | Hukukportali.com",
-      "metaDescription": "Miras kalan bir evin satışı nasıl yapılır? Mirasçılar arasında anlaşma sağlanamazsa ortaklığın giderilmesi (izale-i şuyu) davası süreci ve hisseli tapu sorunlarına dair kapsamlı hukuki rehber. Adana miras avukatı danışmanlığı.",
+      "metaDescription": "Miras kalan bir evin satışı nasıl yapılır? Mirasçılar arasında anlaşma sağlanamazsa ortaklığın giderilmesi (izale-i şuyu) davası süreci ve hisseli tapu sorunlarına dair kapsamlı hukuki rehber. Miras süreçleri rehberi.",
       "focusKeyword": "miras kalan ev satışı",
       "secondaryKeywords": [
         "mirasçılar arasında taşınmaz satışı",
         "ortaklığın giderilmesi davası",
         "izale-i şuyu",
         "hisseli tapu",
-        "Adana miras avukatı",
-        "Avukat Ceren Sümer Cilli"
+        "miras hukuku",
       ]
     },
     "faq": [
@@ -443,15 +435,14 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "imageAlt": "Ortaklığın Giderilmesi Davasında Ev Açık Artırmaya Gider mi? — kapak görseli",
     "seo": {
       "metaTitle": "Ortaklığın Giderilmesi Davasında Ev Açık Artırmaya Gider mi? - Hukuk Rehberi",
-      "metaDescription": "Hisseli tapulu eviniz açık artırmaya çıkar mı? Ortaklığın giderilmesi (izale-i şuyu) davasında aynen taksim ve satış yolu, açık artırma süreci, satış memurluğu ve paydaşların ihaleye katılım detayları bu kapsamlı hukuk rehberinde. Adana bölgesinde Avukat Ceren Sümer Cilli'den hukuki destek alın.",
+      "metaDescription": "Hisseli tapulu eviniz açık artırmaya çıkar mı? Ortaklığın giderilmesi (izale-i şuyu) davasında aynen taksim ve satış yolu, açık artırma süreci, satış memurluğu ve paydaşların ihaleye katılım detayları bu kapsamlı hukuk rehberinde. Adana bölgesinde ",
       "focusKeyword": "ortaklığın giderilmesi davası",
       "secondaryKeywords": [
         "izale-i şuyu davası",
         "ev açık artırma",
         "hisseli tapu satışı",
         "miras kalan ev satışı",
-        "Adana ortaklığın giderilmesi avukatı",
-        "Avukat Ceren Sümer Cilli"
+        "ortaklığın giderilmesi",
       ]
     },
     "faq": [
@@ -502,13 +493,12 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "imageAlt": "Bir elinde tapu senedi, diğer elinde adalet terazisi olan veya tapu dairesi önünde hukuki belgelerle duran bir kişi.",
     "seo": {
       "metaTitle": "Tapu İptal ve Tescil Davası Nedir? Sık Görülen Sebepler",
-      "metaDescription": "Tapu iptal ve tescil davası nedir? Muris muvazaası, vekaletname, ehliyetsizlik ve hile gibi en sık görülen nedenleri, dava süreci ve miras uyuşmazlıklarındaki rolünü öğrenin. Av. Ceren Sümer Cilli ile stratejik dava yönetimi.",
+      "metaDescription": "Tapu iptal ve tescil davası nedir? Muris muvazaası, vekaletname, ehliyetsizlik ve hile gibi en sık görülen nedenleri, dava süreci ve miras uyuşmazlıklarındaki rolünü öğrenin.",
       "focusKeyword": "tapu iptal ve tescil davası",
       "secondaryKeywords": [
         "mirastan mal kaçırma",
         "muris muvazaası",
         "gayrimenkul avukatı",
-        "Avukat Ceren Sümer Cilli"
       ]
     },
     "faq": [
@@ -560,7 +550,6 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
         "miras nedeniyle tapu iptali",
         "vekalet görevinin kötüye kullanılması",
         "Adana gayrimenkul avukatı",
-        "Avukat Ceren Sümer Cilli"
       ]
     },
     "faq": [
@@ -611,14 +600,13 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "imageAlt": "Tapuda Avukat Zorunluluğu Gelirse Vatandaş Ne Yapacak? — kapak görseli",
     "seo": {
       "metaTitle": "Tapuda Avukat Zorunluluğu: 12. Yargı Paketi ve 30 Milyon TL Üzeri İşlemler İçin Rehber",
-      "metaDescription": "12. Yargı Paketi kapsamında gündeme gelen 30 milyon TL üzeri tapu işlemlerinde avukat zorunluluğu ne anlama geliyor? Bu detaylı rehberde, planlanan düzenlemenin alıcı ve satıcılar üzerindeki potansiyel etkilerini, Avukat Ceren Sümer Cilli'nin uzmanlık alanlarını ve vatandaşların hazırlık adımlarını öğrenin.",
+      "metaDescription": "12. Yargı Paketi kapsamında gündeme gelen 30 milyon TL üzeri tapu işlemlerinde avukat zorunluluğu ne anlama geliyor? Bu detaylı rehberde, planlanan düzenlemenin alıcı ve satıcılar üzerindeki potansiyel etkilerini; vatandaşların hazırlık adımlarını öğrenin.",
       "focusKeyword": "tapuda avukat zorunluluğu",
       "secondaryKeywords": [
         "30 milyon TL üzeri tapu işlemleri",
         "12. Yargı Paketi tapu işlemleri",
         "taşınmaz satışında avukat",
         "Adana gayrimenkul avukatı",
-        "Avukat Ceren Sümer Cilli"
       ]
     },
     "faq": [
@@ -635,8 +623,8 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
         "answer": "Avukat bulundurmak, tapu kaydı incelemesi, sözleşme hazırlığı, yasal risk analizi, müzakere süreci ve temsil gibi konularda hukuki güvence sağlar. Bu sayede dolandırıcılık, gizli ayıplar, hukuki kısıtlamalar gibi riskler minimize edilir, sürecin şeffaflığı ve güvenliği artırılır."
       },
       {
-        "question": "Adana'da gayrimenkul avukatı seçerken nelere dikkat etmeliyim?",
-        "answer": "Adana'da gayrimenkul avukatı seçerken, avukatın gayrimenkul hukuku alanındaki uzmanlığı ve deneyimi, iletişim becerileri, sektördeki itibarı ve referansları önemlidir. Bölgedeki hukuki dinamikleri iyi bilen bir avukat, size daha etkin destek sağlayabilir."
+        "question": "Gayrimenkul alımında hukuki inceleme ne zaman gerekir?",
+        "answer": "Tapu kaydı, şerhler, imar durumu ve sözleşme şartları karmaşıklaştığında veya yüksek tutarlı işlemlerde hukuki inceleme önerilir. Süreç genel bilgilendirme çerçevesinde planlanmalı; somut dosya için uzman değerlendirme gerekebilir."
       },
       {
         "question": "Düzenleme yasalaşırsa, alıcı ve satıcılar için ne gibi değişiklikler olacak?",
@@ -657,15 +645,14 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "imageAlt": "Vekaletname ile Tapu Satışı Güvenli mi? Sahte Vekaletname Risklerine Karşı Rehber — kapak görseli",
     "seo": {
       "metaTitle": "Vekaletname ile Tapu Satışı Güvenli mi? Sahte Vekaletname Risklerine Karşı Kapsamlı Rehber",
-      "metaDescription": "Vekaletname ile tapu satışında alıcı ve satıcılar için riskleri ve korunma yollarını öğrenin. Sahte vekaletname, dolandırıcılık ve yasal süreçler hakkında uzman rehberliği. Adana'da Avukat Ceren Sümer Cilli'den bilgiler.",
+      "metaDescription": "Vekaletname ile tapu satışında alıcı ve satıcılar için riskleri ve korunma yollarını öğrenin. Sahte vekaletname, dolandırıcılık ve yasal süreçler hakkında uzman rehberliği. Adana'da ",
       "focusKeyword": "vekaletname ile tapu satışı",
       "secondaryKeywords": [
         "sahte vekaletname",
         "tapu dolandırıcılığı",
         "tapu sahteciliği",
         "taşınmaz satışında avukat",
-        "Adana tapu avukatı",
-        "Avukat Ceren Sümer Cilli"
+        "Adana tapu işlemleri",
       ]
     },
     "faq": [
@@ -718,8 +705,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
         "çocuğun üstün yararı",
         "boşanmada velayet",
         "ortak velayet",
-        "Adana boşanma avukatı",
-        "Avukat Ceren Sümer Cilli"
+        "boşanma hukuku",
       ]
     },
     "faq": [
@@ -744,8 +730,8 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
         "answer": "Medeni Kanun'a göre, idrak çağındaki çocuğun velayetle ilgili konularda görüşlerinin alınması ve bu görüşlere uygun bir şekilde karar verilmesi esastır. Çocuğun yaşına ve olgunluğuna göre değişmekle birlikte, mahkeme çocuğun taleplerini ve isteklerini ciddiyetle değerlendirir. Ancak çocuğun görüşü tek başına belirleyici olmayıp, diğer tüm faktörlerle birlikte ele alınır."
       },
       {
-        "question": "Velayet davasında Adana'da bir avukatla çalışmak neden önemlidir?",
-        "answer": "Velayet davaları, hukuki bilgi ve tecrübe gerektiren karmaşık süreçlerdir. Adana'da bir avukatla çalışmak, yerel mahkeme pratiklerini ve hukuki prosedürleri iyi bilen bir uzmandan destek almanızı sağlar. Avukat, davanızın doğru bir şekilde yürütülmesine, haklarınızın korunmasına ve çocuğunuzun üstün yararının gözetilmesine yardımcı olur."
+        "question": "Velayet davasında profesyonel destek ne sağlar?",
+        "answer": "Velayet davaları delil, sosyal inceleme ve üstün yarar ilkesi açısından karmaşıktır. Profesyonel destek, dilekçe, delil sunumu ve duruşma hazırlığında sürecin doğru yürütülmesine katkı sağlayabilir; somut dosya koşullarına göre değerlendirme gerekir."
       }
     ]
   },
@@ -811,14 +797,13 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "imageAlt": "Yabancıların Türkiye'de Ev Alırken Avukatla Çalışması Neden Önemli? — kapak görseli",
     "seo": {
       "metaTitle": "Yabancıların Türkiye'de Ev Alımı: Avukat Desteğinin Önemi | Hukukportali.com",
-      "metaDescription": "Türkiye'de gayrimenkul edinmek isteyen yabancılar için tapu, sözleşme, ödeme ve vatandaşlık süreçlerinde avukat desteğinin neden kritik olduğunu öğrenin. Avukat Ceren Sümer Cilli'nin uzman bakış açısıyla güvenli alım yapın.",
+      "metaDescription": "Türkiye'de gayrimenkul edinmek isteyen yabancılar için tapu, sözleşme, ödeme ve vatandaşlık süreçlerinde avukat desteğinin neden kritik olduğunu öğrenin. Güvenli alım için rehber adımlar.",
       "focusKeyword": "yabancıların Türkiye'de ev alması",
       "secondaryKeywords": [
         "foreign property buyers Turkey",
         "Türkiye'de gayrimenkul alımı",
         "yabancılar için tapu işlemleri",
         "Turkish real estate lawyer",
-        "Avukat Ceren Sümer Cilli"
       ]
     },
     "faq": [
@@ -863,7 +848,6 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
         "avukat kişisel veri",
         "yapay zeka KVKK",
         "hukuk bürosu veri güvenliği",
-        "Avukat Ceren Sümer Cilli"
       ]
     },
     "faq": [

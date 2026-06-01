@@ -52,8 +52,8 @@ export function HomeSidebar() {
             </li>
           ))}
         </ul>
-        <Link href="/kategori/haber" className="mt-4 inline-block text-xs font-bold uppercase text-brand-500 hover:text-accent-red">
-          Tüm haberler →
+        <Link href="/konu/mevzuat" className="mt-4 inline-block text-xs font-bold uppercase text-brand-500 hover:text-accent-red">
+          Mevzuat hub →
         </Link>
       </div>
 

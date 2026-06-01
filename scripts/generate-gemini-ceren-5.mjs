@@ -19,12 +19,10 @@ const BANNED_PHRASES = [
 
 const AI_LAWYER_ONLY = process.argv.includes("--ai-lawyer-only");
 
-const CEREN_CTA = `Aile hukuku, miras, mal paylaşımı ve gayrimenkul uyuşmazlıklarında hak kaybı yaşamamak için profesyonel hukuki destek alınması önemlidir. Avukat Ceren Sümer Cilli, bu alanlarda stratejik ve özenli hukuki değerlendirme yapılmasının önemine dikkat çekmektedir.`;
-
-const AI_LAWYER_CTA = `LegalTech ve dava uygulamasında teknoloji kullanımı ile stratejik dosya yönetimi için profesyonel avukatlık desteğinin önemi büyüktür. Avukat Ceren Sümer Cilli, bu bağlamda özenli hukuki değerlendirme yapılmasının önemine dikkat çekmektedir.`;
+const PLATFORM_CTA = `Hukukportali.com, hukuk profesyonellerine yapay zekâ, dijital dönüşüm ve güncel mevzuat hakkında bilgi sunan bağımsız bir yayın platformudur. Somut uyuşmazlıklar için uzman değerlendirmesi gerekebilir; bu metin genel bilgilendirme niteliğindedir.`;
 
 function getFixedCta() {
-  return AI_LAWYER_ONLY ? AI_LAWYER_CTA : CEREN_CTA;
+  return PLATFORM_CTA;
 }
 
 const DISCLAIMER =
@@ -34,7 +32,7 @@ function getCommonBodyInstructions() {
   return `
 Sen hukukportali.com için Türkçe, özgün, SEO uyumlu hukuki bilgilendirme gövdesi yazıyorsun.
 ${COMMON_RULES}
-Avukat Ceren Sümer Cilli adını doğal biçimde 2-3 kez geçir; tanıtım abartısı yapma.
+Kişisel avukat veya hukuk bürosu adı kullanma; gerekiyorsa yalnızca "hukukportali.com" veya "Hukukportali Editör Ekibi" (en fazla 1-2 kez).
 İlk ~150 kelimede odak anahtar kelime geçsin.
 H2 ve H3 kullan; kısa paragraflar; en az bir markdown tablosu ve madde işaretli liste içer.
 Kelime sayısı: ${MIN_WORDS}-${MAX_WORDS} (tüm gövde).
@@ -55,6 +53,7 @@ Sen hukukportali.com için Türkçe hukuki içerik meta verisi hazırlıyorsun.
 ${COMMON_RULES}
 metaTitle en fazla 60 karakter; metaDescription en fazla 155 karakter.
 SSS cevapları öz ama yeterli olsun (her biri yaklaşık 3-6 cümle).
+Kişisel avukat/büro adı, "danışın", "randevu" reklamı kullanma; yayıncı: hukukportali.com / Hukukportali Editör Ekibi.
 `.trim();
 
 const CEREN_ARTICLES = [
@@ -66,7 +65,7 @@ const CEREN_ARTICLES = [
       "mal paylaşımı davası",
       "edinilmiş mallara katılma rejimi",
       "boşanma avukatı",
-      "Avukat Ceren Sümer Cilli"
+      "hukukportali.com"
     ],
     internalLinks: [
       "/aile-hukuku/",
@@ -75,7 +74,7 @@ const CEREN_ARTICLES = [
       "/bosanma-sureci/",
       "/bosanma-avukati/"
     ],
-    objective: `Boşanma sonrası ev, araba, banka hesabı, şirket hissesi, ziynet ve kredi borcu gibi konuları anlaşılır anlat. Mal rejimi ve edinilmiş mallara katılma çerçevesinde genel bilgilendirme yap. Avukat Ceren Sümer Cilli'yi aile hukuku ve mal paylaşımı uyuşmazlıklarında hukuki stratejinin önemine dikkat çeken doğal cümlelerle an.`
+    objective: `Boşanma sonrası ev, araba, banka hesabı, şirket hissesi, ziynet ve kredi borcu gibi konuları anlaşılır anlat. Mal rejimi ve edinilmiş mallara katılma çerçevesinde genel bilgilendirme yap. Kişisel avukat tanıtımı yapma.`
   },
   {
     title: "Velayet Davasında Hakim Neye Bakar? Anne ve Baba İçin Güncel Hukuki Kriterler",
@@ -86,7 +85,7 @@ const CEREN_ARTICLES = [
       "boşanmada velayet",
       "ortak velayet",
       "Adana boşanma avukatı",
-      "Avukat Ceren Sümer Cilli"
+      "hukukportali.com"
     ],
     internalLinks: [
       "/bosanmada-velayet/",
@@ -105,7 +104,7 @@ const CEREN_ARTICLES = [
       "mirastan mal kaçırma",
       "muris muvazaası",
       "gayrimenkul avukatı",
-      "Avukat Ceren Sümer Cilli"
+      "hukukportali.com"
     ],
     internalLinks: [
       "/gayrimenkul-hukuku/",
@@ -114,7 +113,7 @@ const CEREN_ARTICLES = [
       "/muvazaa/",
       "/miras-uyusmazligi/"
     ],
-    objective: `Muris muvazaası, vekaletname/şekil, ehliyetsizlik, hile, aile içi mal kaçırma ve miras uyuşmazlıkları üzerinden rehber yaz. Avukat Ceren Sümer Cilli'yi gayrimenkul ve miras uyuşmazlıklarında dikkatli dava stratejisiyle ilişkilendir.`
+    objective: `Muris muvazaası, vekaletname/şekil, ehliyetsizlik, hile, aile içi mal kaçırma ve miras uyuşmazlıkları üzerinden rehber yaz. Genel bilgilendirme tonu; kişisel avukat tanıtımı yok.`
   },
   {
     title: "Boşanma Davası Devam Ederken Eşlerden Biri Ölürse Ne Olur?",
@@ -165,7 +164,7 @@ const AI_LAWYER_ARTICLES = [
       "legaltech avukat",
       "yapay zeka hukuk",
       "avukatlık meslek etiği yapay zeka",
-      "Avukat Ceren Sümer Cilli"
+      "hukukportali.com"
     ],
     internalLinks: [
       "/analizler/yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri",
@@ -184,7 +183,7 @@ const AI_LAWYER_ARTICLES = [
       "avukat kişisel veri",
       "yapay zeka KVKK",
       "hukuk bürosu veri güvenliği",
-      "Avukat Ceren Sümer Cilli"
+      "hukukportali.com"
     ],
     internalLinks: [
       "/rehber/avukatlar-icin-yapay-zeka-hukuk-rehberi",
@@ -203,7 +202,7 @@ const AI_LAWYER_ARTICLES = [
       "dilekçe taslağı yapay zeka",
       "hukuki araştırma yapay zeka",
       "avukat kontrol listesi",
-      "Avukat Ceren Sümer Cilli"
+      "hukukportali.com"
     ],
     internalLinks: [
       "/rehber/avukatlar-icin-yapay-zeka-hukuk-rehberi",
@@ -283,9 +282,14 @@ function stripFixedTail(text) {
   return body;
 }
 
-function countNameMentions(text) {
-  const matches = stripFixedTail(text).match(/Avukat Ceren Sümer Cilli/g);
-  return matches ? matches.length : 0;
+const BANNED_PERSONAL_NAMES = [/Avukat Ceren Sümer Cilli/i, /Ceren Sümer Cilli/i, /cerensumer\.av\.tr/i];
+
+function ensureNoPersonalPromotion(text) {
+  const body = stripFixedTail(text);
+  const hit = BANNED_PERSONAL_NAMES.find((re) => re.test(body));
+  if (hit) {
+    throw new Error(`Kişisel tanıtım ifadesi bulundu: ${hit}`);
+  }
 }
 
 function extractJson(text) {
@@ -553,7 +557,7 @@ async function enforceWordWindow(ai, article) {
     const revisePrompt = `
 Sadece geçerli JSON döndür; tek alan: "content" (markdown string).
 ${direction}
-Avukat Ceren Sümer Cilli 2-3 kez kalsın.
+Kişisel avukat/büro adı kullanma.
 Sonunda bilgilendirme uyarısı + CTA paragrafları kalsın (kelimesi kelimesine CTA).
 
 Mevcut content:
@@ -579,44 +583,6 @@ ${current.content}
   return { article: current, words };
 }
 
-async function enforceNameMentions(ai, article, min = 2, max = 3) {
-  let current = { ...article };
-  let mentions = countNameMentions(current.content);
-  let tries = 0;
-
-  while ((mentions < min || mentions > max) && tries < 3) {
-    const instruction =
-      mentions < min
-        ? `İçeriğe reklam dili olmadan ${min - mentions} doğal "Avukat Ceren Sümer Cilli" ekle.`
-        : `"Avukat Ceren Sümer Cilli" geçişlerini ${max} olacak şekilde azalt.`;
-
-    const revisePrompt = `
-Sadece geçerli JSON döndür; tek alan: "content" (markdown string).
-${instruction}
-Diğer metni koru.
-
-Mevcut content:
-${current.content}
-    `.trim();
-
-    const revisedRaw = await generateJson(ai, revisePrompt);
-    let parsed;
-    try {
-      parsed = extractJson(revisedRaw);
-    } catch {
-      const fixed = await fixJson(ai, revisedRaw);
-      parsed = extractJson(fixed);
-    }
-    if (typeof parsed.content !== "string" || !parsed.content.trim()) {
-      throw new Error("İsim düzeltmesi geçersiz content döndürdü.");
-    }
-    current = { ...current, content: parsed.content.trim() };
-    mentions = countNameMentions(current.content);
-    tries += 1;
-  }
-
-  return current;
-}
 
 function assertMetaLengths(article) {
   if (article.metaTitle.length > 60) {
@@ -651,17 +617,11 @@ async function generateOneArticle(ai, spec) {
   const revised = await enforceWordWindow(ai, article);
   article = normalizeArticle(revised.article);
   let words = revised.words;
-  article = await enforceNameMentions(ai, article);
   words = countWords(article.content);
   validateArticleShape(article);
 
   ensureNoBannedPhrases(article.content);
-  const mentionCount = countNameMentions(article.content);
-  if (mentionCount < 2 || mentionCount > 3) {
-    throw new Error(
-      `İsim geçiş sayısı kurala uymuyor (${mentionCount}). Beklenen: 2-3. Makale: ${spec.slug}`
-    );
-  }
+  ensureNoPersonalPromotion(article.content);
 
   if (words < MIN_WORDS || words > MAX_WORDS) {
     throw new Error(`Kelime aralığı sağlanamadı (${words}). Makale: ${spec.slug}`);

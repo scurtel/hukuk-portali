@@ -59,6 +59,18 @@ export function Header() {
               </svg>
             </button>
 
+            <Link
+              href="/arama"
+              className="hidden min-h-11 items-center gap-1.5 rounded-sm border border-slate-200 px-3 text-sm font-semibold text-ink-muted transition hover:border-brand-500 hover:text-brand-900 lg:inline-flex"
+              aria-label="Site içinde ara"
+            >
+              <svg aria-hidden className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.5-3.5" />
+              </svg>
+              <span className="hidden xl:inline">Ara</span>
+            </Link>
+
             <nav className="hidden items-stretch gap-0 lg:flex" aria-label="Ana menü">
               {navItems.map((item) => {
                 const active = isNavActive(item.href);
@@ -88,6 +100,13 @@ export function Header() {
             )}
           >
             <nav className="min-h-0 space-y-0 border border-slate-200 bg-slate-50" aria-label="Mobil menü">
+              <Link
+                href="/arama"
+                onClick={closeMenu}
+                className="flex min-h-12 items-center gap-2 border-b border-slate-200 px-4 text-sm font-semibold uppercase tracking-wide text-brand-700"
+              >
+                Ara
+              </Link>
               {navItems.map((item) => (
                 <Link
                   key={item.href}
