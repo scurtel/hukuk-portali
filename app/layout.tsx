@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Inter, Source_Serif_4 } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { Footer } from "@/components/layout/Footer";
@@ -7,12 +8,27 @@ import { getSiteUrl, siteConfig } from "@/lib/site";
 
 import "./globals.css";
 
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap"
+});
+
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-source-serif",
+  display: "swap"
+});
+
 const googleSiteVerification = process.env.GOOGLE_SITE_VERIFICATION?.trim();
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: siteConfig.name,
+  title: {
+    default: `${siteConfig.name} | ${siteConfig.tagline}`,
+    template: `%s | ${siteConfig.name}`
+  },
   description: siteConfig.description,
   icons: {
     icon: "/images/logo.png",
@@ -34,8 +50,8 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="tr">
-      <body className="min-h-screen bg-white text-slate-900">
+    <html lang="tr" className={`${inter.variable} ${sourceSerif.variable}`}>
+      <body className="min-h-screen bg-slate-50 font-sans text-ink antialiased">
         <Header />
         <main>{children}</main>
         <Footer />

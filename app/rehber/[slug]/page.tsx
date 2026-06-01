@@ -41,7 +41,7 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
 
   if (!post) {
     return (
-      <Container className="py-8 sm:py-10">
+      <Container wide className="portal-section py-8 sm:py-10">
         <h1 className="text-xl font-semibold sm:text-2xl">İçerik bulunamadı</h1>
         <p className="mt-2 text-sm text-slate-600 sm:text-base">Aradığınız rehber mevcut değil veya yayından kaldırılmış olabilir.</p>
       </Container>
@@ -49,7 +49,7 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
   }
 
   return (
-    <Container className="py-8 sm:py-10">
+    <Container wide className="portal-section py-8 sm:py-10">
       <ArticleJsonLd post={post} />
       <PostHeader post={post} />
       <PostContent content={post.content} />

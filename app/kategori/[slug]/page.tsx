@@ -28,9 +28,11 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const categoryPosts = getPostsByCategory(slug);
 
   return (
-    <Container className="py-8 sm:py-10">
-      <CategoryHeader category={category} />
-      <PostList posts={categoryPosts} />
-    </Container>
+    <div className="portal-section">
+      <Container wide className="py-4 sm:py-6">
+        <CategoryHeader category={category} />
+        <PostList posts={categoryPosts} />
+      </Container>
+    </div>
   );
 }

@@ -15,11 +15,38 @@ export function getSiteUrl(): string {
   return configuredUrl.replace(/\/$/, "");
 }
 
-export const navItems = [
+export type NavItem = {
+  label: string;
+  href: string;
+};
+
+export const navItems: NavItem[] = [
   { label: "Ana Sayfa", href: "/" },
   { label: "Haberler", href: "/kategori/haber" },
+  { label: "Yapay Zekâ", href: "/#yapay-zeka" },
+  { label: "Hukuk Teknolojileri", href: "/#hukuk-teknolojileri" },
   { label: "Rehberler", href: "/kategori/rehber" },
   { label: "Analizler", href: "/kategori/analiz" },
-  { label: "Hakkımızda", href: "/hakkimizda" },
+  { label: "Mevzuat", href: "/#mevzuat" },
   { label: "İletişim", href: "/iletisim" }
 ];
+
+export const footerNavGroups = [
+  {
+    title: "Kategoriler",
+    links: [
+      { label: "Haberler", href: "/kategori/haber" },
+      { label: "Rehberler", href: "/kategori/rehber" },
+      { label: "Analizler", href: "/kategori/analiz" },
+      { label: "Yapay Zekâ", href: "/#yapay-zeka" }
+    ]
+  },
+  {
+    title: "Kurumsal",
+    links: [
+      { label: "Hakkımızda", href: "/hakkimizda" },
+      { label: "İletişim", href: "/iletisim" },
+      { label: "Tüm Haberler", href: "/haberler" }
+    ]
+  }
+] as const;

@@ -66,7 +66,7 @@ export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) 
 
   if (!post) {
     return (
-      <Container className="py-8 sm:py-10">
+      <Container wide className="portal-section py-8 sm:py-10">
         <h1 className="text-xl font-semibold sm:text-2xl">İçerik bulunamadı</h1>
         <p className="mt-2 text-sm text-slate-600 sm:text-base">Aradığınız analiz içeriğine ulaşılamadı.</p>
       </Container>
@@ -79,7 +79,7 @@ export default async function AnalysisSeoPage({ params }: AnalysisSeoPageProps) 
       : COVER_IMAGES_BY_SLUG[slug] ?? DEFAULT_COVER_IMAGE;
 
   return (
-    <Container className="py-8 sm:py-10">
+    <Container wide className="portal-section py-8 sm:py-10">
       <ArticleJsonLd post={post} />
       <div className="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
         <SafeImage
