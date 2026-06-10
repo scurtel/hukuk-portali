@@ -4,6 +4,7 @@ import {
   getAiLawyerPosts,
   getHomeAnalizPosts,
   getHotNewsPosts,
+  getLegalTechSpotlightPosts,
   getTechLawPosts,
   isHomepageVisible
 } from "@/lib/home";
@@ -66,7 +67,14 @@ export const EDITORIAL_HOME_SECTIONS: EditorialSectionConfig[] = [
     id: "hukuk-teknolojileri",
     title: "LegalTech",
     href: "/#hukuk-teknolojileri",
-    getPosts: (take = 5) => getTechLawPosts(take)
+    getPosts: (take = 5) => {
+      const spotlight = getLegalTechSpotlightPosts();
+      if (spotlight.length >= take) return spotlight.slice(0, take);
+      const extra = getTechLawPosts(take).filter(
+        (p) => !spotlight.some((s) => s.slug === p.slug)
+      );
+      return [...spotlight, ...extra].slice(0, take);
+    }
   },
   {
     id: "mahkeme",

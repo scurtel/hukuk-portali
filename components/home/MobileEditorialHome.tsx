@@ -33,7 +33,11 @@ export function MobileEditorialHome() {
 
             <div className="lg:space-y-1">
               {EDITORIAL_HOME_SECTIONS.map((section) => {
-                const posts = section.getPosts(6).filter((p) => !usedSlugs.has(p.slug));
+                const raw = section.getPosts(6);
+                const posts =
+                  section.id === "hukuk-teknolojileri"
+                    ? raw
+                    : raw.filter((p) => !usedSlugs.has(p.slug));
                 posts.slice(0, 4).forEach((p) => usedSlugs.add(p.slug));
                 return (
                   <EditorialSectionBlock key={section.id} section={section} posts={posts} maxPosts={4} />
