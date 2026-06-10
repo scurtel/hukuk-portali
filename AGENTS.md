@@ -9,6 +9,9 @@
 | Üret + `lib/generatedLegalArticleData.ts` güncelle | `npm run content:legal:sync` |
 | Mevcut JSON üstüne yazarak yeniden üret + yayın | `npm run content:legal:sync:force` |
 | AI-lawyer paketi üret + yayın (force) | `npm run content:legal:ai-lawyer:sync:force` |
+| LegalTech 5’li paket üret (`generated-articles/`) | `npm run content:gemini:legaltech-5` |
+| LegalTech 5’li üret + yayın | `npm run content:legal:legaltech-5:sync` |
+| LegalTech 5’li force yenile + yayın | `npm run content:legal:legaltech-5:sync:force` |
 | Sadece yayın (JSON zaten var) | `npm run content:legal:publish` |
 
 Gerekli ortam: kök `.env` içinde `GEMINI_API_KEY`; isteğe bağlı `GEMINI_MODEL`.

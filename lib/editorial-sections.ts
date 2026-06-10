@@ -1,6 +1,12 @@
 import type { Post } from "@/types/post";
 
-import { getAiLawyerPosts, getHotNewsPosts, getTechLawPosts, isHomepageVisible } from "@/lib/home";
+import {
+  getAiLawyerPosts,
+  getHomeAnalizPosts,
+  getHotNewsPosts,
+  getTechLawPosts,
+  isHomepageVisible
+} from "@/lib/home";
 import { getPostsByType, staticPosts } from "@/lib/posts";
 
 export type EditorialSectionConfig = {
@@ -77,7 +83,7 @@ export const EDITORIAL_HOME_SECTIONS: EditorialSectionConfig[] = [
     id: "analizler",
     title: "Analizler",
     href: "/kategori/analiz",
-    getPosts: (take = 5) => getPostsByType("analiz", take)
+    getPosts: (take = 5) => getHomeAnalizPosts(take)
   },
   {
     id: "dijital",

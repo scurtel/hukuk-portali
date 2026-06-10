@@ -16,7 +16,12 @@ const TYPE_BY_SLUG = {
   "tapu-iptal-tescil-davasi-sik-sebepler": "rehber",
   "avukatlar-icin-yapay-zeka-hukuk-rehberi": "rehber",
   "yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri": "analiz",
-  "dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi": "rehber"
+  "dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi": "rehber",
+  "avukatlar-icin-yapay-zeka-kullanim-rehberi": "analiz",
+  "yapay-zeka-ile-dilekce-yazmak-guvenli-mi": "analiz",
+  "kvkk-yapay-zeka-muvekkil-verisi-riski": "analiz",
+  "hukuk-burolarinda-yapay-zeka-politikasi": "rehber",
+  "yapay-zeka-hukuki-arastirma-halusinasyon-riski": "analiz"
 };
 
 /** Anasayfa öne çıkan + güncel tarih (placeholder kapak posts.ts postImages ile) */

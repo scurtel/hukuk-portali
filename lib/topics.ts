@@ -40,7 +40,12 @@ export function getTopicBySlug(slug: string): TopicDefinition | undefined {
 const AI_EXTRA_SLUGS = [
   "yapay-zeka-avukat-sorumlulugu",
   "yapay-zeka-avukatsiz-dava-dilekcesi",
-  "yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri"
+  "yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri",
+  "avukatlar-icin-yapay-zeka-kullanim-rehberi",
+  "yapay-zeka-ile-dilekce-yazmak-guvenli-mi",
+  "kvkk-yapay-zeka-muvekkil-verisi-riski",
+  "hukuk-burolarinda-yapay-zeka-politikasi",
+  "yapay-zeka-hukuki-arastirma-halusinasyon-riski"
 ] as const;
 
 export function getPostsForTopic(slug: string): Post[] {

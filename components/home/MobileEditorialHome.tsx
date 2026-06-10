@@ -3,9 +3,11 @@ import { BreakingNewsBar } from "@/components/home/BreakingNewsBar";
 import { HomeSidebar } from "@/components/home/HomeSidebar";
 import { TopStories } from "@/components/home/TopStories";
 import { EDITORIAL_HOME_SECTIONS } from "@/lib/editorial-sections";
-import { getHomeFeaturedPosts, getHotNewsPosts } from "@/lib/home";
+import { getHomeFeaturedPosts, getHotNewsPosts, getLegalTechSpotlightPosts } from "@/lib/home";
 
 function getLeadStory() {
+  const spotlight = getLegalTechSpotlightPosts();
+  if (spotlight[0]) return spotlight[0];
   const featured = getHomeFeaturedPosts();
   const news = getHotNewsPosts(12);
   return featured[0] ?? news[0];

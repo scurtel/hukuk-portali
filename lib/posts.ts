@@ -453,7 +453,17 @@ const postImages: Record<string, string> = {
   "dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi":
     "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=85",
   "turkiyede-avukat-sayilari-2025":
-    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85"
+    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85",
+  "avukatlar-icin-yapay-zeka-kullanim-rehberi":
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=85",
+  "yapay-zeka-ile-dilekce-yazmak-guvenli-mi":
+    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=85",
+  "kvkk-yapay-zeka-muvekkil-verisi-riski":
+    "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=85",
+  "hukuk-burolarinda-yapay-zeka-politikasi":
+    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85",
+  "yapay-zeka-hukuki-arastirma-halusinasyon-riski":
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
 };
 
 export const staticPosts: Post[] = allPostMetas.map((meta) => ({
