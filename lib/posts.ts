@@ -463,7 +463,13 @@ const postImages: Record<string, string> = {
   "hukuk-burolarinda-yapay-zeka-politikasi":
     "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85",
   "yapay-zeka-hukuki-arastirma-halusinasyon-riski":
-    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85",
+  "yapay-zeka-avukatlarin-is-akisini-nasil-degistiriyor":
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=85",
+  "hukuk-burolarinda-yapay-zeka-kullaniminda-riskler":
+    "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=85",
+  "turkiyede-hukuk-teknolojileri-yeni-donem":
+    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85"
 };
 
 export const staticPosts: Post[] = allPostMetas.map((meta) => ({

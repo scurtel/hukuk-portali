@@ -21,7 +21,10 @@ const TYPE_BY_SLUG = {
   "yapay-zeka-ile-dilekce-yazmak-guvenli-mi": "analiz",
   "kvkk-yapay-zeka-muvekkil-verisi-riski": "analiz",
   "hukuk-burolarinda-yapay-zeka-politikasi": "rehber",
-  "yapay-zeka-hukuki-arastirma-halusinasyon-riski": "analiz"
+  "yapay-zeka-hukuki-arastirma-halusinasyon-riski": "analiz",
+  "yapay-zeka-avukatlarin-is-akisini-nasil-degistiriyor": "analiz",
+  "hukuk-burolarinda-yapay-zeka-kullaniminda-riskler": "analiz",
+  "turkiyede-hukuk-teknolojileri-yeni-donem": "haber"
 };
 
 /** Anasayfa öne çıkan + güncel tarih (placeholder kapak posts.ts postImages ile) */

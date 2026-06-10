@@ -20,7 +20,9 @@
     "content:haber:avukat-sayilari-2025": "node scripts/generate-haber-avukat-sayilari-2025.mjs && node scripts/publish-generated-articles.mjs",
     "content:gemini:legaltech-5": "node scripts/generate-gemini-legaltech-5-2026.mjs",
     "content:legal:legaltech-5:sync": "node scripts/generate-gemini-legaltech-5-2026.mjs && node scripts/publish-generated-articles.mjs",
-    "content:legal:legaltech-5:sync:force": "node scripts/generate-gemini-legaltech-5-2026.mjs --force && node scripts/publish-generated-articles.mjs"
+    "content:legal:legaltech-5:sync:force": "node scripts/generate-gemini-legaltech-5-2026.mjs --force && node scripts/publish-generated-articles.mjs",
+    "content:gemini:legaltech-3": "node scripts/generate-gemini-legaltech-3-batch.mjs",
+    "content:legal:legaltech-3:sync": "node scripts/generate-gemini-legaltech-3-batch.mjs && node scripts/publish-generated-articles.mjs"
   },
   "dependencies": {
     "@google/genai": "^1.50.1",

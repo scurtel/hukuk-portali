@@ -13,8 +13,16 @@ export function filterHomepagePosts<T extends Pick<Post, "slug">>(posts: T[]): T
   return posts.filter(isHomepageVisible);
 }
 
-/** Ana sayfada öne çıkarılan güncel LegalTech / yapay zekâ paketi (2026-06-10) */
+/** En güncel 3'lü Gemini paketi */
+export const HOME_LATEST_BATCH_SLUGS = [
+  "yapay-zeka-avukatlarin-is-akisini-nasil-degistiriyor",
+  "hukuk-burolarinda-yapay-zeka-kullaniminda-riskler",
+  "turkiyede-hukuk-teknolojileri-yeni-donem"
+] as const;
+
+/** Ana sayfada öne çıkarılan güncel LegalTech / yapay zekâ paketi */
 export const HOME_LEGALTECH_SPOTLIGHT_SLUGS = [
+  ...HOME_LATEST_BATCH_SLUGS,
   "avukatlar-icin-yapay-zeka-kullanim-rehberi",
   "yapay-zeka-ile-dilekce-yazmak-guvenli-mi",
   "kvkk-yapay-zeka-muvekkil-verisi-riski",

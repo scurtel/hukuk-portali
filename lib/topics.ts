@@ -45,7 +45,10 @@ const AI_EXTRA_SLUGS = [
   "yapay-zeka-ile-dilekce-yazmak-guvenli-mi",
   "kvkk-yapay-zeka-muvekkil-verisi-riski",
   "hukuk-burolarinda-yapay-zeka-politikasi",
-  "yapay-zeka-hukuki-arastirma-halusinasyon-riski"
+  "yapay-zeka-hukuki-arastirma-halusinasyon-riski",
+  "yapay-zeka-avukatlarin-is-akisini-nasil-degistiriyor",
+  "hukuk-burolarinda-yapay-zeka-kullaniminda-riskler",
+  "turkiyede-hukuk-teknolojileri-yeni-donem"
 ] as const;
 
 export function getPostsForTopic(slug: string): Post[] {

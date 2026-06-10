@@ -12,6 +12,8 @@
 | LegalTech 5’li paket üret (`generated-articles/`) | `npm run content:gemini:legaltech-5` |
 | LegalTech 5’li üret + yayın | `npm run content:legal:legaltech-5:sync` |
 | LegalTech 5’li force yenile + yayın | `npm run content:legal:legaltech-5:sync:force` |
+| LegalTech 3’lü paket üret | `npm run content:gemini:legaltech-3` |
+| LegalTech 3’lü üret + yayın | `npm run content:legal:legaltech-3:sync` |
 | Sadece yayın (JSON zaten var) | `npm run content:legal:publish` |
 
 Gerekli ortam: kök `.env` içinde `GEMINI_API_KEY`; isteğe bağlı `GEMINI_MODEL`.
