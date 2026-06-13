@@ -24,7 +24,8 @@ const TYPE_BY_SLUG = {
   "yapay-zeka-hukuki-arastirma-halusinasyon-riski": "analiz",
   "yapay-zeka-avukatlarin-is-akisini-nasil-degistiriyor": "analiz",
   "hukuk-burolarinda-yapay-zeka-kullaniminda-riskler": "analiz",
-  "turkiyede-hukuk-teknolojileri-yeni-donem": "haber"
+  "turkiyede-hukuk-teknolojileri-yeni-donem": "haber",
+  "uludag-sozluk-yapay-zeka-moderator": "haber"
 };
 
 /** Anasayfa öne çıkan + güncel tarih (placeholder kapak posts.ts postImages ile) */
@@ -41,7 +42,10 @@ const PROMOTED_LEGAL_SLUGS = new Set([
 
 const PROMOTED_PUBLISH_DATE = "2026-05-14";
 const AI_LAWYER_PUBLISH_DATE = "2026-05-15";
-const HOT_HABER_SLUGS = new Set(["turkiyede-avukat-sayilari-2025"]);
+const HOT_HABER_SLUGS = new Set([
+  "turkiyede-avukat-sayilari-2025",
+  "uludag-sozluk-yapay-zeka-moderator"
+]);
 
 function getPostType(slug) {
   return TYPE_BY_SLUG[slug] || "rehber";
