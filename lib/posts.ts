@@ -469,7 +469,11 @@ const postImages: Record<string, string> = {
   "hukuk-burolarinda-yapay-zeka-kullaniminda-riskler":
     "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=85",
   "turkiyede-hukuk-teknolojileri-yeni-donem":
-    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85"
+    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85",
+  "uludag-sozluk-yapay-zeka-moderator":
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=85",
+  "yks-turkiye-paraguay-maci-dev-ekran-yasagi":
+    "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=85"
 };
 
 export const staticPosts: Post[] = allPostMetas.map((meta) => ({

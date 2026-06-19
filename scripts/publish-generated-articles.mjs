@@ -25,7 +25,8 @@ const TYPE_BY_SLUG = {
   "yapay-zeka-avukatlarin-is-akisini-nasil-degistiriyor": "analiz",
   "hukuk-burolarinda-yapay-zeka-kullaniminda-riskler": "analiz",
   "turkiyede-hukuk-teknolojileri-yeni-donem": "haber",
-  "uludag-sozluk-yapay-zeka-moderator": "haber"
+  "uludag-sozluk-yapay-zeka-moderator": "haber",
+  "yks-turkiye-paraguay-maci-dev-ekran-yasagi": "haber"
 };
 
 /** Anasayfa öne çıkan + güncel tarih (placeholder kapak posts.ts postImages ile) */
@@ -44,7 +45,8 @@ const PROMOTED_PUBLISH_DATE = "2026-05-14";
 const AI_LAWYER_PUBLISH_DATE = "2026-05-15";
 const HOT_HABER_SLUGS = new Set([
   "turkiyede-avukat-sayilari-2025",
-  "uludag-sozluk-yapay-zeka-moderator"
+  "uludag-sozluk-yapay-zeka-moderator",
+  "yks-turkiye-paraguay-maci-dev-ekran-yasagi"
 ]);
 
 function getPostType(slug) {
