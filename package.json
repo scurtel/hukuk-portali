@@ -22,7 +22,8 @@
     "content:legal:legaltech-5:sync": "node scripts/generate-gemini-legaltech-5-2026.mjs && node scripts/publish-generated-articles.mjs",
     "content:legal:legaltech-5:sync:force": "node scripts/generate-gemini-legaltech-5-2026.mjs --force && node scripts/publish-generated-articles.mjs",
     "content:gemini:legaltech-3": "node scripts/generate-gemini-legaltech-3-batch.mjs",
-    "content:legal:legaltech-3:sync": "node scripts/generate-gemini-legaltech-3-batch.mjs && node scripts/publish-generated-articles.mjs"
+    "content:legal:legaltech-3:sync": "node scripts/generate-gemini-legaltech-3-batch.mjs && node scripts/publish-generated-articles.mjs",
+    "generate:auto-article": "node scripts/generate-article.mjs"
   },
   "dependencies": {
     "@google/genai": "^1.50.1",

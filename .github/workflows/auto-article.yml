@@ -1,0 +1,58 @@
+# Haftada 3 gün (Pzt/Çar/Cum) TR 05:00 civarı — UTC 02:00
+name: Auto Article Generation
+
+on:
+  schedule:
+    - cron: "0 2 * * 1,3,5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-article
+  cancel-in-progress: false
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate article
+        id: generate
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/generate-article.mjs
+
+      - name: Commit and push changes
+        if: success()
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Değişiklik yok; commit atlanıyor."
+            exit 0
+          fi
+
+          SLUG="${{ steps.generate.outputs.slug }}"
+          if [ -z "$SLUG" ] && [ -f generated-articles/auto-last-run.json ]; then
+            SLUG=$(node -p "JSON.parse(require('fs').readFileSync('generated-articles/auto-last-run.json','utf8')).slug")
+          fi
+
+          git add generated-articles/*.json generated-articles/*.md lib/generatedLegalArticleData.ts
+          git commit -m "add article on ${SLUG:-auto-article}"
+          git push
