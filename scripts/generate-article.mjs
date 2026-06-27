@@ -12,7 +12,9 @@ const ROOT = resolve(import.meta.dirname, "..");
 const GENERATED_DIR = resolve(ROOT, "generated-articles");
 const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 const MIN_WORDS = 900;
-const MAX_WORDS = 1200;
+const MAX_WORDS = 1400;
+const PROMPT_WORD_MIN = 1000;
+const PROMPT_WORD_MAX = 1300;
 
 const BANNED_PHRASES = [
   "en iyi avukat",
@@ -325,7 +327,7 @@ Odak kelime: ${meta.focusKeyword}
 Kategori: ${topicSpec.category}
 
 Kurallar:
-- ${MIN_WORDS}-${MAX_WORDS} kelime
+- ${PROMPT_WORD_MIN}-${PROMPT_WORD_MAX} kelime (kabul edilen aralık: ${MIN_WORDS}-${MAX_WORDS})
 - H1 kullanma (başlık ayrı); H2 ve H3 ile yapılandır
 - Giriş paragrafı arama niyetine doğrudan cevap versin
 - En az bir madde işaretli liste
@@ -342,6 +344,72 @@ Konu odağı: ${topicSpec.topic}
 
 Yalnızca Markdown gövde döndür (JSON veya kod çiti yok).
   `.trim();
+}
+
+function buildBodyRetryPrompt(topicSpec, meta, suggestedLinks, { words, direction, previousContent }) {
+  return `
+Sen hukukportali.com için Türkçe hukuk makalesi gövdesini kelime sayısına göre düzeltiyorsun.
+${COMMON_RULES}
+
+Başlık: ${meta.title}
+Konu: ${topicSpec.topic}
+
+${direction}
+
+Hedef kelime aralığı: ${PROMPT_WORD_MIN}-${PROMPT_WORD_MAX} (mutlak sınır: ${MIN_WORDS}-${MAX_WORDS})
+Mevcut kelime sayısı: ${words}
+
+Yapıyı koru (H2/H3, liste, Sonuç, disclaimer). Disclaimer cümlesi aynen kalsın:
+"${DISCLAIMER}"
+
+İç linkler (yalnızca varsa kullan): ${suggestedLinks.length ? suggestedLinks.join(", ") : "Yok"}
+
+Mevcut metin:
+---
+${previousContent.slice(0, 80_000)}
+---
+
+Yalnızca düzeltilmiş Markdown gövde döndür.
+  `.trim();
+}
+
+function isWordCountValid(words) {
+  return words >= MIN_WORDS && words <= MAX_WORDS;
+}
+
+async function generateBodyWithRetry(ai, topicSpec, meta, suggestedLinks, validPaths) {
+  let content = sanitizeMarkdownLinks(
+    stripOuterCodeFence(await generatePlainText(ai, buildBodyPrompt(topicSpec, meta, suggestedLinks))).trim(),
+    validPaths
+  );
+  let words = countWords(content);
+
+  if (isWordCountValid(words)) {
+    return content;
+  }
+
+  console.warn(`Kelime sayısı sınır dışı (${words}); gövde yeniden üretiliyor (1 deneme)…`);
+  const direction =
+    words > MAX_WORDS
+      ? `Metin ${words} kelime; ${MAX_WORDS} kelimeyi geçmeyecek şekilde kısalt. Tekrarları ve gereksiz paragrafları çıkar.`
+      : `Metin ${words} kelime; en az ${MIN_WORDS} kelime olacak şekilde genişlet.`;
+
+  content = sanitizeMarkdownLinks(
+    stripOuterCodeFence(
+      await generatePlainText(
+        ai,
+        buildBodyRetryPrompt(topicSpec, meta, suggestedLinks, { words, direction, previousContent: content })
+      )
+    ).trim(),
+    validPaths
+  );
+  words = countWords(content);
+
+  if (!isWordCountValid(words)) {
+    throw new Error(`Kelime sayısı uygun değil: ${words} (${MIN_WORDS}-${MAX_WORDS})`);
+  }
+
+  return content;
 }
 
 function validateMeta(meta) {
@@ -367,7 +435,7 @@ function validateArticle(article, existingSlugs) {
     throw new Error(`Slug zaten mevcut: ${article.slug}`);
   }
   const words = countWords(article.content);
-  if (words < MIN_WORDS - 50 || words > MAX_WORDS + 100) {
+  if (!isWordCountValid(words)) {
     throw new Error(`Kelime sayısı uygun değil: ${words} (${MIN_WORDS}-${MAX_WORDS})`);
   }
   ensureNoBannedPhrases(`${article.title}\n${article.content}`);
@@ -444,8 +512,7 @@ async function main() {
   validateMeta(meta);
 
   console.log("Gövde üretiliyor…");
-  const bodyRaw = stripOuterCodeFence(await generatePlainText(ai, buildBodyPrompt(topicSpec, meta, suggestedLinks)));
-  let content = sanitizeMarkdownLinks(bodyRaw.trim(), validPaths);
+  const content = await generateBodyWithRetry(ai, topicSpec, meta, suggestedLinks, validPaths);
 
   const today = new Date().toISOString().slice(0, 10);
   const article = {
