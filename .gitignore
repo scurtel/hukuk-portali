@@ -10,7 +10,7 @@ out
 coverage
 automation/data/rss_items.json
 automation/data/used_sources.json
-generated-articles/auto-last-run.json
+.auto-article-last-run.json
 public/images/covers/cover-*.png
 
 # Python

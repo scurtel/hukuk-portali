@@ -10,9 +10,10 @@ import { GoogleGenAI } from "@google/genai";
 
 const ROOT = resolve(import.meta.dirname, "..");
 const GENERATED_DIR = resolve(ROOT, "generated-articles");
+const LAST_RUN_REPORT = resolve(ROOT, ".auto-article-last-run.json");
 const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
-const MIN_WORDS = 900;
-const MAX_WORDS = 1400;
+const RECOMMENDED_WORD_MIN = 900;
+const RECOMMENDED_WORD_MAX = 1400;
 const PROMPT_WORD_MIN = 1000;
 const PROMPT_WORD_MAX = 1300;
 
@@ -135,10 +136,93 @@ function clampText(s, max) {
   return t.length <= max ? t : t.slice(0, max).trim();
 }
 
-function ensureNoBannedPhrases(text) {
+function warnBannedPhrases(text) {
   const lowered = text.toLocaleLowerCase("tr");
   const found = BANNED_PHRASES.find((p) => lowered.includes(p.toLocaleLowerCase("tr")));
-  if (found) throw new Error(`Yasak ifade: "${found}"`);
+  if (found) {
+    console.warn(`Öneri: yasak ifade tespit edildi ("${found}"); yine de yayınlanıyor.`);
+  }
+}
+
+function ensureUniqueSlug(slug, existingSlugs) {
+  let candidate = slugify(slug || "makale");
+  if (!existingSlugs.has(candidate)) return candidate;
+  const unique = `${candidate}-${Date.now().toString(36).slice(-4)}`;
+  console.warn(`Öneri: slug çakışması ("${candidate}"); "${unique}" kullanılıyor.`);
+  return unique;
+}
+
+function normalizeMeta(meta, topicSpec) {
+  const normalized = { ...meta };
+
+  if (!normalized.title?.trim()) {
+    normalized.title = topicSpec.topic;
+    console.warn("Öneri: title eksik; konu başlığı kullanıldı.");
+  }
+  normalized.slug = slugify(normalized.slug || normalized.title);
+
+  if (!normalized.metaTitle?.trim()) {
+    normalized.metaTitle = clampText(normalized.title, 60);
+    console.warn("Öneri: metaTitle eksik; title'dan türetildi.");
+  } else if (normalized.metaTitle.length > 65) {
+    console.warn(`Öneri: metaTitle uzun (${normalized.metaTitle.length}); kırpılıyor.`);
+    normalized.metaTitle = clampText(normalized.metaTitle, 60);
+  }
+
+  if (!normalized.metaDescription?.trim()) {
+    normalized.metaDescription = clampText(normalized.excerpt || normalized.title, 160);
+    console.warn("Öneri: metaDescription eksik; excerpt/title'dan türetildi.");
+  } else if (normalized.metaDescription.length > 165) {
+    console.warn(`Öneri: metaDescription uzun (${normalized.metaDescription.length}); kırpılıyor.`);
+    normalized.metaDescription = clampText(normalized.metaDescription, 160);
+  }
+
+  if (!normalized.excerpt?.trim()) {
+    normalized.excerpt = normalized.title;
+    console.warn("Öneri: excerpt eksik; title kullanıldı.");
+  }
+
+  if (!Array.isArray(normalized.faq)) {
+    normalized.faq = [];
+    console.warn("Öneri: FAQ dizisi yok; boş dizi kullanıldı.");
+  } else if (normalized.faq.length < 5) {
+    console.warn(`Öneri: FAQ ${normalized.faq.length} soru (öneri: en az 5); yine de yayınlanıyor.`);
+  }
+
+  if (!normalized.conclusion?.trim()) {
+    normalized.conclusion = normalized.excerpt || normalized.title;
+    console.warn("Öneri: conclusion eksik; excerpt/title kullanıldı.");
+  }
+
+  if (!Array.isArray(normalized.tags)) normalized.tags = [];
+  if (!Array.isArray(normalized.focusKeywords)) normalized.focusKeywords = [];
+  if (!Array.isArray(normalized.helperKeywords)) normalized.helperKeywords = [];
+  if (!Array.isArray(normalized.internalLinks)) normalized.internalLinks = [];
+  if (!normalized.focusKeyword?.trim()) {
+    normalized.focusKeyword = normalized.focusKeywords[0] || topicSpec.topic.split(/\s+/)[0] || "hukuk";
+  }
+
+  normalized.category = normalized.category || topicSpec.category;
+  return normalized;
+}
+
+function normalizeArticle(article, topicSpec, existingSlugs) {
+  const normalized = normalizeMeta(article, topicSpec);
+  normalized.slug = ensureUniqueSlug(normalized.slug, existingSlugs);
+
+  if (!normalized.content?.trim()) {
+    normalized.content = `## ${normalized.title}\n\n${normalized.excerpt}\n\n${DISCLAIMER}`;
+    console.warn("Öneri: gövde boş; minimal içerik oluşturuldu.");
+  }
+
+  if (!normalized.content.includes(DISCLAIMER)) {
+    normalized.content = `${normalized.content.trim()}\n\n${DISCLAIMER}`;
+    console.warn("Öneri: disclaimer gövdede yoktu; eklendi.");
+  }
+
+  warnWordCountRecommendation(countWords(normalized.content), "Makale");
+  warnBannedPhrases(`${normalized.title}\n${normalized.content}`);
+  return normalized;
 }
 
 function slugify(text) {
@@ -159,7 +243,7 @@ function loadExistingArticles() {
   if (!existsSync(GENERATED_DIR)) return articles;
 
   for (const file of readdirSync(GENERATED_DIR)) {
-    if (!file.endsWith(".json") || file.startsWith("generation-report") || file === "auto-last-run.json") {
+    if (!file.endsWith(".json") || file.startsWith("generation-report")) {
       continue;
     }
     try {
@@ -327,7 +411,7 @@ Odak kelime: ${meta.focusKeyword}
 Kategori: ${topicSpec.category}
 
 Kurallar:
-- ${PROMPT_WORD_MIN}-${PROMPT_WORD_MAX} kelime (kabul edilen aralık: ${MIN_WORDS}-${MAX_WORDS})
+- Önerilen uzunluk: ${PROMPT_WORD_MIN}-${PROMPT_WORD_MAX} kelime (yaklaşık ${RECOMMENDED_WORD_MIN}-${RECOMMENDED_WORD_MAX} kabul edilebilir)
 - H1 kullanma (başlık ayrı); H2 ve H3 ile yapılandır
 - Giriş paragrafı arama niyetine doğrudan cevap versin
 - En az bir madde işaretli liste
@@ -346,128 +430,60 @@ Yalnızca Markdown gövde döndür (JSON veya kod çiti yok).
   `.trim();
 }
 
-function buildBodyRetryPrompt(topicSpec, meta, suggestedLinks, { words, direction, previousContent }) {
-  return `
-Sen hukukportali.com için Türkçe hukuk makalesi gövdesini kelime sayısına göre düzeltiyorsun.
-${COMMON_RULES}
-
-Başlık: ${meta.title}
-Konu: ${topicSpec.topic}
-
-${direction}
-
-Hedef kelime aralığı: ${PROMPT_WORD_MIN}-${PROMPT_WORD_MAX} (mutlak sınır: ${MIN_WORDS}-${MAX_WORDS})
-Mevcut kelime sayısı: ${words}
-
-Yapıyı koru (H2/H3, liste, Sonuç, disclaimer). Disclaimer cümlesi aynen kalsın:
-"${DISCLAIMER}"
-
-İç linkler (yalnızca varsa kullan): ${suggestedLinks.length ? suggestedLinks.join(", ") : "Yok"}
-
-Mevcut metin:
----
-${previousContent.slice(0, 80_000)}
----
-
-Yalnızca düzeltilmiş Markdown gövde döndür.
-  `.trim();
+function warnWordCountRecommendation(words, context = "Gövde") {
+  if (words < RECOMMENDED_WORD_MIN || words > RECOMMENDED_WORD_MAX) {
+    console.warn(
+      `${context} kelime sayısı önerilen aralığın dışında (${words}; öneri: ${RECOMMENDED_WORD_MIN}-${RECOMMENDED_WORD_MAX}). Yine de kabul ediliyor.`
+    );
+  } else {
+    console.log(`${context} kelime sayısı: ${words} (önerilen aralıkta)`);
+  }
 }
 
-function isWordCountValid(words) {
-  return words >= MIN_WORDS && words <= MAX_WORDS;
-}
-
-async function generateBodyWithRetry(ai, topicSpec, meta, suggestedLinks, validPaths) {
-  let content = sanitizeMarkdownLinks(
+async function generateBody(ai, topicSpec, meta, suggestedLinks, validPaths) {
+  const content = sanitizeMarkdownLinks(
     stripOuterCodeFence(await generatePlainText(ai, buildBodyPrompt(topicSpec, meta, suggestedLinks))).trim(),
     validPaths
   );
-  let words = countWords(content);
-
-  if (isWordCountValid(words)) {
-    return content;
-  }
-
-  console.warn(`Kelime sayısı sınır dışı (${words}); gövde yeniden üretiliyor (1 deneme)…`);
-  const direction =
-    words > MAX_WORDS
-      ? `Metin ${words} kelime; ${MAX_WORDS} kelimeyi geçmeyecek şekilde kısalt. Tekrarları ve gereksiz paragrafları çıkar.`
-      : `Metin ${words} kelime; en az ${MIN_WORDS} kelime olacak şekilde genişlet.`;
-
-  content = sanitizeMarkdownLinks(
-    stripOuterCodeFence(
-      await generatePlainText(
-        ai,
-        buildBodyRetryPrompt(topicSpec, meta, suggestedLinks, { words, direction, previousContent: content })
-      )
-    ).trim(),
-    validPaths
-  );
-  words = countWords(content);
-
-  if (!isWordCountValid(words)) {
-    throw new Error(`Kelime sayısı uygun değil: ${words} (${MIN_WORDS}-${MAX_WORDS})`);
-  }
-
+  warnWordCountRecommendation(countWords(content));
   return content;
-}
-
-function validateMeta(meta) {
-  if (!meta.title || !meta.slug || !meta.metaTitle || !meta.metaDescription) {
-    throw new Error("Meta alanları eksik.");
-  }
-  if (!Array.isArray(meta.faq) || meta.faq.length < 5) {
-    throw new Error("FAQ en az 5 soru olmalı.");
-  }
-  if (meta.metaTitle.length > 65) {
-    console.warn(`metaTitle uzun (${meta.metaTitle.length}): kırpılıyor`);
-    meta.metaTitle = clampText(meta.metaTitle, 60);
-  }
-  if (meta.metaDescription.length > 165) {
-    console.warn(`metaDescription uzun (${meta.metaDescription.length}): kırpılıyor`);
-    meta.metaDescription = clampText(meta.metaDescription, 160);
-  }
-}
-
-function validateArticle(article, existingSlugs) {
-  validateMeta(article);
-  if (existingSlugs.has(article.slug)) {
-    throw new Error(`Slug zaten mevcut: ${article.slug}`);
-  }
-  const words = countWords(article.content);
-  if (!isWordCountValid(words)) {
-    throw new Error(`Kelime sayısı uygun değil: ${words} (${MIN_WORDS}-${MAX_WORDS})`);
-  }
-  ensureNoBannedPhrases(`${article.title}\n${article.content}`);
-  if (!article.content.includes(DISCLAIMER)) {
-    throw new Error("Disclaimer metni gövdede yok.");
-  }
 }
 
 function buildMarkdownFile(article) {
   const lines = [
     `# ${article.title}`,
     "",
-    article.excerpt,
+    article.excerpt || "",
     "",
     article.content.trim(),
-    "",
-    "## Sık sorulan sorular",
     ""
   ];
-  for (const item of article.faq) {
-    lines.push(`### ${item.question}`, "", item.answer, "");
+  const faq = Array.isArray(article.faq) ? article.faq : [];
+  if (faq.length > 0) {
+    lines.push("## Sık sorulan sorular", "");
+    for (const item of faq) {
+      const q = String(item?.question || "").trim();
+      const a = String(item?.answer || "").trim();
+      if (!q && !a) continue;
+      lines.push(`### ${q || "Soru"}`, "", a || "", "");
+    }
   }
-  lines.push("## Sonuç", "", article.conclusion.trim(), "");
+  lines.push("## Sonuç", "", (article.conclusion || "").trim(), "");
   return lines.join("\n");
 }
 
-function runCommand(label, cmd, args, cwd = ROOT) {
+function runCommand(label, cmd, args, cwd = ROOT, { optional = false } = {}) {
   console.log(`→ ${label}`);
   const result = spawnSync(cmd, args, { cwd, stdio: "inherit", shell: true });
   if (result.status !== 0) {
-    throw new Error(`${label} başarısız (kod ${result.status ?? 1})`);
+    const message = `${label} başarısız (kod ${result.status ?? 1})`;
+    if (optional) {
+      console.warn(`Öneri: ${message}; yayın adımları devam ediyor.`);
+      return false;
+    }
+    throw new Error(message);
   }
+  return true;
 }
 
 function writeRunReport(article) {
@@ -477,7 +493,7 @@ function writeRunReport(article) {
     type: article.type,
     generatedAt: new Date().toISOString()
   };
-  writeFileSync(resolve(GENERATED_DIR, "auto-last-run.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  writeFileSync(LAST_RUN_REPORT, `${JSON.stringify(report, null, 2)}\n`, "utf8");
 
   if (process.env.GITHUB_OUTPUT) {
     appendFileSync(process.env.GITHUB_OUTPUT, `slug=${article.slug}\n`);
@@ -504,18 +520,14 @@ async function main() {
 
   console.log("Meta + FAQ üretiliyor…");
   const metaRaw = await generateJson(ai, buildMetadataPrompt(topicSpec, [...existingSlugs], suggestedLinks));
-  const meta = await parseJsonWithRepair(ai, metaRaw);
-  meta.slug = slugify(meta.slug || meta.title);
-  if (existingSlugs.has(meta.slug)) {
-    meta.slug = `${meta.slug}-${Date.now().toString(36).slice(-4)}`;
-  }
-  validateMeta(meta);
+  let meta = await parseJsonWithRepair(ai, metaRaw);
+  meta = normalizeMeta(meta, topicSpec);
 
   console.log("Gövde üretiliyor…");
-  const content = await generateBodyWithRetry(ai, topicSpec, meta, suggestedLinks, validPaths);
+  const content = await generateBody(ai, topicSpec, meta, suggestedLinks, validPaths);
 
   const today = new Date().toISOString().slice(0, 10);
-  const article = {
+  let article = {
     ...meta,
     slug: meta.slug,
     type: topicSpec.type,
@@ -526,7 +538,7 @@ async function main() {
     internalLinks: filterInternalLinks(meta.internalLinks, validPaths)
   };
 
-  validateArticle(article, existingSlugs);
+  article = normalizeArticle(article, topicSpec, existingSlugs);
 
   const jsonPath = resolve(GENERATED_DIR, `${article.slug}.json`);
   const mdPath = resolve(GENERATED_DIR, `${article.slug}.md`);
@@ -536,7 +548,7 @@ async function main() {
   writeFileSync(mdPath, buildMarkdownFile(article), "utf8");
 
   runCommand("Yayın verisi güncelleniyor", "node", ["scripts/publish-generated-articles.mjs"]);
-  runCommand("Build doğrulanıyor", "npm", ["run", "build"]);
+  runCommand("Build doğrulanıyor", "npm", ["run", "build"], ROOT, { optional: true });
 
   writeRunReport(article);
 

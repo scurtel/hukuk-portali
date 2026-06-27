@@ -17,13 +17,8 @@ jobs:
   generate-and-publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: "24"
           cache: npm
@@ -42,18 +37,35 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git config advice.addIgnoredFile false
 
-          git add lib/generatedLegalArticleData.ts
-          git add generated-articles/*.md
-          git add -- generated-articles/*.json \
-            ':!generated-articles/auto-last-run.json' \
-            ':!generated-articles/generation-report*.json'
+          SLUG="${{ steps.generate.outputs.slug }}"
+          if [ -z "$SLUG" ] && [ -f .auto-article-last-run.json ]; then
+            SLUG="$(node -e "console.log(JSON.parse(require('fs').readFileSync('.auto-article-last-run.json','utf8')).slug || '')")"
+          fi
+          if [ -z "$SLUG" ]; then
+            echo "Slug bulunamadı; commit atlanıyor."
+            exit 1
+          fi
+
+          echo "Commit slug: ${SLUG}"
+
+          for path in \
+            "lib/generatedLegalArticleData.ts" \
+            "generated-articles/${SLUG}.json" \
+            "generated-articles/${SLUG}.md"
+          do
+            if [ -f "$path" ]; then
+              git add "$path"
+            else
+              echo "Uyarı: dosya yok, atlanıyor: $path"
+            fi
+          done
 
           if git diff --cached --quiet; then
             echo "Değişiklik yok; commit atlanıyor."
             exit 0
           fi
 
-          SLUG="${{ steps.generate.outputs.slug }}"
-          git commit -m "add article on ${SLUG:-auto-article}"
+          git commit -m "add article on ${SLUG}"
           git push
