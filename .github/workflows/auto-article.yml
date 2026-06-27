@@ -43,16 +43,17 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          if git diff --quiet && git diff --cached --quiet; then
+          git add lib/generatedLegalArticleData.ts
+          git add generated-articles/*.md
+          git add -- generated-articles/*.json \
+            ':!generated-articles/auto-last-run.json' \
+            ':!generated-articles/generation-report*.json'
+
+          if git diff --cached --quiet; then
             echo "Değişiklik yok; commit atlanıyor."
             exit 0
           fi
 
           SLUG="${{ steps.generate.outputs.slug }}"
-          if [ -z "$SLUG" ] && [ -f generated-articles/auto-last-run.json ]; then
-            SLUG=$(node -p "JSON.parse(require('fs').readFileSync('generated-articles/auto-last-run.json','utf8')).slug")
-          fi
-
-          git add generated-articles/*.json generated-articles/*.md lib/generatedLegalArticleData.ts
           git commit -m "add article on ${SLUG:-auto-article}"
           git push
