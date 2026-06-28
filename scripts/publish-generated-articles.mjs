@@ -43,11 +43,7 @@ const PROMOTED_LEGAL_SLUGS = new Set([
 
 const PROMOTED_PUBLISH_DATE = "2026-05-14";
 const AI_LAWYER_PUBLISH_DATE = "2026-05-15";
-const HOT_HABER_SLUGS = new Set([
-  "turkiyede-avukat-sayilari-2025",
-  "uludag-sozluk-yapay-zeka-moderator",
-  "yks-turkiye-paraguay-maci-dev-ekran-yasagi"
-]);
+const HOT_HABER_SLUGS = new Set<string>();
 
 function getPostType(slug) {
   return TYPE_BY_SLUG[slug] || "rehber";

@@ -13,11 +13,17 @@ export function filterHomepagePosts<T extends Pick<Post, "slug">>(posts: T[]): T
   return posts.filter(isHomepageVisible);
 }
 
-/** Ana sayfada öne çıkarılacak güncel hukuk haberleri (sırayla) */
-export const HOME_BREAKING_NEWS_SLUGS = [
+/** Ana sayfa hero / gündemde geriye alınacak (URL’de kalır) */
+export const HOME_DEPRIORITIZED_SLUGS = new Set<string>([
   "yks-turkiye-paraguay-maci-dev-ekran-yasagi",
   "uludag-sozluk-yapay-zeka-moderator"
-] as const;
+]);
+
+function sortWithDeprioritized<T extends Pick<Post, "slug" | "publishedAt">>(posts: T[]): T[] {
+  const fresh = posts.filter((p) => !HOME_DEPRIORITIZED_SLUGS.has(p.slug));
+  const stale = posts.filter((p) => HOME_DEPRIORITIZED_SLUGS.has(p.slug));
+  return [...fresh, ...stale];
+}
 
 /** En güncel 3'lü Gemini paketi */
 export const HOME_LATEST_BATCH_SLUGS = [
@@ -59,19 +65,20 @@ export function getLegalTechSpotlightPosts(): Post[] {
   );
 }
 
-export function getBreakingNewsPosts(): Post[] {
-  return HOME_BREAKING_NEWS_SLUGS.map((slug) => getPostBySlug(slug, "haber")).filter((p): p is Post =>
-    Boolean(p)
-  );
-}
-
-/** Ana sayfa hero: önce güncel haber, yoksa LegalTech spotlight */
+/** Ana sayfa hero: en güncel haber/rehber (sabit pin yok) */
 export function getHomeLeadPost(): Post | undefined {
-  const breaking = filterHomepagePosts(getBreakingNewsPosts())[0];
-  if (breaking) return breaking;
+  const pool = filterHomepagePosts(
+    staticPosts.filter(
+      (p) => p.isPublic !== false && (p.type === "haber" || p.type === "rehber")
+    )
+  ).sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
+  const lead = sortWithDeprioritized(pool)[0];
+  if (lead) return lead;
+
   const spotlight = getLegalTechSpotlightPosts()[0];
   if (spotlight) return spotlight;
-  return filterHomepagePosts(getFeaturedPosts())[0] ?? getPostsByType("haber")[0];
+  return filterHomepagePosts(getFeaturedPosts())[0];
 }
 
 export function getAiLawyerPosts(): Post[] {
@@ -86,10 +93,7 @@ export function getHomeAnalizPosts(take = 6): Post[] {
 }
 
 export function getHotNewsPosts(take = 8): Post[] {
-  const pinned = filterHomepagePosts(getBreakingNewsPosts());
-  const pinnedSlugs = new Set(pinned.map((p) => p.slug));
-  const rest = filterHomepagePosts(getPostsByType("haber")).filter((p) => !pinnedSlugs.has(p.slug));
-  return [...pinned, ...rest].slice(0, take);
+  return sortWithDeprioritized(filterHomepagePosts(getPostsByType("haber"))).slice(0, take);
 }
 
 export function getHomeFeaturedPosts(): Post[] {
