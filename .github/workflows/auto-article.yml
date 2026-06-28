@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: auto-article
@@ -33,6 +34,7 @@ jobs:
         run: node scripts/generate-article.mjs
 
       - name: Commit and push changes
+        id: commit
         if: success()
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -64,8 +66,16 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "Değişiklik yok; commit atlanıyor."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
           git commit -m "add article on ${SLUG}"
           git push
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger site deploy
+        if: success() && steps.commit.outputs.committed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main

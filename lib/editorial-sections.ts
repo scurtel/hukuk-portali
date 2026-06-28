@@ -94,12 +94,23 @@ export const EDITORIAL_HOME_SECTIONS: EditorialSectionConfig[] = [
     getPosts: (take = 5) => getHomeAnalizPosts(take)
   },
   {
+    id: "rehberler",
+    title: "Son Rehberler",
+    href: "/kategori/rehber",
+    getPosts: (take = 5) => getPostsByType("rehber", take)
+  },
+  {
     id: "dijital",
     title: "Dijital Dönüşüm",
     href: "/kategori/rehber",
-    getPosts: (take = 5) =>
-      scoreByKeywords(["dijital", "dönüşüm", "otomasyon", "legaltech", "uyap", "e-devlet"], take, () =>
-        getPostsByType("rehber", take)
-      )
+    getPosts: (take = 5) => {
+      const latest = getPostsByType("rehber", take);
+      const keywordHits = scoreByKeywords(
+        ["dijital", "dönüşüm", "otomasyon", "legaltech", "uyap", "e-devlet"],
+        take,
+        () => []
+      );
+      return uniqueBySlug([...latest, ...keywordHits]).slice(0, take);
+    }
   }
 ];
