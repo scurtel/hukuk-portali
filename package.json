@@ -18,6 +18,7 @@
     "content:legal:sync:force": "node scripts/generate-gemini-ceren-5.mjs --force && node scripts/publish-generated-articles.mjs",
     "content:meta:neutralize": "node scripts/neutralize-legal-article-meta.mjs",
     "content:haber:avukat-sayilari-2025": "node scripts/generate-haber-avukat-sayilari-2025.mjs && node scripts/publish-generated-articles.mjs",
+    "content:haber:kayip-bitcoin-kripto": "node scripts/generate-haber-kayip-bitcoin-kripto.mjs && node scripts/publish-generated-articles.mjs",
     "content:gemini:legaltech-5": "node scripts/generate-gemini-legaltech-5-2026.mjs",
     "content:legal:legaltech-5:sync": "node scripts/generate-gemini-legaltech-5-2026.mjs && node scripts/publish-generated-articles.mjs",
     "content:legal:legaltech-5:sync:force": "node scripts/generate-gemini-legaltech-5-2026.mjs --force && node scripts/publish-generated-articles.mjs",

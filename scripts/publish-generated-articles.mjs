@@ -26,7 +26,8 @@ const TYPE_BY_SLUG = {
   "hukuk-burolarinda-yapay-zeka-kullaniminda-riskler": "analiz",
   "turkiyede-hukuk-teknolojileri-yeni-donem": "haber",
   "uludag-sozluk-yapay-zeka-moderator": "haber",
-  "yks-turkiye-paraguay-maci-dev-ekran-yasagi": "haber"
+  "yks-turkiye-paraguay-maci-dev-ekran-yasagi": "haber",
+  "kayip-bitcoin-hikayeleri-kripto-varlik-hukuku": "haber"
 };
 
 /** Anasayfa öne çıkan + güncel tarih (placeholder kapak posts.ts postImages ile) */
