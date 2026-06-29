@@ -43,7 +43,7 @@ const PROMOTED_LEGAL_SLUGS = new Set([
 
 const PROMOTED_PUBLISH_DATE = "2026-05-14";
 const AI_LAWYER_PUBLISH_DATE = "2026-05-15";
-const HOT_HABER_SLUGS = new Set<string>();
+const HOT_HABER_SLUGS = new Set();
 
 function getPostType(slug) {
   return TYPE_BY_SLUG[slug] || "rehber";
