@@ -1,7 +1,5 @@
 # Burdan Ricky Gervais Hakkında Suç Duyurusunda Bulunuyorum
 
-*Yiğit Cilli*
-
 Yiğit Cilli'nin kaleminden: Ricky Gervais'in yıllardır süren mizahı, Deniz Göktaş örneğiyle yan yana konduğunda aslında mizah duygusuna yapılan hakareti tartışıyoruz.
 
 Sayın yetkililer,

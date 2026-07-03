@@ -19,6 +19,8 @@ export type Post = {
   imageUrl?: string | null;
   /** Kart/liste görselleri için alt metin */
   imageAlt?: string;
+  /** Görünür yazar adı (misafir köşe vb.) */
+  authorDisplayName?: string;
   seo?: {
     metaTitle?: string;
     metaDescription?: string;

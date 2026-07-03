@@ -112,6 +112,9 @@ function buildMeta(article, index) {
     publishedAt,
     updatedAt,
     imageAlt,
+    ...(typeof article.authorName === "string" && article.authorName.trim()
+      ? { authorDisplayName: article.authorName.trim() }
+      : {}),
     seo: {
       metaTitle: article.metaTitle,
       metaDescription: article.metaDescription,
