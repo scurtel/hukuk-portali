@@ -1,20 +1,28 @@
 # Burdan Ricky Gervais Hakkında Suç Duyurusunda Bulunuyorum
 
-Yiğit Cilli'nin kaleminden: Ricky Gervais'in yıllardır süren mizahı, Deniz Göktaş örneğiyle yan yana konduğunda aslında mizah duygusuna yapılan hakareti tartışıyoruz.
+**Yazan:** Yiğit Cilli
 
-Sayın yetkililer,
+**Tarih:** 03.07.2026
 
-Buradan İngiliz komedyen Ricky Gervais hakkında derhal işlem yapılmasını talep ediyorum. Çünkü kendisi yıllardır sahnelerde, ekranlarda ve sosyal medyada din, tanrı, cehennem, kutsal metinler, inanç, ateizm ve insanlığın genel hassas sinir uçları hakkında şakalar yapmaktadır. Üstelik bunu gizli saklı da yapmamaktadır. Adam resmen mikrofonla, ışık altında, biletli seyirci önünde yapmaktadır. Yani kast unsuru projektörle aydınlatılmış bir şekildedir.
+![Ricky Gervais - mizah ve ifade özgürlüğü kapak görseli](/images/covers/burdan-ricky-gervais-hakkinda-suc-duyurusunda-bulunuyorum.png)
 
-Gervais'in bazı sözlerine bakınca durumun vahameti daha da artıyor. "Bir şeye alınmış olman, haklı olduğun anlamına gelmez" minvalinde laflar ediyor. Bu tek başına bile toplumun alınma düzenini bozacak niteliktedir. Zira modern çağda alınmak, artık neredeyse noter tasdikli bir haklılık belgesi sayılmaktadır. Bir insan hem alınacak hem haksız olacak; böyle bir anayasal krizle toplum nasıl başa çıkacaktır?
+Buradan İngiliz komedyen Ricky Gervais hakkında açıkça suç duyurusunda bulunuyorum. Hatta yalnızca suç duyurusuyla yetinilmemeli, kendisi mümkünse en kısa sürede ülkemize davet edilmeli, uçağın kapısından iner inmez de "mizah yoluyla kamu düzenini gıdıklamak" suçundan gerekli işlemler başlatılmalıdır.
 
-Daha da ileri gidiyor. Cehennemle, Tanrı'yla, Noel Baba'yla, kutsal kitaplarla, bilimle, aptallıkla, ölümle şaka yapıyor. Eğer Deniz Göktaş'ın bir stand-up gösterisindeki birkaç cümlesi kamu düzenini sarsmaya yetiyorsa, Ricky Gervais'in bugüne kadar en az on defa havaalanında çevrilmesi, üç defa pasaport sırasında ifade vermesi, iki defa da "şaka yaparken neyi kastettiniz?" sorusuna maruz kalması gerekirdi.
+Çünkü ortada basit bir komedyenlik faaliyeti yoktur. Ricky Gervais yıllardır din, Tanrı, cehennem, ateizm, kutsal kitaplar ve insanların alınmak için yıllardır özenle biriktirdiği bütün hassasiyetler hakkında şaka yapmaktadır. Üstelik bunu gizli bir odada, üç arkadaş arasında da yapmamaktadır. Sahneye çıkıyor, mikrofonu eline alıyor, ışıkları yakıyor ve binlerce insanın önünde espri yapıyor. Bu kadar aleniyet karşısında hâlâ "şakaydı" savunmasına sığınması kabul edilemez.
 
-Hatta sadece o da değil. Adamın bütün kariyeri delil klasörü gibi. Bir komedyen düşünün; insanların inançlarını değil, inançları bahane ederek insanların birbirine yaptığını eleştiriyor. Kızdığı şey Tanrı'dan çok, Tanrı adına başkasına sopa gösteren insan. Fakat bu ayrıntı elbette dosyanın selameti açısından fazla karmaşıktır. Çünkü şakayı anlamaya başlarsak, belki de suçun değil, tahammülsüzlüğün peşine düşmemiz gerekir.
+Mesela "Bir şeye alınmış olman, haklı olduğun anlamına gelmez" diyor. Ben bu söze alındım. Dolayısıyla bu cümlenin derhal dosyaya konulmasını istiyorum. Çünkü bir toplumda insanlar alındıkları zaman otomatik olarak haklı sayılmayacaksa, biz bu kadar kırılganlığı boşuna mı büyüttük?
 
-Bu nedenle Ricky Gervais'in Türkiye'ye davet edilmesini ve mümkünse iner inmez "mizahın sınırları" konulu bir seminere alınmasını talep ediyorum. Kendisine önce şu temel bilgi verilmelidir: Bazı ülkelerde komedyenlik, seyirciyi güldürmek değil, yanlış kişiyi güldürmemek sanatıdır.
+Yine cehennemle ilgili şakalar yapıyor. İnsanlara "cehennemde yanmayacaksınız ama yine de iyi olun" tarzında laflar ediyor. Bu cümlede hem cehennem var hem ahlak var hem de insanın iyi olmak için korkutulmaya muhtaç olmayabileceği gibi son derece tehlikeli bir düşünce var. Açıkçası buna da alındım. Hem de sadece kendi adıma değil, ileride alınabilecek herkes adına peşinen alındım.
 
-Ama yine de içimde küçük bir şüphe var. Belki de asıl mesele Ricky Gervais'in ne dediği değildir. Belki de mesele, bizim artık bir şakaya şaka kadar mesafe bırakamamamızdır. Deniz Göktaş'ın sorgulanmasını konuşurken aslında şunu tartışıyoruz: Bir toplum, kendisine yapılan en küçük espriden bile savcılık dosyası çıkarıyorsa, orada en büyük hakaret dine değil, mizah duygusuna yapılmış olabilir.
+Daha da vahimi, bir Hristiyan'ın ateiste cehenneme gideceğini söylemesini, bir çocuğun yetişkine Noel Baba'dan hediye alamayacağını söylemesine benzetiyor. Burada din var, çocukluk var, Noel Baba var, ateizm var. Kısacası bir savcılık dosyasının ihtiyaç duyabileceği bütün kültürel malzemeler itinayla hazırlanmış.
+
+Şimdi soruyorum: Deniz Göktaş'ın bir stand-up gösterisindeki birkaç cümlesi insanı sorguya, gözaltına, adliye koridorlarına götürmeye yetiyorsa, Ricky Gervais'in bugüne kadar en az on defa hapse girip çıkması gerekmez miydi? Hatta iyi hâlden yararlanması bile tartışmalı olmalıdır. Çünkü adam pişmanlık göstermiyor. Aksine hâlâ gülüyor.
+
+Bana kalırsa Ricky Gervais derhal "fazla mizah" suçundan yargılanmalıdır. Savunmasında "ama bu bir şakaydı" derse, bu da ayrıca değerlendirilmelidir. Çünkü artık herkes bilmelidir ki bazı ülkelerde şaka, yalnızca kimse gülmezse güvenlidir.
+
+Tabii bütün bunları söylerken içimde çok küçük, rahatsız edici bir ihtimal de yok değil. Belki de asıl sorun Ricky Gervais'in fazla ileri gitmesi değildir. Belki de sorun, bizim en küçük espriyi bile ciddiye alacak kadar mizah duygumuzu emekliye ayırmış olmamızdır.
+
+Deniz Göktaş meselesinde tartışılması gereken de tam olarak budur. Bir toplum bir şakadan suç, bir espriden kriz, bir cümleden kamu düzeni tehdidi çıkarıyorsa, orada komedyenlerden önce alınma refleksimizi yargılamak gerekir. Çünkü bazen en ağır hakaret dine değil, akla ve mizaha yapılır.
 
 ---
 
