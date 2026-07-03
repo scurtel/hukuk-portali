@@ -27,7 +27,8 @@ const TYPE_BY_SLUG = {
   "turkiyede-hukuk-teknolojileri-yeni-donem": "haber",
   "uludag-sozluk-yapay-zeka-moderator": "haber",
   "yks-turkiye-paraguay-maci-dev-ekran-yasagi": "haber",
-  "kayip-bitcoin-hikayeleri-kripto-varlik-hukuku": "haber"
+  "kayip-bitcoin-hikayeleri-kripto-varlik-hukuku": "haber",
+  "burdan-ricky-gervais-hakkinda-suc-duyurusunda-bulunuyorum": "haber"
 };
 
 /** Anasayfa öne çıkan + güncel tarih (placeholder kapak posts.ts postImages ile) */
