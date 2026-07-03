@@ -124,13 +124,13 @@ export function PostContent({ content }: PostContentProps) {
           if (!src || typeof src !== "string") return null;
 
           return (
-            <div className="my-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+            <div className="my-6 mx-auto max-w-2xl overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
               <SafeImage
                 src={src}
                 alt={alt || "Makale görseli"}
-                width={1200}
-                height={675}
-                className="h-auto w-full object-cover"
+                width={800}
+                height={450}
+                className="h-56 w-full object-cover sm:h-72"
                 fallbackSrc="/images/placeholder-post.jpg"
               />
             </div>
