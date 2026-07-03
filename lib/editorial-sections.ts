@@ -4,6 +4,7 @@ import {
   getAiLawyerPosts,
   getHomeAnalizPosts,
   getHotNewsPosts,
+  getLatestPosts,
   getLegalTechSpotlightPosts,
   getTechLawPosts,
   isHomepageVisible
@@ -45,6 +46,12 @@ function uniqueBySlug(posts: Post[]): Post[] {
 }
 
 export const EDITORIAL_HOME_SECTIONS: EditorialSectionConfig[] = [
+  {
+    id: "son-yazilar",
+    title: "Son Yazılar",
+    href: "/haberler",
+    getPosts: (take = 8) => getLatestPosts(take)
+  },
   {
     id: "gundem",
     title: "Gündem",

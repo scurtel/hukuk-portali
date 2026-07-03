@@ -25,14 +25,15 @@ export function MobileEditorialHome() {
 
             <div className="lg:space-y-1">
               {EDITORIAL_HOME_SECTIONS.map((section) => {
-                const raw = section.getPosts(6);
+                const raw = section.getPosts(section.id === "son-yazilar" ? 8 : 6);
+                const maxPosts = section.id === "son-yazilar" ? 6 : 4;
                 const posts =
-                  section.id === "hukuk-teknolojileri"
+                  section.id === "hukuk-teknolojileri" || section.id === "son-yazilar"
                     ? raw
                     : raw.filter((p) => !usedSlugs.has(p.slug));
-                posts.slice(0, 4).forEach((p) => usedSlugs.add(p.slug));
+                posts.slice(0, maxPosts).forEach((p) => usedSlugs.add(p.slug));
                 return (
-                  <EditorialSectionBlock key={section.id} section={section} posts={posts} maxPosts={4} />
+                  <EditorialSectionBlock key={section.id} section={section} posts={posts} maxPosts={maxPosts} />
                 );
               })}
             </div>

@@ -96,6 +96,15 @@ export function getHotNewsPosts(take = 8): Post[] {
   return sortWithDeprioritized(filterHomepagePosts(getPostsByType("haber"))).slice(0, take);
 }
 
+/** Tüm türlerde en yeni içerikler (ana sayfa “Son Yazılar”, sitemap ile uyumlu havuz) */
+export function getLatestPosts(take = 8): Post[] {
+  const pool = filterHomepagePosts(
+    staticPosts.filter((p) => p.isPublic !== false)
+  ).sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
+  return sortWithDeprioritized(pool).slice(0, take);
+}
+
 export function getHomeFeaturedPosts(): Post[] {
   return filterHomepagePosts(getFeaturedPosts());
 }

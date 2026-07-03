@@ -2,14 +2,14 @@ import Link from "next/link";
 
 import { CategoryBadge } from "@/components/post/CategoryBadge";
 import { getAllCategories } from "@/lib/categories";
-import { getHotNewsPosts, getMevzuatHighlightPosts } from "@/lib/home";
+import { getLatestPosts, getMevzuatHighlightPosts } from "@/lib/home";
 import { formatPostDate } from "@/lib/post-display";
 import { getPostHref } from "@/lib/post-urls";
 import { getPostsByType } from "@/lib/posts";
 import { siteConfig } from "@/lib/site";
 
 export function HomeSidebar() {
-  const trending = getHotNewsPosts(6);
+  const trending = getLatestPosts(6);
   const mevzuat = getMevzuatHighlightPosts(5);
   const categories = getAllCategories();
   const latestAnalysis = getPostsByType("analiz", 4);
@@ -18,7 +18,7 @@ export function HomeSidebar() {
     <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
       <div className="border border-slate-200 bg-white p-4 shadow-editorial">
         <h2 className="border-b border-navy/15 pb-2 font-editorial text-base font-bold uppercase tracking-wide text-navy">
-          Gündem
+          Son Yazılar
         </h2>
         <ul className="mt-3 space-y-3">
           {trending.map((post, i) => (
