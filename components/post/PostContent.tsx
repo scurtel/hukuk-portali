@@ -120,8 +120,10 @@ export function PostContent({ content }: PostContentProps) {
         ol: ({ children }) => <ol className="mb-6 list-decimal space-y-2 pl-6 text-sm text-slate-700 sm:text-base">{children}</ol>,
         li: ({ children }) => <li className="marker:text-slate-700">{children}</li>,
         strong: ({ children }) => <strong className="font-semibold text-slate-900">{children}</strong>,
-        img: ({ src, alt }) =>
-          src ? (
+        img: ({ src, alt }) => {
+          if (!src || typeof src !== "string") return null;
+
+          return (
             <div className="my-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
               <SafeImage
                 src={src}
@@ -132,7 +134,8 @@ export function PostContent({ content }: PostContentProps) {
                 fallbackSrc="/images/placeholder-post.jpg"
               />
             </div>
-          ) : null,
+          );
+        },
         table: ({ children }) => (
           <div className="mb-8 w-full overflow-x-auto rounded-lg border border-slate-200 shadow-sm">
             <table className="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-700">{children}</table>
