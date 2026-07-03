@@ -6,7 +6,9 @@
 
 ![Ricky Gervais - mizah ve ifade özgürlüğü kapak görseli](/images/covers/burdan-ricky-gervais-hakkinda-suc-duyurusunda-bulunuyorum.png)
 
-Buradan İngiliz komedyen Ricky Gervais hakkında açıkça suç duyurusunda bulunuyorum. Hatta yalnızca suç duyurusuyla yetinilmemeli, kendisi mümkünse en kısa sürede ülkemize davet edilmeli, uçağın kapısından iner inmez de "mizah yoluyla kamu düzenini gıdıklamak" suçundan gerekli işlemler başlatılmalıdır.
+**Not:** Bu yazıda ironi yoktur.
+
+Buradan İngiliz komedyen Ricky Gervais hakkında açıkça suç duyurusunda bulunuyorum. Hatta yalnızca suç duyurusuyla yetinilmemeli, kendisi mümkünse en kısa sürede ülkemize davet edilmeli, uçağın kapısından iner inmez de "mizah yoluyla kamu düzenini bozmak" suçundan gerekli işlemler başlatılmalıdır.
 
 Çünkü ortada basit bir komedyenlik faaliyeti yoktur. Ricky Gervais yıllardır din, Tanrı, cehennem, ateizm, kutsal kitaplar ve insanların alınmak için yıllardır özenle biriktirdiği bütün hassasiyetler hakkında şaka yapmaktadır. Üstelik bunu gizli bir odada, üç arkadaş arasında da yapmamaktadır. Sahneye çıkıyor, mikrofonu eline alıyor, ışıkları yakıyor ve binlerce insanın önünde espri yapıyor. Bu kadar aleniyet karşısında hâlâ "şakaydı" savunmasına sığınması kabul edilemez.
 
