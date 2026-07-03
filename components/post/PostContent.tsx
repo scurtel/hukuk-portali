@@ -130,7 +130,7 @@ export function PostContent({ content }: PostContentProps) {
                 alt={alt || "Makale görseli"}
                 width={800}
                 height={450}
-                className="h-56 w-full object-cover sm:h-72"
+                className="!h-auto !max-h-96 !w-full !object-contain"
                 fallbackSrc="/images/placeholder-post.jpg"
               />
             </div>
