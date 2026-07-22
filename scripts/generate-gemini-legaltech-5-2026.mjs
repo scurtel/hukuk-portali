@@ -1,6 +1,11 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { GoogleGenAI } from "@google/genai";
+import {
+  buildGeminiGenerateConfig,
+  extractGroundingFromGenaiResponse,
+  appendSourcesMarkdown
+} from "./lib/gemini-config.mjs";
 
 const OUTPUT_DIR = resolve("generated-articles");
 const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
@@ -428,7 +433,7 @@ async function generateJson(ai, prompt) {
   const response = await ai.models.generateContent({
     model: MODEL,
     contents: prompt,
-    config: { temperature: 0.65, responseMimeType: "application/json" }
+    config: buildGeminiGenerateConfig({ json: true, temperature: 0.65 })
   });
   const text = response.text?.trim();
   if (!text) throw new Error("Gemini boş yanıt verdi.");
@@ -439,11 +444,11 @@ async function generatePlainText(ai, prompt) {
   const response = await ai.models.generateContent({
     model: MODEL,
     contents: prompt,
-    config: { temperature: 0.65 }
+    config: buildGeminiGenerateConfig({ temperature: 0.65 })
   });
   const text = response.text?.trim();
   if (!text) throw new Error("Gemini boş metin verdi.");
-  return text;
+  return appendSourcesMarkdown(text, extractGroundingFromGenaiResponse(response));
 }
 
 async function fixJson(ai, rawText) {

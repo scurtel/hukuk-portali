@@ -1,6 +1,11 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { GoogleGenAI } from "@google/genai";
+import {
+  buildGeminiGenerateConfig,
+  extractGroundingFromGenaiResponse,
+  appendSourcesMarkdown
+} from "./lib/gemini-config.mjs";
 
 function loadEnvFile() {
   try {
@@ -72,7 +77,11 @@ Yalnızca geçerli JSON döndür (markdown yok):
 }
 `.trim();
 
-  const res = await ai.models.generateContent({ model: MODEL, contents: prompt });
+  const res = await ai.models.generateContent({
+    model: MODEL,
+    contents: prompt,
+    config: buildGeminiGenerateConfig({ json: true })
+  });
   const text = res.text?.trim() || "";
   const json = text.replace(/^```json\s*/i, "").replace(/```\s*$/i, "");
   return JSON.parse(json);
@@ -96,8 +105,13 @@ Kurallar:
 - Yalnızca HTML gövde döndür (h1 bir kez, sonra h2/h3, p, ul/li). Markdown kullanma.
 `.trim();
 
-  const res = await ai.models.generateContent({ model: MODEL, contents: prompt });
-  return res.text?.trim() || "";
+  const res = await ai.models.generateContent({
+    model: MODEL,
+    contents: prompt,
+    config: buildGeminiGenerateConfig()
+  });
+  const text = res.text?.trim() || "";
+  return appendSourcesMarkdown(text, extractGroundingFromGenaiResponse(res));
 }
 
 async function main() {

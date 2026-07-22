@@ -1,6 +1,11 @@
 import { writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { GoogleGenAI } from "@google/genai";
+import {
+  buildGeminiGenerateConfig,
+  extractGroundingFromGenaiResponse,
+  appendSourcesMarkdown
+} from "./lib/gemini-config.mjs";
 
 const MODEL = "gemini-2.5-flash";
 
@@ -98,9 +103,7 @@ async function generateAll() {
     const response = await ai.models.generateContent({
       model: MODEL,
       contents: buildPrompt(post),
-      config: {
-        tools: [{ googleSearch: {} }]
-      }
+      config: buildGeminiGenerateConfig()
     });
 
     const text = response.text?.trim();
@@ -108,7 +111,10 @@ async function generateAll() {
       throw new Error(`İçerik üretilemedi: ${post.slug}`);
     }
 
-    result[post.slug] = text;
+    result[post.slug] = appendSourcesMarkdown(
+      text,
+      extractGroundingFromGenaiResponse(response)
+    );
   }
 
   const output = `export const generatedPostContents: Record<string, string> = ${JSON.stringify(result, null, 2)};\n`;

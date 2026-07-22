@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { GoogleGenAI } from "@google/genai";
+import { buildGeminiGenerateConfig } from "./lib/gemini-config.mjs";
 
 const OUTPUT_DIR = resolve("generated-articles");
 const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
@@ -415,10 +416,7 @@ async function generateJson(ai, prompt) {
   const response = await ai.models.generateContent({
     model: MODEL,
     contents: prompt,
-    config: {
-      temperature: 0.7,
-      responseMimeType: "application/json"
-    }
+    config: buildGeminiGenerateConfig({ json: true, temperature: 0.7 })
   });
   const text = response.text?.trim();
   if (!text) {

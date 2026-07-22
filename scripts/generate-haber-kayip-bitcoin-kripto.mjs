@@ -1,6 +1,11 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { GoogleGenAI } from "@google/genai";
+import {
+  buildGeminiGenerateConfig,
+  extractGroundingFromGenaiResponse,
+  appendSourcesMarkdown
+} from "./lib/gemini-config.mjs";
 
 const ROOT = resolve(import.meta.dirname, "..");
 const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
@@ -174,11 +179,11 @@ Yalnızca Markdown gövde döndür.
   const res = await ai.models.generateContent({
     model: MODEL,
     contents: prompt,
-    config: { temperature: 0.65 }
+    config: buildGeminiGenerateConfig({ temperature: 0.65 })
   });
   const text = stripFence(res.text || "");
   if (!text) throw new Error("Gemini boş gövde döndürdü.");
-  return text;
+  return appendSourcesMarkdown(text, extractGroundingFromGenaiResponse(res));
 }
 
 async function generateFaqAnswers(bodyPreview) {
@@ -205,7 +210,7 @@ Yalnızca geçerli JSON döndür:
   const res = await ai.models.generateContent({
     model: MODEL,
     contents: prompt,
-    config: { temperature: 0.5, responseMimeType: "application/json" }
+    config: buildGeminiGenerateConfig({ json: true, temperature: 0.5 })
   });
   const parsed = JSON.parse(stripFence(res.text || "{}"));
   if (!Array.isArray(parsed.faq) || parsed.faq.length < 5) {

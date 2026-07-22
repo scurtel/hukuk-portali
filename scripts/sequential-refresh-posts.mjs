@@ -1,6 +1,11 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { GoogleGenAI } from "@google/genai";
+import {
+  buildGeminiGenerateConfig,
+  extractGroundingFromGenaiResponse,
+  appendSourcesMarkdown
+} from "./lib/gemini-config.mjs";
 
 const MODEL = "gemini-2.5-flash";
 const GENERATED_PATH = resolve("lib/generatedPostContents.ts");
@@ -160,9 +165,7 @@ async function main() {
     const response = await ai.models.generateContent({
       model: MODEL,
       contents: buildPrompt(post),
-      config: {
-        tools: [{ googleSearch: {} }]
-      }
+      config: buildGeminiGenerateConfig()
     });
 
     const text = response.text?.trim();
@@ -175,7 +178,10 @@ async function main() {
       throw new Error(`JSON formati gecersiz: ${post.slug}`);
     }
 
-    contentMap[post.slug] = parsed.content.trim();
+    contentMap[post.slug] = appendSourcesMarkdown(
+      parsed.content.trim(),
+      extractGroundingFromGenaiResponse(response)
+    );
     writeGeneratedContents(contentMap);
     updateExcerptInPostsFile(post.slug, parsed.excerpt.trim());
 

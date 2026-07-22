@@ -16,3 +16,4 @@ public/images/covers/cover-*.png
 # Python
 __pycache__/
 *.pyc
+.env.*.local
