@@ -1,0 +1,101 @@
+# Aile Hukuku Nedir? Kapsamı, İlkeleri ve Temel Konuları
+
+Aile hukuku, bireylerin aile içi ilişkilerini, evlilik, boşanma, nafaka, velayet ve miras gibi konuları düzenleyen hukuk dalıdır. Türk Medeni Kanunu'nda yer alan bu hükümler, aile kurumunun korunmasını ve tarafların haklarının güvence altına alınmasını amaçlar. Bu rehber, aile hukukunun temel prensiplerini ve vatandaşlar için ne anlama geldiğini açıklayacaktır.
+
+## Aile Hukuku Nedir?
+
+Aile hukuku, toplumun temel yapı taşı olan aileyi oluşturan bireyler arasındaki ilişkileri düzenleyen, bu ilişkilerden doğan hak ve yükümlülükleri belirleyen bir hukuk dalıdır. Türk Medeni Kanunu'nun İkinci Kitabı'nda yer alan bu hükümler, nişanlanmadan evliliğe, evliliğin sona ermesinden boşanmanın sonuçlarına, nafaka, velayet, mal rejimleri, soybağı ve miras gibi geniş bir yelpazeyi kapsar. Aile hukukunun temel amacı, aile kurumunun korunması, bireylerin aile içi hak ve menfaatlerinin güvence altına alınması ve özellikle çocukların üstün yararının gözetilmesidir. Bu hukuk dalı, kişilerin yaşam döngüsünün önemli bir parçası olan ailevi süreçlerde karşılaşılabilecek hukuki sorunlara çözüm sunar ve adaletin sağlanmasına yardımcı olur.
+
+## Aile Hukukunun Kapsamı ve Temel Konuları
+
+Aile hukuku, bireylerin aile hayatı içerisinde karşılaştığı pek çok durumu ele alır. Bu konular, kişilerin hayatının farklı evrelerinde önemli hukuki sonuçlar doğurabilir.
+
+### Nişanlanma ve Evlilik
+
+Nişanlanma, evlenme vaadiyle kurulan bir sözleşmedir ve Türk Medeni Kanunu'nda özel olarak düzenlenmiştir. Nişanlanmanın bozulması halinde, belli şartlar altında maddi ve manevi tazminat talepleri gündeme gelebilir. Evlilik ise, iki karşı cinsin yasalara uygun biçimde bir araya gelerek kurduğu birlikteliktir. Evliliğin geçerlilik şartları, evlenme ehliyeti, evlenme engelleri gibi konular aile hukukunun temelini oluşturur. Evliliğin tescili ve resmîyet kazanması, taraflara karşılıklı hak ve yükümlülükler yükler.
+
+### Boşanma ve Ayrılık
+
+Evliliğin sona ermesi, genellikle boşanma yoluyla gerçekleşir. Türk Medeni Kanunu, boşanma sebeplerini özel ve genel olarak ikiye ayırır. Özel boşanma sebepleri arasında zina, hayata kast, pek kötü veya onur kırıcı davranış, suç işleme ve haysiyetsiz hayat sürme, terk ve akıl hastalığı bulunur. Genel boşanma sebebi ise evlilik birliğinin temelden sarsılmasıdır. Anlaşmalı boşanma ve çekişmeli boşanma olmak üzere iki tür boşanma davası mevcuttur. Boşanma süreci, tarafların malvarlığı, çocukların velayeti, nafaka gibi birçok karmaşık konuyu beraberinde getirir.
+
+### Nafaka Türleri
+
+Boşanma veya ayrılık sonucunda gündeme gelen nafaka, ekonomik olarak daha zayıf durumda kalan eşin veya çocukların geçimini sağlamaya yönelik bir destektir. Türk Medeni Kanunu'nda başlıca üç tür nafaka düzenlenmiştir:
+
+*   **Yoksulluk Nafakası:** Boşanma sebebiyle yoksulluğa düşecek tarafa, diğer eşin kusurundan bağımsız olarak verilebilir.
+*   **İştirak Nafakası:** Boşanma sonucunda velayeti kendisine verilmeyen eşin, çocukların giderlerine katılmak üzere ödediği nafakadır.
+*   **Tedbir Nafakası:** Boşanma davası devam ederken, eşlerin ve çocukların geçimini sağlamak amacıyla mahkemece hükmedilen geçici nafakadır.
+
+### Velayet ve Kişisel İlişkinin Kurulması
+
+Velayet, küçüklerin ve kısıtlıların kişiliği ile malları üzerindeki hakları, menfaatleri ve eğitimi gibi konularda yasal temsil yetkisini ifade eder. Boşanma durumunda, velayet hakkının hangi eşe verileceği belirlenirken, çocuğun üstün yararı ilkesi esas alınır. Velayet hakkı kendisine verilmeyen eşin ise çocuklarıyla kişisel ilişki kurma hakkı bulunur. Bu ilişkinin süresi ve şekli, yine çocuğun menfaatleri gözetilerek mahkemece kararlaştırılır.
+
+### Mal Rejimleri
+
+Evlilik birliği içerisinde edinilen malların yönetimi, kullanımı ve evliliğin sona ermesi halinde paylaşımı, mal rejimleri ile düzenlenir. Türk Medeni Kanunu'na göre yasal mal rejimi, "edinilmiş mallara katılma rejimi"dir. Eşler, evlenmeden önce veya evlilik sırasında bir mal rejimi sözleşmesi yaparak, yasal rejim yerine "mal ayrılığı", "paylaşmalı mal ayrılığı" veya "mal ortaklığı" rejimlerinden birini seçebilirler. Boşanma halinde mal rejiminin tasfiyesi, tarafların haklarını belirleyen önemli bir aşamadır.
+
+### Soybağı Kurulması ve Reddi
+
+Çocuk ile ana ve babası arasındaki hukuki bağı ifade eden soybağı, çocuğun miras, vatandaşlık gibi birçok hakkını doğrudan etkiler. Soybağı, evlilik içinde doğan çocuklarda kendiliğinden kurulurken, evlilik dışı doğan çocuklarda tanıma, babalık davası veya evlat edinme yoluyla kurulabilir. Soybağının reddi davası ise, babanın çocuk ile arasındaki soybağının olmadığını iddia ederek açtığı bir davadır. Evlat edinme ise, çocukla evlat edinen arasında yapay bir soybağı kurulması işlemidir.
+
+### Aile Konutu ve Korunması
+
+Aile konutu, eşlerin birlikte yaşadıkları ve aile yaşamlarını sürdürdükleri meskendir. Türk Medeni Kanunu, aile konutunun korunmasına özel bir önem atfeder. Eşlerden biri, diğer eşin açık rızası olmadan aile konutu üzerindeki hakları sınırlayamaz veya konutu devredemez. Tapu siciline aile konutu şerhi düşülmesi, bu korumanın etkinliğini artırır. Aile konutunun hukuki durumu hakkında detaylı bilgi için [Aile Konutu Şerhi Olmadan Ev Satılırsa Ne Olur?](/rehber/aile-konutu-serhi-olmadan-ev-satilirsa-ne-olur) başlıklı rehberimize göz atabilirsiniz.
+
+### Aile İçi Şiddet ve Koruma
+
+Ne yazık ki, aile içinde şiddet vakaları da yaşanabilmektedir. 6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun, aile içi şiddete maruz kalan veya şiddete maruz kalma tehlikesi bulunan kişileri koruma altına almayı amaçlar. Bu kanun kapsamında, şiddet uygulayan kişiye karşı uzaklaştırma, iletişim yasağı gibi koruyucu ve önleyici tedbir kararları alınabilir. Aile içi şiddetle mücadele ve hukuki koruma yolları hakkında daha fazla bilgi için [Aile İçi Şiddete Karşı Hukuki Koruma Rehberi](/rehber/aile-ici-siddete-karsi-hukuki-koruma-rehberi) sayfamızı ziyaret edebilirsiniz.
+
+## Aile Hukukunun Temel İlkeleri
+
+Aile hukuku, belirli temel ilkeler üzerine inşa edilmiştir. Bu ilkeler, kanun koyucunun ve yargı mercilerinin karar alma süreçlerinde yol gösterici niteliktedir.
+
+*   **Çocuğun Üstün Yararı İlkesi:** Aile hukukunu ilgilendiren tüm konularda, özellikle velayet, kişisel ilişki ve evlat edinme gibi durumlarda, çocuğun fiziksel, ruhsal, ahlaki ve sosyal gelişimi ile güvenliği en önemli önceliktir. Mahkemeler, karar verirken bu ilkeyi titizlikle uygular.
+*   **Eşitlik İlkesi:** Evlilik birliği içinde ve boşanma sonrasında eşler arasında hak ve yükümlülükler açısından eşitlik esastır. Cinsiyet ayrımı yapılmaksızın, her iki eşin de yasa önünde eşit haklara sahip olduğu kabul edilir.
+*   **Zayıfın Korunması İlkesi:** Aile içinde ekonomik veya sosyal açıdan daha zayıf durumda olan eşin veya çocuğun korunması amaçlanır. Nafaka düzenlemeleri ve aile konutunun korunması gibi hükümler bu ilkenin bir yansımasıdır.
+*   **Kamu Düzeni İlkesi:** Aile kurumunun toplum için taşıdığı önem nedeniyle, aile hukukuna ilişkin birçok düzenleme kamu düzeniyle ilgilidir ve tarafların serbest iradeleriyle değiştirilemez. Evlenme engelleri, boşanma sebepleri gibi konular buna örnektir.
+*   **Süreklilik İlkesi:** Aile birliğinin mümkün olduğunca devam ettirilmesi hedeflenir. Bu nedenle, boşanma davalarında öncelikle evlilik birliğinin kurtarılmasına yönelik çabalar da göz önünde bulundurulur.
+
+## Aile Hukukunda Miras İlişkileri
+
+Aile hukuku, bireylerin sağlığında kurduğu ailevi ilişkileri düzenlerken, ölümden sonra ortaya çıkan miras ilişkileriyle de yakından ilişkilidir. Türk Medeni Kanunu'nun Miras Hukuku hükümleri, ölen kişinin malvarlığının yasal mirasçıları arasında nasıl paylaşılacağını belirler. Eşler ve çocuklar, yasal mirasçı olarak önemli bir yere sahiptir. Aile hukuku kapsamındaki soybağı kavramı, mirasçılık sıfatını doğrudan etkiler. Miras hukuku hakkında daha fazla bilgi edinmek için [Miras Hukuku Nedir? Rehber](/rehber/miras-hukuku-nedir-rehber) ve [Saklı Pay ve Tenkis Davası Rehberi](/analizler/sakli-pay-ve-tenkis-davasi-rehberi) sayfalarımızı ziyaret edebilirsiniz.
+
+Bu tür karmaşık süreçlerde hukuki destek almak, hak kayıplarının önüne geçmek adına önem taşımaktadır. Hukukportali.com bünyesinde yer alan Avukat Ceren Sümer Cilli, aile hukuku alanındaki bilgi ve deneyimiyle müvekkillerine yol göstermektedir.
+
+## Sonuç
+
+Aile hukuku, bireylerin hayatının en mahrem ve temel alanlarından biri olan aile ilişkilerini düzenleyen, hak ve yükümlülükleri belirleyen hayati bir hukuk dalıdır. Evlilikten boşanmaya, çocukların velayetinden mal paylaşımına kadar geniş bir yelpazede hukuki düzenlemeler içerir. Bu düzenlemeler, aile kurumunun korunmasını, bireylerin haklarının güvence altına alınmasını ve özellikle çocukların üstün menfaatlerinin gözetilmesini amaçlar. Aile hukuku konuları, çoğu zaman duygusal ve karmaşık süreçleri içerdiğinden, doğru hukuki bilgiye sahip olmak ve gerektiğinde profesyonel destek almak, olası mağduriyetlerin önüne geçmek için büyük önem taşır.
+
+Aile hukuku alanında karşılaştığınız her türlü sorun veya danışmanlık ihtiyacınız için, hukuki süreçlerin doğru ve eksiksiz yürütülmesi adına uzman bir avukattan destek almanız tavsiye edilir.
+
+Bu içerik genel bilgilendirme amacıyla hazırlanmıştır; somut olay için hukuki danışmanlık alınmalıdır.
+
+## Sık sorulan sorular
+
+### Aile hukuku hangi konuları kapsar?
+
+Aile hukuku; nişanlanma, evlenme, boşanma, nafaka, velayet, vesayet, soybağı kurulması, evlat edinme, mal rejimleri gibi aile içi ilişkileri düzenleyen geniş bir alandır.
+
+### Türk Medeni Kanunu'nun aile hukukundaki rolü nedir?
+
+Türk Medeni Kanunu, aile hukukunun temel kaynağını oluşturur. Evlenme, boşanma, miras ve diğer ailevi ilişkilerle ilgili tüm temel düzenlemeler bu kanunda yer alır.
+
+### Boşanma davalarında ne tür konular ele alınır?
+
+Boşanma davalarında genellikle boşanma kararı, nafaka (yoksulluk, iştirak), maddi ve manevi tazminat, velayet, şahsi ilişki kurulması (çocukla görüşme) ve mal paylaşımı gibi konular ele alınır.
+
+### Velayet nedir ve kimlere verilir?
+
+Velayet, küçük yaştaki çocukların bakımı, eğitimi, yetiştirilmesi ve temsili gibi hak ve sorumlulukları kapsar. Boşanma durumunda çocuğun üstün yararı gözetilerek anne veya babadan birine ya da istisnai durumlarda üçüncü bir kişiye verilebilir.
+
+### Nafaka türleri nelerdir?
+
+Türk hukukunda başlıca yoksulluk nafakası (boşanma sonrası geçim sıkıntısı çeken eşe), iştirak nafakası (çocuğun giderlerine katkı) ve tedbir nafakası (dava süresince ödenen nafaka) gibi türler bulunmaktadır.
+
+### Mal rejimi nedir ve boşanmada nasıl uygulanır?
+
+Mal rejimi, evlilik birliği içinde edinilen malların yönetimi, kullanımı ve boşanma halinde paylaşım esaslarını belirleyen hukuki sistemdir. Yasal mal rejimi olan edinilmiş mallara katılma rejimi veya eşlerin anlaşarak seçebileceği diğer rejimler uygulanabilir.
+
+## Sonuç
+
+Aile hukuku, bireylerin en temel sosyal birimi olan aile içindeki ilişkilerini düzenleyen ve koruyan hayati bir hukuk dalıdır. Evlilikten boşanmaya, çocukların haklarından mal paylaşımına kadar geniş bir yelpazeyi kapsayan bu alan, tarafların haklarını ve yükümlülüklerini belirleyerek toplumsal düzenin sağlanmasına katkıda bulunur. Bu konularda bilgi sahibi olmak, hukuki süreçlerde doğru adımlar atılmasına yardımcı olacaktır.
