@@ -81,7 +81,7 @@ Boşanmada maddi ve manevi tazminat taleplerinin kabul edilmesi için güçlü d
     *   Kolluk kuvvetleri tutanakları
     *   Telefon kayıtları (HTS kayıtları)
 *   **Zararın Kanıtlanması:** Maddi tazminat için uğranılan veya uğranılacak olan zararın, manevi tazminat için ise kişilik hakları ihlalinin somut olarak ortaya konulması gerekmektedir. Örneğin, maddi zarar için kazanç kaybı hesaplamaları, manevi zarar için ise yaşanan travmanın etkileri anlatılabilir.
-*   **Mal Kaçırma İhtimali:** Boşanma sürecinde eşlerden birinin mal kaçırma girişimleri, tazminat taleplerini ve mal paylaşımını doğrudan etkileyebilir. Bu tür durumların tespiti ve hukuki önlemlerin alınması için dikkatli olmak gerekir. Örneğin, [Boşanmadan Önce Evin Satılması Mal Kaçırma Sayılır Mı?](/rehber/bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi) başlıklı yazımızda bu konuda detaylı bilgi bulabilirsiniz.
+*   **Mal Kaçırma İhtimali:** Boşanma sürecinde eşlerden birinin mal kaçırma girişimleri, tazminat taleplerini ve mal paylaşımını doğrudan etkileyebilir. Bu tür durumların tespiti ve hukuki önlemlerin alınması için dikkatli olmak gerekir. Örneğin, [Boşanmadan Önce Evin Satılması Mal Kaçırma Sayılır Mı?](/analiz/bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi) başlıklı yazımızda bu konuda detaylı bilgi bulabilirsiniz.
 *   **Profesyonel Destek:** Tazminat taleplerinin doğru ve eksiksiz bir şekilde ileri sürülmesi, delillerin usulüne uygun toplanması ve sunulması hukuki bilgi ve tecrübe gerektirir. Bu nedenle, bir avukattan hukuki destek almak önemlidir.
 
 ### Avukatın Rolü ve Önemi

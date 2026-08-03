@@ -70,7 +70,7 @@ Avukatlık Kanunu ve meslek kuralları, avukatların müvekkillerine karşı öz
 
 #### Veri Gizliliği ve Kişisel Verilerin Korunması (KVKK)
 
-Hukuk büroları, müvekkillerine ait hassas bilgilere erişmektedir. YZ araçlarının bu verilerle işleyişi, Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili veri gizliliği düzenlemelerine tam uyum içinde olmalıdır. YZ platformları kullanılırken verilerin depolanma yeri, paylaşımı, işlenişi ve güvenlik önlemleri titizlikle incelenmelidir. Özellikle bulut tabanlı YZ çözümlerinde veri güvenliği ve gizliliği protokolleri önemlidir. Detaylı bilgi için [Avukatlık Mesleki Sırrı ve KVKK: Yapay Zeka Çağında Veri Güvenliği Rehberi](https://hukukportali.com/avukatlik-mesleki-sirri-kvkk-yapay-zeka-veri-guvenligi) makalemize göz atabilirsiniz. Her hukuk ofisi, YZ araçlarının KVKK uyumluluğunu sağlamak adına gerekli tedbirleri almalıdır.
+Hukuk büroları, müvekkillerine ait hassas bilgilere erişmektedir. YZ araçlarının bu verilerle işleyişi, Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili veri gizliliği düzenlemelerine tam uyum içinde olmalıdır. YZ platformları kullanılırken verilerin depolanma yeri, paylaşımı, işlenişi ve güvenlik önlemleri titizlikle incelenmelidir. Özellikle bulut tabanlı YZ çözümlerinde veri güvenliği ve gizliliği protokolleri önemlidir. Detaylı bilgi için [Avukatlık Mesleki Sırrı ve KVKK: Yapay Zeka Çağında Veri Güvenliği Rehberi](https://hukukportali.com/analiz/yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri) makalemize göz atabilirsiniz. Her hukuk ofisi, YZ araçlarının KVKK uyumluluğunu sağlamak adına gerekli tedbirleri almalıdır.
 
 ### Yapay Zeka Kullanımında Karşılaşılabilecek Riskler
 
@@ -123,7 +123,7 @@ Yapay zekâyı başarılı ve sorumlu bir şekilde hukuk ofisine entegre etmek i
 *   **Politika Oluşturma:** YZ kullanımına ilişkin net ve kapsamlı bir iç politika (YZ kullanım kılavuzu) geliştirin. Politika, hangi verilerin YZ'ye girilebileceğini, çıktıların nasıl doğrulanacağını ve mesleki sırrın korunmasını içermelidir.
 *   **Denetim ve Geri Bildirim:** YZ araçlarının performansını düzenli olarak denetleyin, hata oranlarını takip edin ve çıktı kalitesini değerlendirin. Geri bildirim mekanizmaları oluşturarak kullanımı iyileştirin.
 *   **Müvekkil İletişimi:** YZ kullanımı konusunda müvekkillerle şeffaf bir iletişim stratejisi belirleyin, gerektiğinde YZ kullanımını ve etkilerini açıklayın.
-*   Dilekçe ve hukuki belge hazırlık süreçlerinde YZ kullanımına dair detaylar için [Yapay Zeka Destekli Dilekçe Kontrol Listesi Rehberi](https://hukukportali.com/yapay-zeka-dilekce-kontrol-listesi-rehberi) yazımıza göz atabilirsiniz.
+*   Dilekçe ve hukuki belge hazırlık süreçlerinde YZ kullanımına dair detaylar için [Yapay Zeka Destekli Dilekçe Kontrol Listesi Rehberi](https://hukukportali.com/rehber/dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi) yazımıza göz atabilirsiniz.
 
 ### Sonuç
 
