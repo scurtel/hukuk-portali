@@ -84,7 +84,7 @@ Dilekçeler aşaması tamamlandıktan sonra mahkeme, bir ön inceleme duruşmas�
 Ön inceleme duruşmasının ardından tahkikat aşamasına geçilir. Bu aşamada mahkeme, tarafların sunduğu tüm delilleri (tanık dinletme, belge incelemesi, keşif, bilirkişi raporu vb.) toplar ve değerlendirir.
 
 *   **Tanık Dinletme:** Taraflar, iddialarını desteklemek üzere tanık gösterebilirler.
-*   **Belge İncelemesi:** Mahkeme, tarafların sunduğu veya ilgili kurumlardan talep ettiği tüm belgeleri (banka kayıtları, telefon kayıtları, tapu kayıtları vb.) inceler. Özellikle [boşanmadan önce evin satılması mal kaçırma sayılır mı](/rehber/bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi) gibi konularda belge incelemesi hayati önem taşır.
+*   **Belge İncelemesi:** Mahkeme, tarafların sunduğu veya ilgili kurumlardan talep ettiği tüm belgeleri (banka kayıtları, telefon kayıtları, tapu kayıtları vb.) inceler. Özellikle [boşanmadan önce evin satılması mal kaçırma sayılır mı](/analiz/bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi) gibi konularda belge incelemesi hayati önem taşır.
 *   **Bilirkişi İncelemesi:** Mal paylaşımı, çocukların psikolojik durumu gibi özel bilgi gerektiren konularda bilirkişi raporu alınabilir.
 *   **Keşif:** Gerekli görülen durumlarda mahkeme, olay yerinde keşif yapabilir.
 
@@ -117,7 +117,7 @@ Bu tedbirler, dava sonuçlanana kadar yürürlükte kalır ve tarafların talebi
 
 ### Mal Paylaşımı ve Tasfiyesi
 
-Boşanma davası sonuçlandıktan sonra, evlilik birliği içinde edinilen malların nasıl paylaşılacağı konusu gündeme gelir. Türk Medeni Kanunu'na göre yasal mal rejimi edinilmiş mallara katılma rejimidir. Bu rejimde, evlilik birliği içinde edinilen mallar üzerinde eşlerin eşit pay hakkı bulunur. Mal paylaşımı, ayrı bir dava konusu olabileceği gibi, boşanma davası içinde de talep edilebilir. [Boşanmada mal paylaşımı](/rehber/bosanmada-mal-paylasimi-2026-rehber) süreci oldukça detaylıdır ve uzmanlık gerektirir. Özellikle [boşanmadan önce evin satılması mal kaçırma sayılır mı](/rehber/bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi) gibi durumlar, mal paylaşımını doğrudan etkileyebilir ve hukuki mücadele gerektirebilir.
+Boşanma davası sonuçlandıktan sonra, evlilik birliği içinde edinilen malların nasıl paylaşılacağı konusu gündeme gelir. Türk Medeni Kanunu'na göre yasal mal rejimi edinilmiş mallara katılma rejimidir. Bu rejimde, evlilik birliği içinde edinilen mallar üzerinde eşlerin eşit pay hakkı bulunur. Mal paylaşımı, ayrı bir dava konusu olabileceği gibi, boşanma davası içinde de talep edilebilir. [Boşanmada mal paylaşımı](/rehber/bosanmada-mal-paylasimi-2026-rehber) süreci oldukça detaylıdır ve uzmanlık gerektirir. Özellikle [boşanmadan önce evin satılması mal kaçırma sayılır mı](/analiz/bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi) gibi durumlar, mal paylaşımını doğrudan etkileyebilir ve hukuki mücadele gerektirebilir.
 
 ### Çocukların Velayeti ve Şahsi İlişki
 
