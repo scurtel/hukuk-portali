@@ -43,21 +43,31 @@ export function buildArticlePageSchema(post: Post): Record<string, unknown> {
   const graph: Record<string, unknown>[] = [organization, editorialTeam];
 
   const published = publishedToIso(post.publishedAt);
+  const modified = publishedToIso(post.updatedAt ?? post.publishedAt);
 
-  graph.push({
+  const articleNode: Record<string, unknown> = {
     "@type": articleType,
     "@id": `${pageUrl}#article`,
     headline: post.title,
     description: post.seo?.metaDescription ?? post.excerpt,
     datePublished: published,
-    dateModified: published,
+    dateModified: modified,
     author: { "@id": PLATFORM_EDITORIAL_ID },
     publisher: { "@id": PLATFORM_ORGANIZATION_ID },
     mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
     url: pageUrl,
     inLanguage: "tr-TR",
     articleSection: post.categorySlug
-  });
+  };
+
+  const imageSrc = post.imageUrl?.trim();
+  if (imageSrc) {
+    articleNode.image = imageSrc.startsWith("http")
+      ? imageSrc
+      : `${siteConfig.url}${imageSrc.startsWith("/") ? imageSrc : `/${imageSrc}`}`;
+  }
+
+  graph.push(articleNode);
 
   if (post.faq?.length) {
     graph.push({

@@ -475,7 +475,9 @@ const postImages: Record<string, string> = {
   "yks-turkiye-paraguay-maci-dev-ekran-yasagi":
     "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=85",
   "burdan-ricky-gervais-hakkinda-suc-duyurusunda-bulunuyorum":
-    "/images/covers/burdan-ricky-gervais-hakkinda-suc-duyurusunda-bulunuyorum.png"
+    "/images/covers/burdan-ricky-gervais-hakkinda-suc-duyurusunda-bulunuyorum.png",
+  "saglikta-dijitallesme-hekimio":
+    "/images/covers/saglikta-dijitallesme-hekimio.webp"
 };
 
 export const staticPosts: Post[] = allPostMetas.map((meta) => ({

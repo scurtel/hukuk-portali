@@ -7,6 +7,7 @@ import { PostHeader } from "@/components/post/PostHeader";
 import { RelatedPosts } from "@/components/post/RelatedPosts";
 import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { getPostBySlug } from "@/lib/posts";
+import { getPostCanonicalUrl } from "@/lib/seo/articleJsonLd";
 import { staticParamsForPostType } from "@/lib/static-paths";
 
 type NewsDetailPageProps = {
@@ -28,10 +29,42 @@ export async function generateMetadata({ params }: NewsDetailPageProps): Promise
     };
   }
 
+  const title = post.seo?.metaTitle ?? post.title;
+  const description = post.seo?.metaDescription ?? post.excerpt;
+  const canonical = getPostCanonicalUrl(post);
+  const imageUrl = post.imageUrl?.trim() || undefined;
+
   return {
-    title: `${post.seo?.metaTitle ?? post.title} | Hukuk Portalı`,
-    description: post.seo?.metaDescription ?? post.excerpt,
-    keywords: [post.seo?.focusKeyword, ...(post.seo?.secondaryKeywords ?? [])].filter(Boolean) as string[]
+    title,
+    description,
+    keywords: [post.seo?.focusKeyword, ...(post.seo?.secondaryKeywords ?? [])].filter(Boolean) as string[],
+    alternates: { canonical },
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      url: canonical,
+      locale: "tr_TR",
+      siteName: "Hukuk Portalı",
+      publishedTime: post.publishedAt,
+      modifiedTime: post.updatedAt ?? post.publishedAt,
+      images: imageUrl
+        ? [
+            {
+              url: imageUrl,
+              width: 1200,
+              height: 675,
+              alt: post.imageAlt || post.title
+            }
+          ]
+        : undefined
+    },
+    twitter: {
+      card: imageUrl ? "summary_large_image" : "summary",
+      title,
+      description,
+      images: imageUrl ? [imageUrl] : undefined
+    }
   };
 }
 
