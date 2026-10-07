@@ -910,6 +910,55 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
   },
   {
     "id": "post-219",
+    "slug": "bosanmada-ziynet-alacagi-rehberi",
+    "title": "Boşanmada Ziynet Alacağı: Haklar, Deliller ve Hukuki Süreç",
+    "excerpt": "Boşanma sürecinde en çok merak edilen konulardan biri de ziynet eşyalarının kime ait olacağı ve nasıl talep edileceğidir. Bu rehber, ziynet alacağı davasının hukuki dayanaklarını, delil sunma süreçlerini ve haklarınızı detaylıca ele almaktadır.",
+    "type": "analiz",
+    "categorySlug": "analiz",
+    "featured": false,
+    "publishedAt": "2026-10-07",
+    "updatedAt": "2026-10-07",
+    "imageAlt": "Boşanma sırasında ziynet eşyalarını gösteren bir görsel, örneğin bir yüzük veya bilezik.",
+    "seo": {
+      "metaTitle": "Boşanmada Ziynet Alacağı: Haklar, Deliller ve Dava Süreci",
+      "metaDescription": "Boşanmada ziynet eşyalarının kime ait olduğu, nasıl talep edileceği ve hukuki süreç bu rehberde. Ziynet alacağı davası hakkında bilmeniz gerekenler.",
+      "focusKeyword": "Boşanmada ziynet alacağı",
+      "secondaryKeywords": [
+        "Ziynet eşyası davası",
+        "Boşanmada altınlar",
+        "Ziynetlerin iadesi",
+        "Altın alacağı davası"
+      ]
+    },
+    "faq": [
+      {
+        "question": "Ziynet eşyası nedir ve boşanmada kime aittir?",
+        "answer": "Ziynet eşyaları, düğünde takılan altın, bilezik, kolye gibi değerli süs eşyalarıdır. Yargıtay içtihatlarına göre, kural olarak kadına bağışlanmış sayılır ve kadının kişisel malıdır."
+      },
+      {
+        "question": "Ziynet eşyaları boşanmada nasıl talep edilir?",
+        "answer": "Ziynet eşyaları, boşanma davası ile birlikte veya ayrı bir alacak davası olarak talep edilebilir. Talep dilekçesinde hangi ziynetlerin istendiği açıkça belirtilmelidir."
+      },
+      {
+        "question": "Ziynet alacağı davasında hangi deliller kullanılabilir?",
+        "answer": "Ziynet alacağı davasında fotoğraf, video kayıtları, tanık beyanları, banka dekontları, bilirkişi incelemesi gibi deliller kullanılabilir."
+      },
+      {
+        "question": "Erkek, eşine takılan ziynetleri geri isteyebilir mi?",
+        "answer": "Kural olarak, düğünde takılan ziynetler kadına bağışlanmış sayılır ve kadının kişisel malıdır. Erkek, bu ziynetleri genellikle geri isteyemez, ancak istisnai durumlar (örneğin, ziynetlerin evlilik birliği için harcandığının ispatı) olabilir."
+      },
+      {
+        "question": "Ziynetler evlilik birliği içinde harcanmışsa ne olur?",
+        "answer": "Ziynet eşyalarının evlilik birliğinin devamı için, eşlerin ortak rızasıyla ve zorunlu ihtiyaçlar için harcandığının ispat edilmesi halinde, kadın ziynet alacağı talep edemeyebilir. Ancak bu durumun ispat yükü erkeğe aittir."
+      },
+      {
+        "question": "Ziynet alacağı davası ne kadar sürer?",
+        "answer": "Dava süresi, delillerin toplanmasına, tanık dinlenmesine, bilirkişi incelemesine ve mahkemenin iş yüküne göre değişebilir. Kesin bir süre vermek mümkün değildir."
+      }
+    ]
+  },
+  {
+    "id": "post-220",
     "slug": "bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi",
     "title": "Boşanmadan Önce Evin Satılması Mal Kaçırma Sayılır mı?",
     "excerpt": "Boşanma sürecinde eşlerden birinin evini satması, diğer eş tarafından \"mal kaçırma\" olarak nitelendirilebilir ve ciddi hukuki ihtilaflara yol açabilir. Bu rehberimizde, boşanma öncesi taşınmaz satışlarının hangi durumlarda mal kaçırma sayılacağını, hukuki yolları ve haklarınızı koruma yöntemlerini inceliyoruz.",
@@ -956,7 +1005,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-220",
+    "id": "post-221",
     "slug": "burdan-ricky-gervais-hakkinda-suc-duyurusunda-bulunuyorum",
     "title": "Burdan Ricky Gervais Hakkında Suç Duyurusunda Bulunuyorum",
     "excerpt": "Yiğit Cilli'nin kaleminden: Ricky Gervais'in yıllardır süren mizahı, Deniz Göktaş örneğiyle yan yana konduğunda aslında mizah duygusuna yapılan hakareti tartışıyoruz.",
@@ -982,7 +1031,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     "faq": []
   },
   {
-    "id": "post-221",
+    "id": "post-222",
     "slug": "cekismeli-bosanma-davasi-rehberi",
     "title": "Çekişmeli Boşanma Davası: Süreç, Şartlar ve Hukuki Adımlar",
     "excerpt": "Çekişmeli boşanma davası, eşlerin boşanma ve ferileri konusunda anlaşamadığı durumlarda açılan hukuki bir süreçtir. Bu dava türü, anlaşmalı boşanmaya göre daha uzun ve karmaşık olabilir, çünkü kusur tespiti, nafaka, velayet ve mal paylaşımı gibi konularda mahkeme kararı gerektirir.",
@@ -1031,7 +1080,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-222",
+    "id": "post-223",
     "slug": "cocugu-gostermeme-halinde-yapilacaklar",
     "title": "Çocuğu Göstermeme Durumunda Ne Yapılır? Hukuki Rehber",
     "excerpt": "Boşanma sonrası çocuğu göstermeme durumu, velayet hakkına sahip ebeveynler için zorlayıcı olabilir. Bu rehber, çocuğunuzla kişisel ilişkinizi güvence altına almak için izlemeniz gereken hukuki süreçleri ve atılacak adımları detaylıca açıklıyor. Yasal haklarınızı öğrenerek çocuğunuzla tekrar bir araya gelin.",
@@ -1080,7 +1129,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-223",
+    "id": "post-224",
     "slug": "cocugun-gorusturulmemesi-hukuki-surec-rehberi",
     "title": "Çocuğun Gösterilmemesi Durumunda Hukuki Adımlar Rehberi",
     "excerpt": "Velayet veya kişisel ilişki kararına rağmen çocuğunuzla görüşmeniz engelleniyorsa, Türk Medeni Kanunu ve ilgili mevzuat çerçevesinde yasal haklarınız bulunmaktadır. Bu rehber, çocuğun gösterilmemesi durumunda atılabilecek adımları ve hukuki süreçleri açıklayarak hak kaybı yaşamanızı önlemeyi amaçlar.",
@@ -1129,7 +1178,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-224",
+    "id": "post-225",
     "slug": "cocuk-teslim-ihlalinde-yasal-haklar",
     "title": "Çocuğun Teslim Edilmemesi Durumunda Hukuki Haklarınız ve Süreç",
     "excerpt": "Velayet kararına rağmen çocuğunuzu göremiyorsanız, hukuki yollarla haklarınızı arayabilirsiniz. Bu rehber, çocuğun teslim edilmemesi halinde atmanız gereken adımları ve karşılaşabileceğiniz süreçleri açıklamaktadır.",
@@ -1179,7 +1228,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-225",
+    "id": "post-226",
     "slug": "cocukla-kisisel-iliskinin-engellenmesi-hukuki-cozumler",
     "title": "Çocuğu Göstermeme Durumunda Hukuki Süreç ve Haklarınız",
     "excerpt": "Boşanma veya ayrılık sonrası çocuğunuzla kişisel ilişkinizin engellenmesi durumunda ne yapmanız gerektiğini merak mı ediyorsunuz? Bu rehber, çocuğu göstermeme halinde başvurulabilecek hukuki yolları ve haklarınızı detaylıca açıklıyor. Adli süreçler hakkında güvenilir bilgilerle haklarınızı koruyun.",
@@ -1228,7 +1277,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-226",
+    "id": "post-227",
     "slug": "dava-dilekcesi-hazirlama-rehberi-nelere-dikkat-edilmeli",
     "title": "Dava Dilekçesi Hazırlarken Nelere Dikkat Edilmeli? Kapsamlı Rehber",
     "excerpt": "Dava dilekçesi, hukuki sürecin başlangıcı ve en önemli adımlarından biridir. Doğru ve eksiksiz hazırlanmış bir dilekçe, davanın seyrini olumlu etkileyebilir. Bu rehberde, dilekçe hazırlarken dikkat etmeniz gereken tüm detayları bulacaksınız.",
@@ -1277,7 +1326,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-227",
+    "id": "post-228",
     "slug": "dava-dilekcesi-hazirlama-sureci-ve-ipuclari",
     "title": "Dava Dilekçesi Hazırlarken Nelere Dikkat Edilmeli?",
     "excerpt": "Dava dilekçesi, hukuki sürecin temelini oluşturan ve hak arayışının ilk adımı olan önemli bir belgedir. Bu belgeyi hazırlarken yapılan hatalar, davanın seyrini olumsuz etkileyebilir ve telafisi zor sonuçlar doğurabilir. Bu rehber, dava dilekçesi hazırlarken dikkat edilmesi gereken kritik noktaları ve usul kurallarını açıklamaktadır.",
@@ -1325,7 +1374,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-228",
+    "id": "post-229",
     "slug": "dava-dilekcesi-hazirlarken-bilinmesi-gerekenler",
     "title": "Dava Dilekçesi Hazırlarken Bilinmesi Gereken Temel Adımlar",
     "excerpt": "Hukuki süreçlerin temelini oluşturan dava dilekçesi, hak arayışınızın ilk ve en önemli adımıdır. Doğru ve eksiksiz bir dilekçe ile davanızın seyrini olumlu etkileyebilir, olası hak kayıplarının önüne geçebilirsiniz. Bu rehberimizde dava dilekçesi hazırlarken dikkat edilmesi gereken kritik noktalara değiniyoruz.",
@@ -1374,7 +1423,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-229",
+    "id": "post-230",
     "slug": "dava-dilekcesi-yazarken-onemli-ipuclari",
     "title": "Dava Dilekçesi Hazırlarken Dikkat Edilmesi Gereken Temel Noktalar",
     "excerpt": "Hukuki bir sürecin başlangıcı olan dava dilekçesi, davanın seyrini doğrudan etkileyen kritik bir belgedir. Bu rehberde, dilekçenin zorunlu unsurları, yazım kuralları ve dikkat edilmesi gereken temel noktaları adım adım inceleyeceğiz.",
@@ -1419,7 +1468,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-230",
+    "id": "post-231",
     "slug": "dilekce-ve-arastirmada-yapay-zeka-kontrol-listesi",
     "title": "Dilekçe ve Araştırmada Yapay Zekâ: Avukat Kontrol Listesi",
     "excerpt": "Yapay zekâ araçlarının hukuki dilekçe hazırlığı ve araştırma süreçlerinde kullanımı giderek yaygınlaşıyor. Bu makale, avukatların yapay zekâ çıktılarının doğruluğunu, güncelliğini ve etik uygunluğunu sağlamak için kullanabileceği kritik bir kontrol listesi sunmaktadır.",
@@ -1468,7 +1517,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-231",
+    "id": "post-232",
     "slug": "hisseli-tapu-almak-riskli-mi-alicilar-icin-kontrol-listesi",
     "title": "Hisseli Tapu Almak Riskli mi? Alıcılar İçin Hukuki Kontrol Listesi",
     "excerpt": "Hisseli tapu alımı, yatırımcılar ve mülk edinmek isteyenler için cazip gibi görünse de, kendine özgü hukuki riskler barındırır. Bu rehber, hisseli tapu almadan önce yapılması gereken detaylı incelemeleri ve dikkat edilmesi gereken noktaları açıklayarak, olası mağduriyetlerin önüne geçmeyi amaçlamaktadır.",
@@ -1516,7 +1565,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-232",
+    "id": "post-233",
     "slug": "hukuk-burolarinda-yapay-zeka-kullaniminda-riskler",
     "title": "Hukuk Büroları İçin Yapay Zekâ Kullanımında Riskler ve Dikkat Edilmesi Gerekenler",
     "excerpt": "Yapay zekâ teknolojileri, hukuk bürolarına verimlilik vaat ederken, kişisel veri güvenliği, mesleki sır saklama ve olası hatalı çıktılar gibi ciddi riskleri de beraberinde getiriyor. Bu analiz, avukatlık mesleğinin etik ve hukuki sorumlulukları çerçevesinde yapay zekâ kullanımında dikkat edilmesi gereken kritik noktaları ele almaktadır.",
@@ -1557,7 +1606,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-233",
+    "id": "post-234",
     "slug": "hukuk-burolarinda-yapay-zeka-politikasi",
     "title": "Hukuk Bürolarında Yapay Zekâ Politikası Nasıl Hazırlanır?",
     "excerpt": "Hukuk bürolarında yapay zekâ kullanımı hızla yaygınlaşırken, bu teknolojinin etik ve yasal çerçevede kullanılması büyük önem taşır. Bu rehber, yapay zekâ politikası oluştururken gizlilik, veri güvenliği ve sorumluluk gibi temel unsurları ele almaktadır. Etkin bir politika ile hem verimlilik artırılabilir hem de mesleki riskler minimize edilebilir.",
@@ -1598,7 +1647,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-234",
+    "id": "post-235",
     "slug": "hukuki-danismanligin-onemi-rehber",
     "title": "Hukuki Danışmanlık Neden Önemlidir? Bilmeniz Gerekenler",
     "excerpt": "Hukuki danışmanlık, bireylerin ve kurumların yasal haklarını anlamaları, olası riskleri öngörmeleri ve doğru hukuki stratejiler geliştirmeleri için vazgeçilmezdir. Bu rehber, hukuki destek almanın neden bu kadar önemli olduğunu açıklıyor.",
@@ -1643,7 +1692,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-235",
+    "id": "post-236",
     "slug": "hukuki-danismanlik-neden-gereklidir-rehber",
     "title": "Hukuki Danışmanlık Neden Bu Kadar Önemlidir? Bilmeniz Gerekenler",
     "excerpt": "Hukuki danışmanlık, bireylerin ve kurumların yasal haklarını anlamaları, olası riskleri öngörmeleri ve hukuki süreçlerde doğru adımlar atmaları için hayati bir öneme sahiptir. Bu rehber, hukuki danışmanlığın neden vazgeçilmez olduğunu detaylarıyla açıklamaktadır.",
@@ -1692,7 +1741,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-236",
+    "id": "post-237",
     "slug": "hukukta-delil-sunma-sureci-rehberi",
     "title": "Hukukta Delil Sunma Süreci: Adım Adım Rehber",
     "excerpt": "Bir davanın seyrini doğrudan etkileyen delillerin mahkemeye sunulması, belirli hukuki kurallara tabidir. Bu rehber, delil sunma sürecinin temel adımlarını, dikkat edilmesi gereken noktaları ve delil türlerini anlaşılır bir dille açıklar.",
@@ -1745,7 +1794,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-237",
+    "id": "post-238",
     "slug": "ihtarname-nedir-ne-ise-yarar-hukuki-rehber",
     "title": "İhtarname Nedir, Ne İşe Yarar ve Nasıl Hazırlanır?",
     "excerpt": "İhtarname, hukuki ilişkilerde karşı tarafa belirli bir durumu bildirmek, uyarmak veya talepte bulunmak amacıyla çekilen resmi bir yazıdır. Bu belge, birçok hukuki sürecin başlangıcı olabilir ve hak kaybını önlemede kritik rol oynar. İhtarname hazırlama süreci ve dikkat edilmesi gerekenler hakkında detaylı bilgi edinin.",
@@ -1793,7 +1842,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-238",
+    "id": "post-239",
     "slug": "iscilik-alacaklari-rehberi",
     "title": "İşçilik Alacakları Rehberi: Hukuki Haklarınız ve Süreçler",
     "excerpt": "İşçilik alacakları, iş sözleşmesinin sona ermesiyle veya devam ederken doğan işçi haklarıdır. Bu rehberde, kıdem, ihbar, fazla mesai, yıllık izin gibi temel işçilik alacaklarının hukuki niteliğini ve talep süreçlerini bulabilirsiniz. Haklarınızı doğru bir şekilde öğrenmek ve korumak için gerekli bilgilere ulaşın.",
@@ -1843,7 +1892,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-239",
+    "id": "post-240",
     "slug": "istirak-nafakasi-nasil-belirlenir-rehber",
     "title": "İştirak Nafakası Nasıl Belirlenir? Kapsamlı Rehber",
     "excerpt": "İştirak nafakası, boşanma veya ayrılık durumunda velayeti kendisine verilmeyen eşin, çocuğun eğitim ve bakım giderlerine katkıda bulunmak amacıyla ödediği nafaka türüdür. Bu rehberde, iştirak nafakasının belirlenme kriterlerini ve hukuki sürecini detaylıca inceleyeceğiz.",
@@ -1891,7 +1940,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-240",
+    "id": "post-241",
     "slug": "kayip-bitcoin-hikayeleri-kripto-varlik-hukuku",
     "title": "Çöpe Atılan Bitcoin Serveti: Kayıp Kripto Varlıklar Hukuken Ne Anlama Geliyor?",
     "excerpt": "James Howells'in çöpe giden hard diski ve Stefan Thomas'ın kilitli USB'si, kripto varlıklarda özel anahtar kaybının hukuki ve pratik sonuçlarını gözler önüne seriyor.",
@@ -1940,7 +1989,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-241",
+    "id": "post-242",
     "slug": "kira-uyusmazliklari-rehberi",
     "title": "Kira Uyuşmazlıkları Rehberi: Haklarınız ve Çözüm Yolları",
     "excerpt": "Kira uyuşmazlıkları, kiracılar ve ev sahipleri arasında sıkça yaşanan hukuki sorunlardır. Bu rehber, kira sözleşmesi, tahliye, kira artışı gibi konularda haklarınızı ve çözüm yollarını sade bir dille açıklar. Hukuki süreçleri anlamak ve doğru adımları atmak için önemli bilgiler sunar.",
@@ -1986,7 +2035,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-242",
+    "id": "post-243",
     "slug": "kisisel-iliski-tesisi-ve-degisikligi",
     "title": "Kişisel İlişki Kurulması ve Düzenlenmesi Rehberi",
     "excerpt": "Boşanma veya ayrılık durumlarında çocukla kişisel ilişki kurulması, ebeveynler için önemli bir konudur. Bu rehber, kişisel ilişki düzenlemesi sürecini, hukuki hakları ve dikkat edilmesi gereken noktaları aydınlatmaktadır. Çocuğun üstün yararı gözetilerek yapılan bu düzenlemeler hakkında bilgi edinmek için doğru yerdesiniz.",
@@ -2039,7 +2088,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-243",
+    "id": "post-244",
     "slug": "kvkk-yapay-zeka-muvekkil-verisi-riski",
     "title": "KVKK Açısından Yapay Zekâ Araçlarına Müvekkil Verisi Girmek Ne Kadar Riskli?",
     "excerpt": "Avukatların yapay zekâ araçlarını kullanırken müvekkil verilerinin gizliliğini ve güvenliğini nasıl sağlaması gerektiği kritik bir konudur. KVKK, mesleki sır ve veri işleme ilkeleri çerçevesinde yapay zekâya veri girişinin potansiyel riskleri bu yazıda incelenmektedir.",
@@ -2080,7 +2129,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-244",
+    "id": "post-245",
     "slug": "miras-hukuku-nedir-rehber",
     "title": "Miras Hukuku Nedir? Temel Kavramlar ve Yasal Süreçler",
     "excerpt": "Miras hukuku, bir kişinin ölümüyle malvarlığının yasal mirasçılarına veya vasiyetname ile belirlenen kişilere nasıl geçeceğini düzenleyen hukuk dalıdır. Bu rehber, miras hukukunun temel kavramlarını ve yasal süreçlerini anlamanıza yardımcı olmayı amaçlamaktadır.",
@@ -2129,7 +2178,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-245",
+    "id": "post-246",
     "slug": "miras-hukuku-sakli-pay-ve-tenkis-davasi-incelemesi",
     "title": "Saklı Pay ve Tenkis Davası: Mirasçıların Haklarını Koruma Yolları",
     "excerpt": "Miras hukukunun önemli konularından biri olan saklı pay ve tenkis davası, mirasçıların yasal haklarını korumak adına büyük önem taşır. Bu analizimizde, saklı payın ne anlama geldiğini, tenkis davasının hangi durumlarda açılabileceğini ve sürecin nasıl işlediğini detaylı bir şekilde ele alıyoruz.",
@@ -2178,7 +2227,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-246",
+    "id": "post-247",
     "slug": "miras-hukukunda-sakli-pay-ve-tenkis-davasi-analizi",
     "title": "Saklı Pay ve Tenkis Davası: Miras Hukukunda Hakların Korunması",
     "excerpt": "Miras hukukunun önemli konularından saklı pay ve tenkis davası, mirasçıların haklarını korumak için kritik bir rol oynar. Bu analiz, saklı paylı mirasçıların haklarını ve tenkis davasının hukuki süreçlerini aydınlatmaktadır.",
@@ -2232,7 +2281,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-247",
+    "id": "post-248",
     "slug": "miras-kalan-ev-satilabilir-mi-ortakligin-giderilmesi",
     "title": "Miras Kalan Ev Satılabilir mi? Mirasçılar Arasında Satış ve Ortaklığın Giderilmesi",
     "excerpt": "Miras kalan bir evin satışı, mirasçılar arasında anlaşma sağlanması halinde kolaylıkla gerçekleşebilirken, anlaşmazlık durumunda ortaklığın giderilmesi davası gibi hukuki yollarla çözüme kavuşturulabilir. Bu rehber, miras kalan taşınmazların satış süreçlerini ve hukuki çözüm yollarını detaylı olarak açıklamaktadır.",
@@ -2279,7 +2328,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-248",
+    "id": "post-249",
     "slug": "miras-paylasimi-nasil-yapilir-rehber",
     "title": "Miras Paylaşımı Nasıl Yapılır? Kapsamlı Yasal Rehber",
     "excerpt": "Miras paylaşımı, vefat eden kişinin malvarlığının yasal mirasçılar arasında nasıl bölüşüleceğini düzenleyen önemli bir hukuki süreçtir. Bu rehberimizde, mirasın taksimi, mirasçılık belgesi ve mirasın reddi gibi temel konuları sade bir dille açıklıyoruz.",
@@ -2332,7 +2381,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-249",
+    "id": "post-250",
     "slug": "mirasta-sakli-pay-ve-tenkis-davasi-detayli-inceleme",
     "title": "Mirasta Saklı Pay ve Tenkis Davası: Haklarınızı Nasıl Korursunuz?",
     "excerpt": "Miras hukukunda saklı pay, mirasçıların belirli bir oranda miras üzerinde sahip olduğu devredilemez haktır. Bu hakkın ihlal edilmesi durumunda açılan tenkis davası, mirasçıların mağduriyetini gidermeyi amaçlar. Bu analizde, saklı pay ve tenkis davasının hukuki boyutlarını inceleyeceğiz.",
@@ -2381,7 +2430,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-250",
+    "id": "post-251",
     "slug": "nafaka-turleri-nelerdir-kapsamli-rehber",
     "title": "Nafaka Türleri Nelerdir? Hukuki Bilgiler ve Çeşitleri Rehberi",
     "excerpt": "Nafaka, boşanma veya ayrılık durumlarında ya da kanunen belirlenen diğer hallerde, bir kişinin geçimini sağlamak amacıyla diğerine ödemekle yükümlü olduğu parasal destektir. Türk Medeni Kanunu'nda farklı nafaka türleri düzenlenmiştir. Bu rehberde, nafaka çeşitlerini ve hukuki niteliklerini detaylıca inceleyeceğiz.",
@@ -2431,7 +2480,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-251",
+    "id": "post-252",
     "slug": "ortakligin-giderilmesi-davasinda-ev-acik-artirmaya-gider-mi",
     "title": "Ortaklığın Giderilmesi Davasında Ev Açık Artırmaya Gider mi?",
     "excerpt": "Ortaklığın giderilmesi davası, hisseli mülkiyete sahip taşınmazların paydaşlar arasında bölüştürülmesi veya satılarak bedelinin paylaştırılması amacını taşır. Özellikle bir evin durumu söz konusu olduğunda, 'ev açık artırmaya gider mi?' sorusu sıkça akla gelir. Bu rehber, sürecin hukuki boyutlarını, aynen taksim ve satış yöntemlerini, açık artırma aşamalarını ve paydaşların haklarını sade bir dille açıklıyor.",
@@ -2490,7 +2539,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-252",
+    "id": "post-253",
     "slug": "saglikta-dijitallesme-hekimio",
     "title": "Sağlıkta Dijital Dönüşüm: Doktor Arama Platformları Yaygınlaşıyor",
     "excerpt": "İnternetten doktor araştırması yaygınlaşırken dijital sağlık platformları da çeşitleniyor. Hekimio.com örneği üzerinden doktor arama, hasta yorumları ve KVKK çerçevesi ele alınıyor.",
@@ -2532,7 +2581,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-253",
+    "id": "post-254",
     "slug": "sakli-pay-tenkis-davasi-kapsamli-analiz",
     "title": "Saklı Pay ve Tenkis Davası: Miras Hukukunda Kapsamlı Bir Analiz",
     "excerpt": "Miras hukukunda, miras bırakanın bazı mirasçılarının yasal miras paylarını koruyan \"saklı pay\" kavramı büyük önem taşır. Bu payın ihlal edilmesi durumunda, saklı paylı mirasçılar \"tenkis davası\" açarak haklarını geri isteyebilirler. Bu analiz, saklı pay ve tenkis davasının hukuki çerçevesini ve sürecini aydınlatmaktadır.",
@@ -2581,7 +2630,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-254",
+    "id": "post-255",
     "slug": "sakli-pay-ve-tenkis-davasi-hukuki-haklarin-korunmasi",
     "title": "Saklı Pay ve Tenkis Davası: Miras Hukukunda Hakların Korunması",
     "excerpt": "Saklı pay, miras bırakanın tasarruf edemeyeceği, yasal mirasçılarına ait miras payıdır. Bu payın ihlal edilmesi durumunda, mirasçıların haklarını korumak amacıyla tenkis davası açılabilir. Bu analiz, saklı pay ve tenkis davasının hukuki temellerini ve sürecini ele almaktadır.",
@@ -2630,7 +2679,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-255",
+    "id": "post-256",
     "slug": "sakli-pay-ve-tenkis-davasi-rehberi",
     "title": "Saklı Pay ve Tenkis Davası: Miras Hukukunda Haklarınızı Koruyun",
     "excerpt": "Miras hukukunda saklı pay, miras bırakanın belirli mirasçılarının paylarını güvence altına alan yasal bir haktır. Tenkis davası ise bu hakka tecavüz edildiğinde açılan, mirasçıların saklı paylarını geri kazanmalarını sağlayan hukuki bir yoldur.",
@@ -2683,7 +2732,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-256",
+    "id": "post-257",
     "slug": "tahliye-davasi-rehberi",
     "title": "Tahliye Davası Rehberi: Kira Sözleşmesi Feshi ve Süreci",
     "excerpt": "Tahliye davası, kira sözleşmesinin belirli şartlar altında sona erdirilmesi ve kiracının taşınmazdan çıkarılması sürecidir. Bu rehber, ev sahipleri ve kiracılar için tahliye davasının hukuki boyutlarını ve izlenmesi gereken adımları açıklamaktadır.",
@@ -2732,7 +2781,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-257",
+    "id": "post-258",
     "slug": "tanima-ve-tenfiz-davasi-rehberi",
     "title": "Tanıma ve Tenfiz Davası Rehberi: Yabancı Mahkeme Kararlarının Türkiye'de Tanınması",
     "excerpt": "Yabancı mahkemelerce verilmiş kararların Türkiye'de hukuki sonuç doğurması için tanıma ve tenfiz davaları büyük önem taşır. Bu rehberimizde, tanıma ve tenfiz davasının ne olduğunu, hangi şartlarda açılabileceğini ve sürecin nasıl işlediğini adım adım inceliyoruz.",
@@ -2781,7 +2830,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-258",
+    "id": "post-259",
     "slug": "tapu-iptal-tescil-davasi-sik-sebepler",
     "title": "Tapu İptal ve Tescil Davası Nedir? En Sık Görülen Sebepler",
     "excerpt": "Tapu iptal ve tescil davası, hukuka aykırı bir şekilde yapılan tapu devirlerinin düzeltilmesini amaçlayan önemli bir davadır. Muris muvazaası, ehliyetsizlik, vekaletname usulsüzlükleri ve hile gibi birçok sebeple açılabilmektedir. Bu dava, taşınmaz üzerindeki gerçek hak sahibinin tescilini sağlar.",
@@ -2830,7 +2879,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-259",
+    "id": "post-260",
     "slug": "tapu-iptal-ve-tescil-davasi-hangi-durumlarda-acilir",
     "title": "Tapu İptal ve Tescil Davası Hangi Durumlarda Açılır?",
     "excerpt": "Tapu iptal ve tescil davası, taşınmaz mülkiyetinin hukuka aykırı olarak el değiştirmesi durumunda tapu kaydının düzeltilmesi ve gerçek hak sahibine iadesini amaçlayan kritik bir hukuki süreçtir. Bu dava, sahte vekaletname, muvazaa, ehliyetsizlik, mirastan mal kaçırma veya aile konutu gibi pek çok farklı sebeple gündeme gelebilir. Taşınmaz malların değeri ve hukuki karmaşıklığı göz önüne alındığında, bu tür davalarda doğru adımların atılması büyük önem taşır.",
@@ -2890,7 +2939,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-260",
+    "id": "post-261",
     "slug": "tapuda-avukat-zorunlulugu-gelirse-vatandas-ne-yapacak",
     "title": "Tapuda Avukat Zorunluluğu Gelirse Vatandaş Ne Yapacak?",
     "excerpt": "Türkiye'de gayrimenkul alım satım süreçleri, özellikle 12. Yargı Paketi ile gündeme gelen 30 milyon TL üzeri tapu işlemlerinde avukat bulundurma zorunluluğu ihtimaliyle yeni bir boyut kazanıyor. Bu rehber, planlanan düzenlemenin vatandaşlar için ne anlama geldiğini, alıcı ve satıcıların haklarını nasıl koruyabileceğini ve süreçte nelere dikkat etmeleri gerektiğini açıklıyor.",
@@ -2936,7 +2985,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-261",
+    "id": "post-262",
     "slug": "tuketici-uyusmazliklari-rehberi",
     "title": "Tüketici Uyuşmazlıkları Rehberi: Haklarınızı Bilin ve Koruyun",
     "excerpt": "Tüketici uyuşmazlıkları, günlük hayatta sıkça karşılaşılan ve tüketicilerin haklarını koruma altına alan hukuki süreçlerdir. Bu rehber, ayıplı mal veya hizmetten kaynaklanan sorunlarda haklarınızı nasıl arayacağınızı, Tüketici Hakem Heyeti ve mahkeme süreçlerini anlaşılır bir dille açıklamaktadır. Bilinçli bir tüketici olmak için bu bilgilerden faydalanabilirsiniz.",
@@ -2989,7 +3038,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-262",
+    "id": "post-263",
     "slug": "turkiyede-avukat-sayilari-2025",
     "title": "Türkiye'de Avukat Sayıları 2025: Rekor Büyüme, Yeni Dengeler ve LegalTech'in Rolü",
     "excerpt": "Türkiye'de avukatlık mesleği 2014'ten 2025'e rekor bir büyüme kaydederek 200 bini aştı. Bu çarpıcı artışın bölgesel dağılımını, kadın avukatların yükselişini ve mesleğin dijital dönüşümünü ele alıyoruz.",
@@ -3030,7 +3079,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-263",
+    "id": "post-264",
     "slug": "turkiyede-hukuk-teknolojileri-yeni-donem",
     "title": "Türkiye'de Hukuk Teknolojileri Neden Yeni Bir Döneme Giriyor?",
     "excerpt": "Türkiye hukuk sektörü, dijitalleşme ve teknolojik yeniliklerle köklü bir dönüşümün eşiğinde. UYAP'ın yaygınlaşması, e-duruşma uygulamaları ve yapay zekâ destekli çözümler, hukuki süreçleri daha verimli hale getiriyor ve yeni bir dönemin kapılarını aralıyor.",
@@ -3071,7 +3120,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-264",
+    "id": "post-265",
     "slug": "uludag-sozluk-yapay-zeka-moderator",
     "title": "Uludağ Sözlük Yapay Zekâ Moderatör Kullanan İlk Sözlüklerden Biri Oldu",
     "excerpt": "Uludağ Sözlük'te gammaz ve şikâyet incelemelerinin yapay zekâ moderatör tarafından değerlendirilmeye alınması, Türkiye'de sözlük platformlarında içerik moderasyonu ve internet hukuku açısından dikkat çeken bir gelişme olarak öne çıkıyor.",
@@ -3114,7 +3163,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-265",
+    "id": "post-266",
     "slug": "uzaklastirma-karari-nasil-alinir-hukuki-rehber",
     "title": "Uzaklaştırma Kararı Nasıl Alınır? Adım Adım Hukuki Rehber",
     "excerpt": "Uzaklaştırma kararı, aile içi şiddet veya tehdit durumlarında mağduru korumak amacıyla verilen önemli bir hukuki tedbirdir. Bu rehberimizde, uzaklaştırma kararının nasıl alınacağını, başvuru şartlarını ve sürecini adım adım açıklıyoruz. Hukuki haklarınızı bilmek ve doğru adımları atmak için bu bilgilere başvurabilirsiniz.",
@@ -3167,7 +3216,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-266",
+    "id": "post-267",
     "slug": "vekaletname-ile-tapu-satisi-guvenli-mi-sahte-vekaletname-riskleri",
     "title": "Vekaletname ile Tapu Satışı Güvenli mi? Sahte Vekaletname Risklerine Karşı Rehber",
     "excerpt": "Vekaletname ile tapu satışı, pratik bir çözüm sunsa da beraberinde ciddi riskler barındırır. Bu rehber, sahte vekaletname dolandırıcılığından korunma yollarını, alıcı ve satıcının haklarını ve hukuki danışmanlığın önemini detaylıca ele alıyor.",
@@ -3222,7 +3271,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-267",
+    "id": "post-268",
     "slug": "velayet-altindaki-cocugun-gorusturulmemesi-cozumleri",
     "title": "Çocuğu Göstermeme Halinde Hukuki Adımlar ve Çözüm Yolları Rehberi",
     "excerpt": "Çocuğu göstermeme durumu, velayet sahibi olmayan ebeveynin en sık karşılaştığı sorunlardan biridir. Bu rehber, çocuğun görüşülmesinin engellenmesi halinde başvurulabilecek hukuki yolları ve yasal hakları açıklamaktadır.",
@@ -3271,7 +3320,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-268",
+    "id": "post-269",
     "slug": "velayet-davasinda-hakim-kriterleri",
     "title": "Velayet Davasında Hakim Neye Bakar? Anne ve Baba İçin Güncel Hukuki Kriterler",
     "excerpt": "Velayet davası, çocuğun geleceğini şekillendiren hassas bir süreçtir. Hakim, kararını verirken çocuğun üstün yararını esas alır; yaşından eğitimine, psikolojik durumundan yaşam koşullarına kadar birçok faktörü titizlikle inceler.",
@@ -3321,7 +3370,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-269",
+    "id": "post-270",
     "slug": "whatsapp-mesaji-mahkemede-delil",
     "title": "Bir WhatsApp Mesajı Mahkemede Delil Olabilir mi?",
     "excerpt": "WhatsApp yazışmaları ve ekran görüntüleri, günümüzde birçok davanın seyrini etkileyebilecek potansiyel deliller arasında yer almaktadır. Ancak bu tür dijital delillerin mahkemede geçerliliği, hukuka uygun elde edilme şartlarına ve özel hayatın gizliliği ilkesine bağlıdır.",
@@ -3370,7 +3419,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-270",
+    "id": "post-271",
     "slug": "yabancilarin-turkiyede-ev-alirken-avukatla-calismasi-neden-onemli",
     "title": "Yabancıların Türkiye'de Ev Alırken Avukatla Çalışması Neden Önemli?",
     "excerpt": "Türkiye, yabancı yatırımcılar için cazip gayrimenkul fırsatları sunsa da, bu süreç karmaşık hukuki ve idari adımlar içerir. Yabancıların Türkiye'de ev alımı sırasında bir avukatla çalışması, olası riskleri minimize ederek güvenli ve sorunsuz bir yatırım yapmanın anahtarıdır.",
@@ -3416,7 +3465,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-271",
+    "id": "post-272",
     "slug": "yapay-zeka-avukatlarin-is-akisini-nasil-degistiriyor",
     "title": "Yapay Zekâ Avukatların İş Akışını Nasıl Değiştiriyor?",
     "excerpt": "Yapay zekâ teknolojileri, hukuk sektöründe köklü bir dönüşüm potansiyeli taşıyor. Avukatların günlük iş akışlarını otomatize eden, veri analizini hızlandıran ve stratejik karar alma süreçlerini destekleyen yapay zekâ araçları, mesleki pratiklerin geleceğini şekillendiriyor.",
@@ -3457,7 +3506,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-272",
+    "id": "post-273",
     "slug": "yapay-zeka-ciktilari-mesleki-sir-ve-kisisel-veri",
     "title": "Yapay Zekâ Çıktıları: Meslekî Sır, Kişisel Veri ve Baro Perspektifinden Genel Çerçeve",
     "excerpt": "Hukuk bürolarında yapay zekâ araçlarının kullanımı, mesleki sırrın korunması ve kişisel verilerin gizliliği açısından önemli hukuki ve etik sorunları beraberinde getirmektedir. Bu makale, avukatların yapay zekâ çıktılarını değerlendirirken dikkat etmesi gereken temel çerçeveyi sunmaktadır.",
@@ -3506,7 +3555,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-273",
+    "id": "post-274",
     "slug": "yapay-zeka-hukuki-arastirma-halusinasyon-riski",
     "title": "Yapay Zekâ Hukuki Araştırmada Nasıl Kullanılmalı? Emsal Karar, Mevzuat ve Halüsinasyon Riski",
     "excerpt": "Yapay zekânın hukuki araştırmalarda kullanımı, hukuk profesyonelleri için yeni bir dönemi başlatıyor. Bu teknolojinin emsal karar ve mevzuat analizinde sunduğu avantajlar kadar, \"halüsinasyon\" gibi potansiyel riskler de önem taşıyor. Makalemizde yapay zekâyı hukuki araştırmada etkin ve güvenli kullanma yöntemlerini inceliyoruz.",
@@ -3547,7 +3596,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-274",
+    "id": "post-275",
     "slug": "yapay-zeka-ile-dilekce-yazmak-guvenli-mi",
     "title": "Yapay Zekâ ile Dilekçe Yazmak Güvenli mi? Avukatlık Mesleği Açısından Riskler",
     "excerpt": "Yapay zekâ araçları, dilekçe yazım süreçlerinde büyük kolaylıklar sunsa da, hukuki metinlerin hazırlanmasında önemli riskleri beraberinde getirmektedir. Hak kayıpları, yanlış hukuki nitelendirmeler ve avukatsız dava açma gibi durumlar, bu teknolojinin dikkatli kullanımını zorunlu kılmaktadır.",
@@ -3588,7 +3637,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-275",
+    "id": "post-276",
     "slug": "yks-turkiye-paraguay-maci-dev-ekran-yasagi",
     "title": "YKS Nedeniyle Türkiye-Paraguay Maçı İçin Meydanlarda Dev Ekran Kurulmayacak",
     "excerpt": "İçişleri Bakanlığı'nın, 20-21 Haziran 2026 tarihlerinde yapılacak YKS nedeniyle Türkiye-Paraguay karşılaşması için meydanlarda dev ekran kurulmasına izin verilmemesi yönünde valiliklere talimat gönderdiği belirtildi.",
@@ -3630,7 +3679,7 @@ export const generatedLegalArticleMetas: ReadonlyArray<Omit<Post, "authorSlug" |
     ]
   },
   {
-    "id": "post-276",
+    "id": "post-277",
     "slug": "yoksulluk-nafakasi-sartlari-rehber",
     "title": "Yoksulluk Nafakası Şartları: Kimler Talep Edebilir, Süreç Nasıl İşler?",
     "excerpt": "Boşanma sonrası yoksulluğa düşecek eşin talep edebileceği yoksulluk nafakası, Medeni Kanunumuzda düzenlenen önemli bir haktır. Bu rehberimizde, yoksulluk nafakası alabilme şartlarını, başvuru sürecini ve dikkat edilmesi gereken hukuki noktaları açıklıyoruz. Haklarınızı öğrenmek için okuyun.",
@@ -3699,6 +3748,7 @@ export const generatedLegalArticleContents: Record<string, string> = {
   "bosanmada-kusur-nedir": "Boşanmada kusur kavramı, evlilik birliğinin temelden sarsılmasına yol açan olaylarda eşlerden birinin veya her ikisinin de bu durumdaki rolünü ve sorumluluğunu ifade eden merkezi bir hukuki terimdir. Türk Medeni Kanunu (TMK) kapsamında boşanma davalarında kusur tespiti, davanın seyrini ve boşanmanın hukuki sonuçlarını, özellikle maddi ve manevi tazminat ile yoksulluk nafakası yükümlülüklerini doğrudan etkileyen kritik bir unsurdur. Eşlerin boşanmaya neden olan olaylardaki kusur oranları, mahkeme tarafından toplanan deliller ışığında belirlenir ve bu belirleme, boşanma sonrasında tarafların birbirlerine karşı olan mali yükümlülüklerini şekillendirir. Bu nedenle, boşanma sürecinde kusurun doğru tespiti ve hukuki sonuçlarının iyi anlaşılması büyük önem taşır.\n\n## Türk Medeni Kanunu'na Göre Boşanmada Kusur\n\nTürk Medeni Kanunu, boşanma sebeplerini özel ve genel boşanma sebepleri olarak iki ana başlık altında düzenlemiştir. Kusur, özellikle genel boşanma sebebi olan \"evlilik birliğinin temelinden sarsılması\" (TMK m. 166/1) hallerinde ve bazı özel boşanma sebeplerinde (zina, hayata kast, pek kötü veya onur kırıcı davranış gibi) belirleyici bir rol oynar.\n\n### Genel Boşanma Sebepleri ve Kusur İlişkisi\n\nEvlilik birliğinin temelinden sarsılması, eşlerden beklenen karşılıklı sevgi, saygı, anlayış ve sadakat gibi yükümlülüklerin yerine getirilmemesi sonucu evliliğin sürdürülmesinin eşler için çekilmez hale gelmesidir. Bu durumda, evliliğin sarsılmasına yol açan davranışlar ve bu davranışların sorumluluğu kusur değerlendirmesinin temelini oluşturur. Örneğin, eşine sürekli şiddet uygulayan, hakaret eden, ailesine karşı saygısız davranan veya evlilik yükümlülüklerini kasten yerine getirmeyen eş, boşanmaya neden olan olaylarda kusurlu kabul edilir.\n\nÖzel boşanma sebeplerinde ise kusur, kanun maddesinde açıkça belirtilmiş veya örtülü olarak mevcuttur:\n\n*   **Zina (TMK m. 161):** Eşlerden birinin evlilik dışı cinsel ilişkiye girmesi, kesin ve ağır bir kusur sebebidir.\n*   **Hayata Kast, Pek Kötü veya Onur Kırıcı Davranış (TMK m. 162):** Eşlerden birinin diğerinin hayatına kastetmesi, ona kötü muamelede bulunması veya ağır derecede onurunu kırıcı davranışlarda bulunması ağır kusur teşkil eder.\n*   **Suç İşleme ve Haysiyetsiz Hayat Sürme (TMK m. 163):** Eşlerden birinin küçük düşürücü bir suç işlemesi veya haysiyetsiz bir yaşam tarzı benimsemesi, diğer eş için evliliği çekilmez hale getiren kusurlu davranışlardır.\n*   **Terk (TMK m. 164):** Eşlerden birinin haklı bir sebep olmaksızın ortak konutu terk etmesi ve geri dönmemesi kusurlu bir davranıştır.\n*   **Akıl Hastalığı (TMK m. 165):** Bu sebep, kusura dayalı bir boşanma sebebi değildir. Eşin kusuru olmaksızın ortaya çıkan bir sağlık sorunudur.\n\n### Kusur Tespiti ve Deliller\n\nBoşanma davalarında kusurun tespiti, mahkeme tarafından titizlikle yürütülen bir süreçtir. Hâkim, tarafların iddialarını ve sundukları delilleri değerlendirerek hangi eşin ne oranda kusurlu olduğunu belirler. Kusur tespitinde kullanılabilecek deliller geniş bir yelpazeyi kapsar:\n\n*   **Tanık Beyanları:** Eşlerin aile üyeleri, arkadaşları, komşuları veya diğer tanıdıklarının olaylara ilişkin görgüye dayalı bilgileri.\n*   **Yazılı Belgeler:** E-posta yazışmaları, SMS mesajları, sosyal medya paylaşımları, banka kayıtları, hastane raporları, karakol tutanakları gibi belgeler.\n*   **Fotoğraf ve Video Kayıtları:** Olayları kanıtlayıcı nitelikteki görsel materyaller.\n*   **Keşif ve Bilirkişi İncelemesi:** Gerekli görülen durumlarda mahkemece yerinde inceleme veya uzman görüşü alınması.\n\nMahkeme, toplanan tüm delilleri Türk Medeni Kanunu'nun ve ilgili mevzuatın hükümleri çerçevesinde değerlendirerek, evlilik birliğinin sarsılmasına yol açan olaylarda tarafların kusur oranlarını belirler. Bu süreçte, delillerin hukuka uygun yollardan elde edilmiş olması büyük önem taşır.\n\n## Boşanmada Kusur Çeşitleri ve Dereceleri\n\nBoşanma davalarında kusur, mahkeme tarafından yapılan değerlendirme sonucunda farklı derecelerde sınıflandırılabilir. Bu sınıflandırma, boşanmanın mali sonuçları açısından belirleyici rol oynar.\n\n### Ağır Kusur, Az Kusur ve Eşit Kusur\n\n*   **Ağır Kusur:** Evlilik birliğini temelden sarsan olaylarda, bir eşin diğerine kıyasla çok daha fazla sorumlu olması durumudur. Örneğin, zina, sürekli fiziksel şiddet uygulama, hakaret etme, evi terk etme gibi davranışlar ağır kusur olarak değerlendirilebilir. Ağır kusurlu eş, genellikle maddi ve manevi tazminat ödeme yükümlülüğü altına girer ve yoksulluk nafakası talep etme hakkını kaybeder.\n*   **Az Kusur:** Boşanmaya neden olan olaylarda bir eşin sorumluluğunun diğerine göre daha az olması halidir. Örneğin, diğer eşin ağır kusurlu davranışlarına tahammül edemeyerek evden kısa süreli ayrılmak gibi durumlar az kusur olarak değerlendirilebilir. Az kusurlu eş, genellikle maddi ve manevi tazminat talep etme hakkına sahip olabilir ve yoksulluk nafakası alabilir.\n*   **Eşit Kusur:** Evlilik birliğinin sarsılmasında her iki eşin de benzer oranda sorumlu olması durumudur. Bu durumda, taraflar birbirlerinden maddi ve manevi tazminat talep edemezler. Yoksulluk nafakası ise, koşulları oluştuğu takdirde, tarafların ekonomik durumlarına göre değerlendirilir.\n\n### Kusursuz Eş Kavramı ve Hukuki Koruma\n\nBoşanmaya neden olan olaylarda hiçbir kusuru bulunmayan eş, \"kusursuz eş\" olarak kabul edilir. Kusursuz eş, Türk Medeni Kanunu tarafından özel olarak korunur. Kusursuz eş, evlilik birliğinin sona ermesiyle uğradığı zararlar için kusurlu eşten maddi ve manevi tazminat talep etme hakkına sahiptir. Ayrıca, boşanma nedeniyle yoksulluğa düşecek olması halinde, kusurlu eşten yoksulluk nafakası da talep edebilir.\n\n## Kusurun Boşanmanın Sonuçlarına Etkisi\n\nKusur tespiti, boşanma davasının sadece evliliği sonlandırmakla kalmayıp, tarafların boşanma sonrası yaşamlarını da etkileyecek önemli mali ve hukuki sonuçları üzerinde doğrudan etkilidir.\n\n### Maddi ve Manevi Tazminat\n\nBoşanma nedeniyle maddi ve manevi tazminat talepleri, kusur oranına sıkı sıkıya bağlıdır.\n*   **Maddi Tazminat (TMK m. 174/1):** Boşanmaya neden olan olaylarda kusursuz veya az kusurlu olan eş, kusurlu eşten, mevcut veya beklenen menfaatleri boşanma yüzünden zedelenmiş olması halinde maddi tazminat talep edebilir. Bu tazminat, genellikle boşanma nedeniyle kaybedilen gelir, destekten yoksun kalma veya diğer somut zararları karşılamayı amaçlar.\n*   **Manevi Tazminat (TMK m. 174/2):** Boşanmaya neden olan olaylarda kusursuz veya az kusurlu olan eş, kusurlu eşten, kişilik haklarının saldırıya uğraması nedeniyle uğradığı elem ve ızdırabın karşılığı olarak manevi tazminat talep edebilir. Manevi tazminatın amacı, yaşanan acı ve üzüntüyü bir nebze de olsa hafifletmektir.\nMaddi ve manevi tazminat hakları ve süreci hakkında daha detaylı bilgi için [boşanmada maddi manevi tazminat hakları süreci](/analizler/bosanmada-maddi-manevi-tazminat-haklari-sureci) başlıklı içeriğimizi inceleyebilirsiniz.\n\n### Nafaka Yükümlülükleri\n\nBoşanma sonrasında ortaya çıkan nafaka yükümlülükleri de kusur tespitiyle yakından ilişkilidir.\n*   **Yoksulluk Nafakası (TMK m. 175):** Boşanma yüzünden yoksulluğa düşecek taraf, kusuru daha ağır olmamak koşuluyla geçimini sağlamak amacıyla diğer taraftan yoksulluk nafakası isteyebilir. Burada kusur oranının \"daha ağır olmamak\" şartı, yoksulluk nafakası talebinin kabul edilebilirliği açısından kritik bir eşiktir. Ağır kusurlu eş yoksulluk nafakası talep edemez.\n*   **İştirak Nafakası (TMK m. 182):** Müşterek çocukların velayeti kendisinde bulunmayan eşin, çocuğun eğitim, bakım ve sağlık giderlerine katkıda bulunması amacıyla ödediği nafakadır. İştirak nafakası, çocuğun üstün yararı ilkesi gereği, eşlerin boşanmadaki kusur oranlarından bağımsızdır. Yani, ağır kusurlu eş bile, velayeti diğer eşte olan çocuğu için iştirak nafakası ödemekle yükümlüdür.\n\n### Velayet ve Mal Paylaşımı Üzerindeki Etkisi\n\n*   **Velayet:** Çocukların velayeti konusunda kusur, doğrudan belirleyici bir faktör değildir. Mahkeme, velayet düzenlemesini yaparken öncelikle çocuğun üstün yararını gözetir. Ancak, eşlerden birinin kusurlu davranışları (örneğin, çocuğa kötü muamele, ihmal, bağımlılık gibi durumlar) çocuğun üstün yararını olumsuz etkiliyorsa, bu durum velayet kararını dolaylı olarak etkileyebilir.\n*   **Mal Paylaşımı:** Boşanmada kusur, mal rejiminin tasfiyesi ve edinilmiş mallara katılma rejiminin sona ermesi sürecinde doğrudan bir etken değildir. Mal paylaşımı, eşler arasındaki mal rejiminin türüne ve yasal düzenlemelere göre yapılır. Ancak, evlilik birliği içinde yapılan bazı kusurlu davranışlar, örneğin mal kaçırma niyetiyle yapılan işlemler, mal paylaşımı davasında gündeme gelebilir ve bu işlemlerin iptali veya denkleştirilmesi talep edilebilir. Boşanmadan önce evin satılması gibi durumların mal kaçırma sayılıp sayılmadığına dair bilgi için [boşanmadan önce evin satılması mal kaçırma sayılır mı](/analiz/bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi) içeriğini ziyaret edebilirsiniz.\n\n## Kusurlu Davranışlara Örnekler\n\nEvlilik birliğini temelden sarsan ve boşanmada kusur olarak değerlendirilebilecek pek çok davranış bulunmaktadır. Bu davranışlar, Yargıtay içtihatları ile de şekillenmiş ve uygulamada sıklıkla karşılaşılan örneklerdir:\n\n*   Fiziksel şiddet uygulama, tehdit etme veya darp etme.\n*   Eşine veya ailesine yönelik sürekli hakaret, küfür veya aşağılayıcı sözler kullanma.\n*   Aldatma (zina) veya sadakat yükümlülüğüne aykırı davranışlarda bulunma.\n*   Haklı bir sebep olmaksızın ortak konutu terk etme veya eşi evden kovma.\n*   Evlilik birliğinin gerektirdiği cinsel ilişkiyi haksız ve sürekli olarak reddetme.\n*   Aşırı alkol, uyuşturucu veya kumar bağımlılığı nedeniyle evlilik görevlerini yerine getirememe.\n*   Eşin ailesine karşı saygısız veya kötü davranma.\n*   Eşin özel hayatını veya aile sırlarını üçüncü kişilerle paylaşma.\n*   Aşırı kıskançlık, denetleyici davranışlar veya eşin özgürlüğünü kısıtlama.\n*   Ekonomik şiddet uygulama, eşin parasını kötüye kullanma veya eşi maddi olarak mağdur etme.\n*   Sürekli ilgisizlik, sevgisizlik veya eşle iletişim kurmaktan kaçınma.\n*   Eşin mesleki veya kişisel gelişimini engelleme.\n\nBu örnekler, kusurlu davranışların sadece fiziksel eylemlerle sınırlı olmadığını, aynı zamanda psikolojik, ekonomik ve sosyal boyutları da içerebileceğini göstermektedir.\n\n## Boşanmada Kusur Tespiti Süreci ve Hukuki Destek\n\nBoşanma davalarında kusur tespiti, oldukça karmaşık ve hassas bir süreçtir. Tarafların iddialarını doğru bir şekilde ortaya koymaları, delillerini eksiksiz sunmaları ve hukuki argümanlarını güçlü bir şekilde savunmaları gerekmektedir. Mahkeme, toplanan tüm delilleri objektif bir şekilde değerlendirerek hakkaniyete uygun bir kusur tespiti yapmaya çalışır.\n\nBu süreçte hukuki destek almak, davanın doğru bir şekilde yürütülmesi ve hak kayıplarının önlenmesi açısından hayati öneme sahiptir. Boşanma hukuku alanında uzman bir avukat, müvekkilinin durumunu analiz ederek kusur tespitine ilişkin delilleri toplama, mahkemeye sunma ve hukuki argümanları geliştirme konularında profesyonel rehberlik sağlar. Ayrıca, davanın her aşamasında müvekkilini bilgilendirir ve haklarını en iyi şekilde savunur. Boşanma davaları, aile hukukunun önemli bir alanıdır ve bu tür davalarda profesyonel hukuki danışmanlık almak, sürecin sağlıklı ilerlemesi için elzemdir.\n\n## Sonuç\n\nBoşanmada kusur kavramı, Türk Medeni Kanunu'nda düzenlenen boşanma davalarının temelini oluşturan ve hukuki sonuçları doğrudan etkileyen kritik bir unsurdur. Eşlerin evlilik birliğinin sarsılmasına yol açan olaylardaki rol ve sorumluluklarının belirlenmesi, maddi ve manevi tazminat ile yoksulluk nafakası gibi önemli mali yükümlülüklerin tayininde belirleyici rol oynar. Kusur tespiti, mahkeme tarafından toplanan deliller ve hukuki değerlendirmeler ışığında yapılır ve bu süreçte hukuki bilgi ve deneyim büyük önem taşır. Boşanma sürecinde hak kaybı yaşamamak ve adil bir sonuca ulaşmak için profesyonel hukuki destek almak, sürecin sağlıklı yönetimi açısından tavsiye edilir.\n\nBu içerik genel bilgilendirme amacıyla hazırlanmıştır; somut olay için hukuki danışmanlık alınmalıdır.",
   "bosanmada-maddi-manevi-tazminat-haklari-sureci": "## Boşanmada Maddi ve Manevi Tazminat Talepleri: Detaylı Analiz\n\nBoşanma süreci, evlilik birliğinin sona ermesiyle birlikte eşler için hem hukuki hem de duygusal açıdan zorlayıcı bir dönem olabilir. Bu sürecin önemli hukuki boyutlarından biri de boşanmada maddi ve manevi tazminat talepleridir. Türk Medeni Kanunu'nda düzenlenen bu tazminatlar, boşanma nedeniyle zarara uğrayan eşin mağduriyetini gidermeyi amaçlar. Peki, boşanmada maddi ve manevi tazminat nedir, hangi şartlarda talep edilebilir ve hukuki süreç nasıl işler? Bu yazımızda, boşanma davalarında karşılaşılan maddi ve manevi tazminat taleplerini detaylı bir şekilde inceleyecek, haklarınız ve bilmeniz gerekenler hakkında kapsamlı bilgiler sunacağız.\n\n### Boşanmada Maddi Tazminat Nedir ve Şartları Nelerdir?\n\nMaddi tazminat, boşanma yüzünden mevcut veya beklenen menfaatleri zedelenen kusursuz ya da daha az kusurlu eşin, kusurlu eşten talep edebileceği parasal bir karşılıktır. Bu tazminatın temel amacı, evliliğin sona ermesiyle birlikte eşin uğradığı maddi kayıpları telafi etmektir.\n\n#### Maddi Tazminatın Amacı\n\nBoşanmada maddi tazminatın temel amacı, evlilik birliğinin sona ermesiyle birlikte eşin gelecekteki maddi beklentilerinin veya mevcut kazançlarının zarar görmesini önlemektir. Örneğin, evlilik süresince eşinin iş hayatına destek olmuş, kendi kariyerinden feragat etmiş bir eşin boşanma sonrası uğrayacağı maddi kayıpların telafi edilmesi bu kapsamda değerlendirilebilir. Ayrıca, boşanma yüzünden uğranılan doğrudan maddi zararlar da bu tazminatın konusu olabilir.\n\n#### Maddi Tazminat İçin Gerekli Şartlar\n\nTürk Medeni Kanunu'nun 174. maddesinin 1. fıkrasına göre, boşanmada maddi tazminat talep edebilmek için belirli şartların bir arada bulunması gerekmektedir:\n\n1.  **Kusur Şartı:** Tazminat talep eden eşin boşanmaya neden olan olaylarda kusursuz veya diğer eşe göre daha az kusurlu olması gerekir. Tazminat yükümlüsü eşin ise boşanmaya neden olan olaylarda kusurlu olması şarttır. Eşit kusurlu veya tam kusurlu eş maddi tazminat talep edemez.\n2.  **Zarar Şartı:** Tazminat talep eden eşin boşanma yüzünden mevcut veya beklenen menfaatlerinin zedelenmiş olması gerekmektedir. Bu zarar, somut olarak ortaya konulmalı ve boşanmayla doğrudan ilişkili olmalıdır. Örnek olarak, eşin diğer eşin mesleki kariyerine yatırım yapması nedeniyle kendi kariyerinden geri kalması, evlilik birliği içindeki ekonomik güvenin sona ermesi gibi durumlar gösterilebilir.\n3.  **Talep Şartı:** Maddi tazminat, kendiliğinden hükmedilebilecek bir durum değildir. Zarar gören eşin bu tazminatı açıkça talep etmesi gerekmektedir.\n\n#### Maddi Tazminatın Hesaplanması ve Kapsamı\n\nMaddi tazminatın miktarı belirlenirken, hakimin takdir yetkisi bulunmaktadır. Hakim, tarafların ekonomik ve sosyal durumlarını, evlilik birliğinin süresini, boşanmaya yol açan olaylardaki kusur oranlarını, eşlerin yaşlarını, mesleklerini, gelirlerini ve boşanma sonrası beklenen yaşam standartlarını göz önünde bulundurarak hakkaniyete uygun bir miktar belirler. Maddi tazminat, genellikle irat (düzenli ödeme) şeklinde veya toptan ödeme şeklinde hükmedilebilir.\n\n### Boşanmada Manevi Tazminat Nedir ve Şartları Nelerdir?\n\nManevi tazminat, boşanmaya neden olan olaylar yüzünden kişilik hakları saldırıya uğrayan kusursuz veya daha az kusurlu eşin, kusurlu eşten talep edebileceği parasal bir karşılıktır. Bu tazminatın amacı, yaşanan acı, üzüntü, elem, itibar kaybı gibi manevi zararları bir nebze olsun telafi etmektir.\n\n#### Manevi Tazminatın Amacı\n\nManevi tazminatın amacı, maddi bir karşılığı olmayan ancak kişinin ruhsal bütünlüğünü, onurunu, saygınlığını ve yaşam sevincini olumsuz etkileyen zararları gidermektir. Boşanma süreci, birçok eş için derin duygusal yaralar açabilir. Aldatma, şiddet, ağır hakaretler gibi evlilik birliğini temelden sarsan eylemler sonucunda eşin kişilik haklarına yönelik bir saldırı söz konusu olduğunda manevi tazminat gündeme gelir.\n\n#### Manevi Tazminat İçin Gerekli Şartlar\n\nTürk Medeni Kanunu'nun 174. maddesinin 2. fıkrasına göre, boşanmada manevi tazminat talep edebilmek için şu şartlar aranır:\n\n1.  **Kusur Şartı:** Maddi tazminatta olduğu gibi, manevi tazminat talep eden eşin boşanmaya neden olan olaylarda kusursuz veya diğer eşe göre daha az kusurlu olması gerekir. Tazminat yükümlüsü eşin ise boşanmaya neden olan olaylarda kusurlu olması şarttır.\n2.  **Kişilik Hakkı İhlali:** Tazminat talep eden eşin boşanma yüzünden kişilik haklarının zedelenmiş olması gerekmektedir. Bu zedelenme, fiziksel veya duygusal şiddet, aldatma, onur kırıcı davranışlar, ağır hakaretler, terk gibi durumlar sonucunda ortaya çıkabilir.\n3.  **Talep Şartı:** Manevi tazminat da kendiliğinden hükmedilemez; zarar gören eşin bu tazminatı açıkça talep etmesi gerekmektedir.\n\n#### Manevi Tazminatın Belirlenmesi\n\nManevi tazminatın miktarı belirlenirken, hakimin geniş bir takdir yetkisi bulunur. Hakim, kişilik haklarına yapılan saldırının niteliğini, tarafların ekonomik ve sosyal durumlarını, kusur oranlarını, evlilik birliğinin süresini, boşanmaya yol açan olayların ağırlığını ve manevi zararın derecesini göz önünde bulundurarak hakkaniyete uygun bir miktar belirler. Manevi tazminat, genellikle toptan ödeme şeklinde hükmedilir.\n\n### Boşanmada Maddi ve Manevi Tazminat Taleplerinin Hukuki Niteliği ve Süreci\n\nBoşanma davalarında tazminat talepleri, davanın önemli bir parçasını oluşturur ve belirli hukuki prosedürlere tabidir.\n\n#### Tazminat Taleplerinin Boşanma Davasıyla Birlikte mi, Ayrı mı Açılması?\n\nMaddi ve manevi tazminat talepleri, boşanma davası ile birlikte ileri sürülebileceği gibi, boşanma kararının kesinleşmesinden itibaren bir yıl içinde ayrı bir dava olarak da açılabilir. Ancak, uygulamada genellikle boşanma davası ile birlikte talep edilmesi tercih edilmektedir. Bu durum, yargılama ekonomisi açısından daha verimli olmakla birlikte, boşanma davasında ortaya konulan delillerin tazminat davasında da kullanılmasına olanak tanır.\n\n#### Kusur Oranının Önemi\n\nTazminat taleplerinde kusur oranı, davanın seyrini ve tazminat miktarını doğrudan etkileyen en kritik faktörlerden biridir. Hakim, boşanmaya yol açan olaylarda eşlerin kusur oranlarını detaylı bir şekilde inceleyerek, hangi eşin daha kusurlu olduğunu belirler. Kusur belirlemesi yapılırken, aldatma, fiziksel veya psikolojik şiddet, hakaret, terk, evlilik görevlerini yerine getirmeme, aşırı kıskançlık gibi birçok faktör değerlendirilir. Unutulmamalıdır ki, tamamen kusurlu olan eşin tazminat talep etme hakkı bulunmamaktadır.\n\n#### Tazminat Talebinde Zamanaşımı\n\nYukarıda da belirtildiği üzere, boşanma davası ile birlikte talep edilmeyen maddi ve manevi tazminat talepleri için, boşanma hükmünün kesinleşmesinden itibaren bir yıllık zamanaşımı süresi bulunmaktadır. Bu süre hak düşürücü nitelikte olup, bir yıl içinde dava açılmazsa tazminat talep etme hakkı ortadan kalkar.\n\n#### Tazminat Türleri Arasındaki İlişki (Maddi ve Manevi Birlikte Talep)\n\nMaddi ve manevi tazminat talepleri birbirinden bağımsızdır ve her ikisi de aynı anda talep edilebilir. Bir eş, boşanma nedeniyle hem maddi kayba uğradığını hem de kişilik haklarının zedelendiğini iddia ediyorsa, her iki tazminat türünü de aynı dava dilekçesinde talep edebilir. Hakim, her bir tazminat türü için ayrı ayrı değerlendirme yaparak karar verir.\n\n### Tazminat Taleplerinde Dikkat Edilmesi Gerekenler ve Deliller\n\nBoşanmada maddi ve manevi tazminat taleplerinin kabul edilmesi için güçlü deliller sunulması büyük önem taşır. İşte dikkat edilmesi gerekenler ve kullanılabilecek delil türleri:\n\n*   **Detaylı ve Somut İddialar:** Tazminat talebinin dayandırıldığı olaylar, mümkün olduğunca somut ve detaylı bir şekilde açıklanmalıdır. Genel ifadeler yerine, olayların tarihi, yeri ve nasıl gerçekleştiği belirtilmelidir.\n*   **Kusurlu Davranışların Kanıtlanması:** Diğer eşin kusurlu davranışlarını ispatlayacak her türlü delil toplanmalıdır. Bu deliller arasında şunlar yer alabilir:\n    *   Tanık beyanları\n    *   Yazılı belgeler (mesajlaşmalar, e-postalar, mektuplar)\n    *   Sosyal medya paylaşımları\n    *   Fotoğraf ve video kayıtları\n    *   Banka kayıtları (maddi durumun tespiti için)\n    *   Sağlık raporları (şiddet durumlarında)\n    *   Kolluk kuvvetleri tutanakları\n    *   Telefon kayıtları (HTS kayıtları)\n*   **Zararın Kanıtlanması:** Maddi tazminat için uğranılan veya uğranılacak olan zararın, manevi tazminat için ise kişilik hakları ihlalinin somut olarak ortaya konulması gerekmektedir. Örneğin, maddi zarar için kazanç kaybı hesaplamaları, manevi zarar için ise yaşanan travmanın etkileri anlatılabilir.\n*   **Mal Kaçırma İhtimali:** Boşanma sürecinde eşlerden birinin mal kaçırma girişimleri, tazminat taleplerini ve mal paylaşımını doğrudan etkileyebilir. Bu tür durumların tespiti ve hukuki önlemlerin alınması için dikkatli olmak gerekir. Örneğin, [Boşanmadan Önce Evin Satılması Mal Kaçırma Sayılır Mı?](/analiz/bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi) başlıklı yazımızda bu konuda detaylı bilgi bulabilirsiniz.\n*   **Profesyonel Destek:** Tazminat taleplerinin doğru ve eksiksiz bir şekilde ileri sürülmesi, delillerin usulüne uygun toplanması ve sunulması hukuki bilgi ve tecrübe gerektirir. Bu nedenle, bir avukattan hukuki destek almak önemlidir.\n\n### Avukatın Rolü ve Önemi\n\nBoşanma davaları, özellikle maddi ve manevi tazminat gibi karmaşık konuları içerdiğinde, hukuki bilgi ve deneyim gerektiren süreçlerdir. Hak kaybı yaşamamak, delillerin doğru toplanması ve yasal süreçlerin eksiksiz yürütülmesi açısından bir avukatın desteği hayati önem taşır. Avukat, müvekkilinin haklarını korumak, en uygun stratejiyi belirlemek ve dava sürecini etkin bir şekilde yönetmek için rehberlik eder. Bu karmaşık süreçte hukuki destek almak, hak kaybı yaşamamak adına önem taşır. Konuyla ilgili daha detaylı bilgi ve kişiye özel danışmanlık için Avukat Ceren Sümer Cilli ile iletişime geçebilirsiniz.\n\n### Sonuç\n\nBoşanmada maddi ve manevi tazminat talepleri, evlilik birliğinin sona ermesiyle ortaya çıkan zararların giderilmesi amacıyla Türk Medeni Kanunu'nda yer alan önemli düzenlemelerdir. Bu tazminatların talep edilebilmesi için kusur, zarar ve talep gibi temel şartların bir arada bulunması gerekmektedir. Davaların seyri ve tazminat miktarları, eşlerin kusur oranlarına, ekonomik ve sosyal durumlarına, evliliğin süresine ve kişilik haklarına yapılan saldırının niteliğine göre değişiklik gösterir. Hukuki süreçlerin doğru yönetilmesi, hak kayıplarının önlenmesi ve adil bir sonuca ulaşılması için uzman bir avukattan hukuki danışmanlık almak büyük önem taşır.\n\nBoşanma sürecinde maddi ve manevi tazminat haklarınızla ilgili sorularınız varsa veya hukuki destek almak istiyorsanız, alanında uzman bir avukatla görüşmeniz faydalı olacaktır. Unutmayın ki her vaka kendi özel koşullarına göre değerlendirilmelidir.\n\n---\n\nBu içerik genel bilgilendirme amacıyla hazırlanmıştır; somut olay için hukuki danışmanlık alınmalıdır.",
   "bosanmada-mal-paylasimi-2026-rehber": "# Boşanma Davasında Mal Paylaşımı Nasıl Yapılır? 2026 Güncel Rehber\n\nEvlilik birliğinin sona ermesiyle birlikte eşler arasında gündeme gelen en önemli konulardan biri, **boşanmada mal paylaşımı** sürecidir. Bu süreç, eşlerin evlilik süresince edindikleri malvarlıklarının hukuki çerçevede nasıl tasfiye edileceğini belirler. Türk Medeni Kanunu (TMK) hükümleri uyarınca, eşler arasında farklı mal rejimleri seçilmiş olsa da, kanuni mal rejimi olarak \"edinilmiş mallara katılma rejimi\" uygulanmaktadır. Bu rehber, **boşanmada mal paylaşımı** sürecinin temel dinamiklerini, eşlerin evlilik birliği içinde edindikleri malların (ev, araba, banka hesabı, şirket hissesi, ziynet eşyası) ve kredi borçlarının nasıl paylaştırılacağını detaylı bir şekilde ele almaktadır. Boşanma sürecinde hak kaybı yaşamamak ve adil bir paylaşım sağlamak adına hukuki bilgi sahibi olmak büyük önem taşır.\n\n## Boşanmada Mal Paylaşımı Nedir?\n\n**Boşanmada mal paylaşımı**, evlilik birliğinin sona ermesiyle eşler arasında geçerli olan mal rejiminin tasfiyesi anlamına gelir. Türk Medeni Kanunu, eşler aksini kararlaştırmadıkça, yasal mal rejimi olarak \"edinilmiş mallara katılma rejimi\"ni benimsemiştir. Bu rejim, evlilik süresince edinilen malların ortak kabul edilerek, boşanma durumunda eşit oranda paylaşılmasını öngörür. Ancak, tüm mallar bu kapsamda değerlendirilmez; kişisel mallar ve edinilmiş mallar arasında önemli bir ayrım bulunmaktadır. Mal paylaşımı davası, genellikle boşanma davası ile birlikte veya boşanma kararının kesinleşmesinden sonra açılan ayrı bir dava türüdür.\n\n## Edinilmiş Mallara Katılma Rejimi: Temel İlkeler\n\nEdinilmiş mallara katılma rejimi, 01.01.2002 tarihinde yürürlüğe giren Türk Medeni Kanunu ile yasal mal rejimi olarak kabul edilmiştir. Bu rejime göre, her eşin kendi kişisel malları ile edinilmiş malları bulunur. Mal paylaşımı sürecinde, öncelikle eşlerin kişisel malları ayrılır, ardından edinilmiş malların tasfiyesi yapılır.\n\n### Edinilmiş Malların Kapsamı\n\nTürk Medeni Kanunu'nun 219. maddesine göre edinilmiş mallar, evlilik birliği içinde bir karşılık verilerek kazanılan değerlerdir. Bunlar başlıca şunlardır:\n\n*   Çalışma karşılığı elde edilen kazançlar (maaş, ücret, serbest meslek geliri vb.)\n*   Sosyal güvenlik veya sosyal yardım kurum ve kuruluşlarının veya benzeri amaçlarla kurulan sandık ve kuruluşların ödemeleri (emekli maaşı, işsizlik maaşı vb.)\n*   Çalışma gücünün kaybı nedeniyle ödenen tazminatlar (maddi tazminatlar)\n*   Kişisel malların gelirleri (örneğin, evlilik öncesi sahip olunan bir daireden elde edilen kira geliri)\n*   Edinilmiş malların yerine geçen değerler (örneğin, edinilmiş bir arabanın satılıp yerine yeni bir araba alınması)\n\n### Kişisel Malların Kapsamı\n\nKişisel mallar ise TMK'nın 220. maddesinde belirtildiği üzere, eşlerden birine ait olup, mal paylaşımına tabi olmayan mallardır. Bunlar şunları içerir:\n\n*   Eşlerden birinin yalnız kişisel kullanımına yarayan eşyalar (giyim, takı, kişisel hobi malzemeleri vb.)\n*   Evliliğin başlangıcında eşlerden birine ait olan veya bir eşin tek başına sahip olduğu mallar (evlilik öncesi alınan ev, araba, birikimler)\n*   Bir eşin miras yoluyla veya karşılıksız kazanma yoluyla elde ettiği mallar (bağış, piyango ikramiyesi vb.)\n*   Manevi tazminat alacakları\n*   Kişisel malların yerine geçen değerler (örneğin, evlilik öncesi sahip olunan bir evin satılıp yerine yeni bir ev alınması durumunda, yeni ev de kişisel mal sayılır.)\n\n## Boşanmada Mal Paylaşımı Süreci Nasıl İşler?\n\nMal paylaşımı süreci, genellikle karmaşık ve zaman alıcı olabilir. Süreç, temel olarak şu adımları içerir:\n\n1.  **Malvarlığı Tespiti:** Eşlerin evlilik süresince edindikleri tüm malvarlıklarının (taşınır, taşınmaz, banka hesapları, şirket hisseleri vb.) ve borçlarının belirlenmesi.\n2.  **Değerleme:** Tespit edilen malların dava tarihindeki değerlerinin belirlenmesi. Taşınmazlar için bilirkişi incelemesi, araçlar için piyasa değeri tespiti gibi yöntemler kullanılır.\n3.  **Kişisel Malların Ayrılması:** Her eşin kişisel malları, edinilmiş mallar havuzundan ayrılır.\n4.  **Edinilmiş Malların Hesaplanması:** Her eşin edinilmiş mallarının toplam değeri belirlenir. Bu değerden, edinilmiş mallara ilişkin borçlar düşülerek \"artık değer\" bulunur.\n5.  **Katılma Alacağı ve Değer Artış Payı:** Artık değerin yarısı, diğer eşin \"katılma alacağı\"nı oluşturur. Ayrıca, bir eşin kişisel malına diğer eşin katkısıyla değer artışı sağlanmışsa, \"değer artış payı alacağı\" da hesaplanır.\n6.  **Tasfiye:** Hesaplanan alacakların nakden veya aynen ödenmesiyle mal rejimi tasfiyesi tamamlanır.\n\n### Mal Paylaşımı Davası Ne Zaman Açılır?\n\nMal paylaşımı davası, boşanma davası ile birlikte veya boşanma kararının kesinleşmesinden sonraki 10 yıl içinde açılabilir. Boşanma kararının kesinleşmesinden sonra açılması daha yaygın bir durumdur, zira boşanma kararının kesinleşmesiyle mal rejiminin sona erdiği tarih netleşir. Ancak, hak düşürücü sürelerin kaçırılmaması adına süreci iyi yönetmek önemlidir.\n\n## Hangi Mallar Nasıl Paylaşılır? Detaylı İnceleme\n\nBoşanmada mal paylaşımı sürecinde en çok merak edilen konulardan biri, farklı malvarlığı kalemlerinin nasıl değerlendirildiğidir.\n\n### Ev ve Taşınmaz Mallar\n\nEvlilik birliği içinde edinilen bir ev veya arsa, edinilmiş mal olarak kabul edilir ve artık değerin hesaplanmasında dikkate alınır. Eğer evlilik öncesinde edinilmiş bir ev varsa ve evlilik süresince diğer eşin katkılarıyla evin değeri artmışsa (örneğin tadilat, ekleme), katkıda bulunan eş \"değer artış payı\" talep edebilir. Taşınmazın edinilmesinde eşlerden birinin kişisel malı kullanılmışsa, bu kişisel malın değeri de oranlanarak hesaplamalara dahil edilir.\n\n### Araba ve Diğer Taşınır Mallar\n\nEvlilik süresince alınan arabalar, beyaz eşyalar, mobilyalar gibi taşınır mallar da edinilmiş mal statüsündedir. Bu malların güncel piyasa değerleri tespit edilerek artık değer hesaplamasına dahil edilir. Eğer bir araba eşlerden birinin kişisel malıyla alınmışsa, bu durum ispatlandığı takdirde o eşin kişisel malı olarak değerlendirilir.\n\n### Banka Hesapları ve Birikimler\n\nEşlerin evlilik birliği içinde çalışma karşılığı elde ettikleri gelirlerden oluşan banka hesaplarındaki birikimler, edinilmiş mal olarak kabul edilir. Ancak, miras yoluyla gelen veya kişisel malların satışı sonucu elde edilen birikimler kişisel mal niteliğindedir. Bu nedenle, banka hesap hareketleri ve fonların kaynağı detaylı bir şekilde incelenir.\n\n### Şirket Hisseleri ve İşletmeler\n\nEvlilik birliği içinde kurulan veya edinilen şirket hisseleri ve işletmeler, edinilmiş mal kapsamında değerlendirilir. Bu tür varlıkların değeri, şirket değerlemesi yapılarak tespit edilir. Şirketin büyüklüğü, faaliyet alanı ve finansal durumu gibi faktörler değerlemeyi etkiler. Bu alandaki hesaplamalar, özellikle karmaşık olabilir ve uzmanlık gerektirir. Avukat Ceren Sümer Cilli, şirket hisseleri ve işletmelerin paylaşımında doğru değerlemenin ve stratejik hukuki yaklaşımın, müvekkillerinin haklarını korumak adına kritik önem taşıdığına dikkat çekmektedir.\n\n### Ziynet Eşyaları\n\nTürk hukukunda ziynet eşyaları (altın, bilezik, takı vb.) genellikle kadına bağışlanmış sayılır ve onun kişisel malı olarak kabul edilir. Yargıtay'ın yerleşik içtihatlarına göre, bu eşyaların iadesi veya bedelinin ödenmesi talep edilebilir. Ancak, düğünde takılan ziynetlerin kim tarafından takıldığı ve kime ait olduğu yönündeki ispat yükü, bu eşyaların kişisel mal niteliğini etkileyebilir.\n\n### Kredi Borçları ve Ortak Yükümlülükler\n\nEvlilik birliği içinde edinilmiş mallara yönelik çekilen krediler ve ortak kullanılan borçlar, mal paylaşımı sürecinde dikkate alınır. Edinilmiş mallara ilişkin borçlar, artık değerin hesaplanmasında pasif olarak değerlendirilir. Eşlerin üçüncü kişilere olan borçları ise genellikle borcu çeken eşin kişisel borcu olarak kabul edilir; ancak, borcun edinilmiş malın kazanılmasına harcandığı ispat edilirse, bu borç da edinilmiş mal borcu olarak değerlendirilebilir.\n\nAşağıdaki tabloda, edinilmiş ve kişisel malların temel özelliklerini ve örneklerini bulabilirsiniz:\n\n| Mal Türü          | Tanım                                                                   | Örnekler                                                                   | Paylaşıma Tabi mi? |\n| :---------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------- | :----------------- |\n| **Edinilmiş Mal** | Evlilik birliği içinde bir karşılıkla elde edilen değerler.             | Maaş, kira geliri, evlilik içinde alınan ev/araba, şirket hisseleri, birikimler. | Evet (Artık değerin yarısı) |\n| **Kişisel Mal**   | Evlilik öncesi sahip olunan, miras veya bağış yoluyla edinilen mallar. | Evlilik öncesi ev/araba, miras kalan para/gayrimenkul, manevi tazminat, ziynet eşyası. | Hayır (Eşe ait kalır) |\n\nMal paylaşımı sürecinde dikkat edilmesi gereken bazı önemli noktalar şunlardır:\n\n*   **Belgeleme:** Tüm malvarlığı ve borçlara ilişkin belgelerin (tapu, ruhsat, banka hesap dökümleri, kredi sözleşmeleri vb.) eksiksiz toplanması.\n*   **Değer Tespiti:** Malların doğru ve güncel değerlerinin objektif kriterlere göre belirlenmesi.\n*   **Mal Kaçırma İddiaları:** Eşlerden birinin mal kaçırma amacıyla yaptığı işlemlerin tespiti ve iptali için hukuki yollara başvurulması.\n*   **Anlaşmalı Paylaşım:** Eşlerin mal paylaşımı konusunda anlaşarak bir protokol hazırlamaları, sürecin daha hızlı ve az maliyetli ilerlemesini sağlayabilir.\n\n## Mal Paylaşımında Hukuki Destek Neden Önemlidir?\n\nBoşanmada mal paylaşımı, hukuki bilgi ve deneyim gerektiren, teknik detaylarla dolu bir alandır. Malların doğru şekilde tespiti, değerlemesi, kişisel ve edinilmiş mal ayrımının yapılması, değer artış payı ve katılma alacağının doğru hesaplanması, hak kayıplarının önüne geçmek için hayati öneme sahiptir. Özellikle şirket hisseleri, karmaşık finansal varlıklar veya yurtdışındaki malların paylaşımı gibi durumlarda, alanında uzman bir avukatın stratejik rehberliği vazgeçilmezdir. Avukat Ceren Sümer Cilli, bu tür uyuşmazlıklarda müvekkillerinin tüm haklarını koruyacak ve adil bir sonuca ulaşmalarını sağlayacak hukuki stratejilerin oluşturulmasında profesyonel destek sağlamanın önemini sıkça vurgulamaktadır. Profesyonel hukuki destek, sürecin hızlı, şeffaf ve adil bir şekilde tamamlanmasına yardımcı olurken, aynı zamanda eşler arasındaki gerilimi azaltarak uzlaşma zeminini güçlendirebilir.\n\n## Sonuç\n\nBoşanmada mal paylaşımı süreci, hukuki bilgi ve stratejik yaklaşım gerektiren önemli bir konudur. Bu rehber, edinilmiş mallara katılma rejimi kapsamında malların nasıl paylaştırılacağına dair genel bir çerçeve sunarken, hak kaybı yaşamamak adına profesyonel hukuki destek alınmasının önemini vurgulamaktadır.\n\nBu içerik genel bilgilendirme niteliğindedir, somut olayın koşullarına göre hukuki değerlendirme değişebilir.\nAile hukuku, miras, mal paylaşımı ve gayrimenkul uyuşmazlıklarında hak kaybı yaşamamak için profesyonel hukuki destek alınması önemlidir. Avukat Ceren Sümer Cilli, bu alanlarda stratejik ve özenli hukuki değerlendirme yapılmasının önemine dikkat çekmektedir.",
+  "bosanmada-ziynet-alacagi-rehberi": "## Boşanmada Ziynet Alacağı: Haklar, Deliller ve Hukuki Süreç\n\nBoşanma, taraflar için hem duygusal hem de hukuki pek çok karmaşık konuyu beraberinde getiren bir süreçtir. Bu süreçte en çok merak edilen ve ihtilafa yol açabilen konulardan biri de evlilik birliği içerisinde edinilen ziynet eşyalarının akıbeti, kime ait olacağı ve nasıl talep edileceğidir. Düğünlerde takılan altınlar, bilezikler, takılar gibi ziynet eşyaları, boşanma davasında önemli bir malvarlığı kalemi olarak ortaya çıkabilmektedir.\n\nBu rehber, boşanma sürecinde ziynet alacağı davasının hukuki dayanaklarını, bu tür eşyaların kimin malı sayıldığını, ispat yükünün kimde olduğunu, kullanılabilecek delilleri ve genel hukuki süreci detaylıca ele alarak haklarınızı anlamanıza yardımcı olmayı amaçlamaktadır.\n\n### Ziynet Eşyası Nedir ve Hukuki Niteliği\n\nZiynet eşyası, genellikle düğün ve nişan gibi özel günlerde evlenen çifte takılan altın, pırlanta, mücevherat gibi değerli süs eşyalarını ifade eder. Türk toplum yapısında ve geleneklerinde, bu tür eşyaların kime ait olduğu konusunda yerleşmiş bir anlayış mevcuttur.\n\nYargıtay'ın yerleşik içtihatlarına göre, düğünde takılan ziynet eşyaları kim tarafından ve kime takılırsa takılsın, kural olarak kadına bağışlanmış sayılır ve kadının kişisel malı niteliğindedir. Bu durum, ziynet eşyalarının evlilik birliği içinde veya dışında edinilmiş olmasına bakılmaksızın geçerlidir. Kadının bu ziynet eşyalarını dilediği gibi kullanma, tasarruf etme hakkı bulunmaktadır. Bu genel kuralın istisnaları ise ispat yükü ile yakından ilişkilidir.\n\n### Ziynet Alacağı Davasının Temel Dayanakları\n\nZiynet alacağı davası, Türk Medeni Kanunu'nda doğrudan \"ziynet alacağı\" adıyla düzenlenmiş özel bir maddeye dayanmaz. Ancak, bu dava genel hükümlere ve özellikle Yargıtay'ın yıllardır süregelen istikrarlı içtihatlarına dayanır. Yargıtay, ziynet eşyalarının kadının kişisel malı olduğu ve evden ayrılırken yanında götürülmemişse iadesi veya bedelinin ödenmesi gerektiği yönünde kararlar vermektedir.\n\nBu davaların temel dayanağı, kadının mülkiyet hakkı ve haksız elden çıkarma veya alıkoyma durumunda oluşan alacak hakkıdır. Erkek eş veya onun ailesi tarafından ziynet eşyalarının rıza dışı alınması, satılması veya kadına iade edilmemesi durumunda, kadın eş bu ziynetlerin aynen iadesini veya güncel değerleri üzerinden bedelini talep etme hakkına sahiptir.\n\n### Boşanmada Ziynet Alacağı Talebi Nasıl Yapılır?\n\nZiynet alacağı talebi, boşanma sürecinde iki farklı şekilde ileri sürülebilir:\n\n1.  **Boşanma Davasıyla Birlikte:** Genellikle ziynet alacağı talebi, açılan boşanma davası dilekçesinde, diğer taleplerle (nafaka, tazminat, velayet gibi) birlikte ileri sürülür. Bu yöntem, yargılamanın tek bir çatı altında yürütülmesi ve sürecin daha hızlı tamamlanması açısından tercih edilir. Boşanma davası devam ederken, mahkeme ziynet alacağı talebini de değerlendirir.\n2.  **Ayrı Bir Dava Olarak:** Boşanma davası açılmamış olsa bile veya boşanma davasından sonra ziynet eşyalarının iadesi veya bedeli için ayrı bir \"ziynet alacağı davası\" açılabilir. Ancak, boşanma davasıyla birlikte talep edilmesi genellikle daha pratiktir.\n\nDava dilekçesinde, talep edilen ziynet eşyalarının cinsleri, adetleri ve yaklaşık değerleri belirtilmeli, eğer biliniyorsa bu eşyaların nerede olduğu veya kimde bulunduğu açıklanmalıdır.\n\n### Ziynet Eşyalarının İadesi veya Bedelinin Talebi\n\nZiynet alacağı davasında, talep iki şekilde olabilir:\n\n*   **Aynen İade:** Ziynet eşyalarının fiziki olarak hala mevcut olduğu ve karşı tarafta bulunduğu durumlarda, bu eşyaların kadına aynen iadesi talep edilebilir. Örneğin, eşin kasada tuttuğu veya bir başkasına emanet ettiği altınların geri verilmesi.\n*   **Bedelinin Ödenmesi:** Ziynet eşyalarının fiziki olarak mevcut olmadığı, satıldığı, harcandığı veya nerede olduğunun bilinmediği durumlarda, bu eşyaların dava tarihindeki güncel piyasa değeri üzerinden bedelinin ödenmesi talep edilir. Mahkeme, bilirkişi aracılığıyla ziynetlerin türüne ve miktarına göre değer tespiti yapabilir.\n\n### Ziynet Alacağı Davasında İspat Yükü ve Deliller\n\nZiynet alacağı davaları, ispat yükü açısından önemli özellikler taşır ve genellikle en çok tartışılan konuların başında gelir.\n\n#### İspat Yükü Kimdedir?\n\nYargıtay'ın yerleşik içtihatlarına göre:\n\n*   **Kadın eş:** Ziynet eşyalarının varlığını, yani düğünde kendisine takıldığını veya evlilik birliği içinde edinildiğini ispat etmekle yükümlüdür.\n*   **Erkek eş:** Eğer kadın eş ziynetlerin varlığını ispatlarsa, bu ziynetlerin kendisinde olmadığını, kadının evden ayrılırken bunları yanında götürdüğünü, kendi rızasıyla ortak ihtiyaçlar için harcandığını veya kadına geri verildiğini ispat etmekle yükümlüdür. Bu durum, erkek eşin ispat yükünün ağır olduğu anlamına gelir. Erkek eşin, ziynet eşyalarının ortak harcamaya rıza ile verildiğini ispatlaması oldukça zordur. Genellikle bu ispat, banka dekontları, yazılı anlaşmalar veya ikna edici tanık beyanları ile yapılabilir.\n\n#### Kullanılabilecek Deliller\n\nZiynet alacağı davasında kullanılabilecek deliller oldukça çeşitlidir ve olayın somut koşullarına göre farklılık gösterebilir:\n\n*   **Düğün Fotoğrafları ve Videoları:** Düğünde takılan ziynetlerin türünü, miktarını ve takılma şeklini gösteren en önemli delillerden biridir.\n*   **Tanık Beyanları:** Düğünde bulunan akrabalar, arkadaşlar veya komşular gibi kişilerin, takılan ziynetler hakkında veya kadının evden ayrılırken ziynetleri yanında götürüp götürmediği, eşlerin ziynetler hakkında konuşmaları gibi konulardaki beyanları delil olarak sunulabilir.\n*   **Kuyumcu Faturaları/Makbuzları:** Eğer ziynetler evlilik birliği içinde satın alınmışsa, bu faturalar ziynetlerin varlığını ispatlayabilir.\n*   **Banka Kayıtları:** Düğün öncesi veya evlilik sırasında altın hesabı açıldığına, altın çekildiğine dair banka kayıtları.\n*   **Mesajlaşmalar ve Yazışmalar:** Taraflar veya aileleri arasında ziynetlerle ilgili yapılan yazılı veya sözlü iletişim kayıtları (WhatsApp mesajları, e-postalar vb.) delil olarak kullanılabilir.\n*   **Yemin Delili:** Taraflardan biri, diğer tarafın yemin etmesini talep edebilir.\n*   **Bilirkişi İncelemesi:** Özellikle ziynetlerin değerinin belirlenmesi gerektiğinde veya fotoğraflardan ziynetlerin tespiti zor olduğunda bilirkişi incelemesi gerekebilir.\n\nDelillerin toplanması ve mahkemeye sunulması süreci, davanın seyrini doğrudan etkilediği için büyük önem taşır.\n\n### Ziynet Eşyalarının Evden Götürülmesi Durumu\n\nBoşanma sürecinde, eşlerden birinin evi terk etmesi durumunda ziynet eşyalarının akıbeti sıklıkla tartışma konusu olur.\n\n*   **Kadın Tarafından Götürülmesi:** Kadın eşin evi terk ederken ziynet eşyalarını yanında götürdüğünü erkek eş ispatlarsa, ziynet alacağı davası reddedilebilir. Bu ispat, genellikle tanık beyanları veya güvenlik kamerası kayıtları gibi delillerle yapılmaya çalışılır.\n*   **Erkek Tarafından Götürülmesi veya Satılması:** Eğer ziynetler erkek eş tarafından alınmış, satılmış veya rıza dışı şekilde elden çıkarılmışsa, kadın eşin aynen iade veya bedel talebi haklı bulunur. Erkek eşin, ziynetleri kendi rızasıyla ortak harcamalar için aldığını veya kadının isteğiyle sattığını ispatlaması gerekir ki bu oldukça zor bir ispat yüküdür.\n\n### Ortak Harcamaya Rıza Durumu\n\nZiynet eşyalarının, evlilik birliğinin devamı sırasında ortak ihtiyaçlar (ev alımı, borç ödeme, iş kurma vb.) için harcanması durumunda, bu harcamanın kadının rızasıyla yapılıp yapılmadığı önemlidir. Yargıtay'ın yerleşik içtihadına göre, kadının kendi kişisel malı olan ziynetleri, evliliğin devamı sırasında dahi olsa ortak ihtiyaçlar için harcamaya rıza gösterdiği iddiasının erkek eş tarafından **kesin ve inandırıcı delillerle** ispatlanması gerekir. Bu ispat yapılamazsa, kadının rızası olsa dahi ziynetlerin iadesi veya bedelinin ödenmesi gerektiğine karar verilir. Bu durum, ziynetlerin kadına ait olduğu ve erkek eşin bu konuda ağır bir ispat yükü taşıdığı prensibinin bir sonucudur.\n\nBoşanma sürecinde, ziynet eşyaları gibi mal varlığına ilişkin konularda taraflar arasında anlaşmazlıklar çıkması oldukça doğaldır. Bu tür anlaşmazlıklar, bazen boşanmanın diğer yönleriyle, örneğin boşanmada kusur tespiti ile bağlantılı olarak da değerlendirilmesi gereken durumlar yaratabilir. Ayrıca, boşanmada maddi ve manevi tazminat hakları süreci de malvarlığına ilişkin taleplerle birlikte ele alınabilir. Özellikle, boşanmadan önce evin satılması mal kaçırma sayılır mı gibi sorular da malvarlığı paylaşımında önem arz edebilir.\n\n### Ziynet Alacağı Davasında Zamanaşımı\n\nZiynet alacağı davaları, Borçlar Kanunu'ndaki genel zamanaşımı hükümlerine tabidir. Türk Borçlar Kanunu'na göre, genel zamanaşımı süresi 10 yıldır. Bu süre, ziynet eşyalarının geri istenebilir hale geldiği tarihten itibaren işlemeye başlar. Yani, boşanma davasının kesinleşmesinden veya ziynetlerin rıza dışı elden çıkarıldığının öğrenildiği tarihten itibaren 10 yıl içinde dava açılması gerekmektedir. Ancak, her somut olayın kendi özel koşulları zamanaşımı süresinin başlangıcını etkileyebilir.\n\nBoşanma sürecinin karmaşık hukuki yapısı, delillerin doğru toplanması ve mahkemeye sunulması, ispat yükünün doğru anlaşılması gibi konularda profesyonel hukuki destek almak büyük önem taşır. Bu nedenle, ziynet alacağı gibi hassas konularda hak kaybı yaşamamak adına bir avukatın rehberliğinden faydalanmak faydalı olacaktır. Hukuk alanında uzmanlaşmış Avukat Ceren Sümer Cilli gibi deneyimli bir avukattan alacağınız danışmanlık, sürecin sağlıklı ve hızlı ilerlemesine katkı sağlayabilir ve haklarınızın korunması noktasında size yol gösterebilir.\n\n## Sonuç\n\nBoşanmada ziynet alacağı davası, kadının evlilik birliği içinde edindiği veya kendisine takılan ziynet eşyaları üzerindeki mülkiyet hakkının korunmasına yönelik önemli bir hukuki yoldur. Yargıtay'ın yerleşik içtihatlarıyla desteklenen bu hak, ziynetlerin kadının kişisel malı olduğu ve rızası dışında elden çıkarılamayacağı prensibine dayanır. Davanın başarısı, ziynetlerin varlığının ve karşı tarafça alıkonulduğunun veya satıldığının etkili delillerle ispatlanmasına bağlıdır.\n\nBoşanma sürecindeki haklarınızın tam olarak anlaşılması ve korunması için hukuki danışmanlık alınması tavsiye edilir. Bir avukat, durumunuzun özel koşullarını değerlendirerek en doğru adımları atmanızda size yardımcı olacaktır.\n\nBu içerik genel bilgilendirme amacıyla hazırlanmıştır; somut olay için hukuki danışmanlık alınmalıdır.",
   "bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi": "# Boşanmadan Önce Evin Satılması Mal Kaçırma Sayılır mı?\n\nBoşanma süreçleri, eşler için sadece duygusal değil, aynı zamanda ciddi hukuki ve mali sonuçları da beraberinde getiren karmaşık dönemlerdir. Özellikle evlilik birliği içinde edinilen malvarlığının paylaşımı, sıkça tartışma konusu olan ve çoğu zaman eşler arasında gerginlik yaratan bir alandır. Bu bağlamda, boşanma kararı alınmadan veya boşanma davası açılmadan önce eşlerden birinin ev gibi önemli bir taşınmazı satması, diğer eş tarafından \"mal kaçırma\" olarak yorumlanabilir ve ciddi hukuki ihtilaflara yol açabilir. Bu rehberimizde, boşanma öncesinde gerçekleştirilen taşınmaz satışlarının hukuki sonuçlarını, hangi durumlarda mal kaçırma olarak nitelendirilebileceğini ve mağdur olduğunu düşünen eşin başvurabileceği hukuki yolları detaylı bir şekilde ele alacağız. Amacımız, aile hukuku ile gayrimenkul hukukunun kesişim noktasındaki bu hassas konuyu sade ama uzman bir dille açıklamak ve okuyucularımıza güvenilir bir yol haritası sunmaktır.\n\n## Boşanma Sürecinde Mal Paylaşımı ve Yasal Çerçeve\n\nTürk Medeni Kanunu'na göre, eşler evlilik birliği içinde farklı mal rejimlerini benimseyebilirler. Ancak, kanunda aksi belirtilmedikçe veya eşler özel bir sözleşme yapmadıkça, \"edinilmiş mallara katılma rejimi\" yasal mal rejimi olarak kabul edilir. Bu rejim, 2002 yılında yürürlüğe girmiş olup, evlilik birliği içinde edinilen malların ortak kabul edilmesini ve boşanma halinde bu malların eşit olarak paylaştırılmasını öngörür.\n\n**Edinilmiş Mallar:** Eşlerden her birinin bu mal rejiminin başlangıcından itibaren bir karşılık edinerek elde ettiği malvarlığı değerleridir. Çalışma karşılığı elde edilen gelirler, sosyal güvenlik veya yardım kurum ve kuruluşlarının ödemeleri, çalışma gücünün kaybı nedeniyle ödenen tazminatlar, kişisel malların gelirleri ve edinilmiş malların yerine geçen değerler edinilmiş mal sayılır.\n\n**Kişisel Mallar:** Eşlerden birinin yalnız kişisel kullanımına yarayan eşyalar, evlenmeden önce sahip olduğu veya miras yoluyla ya da karşılıksız kazanma yoluyla edindiği mallar, manevi tazminat alacakları ve kişisel malların yerine geçen değerler kişisel mal olarak kabul edilir ve mal paylaşımına dahil edilmez.\n\nBoşanma davasının açılmasıyla birlikte mal rejiminin tasfiyesi süreci başlar. Bu süreçte, eşlerin evlilik birliği içinde edindiği tüm mallar belirlenir ve yasalara uygun bir şekilde paylaştırılır. İşte tam da bu noktada, eşlerden birinin boşanmadan önce malvarlığını azaltmaya yönelik eylemleri, diğer eşin haklarını ihlal etme potansiyeli taşır ve \"mal kaçırma\" iddiasını gündeme getirir.\n\n## Mal Kaçırma Kavramı ve Hukuki Temelleri\n\nHukuk dilinde \"mal kaçırma\" olarak ifade edilen durum, bir eşin boşanma sürecinde veya boşanma ihtimali belirdiğinde, diğer eşin mal paylaşımından alacağı payı azaltmak veya tamamen engellemek amacıyla malvarlığını devretme, gizleme, yok etme veya değerini düşürme gibi kötü niyetli eylemlerde bulunmasıdır. Bu tür eylemler, Türk Medeni Kanunu'nun dürüstlük kuralına ve mal rejiminin tasfiyesine ilişkin hükümlerine aykırılık teşkil eder.\n\nMal kaçırma eyleminin varlığı halinde, mağdur olan eşin bazı hukuki yollara başvurarak haklarını koruma imkanı bulunmaktadır. Ancak, bu iddiaların ispatı çoğu zaman zorlu bir süreçtir ve detaylı hukuki bilgi ve tecrübe gerektirir. Önemli olan, bu tür eylemlerin genellikle \"kötü niyet\" saikiyle yapılmış olmasıdır. Yani, malı devreden eşin, diğer eşin mal paylaşımındaki hakkını engelleme amacı taşıdığının ortaya konulması gerekmektedir.\n\n## Boşanmadan Önce Taşınmaz Satışı Hangi Durumlarda Mal Kaçırma Sayılabilir?\n\nBoşanmadan önce bir taşınmazın satılması her zaman mal kaçırma olarak nitelendirilemez. Eşin meşru bir ihtiyacı veya ticari bir gereklilik nedeniyle satış yapması olağan kabul edilebilir. Ancak belirli durumlar ve karineler, bu satışın kötü niyetli bir mal kaçırma eylemi olduğuna işaret edebilir.\n\n### Satışın Zamanlaması ve Eşlerin İlişkisi\n\nTaşınmaz satışının boşanma davası açılmadan hemen önce, boşanma sürecinin başladığı veya eşler arasındaki anlaşmazlıkların derinleştiği bir dönemde yapılması, mal kaçırma şüphesini güçlendiren önemli bir faktördür. Özellikle taraflar arasında boşanma konuşmalarının başlamış olması, ayrı yaşama kararının alınmış olması gibi durumlar, satışın kötü niyetli olduğuna dair bir emare oluşturabilir.\n\n### Satış Bedelinin Gerçek Değeri Yansıtmaması (Muvazaalı İşlemler)\n\nBir taşınmazın piyasa değerinin çok altında bir bedelle satılması veya hiç bedel alınmadan devredilmesi (bağış gibi gösterilmesi), muvazaalı bir işlem yapıldığına dair ciddi bir karinedir. Muvazaa, tarafların gerçekte yapmak istemedikleri bir işlemi üçüncü kişileri yanıltmak amacıyla yapmış gibi göstermeleridir. Bu tür durumlarda, satış işlemi geçersiz sayılarak tapu iptal ve tescil davasına konu olabilir.\n\n### Satışın Üçüncü Kişilere Yapılması ve İlişki Durumu\n\nTaşınmazın eşin yakın akrabalarına (anne, baba, kardeş, çocuk gibi) veya yakın arkadaşlarına satılması, satışın gerçek bir ticari işlemden ziyade mal kaçırma amaçlı yapıldığı şüphesini artırır. Özellikle bu kişilerin taşınmazı satın alacak mali güce sahip olmaması veya taşınmazın devrinden sonra yine devreden eş tarafından kullanılmaya devam etmesi gibi durumlar, muvazaa iddiasını destekler.\n\n### Satıştan Elde Edilen Gelirin Akıbeti\n\nSatıştan elde edilen gelirin makul bir açıklaması olmaksızın ortadan kaybolması, banka hesaplarından çekilerek izinin kaybettirilmesi veya kişisel, lüks harcamalarda kullanılması da mal kaçırma şüphesini artıran bir durumdur. Eğer satış meşru bir amaçla yapıldıysa, elde edilen bedelin ne şekilde değerlendirildiği şeffaf bir şekilde açıklanabilmelidir.\n\n### Aile Konutu Niteliğindeki Taşınmazın Satışı\n\nTürk Medeni Kanunu'na göre, eşlerden biri tarafından aile konutu olarak özgülenmiş taşınmazın maliki olmayan eşin rızası olmadan satışı geçerli değildir. Tapu siciline \"aile konutu şerhi\" işlenmiş olsun veya olmasın, aile konutu niteliği taşıyan bir taşınmazın diğer eşin açık rızası olmadan devri hukuka aykırıdır ve bu işlem iptal edilebilir. Bu konuda detaylı bilgi için [Aile Konutu Şerhi](/aile-konutu-serhi) başlıklı yazımıza göz atabilirsiniz. Aile konutu şerhi olmasa bile, satışın kötü niyetli olduğu ve diğer eşin hakkını ihlal ettiği durumlarda yine hukuki yollara başvurulabilir.\n\n## Mal Kaçırma İddiasında Hukuki Yollar ve Davalar\n\nBir eşin boşanmadan önce taşınmaz satışı yaparak mal kaçırdığına dair güçlü şüpheler veya deliller varsa, mağdur eşin başvurabileceği çeşitli hukuki yollar bulunmaktadır. Bu davalar genellikle mal rejiminin tasfiyesi davası ile birlikte veya ayrı olarak açılabilir.\n\n### Tapu İptal ve Tescil Davası\n\nEğer taşınmazın satışı muvazaalı (danışıklı) bir işlemle gerçekleştirildiyse, yani satışın gerçek bir satış işlemi olmadığı, sadece mal kaçırma amacıyla yapıldığı ispat edilebilirse, mağdur eş \"tapu iptal ve tescil davası\" açabilir. Bu dava ile taşınmazın tapu kaydının iptal edilerek tekrar devreden eş adına tescili talep edilir. Muvazaa iddiasının ispatı oldukça zorludur ve tarafların gerçek iradelerini ortaya koyacak somut deliller gerektirir. Bu tür davalar, genellikle uzun ve karmaşık süreçlerdir. [Tapu İptal ve Tescil Davası](/tapu-iptal-ve-tescil-davasi) hakkında daha fazla bilgi edinebilirsiniz.\n\n### Mal Rejiminin Tasfiyesi Davası (Mal Paylaşımı Davası) ve Katılma Alacağı\n\nMal kaçırma iddialarının en yaygın olarak ele alındığı dava türü, mal rejiminin tasfiyesi davasıdır. Türk Medeni Kanunu'nun 229. maddesi uyarınca, eşlerden birinin mal rejiminin sona ermesinden önceki bir yıl içinde diğer eşin rızası olmadan yaptığı olağan dışı kazandırmalar ve evlilik birliği devam ederken üçüncü kişilere yapılan karşılıksız kazandırmalar, \"eklenecek değer\" olarak kabul edilir. Bu değerler, sanki satılmamış gibi mal rejiminin tasfiyesine dahil edilir ve diğer eşin katılma alacağı hesaplanırken dikkate alınır.\n\nYani, boşanmadan önce kötü niyetli bir şekilde satılan bir ev, hukuken hala eşin malvarlığındaymış gibi kabul edilerek, diğer eşin bu mal üzerindeki \"katılma alacağı\" hesaplamasına dahil edilir. Bu durum, taşınmazın geri alınmasını sağlamaz ancak mağdur eşin bu maldan alması gereken payın parasal karşılığını talep etme hakkını doğurur. [Mal Paylaşımı Davası](/mal-paylasimi-davasi) ile ilgili detaylı bilgilere ulaşabilirsiniz.\n\n### İspat Yükü ve Deliller\n\nMal kaçırma iddiasında ispat yükü, bu iddiayı ileri süren eş üzerindedir. Yani, satışın kötü niyetli olduğunu ve mal kaçırma amacı taşıdığını gösteren somut deliller sunmak zorundadır. Bu deliller şunlar olabilir:\n*   **Banka kayıtları:** Satış bedelinin akıbeti, hesaba yatıp yatmadığı, kısa sürede çekilmesi.\n*   **Tapu kayıtları:** Satışın zamanlaması, alıcının kimliği.\n*   **Tanık beyanları:** Satışın gerçek dışı olduğuna dair görgü tanıkları.\n*   **Yazışmalar ve mesajlar:** Eşler arasındaki boşanma konuşmaları, satışa ilişkin planlar.\n*   **Ekspertiz raporları:** Satış bedelinin piyasa değerinin çok altında olduğunu gösteren raporlar.\n*   **Kamera kayıtları veya diğer dijital deliller:** Satıştan sonra taşınmazın hala devreden eş tarafından kullanıldığını gösteren kanıtlar.\n\nBu tür delillerin toplanması ve hukuki süreçte doğru bir şekilde sunulması, davanın seyrini doğrudan etkiler. Bu nedenle, alanında uzman bir hukuk profesyonelinden destek almak hayati önem taşır.\n\n## 12. Yargı Paketi ve Tapuda Avukat Zorunluluğu Gibi Gündemdeki Tartışmaların Potansiyel Etkileri\n\nTürk hukuk sisteminde zaman zaman önemli yasal düzenlemeler gündeme gelmektedir. Son dönemde kamuoyuna yansıyan açıklamalara göre, 12. Yargı Paketi kapsamında tapu işlemlerinde avukat bulundurma zorunluluğuna ilişkin bir düzenlemenin planlandığı bilinmektedir. Özellikle 30 milyon TL üzeri satışlar gibi belirli değerin üzerindeki taşınmaz devirlerinde avukatın aktif rol alması gerektiği yönünde tartışmalar devam etmektedir.\n\nHenüz yürürlüğe girmiş ve kesin olarak uygulanıyor olmamakla birlikte, bu tür bir düzenleme yasalaşırsa, taşınmaz satış süreçlerinde şeffaflığı ve hukuki güvenliği artırması beklenmektedir. Eğer böyle bir uygulama hayata geçerse, boşanma öncesi yapılan şüpheli taşınmaz satışlarının tespiti ve muvazaa iddialarının ortaya konulması açısından önemli bir katkı sağlayabilir. Avukatların tapu işlemlerinde zorunlu olarak yer alması, tarafların haklarının korunması ve olası mal kaçırma girişimlerinin önüne geçilmesi noktasında bir denetim mekanizması oluşturabilir. Ancak, uygulama detaylarının netleşmesi ve yasal sürecin tamamlanması beklenmektedir.\n\nBu tür düzenlemeler, özellikle aile hukuku ile gayrimenkul hukukunun kesişiminde yer alan boşanma ve taşınmaz uyuşmazlıkları gibi karmaşık alanlarda hukuki danışmanlığın önemini bir kez daha vurgulamaktadır. Adana bölgesinde aile hukuku ve gayrimenkul hukuku alanında deneyimli Avukat Ceren Sümer Cilli gibi profesyoneller, bu tip planlanan değişikliklerin potansiyel etkileri hakkında güncel ve doğru bilgi sağlayarak müvekkillerine yol göstermektedir.\n\n## Hukuki Destek Neden Önemlidir?\n\nBoşanma sürecinde mal paylaşımı ve özellikle mal kaçırma iddiaları, hukuken oldukça çetrefilli ve teknik bilgi gerektiren konulardır. Bu süreçte karşılaşılan zorluklar şunlardır:\n\n*   **Karmaşık Hukuki Mevzuat:** Türk Medeni Kanunu'nun ilgili hükümleri, Yargıtay içtihatları ve güncel yasal düzenlemeler hakkında bilgi sahibi olmak gerekliliği.\n*   **İspat Yükünün Zorluğu:** Mal kaçırma iddiasını somut delillerle ispatlamak, banka kayıtları, tapu senetleri, tanık beyanları gibi pek çok farklı türde delili doğru bir şekilde toplama ve sunma becerisi gerektirir.\n*   **Duygusal Yıpranma:** Boşanma sürecinin kendisi zaten yıpratıcıyken, bir de malvarlığına ilişkin haksızlık iddialarıyla uğraşmak, bireyleri psikolojik olarak daha da zorlayabilir.\n*   **Zaman Kısıtlamaları:** Bazı hukuki yollar için belirli zaman aşımı süreleri bulunmakta olup, bu sürelerin kaçırılması hak kayıplarına yol açabilir.\n\nBu nedenlerle, boşanma öncesi yapılan taşınmaz satışlarının hukuki sonuçlarını doğru bir şekilde değerlendirmek ve hak kaybına uğramamak için uzman bir avukatın desteği vazgeçilmezdir. Adana ve çevresinde bu alanda hizmet veren Avukat Ceren Sümer Cilli, müvekkillerinin haklarını en etkin şekilde savunmak, delil toplama sürecini yönetmek ve hukuki stratejiler geliştirmek konularında önemli bir rol üstlenmektedir. Hukuki danışmanlık, sürecin başından itibaren doğru adımların atılmasını sağlayarak olası mağduriyetlerin önüne geçebilir.\n\n## Sonuç\n\nBoşanmadan önce evin satılması, her durumda doğrudan \"mal kaçırma\" olarak nitelendirilemese de, belirli koşullar altında diğer eşin mal paylaşımındaki haklarını ihlal edebilir ve ciddi hukuki sonuçlar doğurabilir. Satışın zamanlaması, gerçek değerin altında yapılması, yakın kişilere devredilmesi veya elde edilen gelirin akıbetinin belirsizliği gibi faktörler, bu işlemin kötü niyetli olduğunu gösteren emareler olabilir. Türk Medeni Kanunu ve Yargıtay içtihatları, bu tür durumlarda mağdur eşin haklarını korumak için tapu iptal ve tescil davası, mal rejiminin tasfiyesi davası ve katılma alacağı davası gibi çeşitli hukuki yollar sunmaktadır.\n\nHukuki süreçlerin karmaşıklığı, ispat yükünün zorluğu ve duygusal yıpranma göz önüne alındığında, bu tür bir durumla karşılaşan eşlerin alanında uzman bir avukattan profesyonel hukuki destek almaları büyük önem taşımaktadır. Unutulmamalıdır ki, her somut olay kendine özgü koşullar taşır ve doğru hukuki değerlendirme ancak detaylı bir inceleme sonucunda yapılabilir. Bu makalede sunulan bilgiler genel nitelikte olup, hukuki danışmanlık yerine geçmez. Güncel yasal düzenlemeler ve kişiye özel durumlar için her zaman bir hukuk uzmanına başvurulması tavsiye edilir.",
   "burdan-ricky-gervais-hakkinda-suc-duyurusunda-bulunuyorum": "**Yazan:** Yiğit Cilli\n\n**Tarih:** 03.07.2026\n\n![Ricky Gervais - mizah ve ifade özgürlüğü kapak görseli](/images/covers/burdan-ricky-gervais-hakkinda-suc-duyurusunda-bulunuyorum.png)\n\n**Not:** Bu yazıda ironi yoktur.\n\nBuradan İngiliz komedyen Ricky Gervais hakkında açıkça suç duyurusunda bulunuyorum. Hatta yalnızca suç duyurusuyla yetinilmemeli, kendisi mümkünse en kısa sürede ülkemize davet edilmeli, uçağın kapısından iner inmez de \"mizah yoluyla kamu düzenini bozmak\" suçundan gerekli işlemler başlatılmalıdır.\n\nÇünkü ortada basit bir komedyenlik faaliyeti yoktur. Ricky Gervais yıllardır din, Tanrı, cehennem, ateizm, kutsal kitaplar ve insanların alınmak için yıllardır özenle biriktirdiği bütün hassasiyetler hakkında şaka yapmaktadır. Üstelik bunu gizli bir odada, üç arkadaş arasında da yapmamaktadır. Sahneye çıkıyor, mikrofonu eline alıyor, ışıkları yakıyor ve binlerce insanın önünde espri yapıyor. Bu kadar aleniyet karşısında hâlâ \"şakaydı\" savunmasına sığınması kabul edilemez.\n\nMesela \"Bir şeye alınmış olman, haklı olduğun anlamına gelmez\" diyor. Ben bu söze alındım. Dolayısıyla bu cümlenin derhal dosyaya konulmasını istiyorum. Çünkü bir toplumda insanlar alındıkları zaman otomatik olarak haklı sayılmayacaksa, biz bu kadar kırılganlığı boşuna mı büyüttük?\n\nYine cehennemle ilgili şakalar yapıyor. İnsanlara \"cehennemde yanmayacaksınız ama yine de iyi olun\" tarzında laflar ediyor. Bu cümlede hem cehennem var hem ahlak var hem de insanın iyi olmak için korkutulmaya muhtaç olmayabileceği gibi son derece tehlikeli bir düşünce var. Açıkçası buna da alındım. Hem de sadece kendi adıma değil, ileride alınabilecek herkes adına peşinen alındım.\n\nDaha da vahimi, bir Hristiyan'ın ateiste cehenneme gideceğini söylemesini, bir çocuğun yetişkine Noel Baba'dan hediye alamayacağını söylemesine benzetiyor. Burada din var, çocukluk var, Noel Baba var, ateizm var. Kısacası bir savcılık dosyasının ihtiyaç duyabileceği bütün kültürel malzemeler itinayla hazırlanmış.\n\nŞimdi soruyorum: Deniz Göktaş'ın bir stand-up gösterisindeki birkaç cümlesi insanı sorguya, gözaltına, adliye koridorlarına götürmeye yetiyorsa, Ricky Gervais'in bugüne kadar en az on defa hapse girip çıkması gerekmez miydi? Hatta iyi hâlden yararlanması bile tartışmalı olmalıdır. Çünkü adam pişmanlık göstermiyor. Aksine hâlâ gülüyor.\n\nBana kalırsa Ricky Gervais derhal \"fazla mizah\" suçundan yargılanmalıdır. Savunmasında \"ama bu bir şakaydı\" derse, bu da ayrıca değerlendirilmelidir. Çünkü artık herkes bilmelidir ki bazı ülkelerde şaka, yalnızca kimse gülmezse güvenlidir.\n\nTabii bütün bunları söylerken içimde çok küçük, rahatsız edici bir ihtimal de yok değil. Belki de asıl sorun Ricky Gervais'in fazla ileri gitmesi değildir. Belki de sorun, bizim en küçük espriyi bile ciddiye alacak kadar mizah duygumuzu emekliye ayırmış olmamızdır.\n\nDeniz Göktaş meselesinde tartışılması gereken de tam olarak budur. Bir toplum bir şakadan suç, bir espriden kriz, bir cümleden kamu düzeni tehdidi çıkarıyorsa, orada komedyenlerden önce alınma refleksimizi yargılamak gerekir. Çünkü bazen en ağır hakaret dine değil, akla ve mizaha yapılır.\n\n---\n\nBu yazı görüş ve ironi niteliğindedir; genel bilgilendirme amacı taşır. Somut olaylarda hukuki değerlendirme, olayın özelliklerine ve yürürlükteki mevzuata göre yapılmalıdır.",
   "cekismeli-bosanma-davasi-rehberi": "## Çekişmeli Boşanma Davası: Süreç, Şartlar ve Hukuki Adımlar\n\nEvlilik birliğinin sürdürülemez hale geldiği durumlarda eşlerin boşanma kararı alması, hayatın doğal bir parçasıdır. Ancak bu karar, her zaman karşılıklı mutabakatla sonuçlanmayabilir. Eşlerin boşanmanın temel hükümleri veya boşanmanın fer'i nitelikteki sonuçları (nafaka, velayet, tazminat, mal paylaşımı gibi) üzerinde anlaşamadığı durumlarda açılan dava türüne **çekişmeli boşanma davası** denir. Anlaşmalı boşanmaya göre daha uzun ve karmaşık bir süreç olan çekişmeli boşanma, mahkemenin delil toplama, kusur tespiti ve tüm bu konularda karar vermesini gerektirir. Bu rehber, çekişmeli boşanma davasının hukuki dayanaklarını, işleyişini, tarafların hak ve yükümlülüklerini sade ve anlaşılır bir dille açıklamayı amaçlamaktadır.\n\n### Çekişmeli Boşanma Davasının Şartları ve Gerekçeleri\n\nTürk Medeni Kanunu (TMK), çekişmeli boşanma davaları için çeşitli boşanma nedenleri öngörmüştür. Bu nedenler, özel boşanma sebepleri ve genel boşanma sebebi olarak iki ana başlıkta incelenebilir.\n\n#### Özel Boşanma Sebepleri\n\nÖzel boşanma sebepleri, kanunda açıkça belirtilen ve varlığı halinde boşanma kararının verilmesini kolaylaştıran durumlardır. Bu sebepler şunlardır:\n\n*   **Zina (TMK m. 161):** Eşlerden birinin evlilik dışı cinsel ilişki yaşaması durumudur. Bu sebeple açılan davalarda, zinanın ispatı büyük önem taşır.\n*   **Hayata Kast, Pek Kötü veya Onur Kırıcı Davranış (TMK m. 162):** Eşlerden birinin diğerinin hayatına kastetmesi, ona kötü muamelede bulunması veya ağır derecede onur kırıcı davranışlarda bulunmasıdır. Bu tür eylemlerin varlığı ve ispatı gereklidir.\n*   **Suç İşleme ve Haysiyetsiz Hayat Sürme (TMK m. 163):** Eşlerden birinin küçük düşürücü bir suç işlemesi veya haysiyetsiz bir yaşam tarzı benimsemesi ve bu durumun diğer eş için evliliği çekilmez hale getirmesidir.\n*   **Terk (TMK m. 164):** Eşlerden birinin, evlilik birliğinden doğan yükümlülüklerini yerine getirmemek amacıyla diğerini terk etmesi ve bu terkin en az altı ay sürmüş olmasıdır. Terk eden eşe mahkeme veya noter aracılığıyla ihtar çekilmesi ve bu ihtara rağmen dönmemesi gerekmektedir.\n*   **Akıl Hastalığı (TMK m. 165):** Eşlerden birinin iyileşmesi mümkün olmayan bir akıl hastalığına yakalanması ve bu hastalığın ortak hayatı diğer eş için çekilmez hale getirmesidir. Hastalığın iyileşme imkanı bulunmadığına dair resmi sağlık kurulu raporu gereklidir.\n\n#### Genel Boşanma Sebebi: Evlilik Birliğinin Temelden Sarsılması (TMK m. 166/1-2)\n\nEn sık karşılaşılan boşanma sebebi, \"evlilik birliğinin temelden sarsılması\"dır. Bu maddeye göre, eşler arasında ortak hayatı çekilmez hale getiren ve evlilik birliğinin devamını imkansız kılan şiddetli geçimsizliklerin varlığı halinde boşanmaya karar verilebilir. Burada önemli olan, evlilik birliğinin temelden sarsıldığının ve bu sarsılmada hangi eşin daha kusurlu olduğunun mahkemece tespit edilmesidir.\n\n### Çekişmeli Boşanma Davası Süreci\n\nÇekişmeli boşanma davaları, belirli hukuki prosedürlere tabidir. Süreç, genellikle aşağıdaki aşamalardan oluşur:\n\n*   **Dava Dilekçesinin Hazırlanması ve Sunulması:** Boşanmak isteyen eş (davacı), boşanma nedenlerini, delillerini ve boşanmanın fer'i sonuçlarına ilişkin taleplerini (nafaka, velayet, tazminat, mal paylaşımı gibi) içeren bir dava dilekçesi hazırlar ve yetkili Aile Mahkemesi'ne sunar. Dilekçenin eksiksiz ve hukuki argümanlarla desteklenmesi sürecin başlangıcı için kritik öneme sahiptir.\n*   **Tebligat ve Cevap Dilekçesi Süreci:** Mahkeme, dava dilekçesini diğer eşe (davalıya) tebliğ eder. Davalı eş, tebligattan itibaren kanunda belirtilen süre içinde (genellikle iki hafta) davaya cevap dilekçesini sunmak zorundadır. Davalı da kendi taleplerini ve delillerini bu dilekçede belirtir. Bu aşamada karşılıklı dilekçeler sunulmaya devam edebilir (cevaba cevap, ikinci cevap dilekçesi).\n*   **Ön İnceleme Duruşması:** Dilekçeler aşaması tamamlandıktan sonra mahkeme, bir ön inceleme duruşması günü belirler. Bu duruşmada mahkeme, tarafları uzlaşmaya davet eder, uyuşmazlık konularını ve tarafların iddialarını netleştirir. Tarafların sunmadığı deliller varsa, bunları sunmaları için süre verilir.\n*   **Tahkikat Aşaması (Delillerin Sunulması ve İncelenmesi):** Ön inceleme sonrası uyuşmazlık devam ederse, mahkeme tahkikat aşamasına geçer. Bu aşamada taraflar, tanıklarını dinletir, yazılı belgeleri (banka kayıtları, SMS, e-posta, sosyal medya yazışmaları vb.) sunar, bilirkişi incelemesi talep edebilir. Mahkeme, delilleri toplar ve değerlendirir. [Boşanmada kusur nedir](/rehber/bosanmada-kusur-nedir) sorusu bu aşamada toplanan delillerle yanıt bulur.\n*   **Sözlü Yargılama ve Hüküm:** Tahkikat aşaması tamamlandıktan sonra mahkeme, taraflara son beyanlarını sunmaları için sözlü yargılama duruşması yapar. Bu duruşmanın ardından mahkeme, toplanan deliller ışığında boşanma kararı ve fer'i sonuçlar hakkında hükmünü açıklar.\n*   **İstinaf ve Temyiz Süreci (Kanun Yolları):** Mahkemenin verdiği karardan memnun olmayan taraf veya taraflar, kararın tebliğinden itibaren yasal süre içinde Bölge Adliye Mahkemesi'ne (istinaf) başvurabilir. İstinaf mahkemesinin kararına karşı da belirli durumlarda Yargıtay'a (temyiz) başvurma hakkı bulunmaktadır. Bu süreçler, davanın kesinleşmesini geciktirebilir.\n\n### Çekişmeli Boşanma Davasında Talep Edilebilecek Fer'i Sonuçlar\n\nBoşanma davası ile birlikte veya ayrı olarak talep edilebilecek bazı hukuki sonuçlar (fer'i sonuçlar) bulunmaktadır:\n\n*   **Nafaka Türleri:**\n    *   **Tedbir Nafakası:** Dava süresince eş ve/veya müşterek çocuklar için hükmedilen nafakadır.\n    *   **Yoksulluk Nafakası:** Boşanma sonucunda yoksulluğa düşecek tarafa, diğer eşin kusurundan daha ağır olmaması şartıyla hükmedilen nafakadır.\n    *   **İştirak Nafakası:** Müşterek çocukların eğitim, sağlık, barınma gibi giderlerine katkı sağlamak amacıyla velayeti almayan eşin ödemekle yükümlü olduğu nafakadır.\n*   **Maddi ve Manevi Tazminat:** Boşanmaya neden olan olaylarda daha az kusurlu veya kusursuz olan tarafın, diğer eşten maddi veya manevi tazminat talep etme hakkı bulunur. [Boşanmada maddi manevi tazminat hakları ve süreci](/analizler/bosanmada-maddi-manevi-tazminat-haklari-sureci) hakkında detaylı bilgiye ilgili rehberimizden ulaşabilirsiniz.\n*   **Velayet ve Kişisel İlişki Kurulması:** Müşterek çocukların velayeti, mahkeme tarafından çocuğun üstün yararı gözetilerek belirlenir. Velayeti alan eş, çocuğun bakım ve eğitiminden sorumlu olurken, velayeti almayan eş ile çocuk arasında kişisel ilişki kurulmasına karar verilir.\n*   **Mal Rejiminin Tasfiyesi ve Mal Paylaşımı:** Boşanma kararı kesinleştikten sonra, eşler arasındaki yasal mal rejimi (edinilmiş mallara katılma rejimi) tasfiye edilir ve mallar paylaşılır. Bu süreç, boşanma davasından ayrı bir dava olarak da görülebilir. [Boşanmada mal paylaşımı](/rehber/bosanmada-mal-paylasimi-2026-rehber) ile ilgili detaylı bilgiye sitemizden ulaşabilirsiniz. Ayrıca, [boşanmadan önce evin satılması mal kaçırma sayılır mı](/analiz/bosanmadan-once-evin-satilmasi-mal-kacirma-sayilir-mi) gibi konular da bu kapsamda değerlendirilir.\n*   **Ev Eşyalarının Paylaşımı ve Konut Tahsisi:** Mahkeme, evlilik birliği içinde edinilen ev eşyalarının nasıl paylaşılacağına ve müşterek konutun kimde kalacağına ilişkin de karar verebilir. Özellikle velayet verilen eşin müşterek konutta oturmaya devam etmesi sıkça karşılaşılan bir durumdur.\n\n### Çekişmeli Boşanma Davasında Delillerin Önemi\n\nÇekişmeli boşanma davasında, tarafların iddialarını ispatlaması büyük önem taşır. Mahkeme, kararını sunulan delillere göre verir. Kullanılabilecek başlıca delil türleri şunlardır:\n\n*   **Tanık Beyanları:** Tarafların iddialarını destekleyecek veya çürütecek olaylara tanıklık etmiş kişilerin beyanları.\n*   **Yazılı Deliller:** SMS, e-posta, sosyal medya yazışmaları, banka kayıtları, tapu kayıtları, kira sözleşmeleri, faturalar gibi belgeler.\n*   **Uzman Raporları:** Özellikle velayet davalarında, psikolog veya pedagog raporları çocuğun menfaati açısından belirleyici olabilir.\n*   **Keşif ve Bilirkişi İncelemesi:** Belirli durumlarda, mahkeme yerinde inceleme yapabilir veya uzman bilirkişilerden rapor alabilir (örneğin mal paylaşımı konularında).\n\nDelillerin hukuka uygun yollarla elde edilmiş olması esastır. Hukuka aykırı yollarla elde edilen deliller mahkeme tarafından dikkate alınmayabilir.\n\n### Çekişmeli Boşanma Davasının Süresi ve Maliyeti\n\nÇekişmeli boşanma davaları, anlaşmalı boşanma davalarına kıyasla daha uzun sürer. Delil toplama, tanık dinleme, bilirkişi raporlarının beklenmesi, karşı tarafın cevap süreleri ve kanun yollarına başvurma ihtimali gibi nedenlerle bu davalar genellikle birkaç aydan birkaç yıla kadar sürebilir. Kesin bir süre vermek mümkün değildir, zira her davanın kendine özgü koşulları ve yoğunluğu farklıdır.\n\nDava maliyetleri ise harçlar, tebligat giderleri, bilirkişi ücretleri ve avukatlık ücretlerinden oluşur. Bu maliyetler, davanın karmaşıklığına, delil toplama sürecinin uzunluğuna ve avukatın deneyimine göre değişiklik gösterebilir.\n\n### Avukat Desteğinin Önemi\n\nÇekişmeli boşanma davaları, hukuki bilgi ve tecrübe gerektiren karmaşık süreçlerdir. Hak kayıplarının önüne geçmek, sürecin doğru ve etkin bir şekilde yönetilmesini sağlamak, delillerin hukuka uygun toplanması ve sunulması, dilekçelerin usulüne uygun hazırlanması gibi konularda profesyonel hukuki destek almak büyük önem taşır. Boşanma hukuku alanında uzmanlaşmış bir avukatın rehberliği, davanın seyrini olumlu yönde etkileyebilir ve tarafların haklarını en iyi şekilde savunmalarına yardımcı olabilir. Örneğin, Avukat Ceren Sümer Cilli gibi alanında yetkin bir hukuk profesyoneliyle çalışmak, bu zorlu süreçte size yol gösterebilir ve hukuki adımları doğru atmanızı sağlayabilir. Unutulmamalıdır ki, [anlaşmalı boşanma şartları ve süreci rehberi](/rehber/anlasmali-bosanma-sartlari-ve-sureci-rehberi) okunarak anlaşmalı boşanma imkanı olup olmadığı da değerlendirilebilir, ancak bu mümkün değilse çekişmeli sürecin profesyonelce yönetilmesi kritik hale gelir.\n\n## Sonuç\n\nÇekişmeli boşanma davası, eşlerin ortak bir noktada buluşamadığı, mahkemenin delilleri değerlendirerek karar verdiği uzun ve detaylı bir hukuki süreçtir. Bu süreçte boşanma nedenlerinin ispatı, nafaka, velayet, tazminat ve mal paylaşımı gibi fer'i sonuçların doğru şekilde talep edilmesi ve savunulması büyük önem taşır. Her bir davanın kendine özgü koşulları olduğundan, hukuki süreçlerin kişiye özel olarak değerlendirilmesi ve yönetilmesi gerekmektedir.\n\nÇekişmeli boşanma davası sürecinde haklarınızın korunması ve en doğru hukuki adımların atılması için uzman bir avukattan hukuki danışmanlık almanız tavsiye edilir.\n\nBu içerik genel bilgilendirme amacıyla hazırlanmıştır; somut olay için hukuki danışmanlık alınmalıdır.",
