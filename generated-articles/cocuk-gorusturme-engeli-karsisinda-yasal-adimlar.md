@@ -1,0 +1,109 @@
+# Çocuğun Gösterilmemesi Durumunda Yasal Süreç ve Haklar Rehberi
+
+Velayet hakkına sahip ebeveynin çocuğu göstermemesi durumunda, diğer ebeveynin yasal hakları ve izlemesi gereken hukuki yollar mevcuttur. Bu rehber, çocuğunuzla kişisel ilişkinizin engellenmesi halinde atılabilecek adımları detaylıca açıklamaktadır. Hukuki süreci anlayarak haklarınızı koruyun.
+
+Çocuğunuzla kişisel ilişkinizin velayet hakkına sahip diğer ebeveyn tarafından engellenmesi durumu, hem duygusal hem de hukuki açıdan zorlayıcı bir süreçtir. Türk Medeni Kanunu ve ilgili yasal düzenlemeler, bu tür durumlarda haklarınızı korumanız için belirli yollar sunmaktadır. Bu rehber, çocuğu göstermeme durumunda atmanız gereken adımları, yasal süreci ve sahip olduğunuz hakları ayrıntılı bir şekilde açıklayarak, bu hassas konuda bilinçli kararlar almanıza yardımcı olmayı amaçlamaktadır. Çocuğunuzla sağlıklı bir kişisel ilişki kurma hakkınızın engellenmesi halinde izlemeniz gereken hukuki yollar hakkında detaylı bilgiye ulaşacaksınız.
+
+## Çocuğu Göstermeme Nedir ve Hukuki Temeli Nelerdir?
+
+Çocuğu göstermeme, velayet hakkına sahip olmayan ebeveynin, mahkeme kararıyla belirlenen kişisel ilişki kurma (görüşme) haklarının, velayet sahibi ebeveyn tarafından kasıtlı olarak engellenmesi durumudur. Bu durum, çocuğun üstün yararı ilkesine aykırı olduğu gibi, kişisel ilişki kurma hakkına sahip ebeveynin de yasal haklarının ihlalidir.
+
+### Kişisel İlişkinin Kurulması ve Kapsamı
+
+Türk Medeni Kanunu'nun 323. maddesi uyarınca, boşanmış veya ayrı yaşayan ebeveynlerden velayeti kendisinde bulunmayan tarafın çocuğuyla kişisel ilişki kurma hakkı vardır. Bu hak, çocuğun üstün yararı gözetilerek mahkeme tarafından belirlenir. Kişisel ilişki kararı, çocuğun yaşına, gelişimine, okul durumuna ve tarafların yaşam koşullarına göre hafta sonları, resmi tatiller, dini ve milli bayramlar ile yaz tatillerinde belirli sürelerle görüşme, telefonla konuşma, görüntülü arama gibi farklı şekillerde düzenlenebilir. Bu kararın amacı, çocuğun her iki ebeveyniyle de sağlıklı bir bağ kurmasını sağlamaktır.
+
+### Çocuğu Göstermemenin Hukuki Sonuçları
+
+Velayet sahibi ebeveynin mahkeme kararına rağmen çocuğu göstermemesi, yasalara aykırı bir davranıştır ve birtakım hukuki sonuçları doğurur. Bu durum, sadece kişisel ilişki kurma hakkı ihlal edilen ebeveyn için değil, çocuğun ruhsal ve fiziksel gelişimi için de olumsuz etkiler yaratabilir. Yasal süreç işletildiğinde, çocuğu göstermeyen ebeveyn hakkında disiplin hapsi gibi yaptırımlar uygulanabilir ve belirli durumlarda velayetin değiştirilmesi dahi gündeme gelebilir. Çocuğun görüşülmemesi durumunda yasal süreç hakkında daha fazla bilgi için /rehber/cocugun-gorusturulmemesi-durumunda-yasal-surec adresini ziyaret edebilirsiniz.
+
+## Çocuğun Gösterilmemesi Halinde İlk Adımlar
+
+Çocuğunuzla kişisel ilişkinizin engellenmesi durumunda atmanız gereken ilk adımlar, hukuki sürecin sağlıklı işlemesi ve haklarınızın korunması açısından büyük önem taşır.
+
+### İletişim ve Uzlaşma Çabaları
+
+Öncelikle, velayet sahibi ebeveynle doğrudan ve sakin bir iletişim kurarak durumu çözmeye çalışmak faydalı olabilir. Bazen yanlış anlaşılmalar veya özel durumlar, görüşmelerin aksamasına neden olabilir. Bu aşamada, çocuğun üstün yararını gözeten bir yaklaşımla, karşılıklı anlayış çerçevesinde bir çözüm bulmaya çalışmak, hem çocuğun ruh sağlığı hem de taraflar arasındaki ilişkinin geleceği açısından önemlidir. Ancak, bu çabaların sonuçsuz kalması veya kasıtlı bir engelleme durumunun devam etmesi halinde hukuki yollara başvurmak gerekecektir.
+
+### Delil Toplama
+
+Hukuki süreçte haklılığınızı ispatlamak için delil toplamak kritik öneme sahiptir. Çocuğu göstermeme durumunda toplayabileceğiniz deliller şunları içerebilir:
+
+*   **Yazılı İletişim Kayıtları:** Çocuğu görmek için yaptığınız talepleri ve karşı tarafın reddini gösteren SMS, e-posta, WhatsApp veya diğer mesajlaşma uygulamaları kayıtları.
+*   **Tanık Beyanları:** Görüşme günü çocuğun teslim edileceği yerde bulunduğunuza dair tanıkların (örneğin aile üyeleri, arkadaşlar, komşular) beyanları.
+*   **Resmi Belgeler:** Mahkeme tarafından belirlenen kişisel ilişki kurma kararının bir kopyası.
+*   **Kamera Kayıtları:** Görüşme yerine gittiğinizi ve çocuğun teslim edilmediğini gösteren güvenlik kamerası kayıtları veya cep telefonu ile çekilmiş görüntüler.
+*   **Ulaşım Belgeleri:** Görüşme yerine ulaşmak için kullandığınız bilet, yakıt fişi gibi belgeler (uzak mesafeden geliyorsanız).
+
+Bu deliller, mahkeme sürecinde iddialarınızı destekleyecek ve karşı tarafın yükümlülüğünü ihlal ettiğini kanıtlamanıza yardımcı olacaktır.
+
+### Çocuk Teslimi ve Kişisel İlişki Kurulması Süreci (Güncel Yasal Düzenleme)
+
+2021 yılında yürürlüğe giren 7343 sayılı İcra İflas Kanunu ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun ile çocuk teslimi ve kişisel ilişki kurulması süreçlerinde köklü değişiklikler yapılmıştır. Eski sistemde icra daireleri aracılığıyla yürütülen bu süreç, artık Adalet Bakanlığı bünyesinde kurulan "Çocuk Teslimi ve Kişisel İlişki Kurulması Büroları" tarafından, uzmanlar (pedagog, psikolog, sosyal çalışmacı) eşliğinde, çocuğun üstün yararı gözetilerek yürütülmektedir. Bu değişiklik, süreci daha insancıl ve çocuk odaklı hale getirmeyi amaçlamaktadır. Çocuğun görüşülmemesi hukuki süreç rehberi için /rehber/cocugun-gorusturulmemesi-hukuki-surec-rehberi adresini inceleyebilirsiniz.
+
+*   **Başvuru:** Velayet hakkı kendisinde olmayan ebeveyn, mahkeme kararını ibraz ederek, ilgili Çocuk Teslimi ve Kişisel İlişki Kurulması Bürosu'na başvurur. Başvuru, çocuğun teslimi veya kişisel ilişki kurulması talebini içerir.
+*   **Uzman İncelemesi ve Görüşme:** Büroya yapılan başvuru üzerine, görevli uzmanlar (pedagog, psikolog, sosyal çalışmacı) taraflarla ve çocukla görüşerek durum tespiti yapar. Bu aşamada, çocuğun ruhsal durumu ve üstün yararı ön planda tutulur. Uzmanlar, tarafları bilgilendirir ve uzlaşmaya teşvik eder.
+*   **Teslim ve Görüşme Yeri:** Çocuk teslimleri ve kişisel ilişki kurulması, çocuk dostu ve güvenli ortamlarda, uzmanın gözetiminde gerçekleştirilir. Bu yerler, genellikle adliyelerde veya adliyeye yakın, çocukların psikolojisine uygun olarak düzenlenmiş özel birimlerdir.
+*   **Yükümlülüğe Aykırılık ve Sonuçları:**
+    *   Eğer velayet sahibi ebeveyn, karara rağmen çocuğu teslim etmez veya kişisel ilişki kurulmasını engellerse, Çocuk Teslimi ve Kişisel İlişki Kurulması Bürosu, durumu mahkemeye bildirir.
+    *   Mahkeme, çocuğu göstermeyen ebeveyn hakkında, ilgili kanun maddeleri uyarınca disiplin hapsi kararı verebilir. Disiplin hapsi, çocuğun üstün yararı gözetilerek ve belirli koşullar altında uygulanır.
+    *   Tekrar eden ihlallerde, velayetin değiştirilmesi dahi gündeme gelebilir. Ancak bu, son çare olarak başvurulan ve çocuğun menfaatinin titizlikle incelenmesini gerektiren ağır bir karardır.
+
+Bu süreç, çocuğu göstermeme halinde yapılacaklar konusunda önemli bir adımdır. Daha detaylı bilgi için /rehber/cocugu-gostermeme-halinde-yapilacaklar adresini ziyaret edebilirsiniz. Çocukla kişisel ilişkinin engellenmesi hukuki çözümleri için /rehber/cocukla-kisisel-iliskinin-engellenmesi-hukuki-cozumler de faydalı olacaktır.
+
+## Hukuki Destek ve Avukatın Rolü
+
+Çocuğunuzla kişisel ilişkinizin engellenmesi gibi hassas ve karmaşık bir süreçte, doğru hukuki adımları atmak ve haklarınızı etkin bir şekilde savunmak için uzman bir avukatın desteği büyük önem taşımaktadır. Avukat, mevcut yasal düzenlemeler hakkında sizi bilgilendirir, delil toplama sürecinde rehberlik eder ve Çocuk Teslimi ve Kişisel İlişki Kurulması Bürosu nezdindeki başvurularınızı ve mahkeme süreçlerinizi titizlikle takip eder. Alanında deneyimli bir hukuk profesyoneli olan Avukat Ceren Sümer Cilli, müvekkillerine bu tür velayet ve kişisel ilişki davalarında yol göstererek, sürecin en sağlıklı şekilde ilerlemesine yardımcı olmaktadır. Avukatınız, çocuğunuzun üstün yararı ilkesini göz önünde bulundurarak, haklarınızın korunması için en uygun stratejiyi belirler ve yasal başvuruları eksiksiz yapar.
+
+## Sık Karşılaşılan Durumlar ve Çözüm Önerileri
+
+Çocuğu göstermeme durumu çeşitli nedenlerle ortaya çıkabilir ve her bir durum özel bir yaklaşım gerektirebilir.
+
+### Çocuğun Görüşmek İstememesi
+
+Bazen velayet sahibi ebeveyn, çocuğun kendisinin görüşmek istemediğini iddia edebilir. Bu durumda, çocuğun yaşı ve olgunluk seviyesi büyük önem taşır. Küçük yaştaki bir çocuğun iradesi genellikle yönlendirilebilir nitelikte olduğundan, bu iddia tek başına çocuğu göstermeme için geçerli bir gerekçe oluşturmaz. Ancak ergenlik dönemindeki bir çocuğun açıkça ve kendi iradesiyle görüşmek istememesi halinde, mahkeme bu durumu dikkate alabilir. Böyle bir durumda, Çocuk Teslimi ve Kişisel İlişki Kurulması Bürosu'ndaki uzmanlar, çocuğun gerçek iradesini tespit etmek için detaylı bir inceleme yapar. Gerekirse, çocuğun psikolojik durumu ve ebeveynlerle olan ilişkileri değerlendirilir. Mahkeme, çocuğun üstün yararı doğrultusunda, kişisel ilişki kararını yeniden düzenleyebilir veya uzman raporlarına göre farklı tedbirler alabilir.
+
+### Ebeveynin İkametgah Değişikliği
+
+Velayet sahibi ebeveynin, kişisel ilişki kararından sonra ikametgahını değiştirmesi ve bu değişikliği diğer ebeveyne bildirmemesi veya çocuğun görüşmesini zorlaştıracak bir yere taşınması da çocuğu göstermeme kapsamında değerlendirilebilir. Bu durumda, kişisel ilişki kurma hakkı ihlal edilen ebeveynin, yeni ikametgah adresini tespit ettirmesi ve kişisel ilişki kararının yeni duruma göre yeniden düzenlenmesi için mahkemeye başvurması gerekebilir. Mahkeme, yeni ikametgahın çocuğun kişisel ilişkilerini nasıl etkilediğini değerlendirerek, kararda değişiklik yapabilir. Velayet altındaki çocuğun görüştürülmemesi çözümleri için /rehber/velayet-altindaki-cocugun-gorusturulmemesi-cozumleri adresinden bilgi alabilirsiniz.
+
+### Acil Durumlarda Yapılması Gerekenler
+
+Çocuğun sağlığı, güvenliği veya eğitim hayatı gibi acil durumlarda, kişisel ilişki kararı beklenmeksizin hızlı adımlar atılması gerekebilir. Örneğin, çocuğun ani bir sağlık sorunu yaşaması ve diğer ebeveyne bilgi verilmemesi veya çocuğun ciddi bir tehlike altında olduğuna dair güçlü şüpheler bulunması durumunda, doğrudan savcılığa veya çocuk koruma birimlerine başvurularak acil tedbir alınması talep edilebilir. Bu tür durumlarda, hızlı ve doğru hukuki müdahale için bir avukatla derhal iletişime geçmek hayati önem taşır.
+
+## Sonuç
+
+Çocuğunuzla kişisel ilişkinizin engellenmesi durumu, hukuki yollarla çözüme kavuşturulabilecek ciddi bir sorundur. Türk Medeni Kanunu ve ilgili yasal düzenlemeler, velayeti kendisinde olmayan ebeveynin bu hakkını korumak için gerekli mekanizmaları sunmaktadır. Yeni yasal düzenlemelerle birlikte, çocuk teslimi ve kişisel ilişki kurulması süreçleri daha çocuk dostu ve uzman odaklı hale gelmiştir. Bu süreçte atacağınız her adımın titizlikle planlanması, delillerin doğru toplanması ve yasal prosedürlerin eksiksiz yerine getirilmesi, haklarınızı korumanız açısından büyük önem taşır.
+
+Çocuğunuzla sağlıklı bir kişisel ilişki kurma hakkınızın ihlal edildiğini düşünüyorsanız, hukuki haklarınızı öğrenmek ve yasal süreci başlatmak için zaman kaybetmeyin. Unutmayın ki, bu süreçte uzman bir avukatın rehberliği, hem sizin hem de çocuğunuzun menfaatleri doğrultusunda en doğru adımları atmanızı sağlayacaktır.
+
+Bu içerik genel bilgilendirme amacıyla hazırlanmıştır; somut olay için hukuki danışmanlık alınmalıdır.
+
+## Sık sorulan sorular
+
+### Çocuğu göstermeme durumunda ilk ne yapılmalı?
+
+İlk olarak, çocuğu göstermeyen ebeveynle iletişim kurularak durumun çözülmeye çalışılması önerilir. Anlaşma sağlanamazsa, hukuki yollara başvurmak gerekecektir.
+
+### Hukuki süreç nasıl başlar?
+
+Mahkeme kararı ile belirlenen kişisel ilişki süresine uyulmaması halinde, icra müdürlüğü aracılığıyla çocukla kişisel ilişki kurulması için başvuruda bulunulabilir.
+
+### Çocuk teslimi icra yoluyla nasıl yapılır?
+
+Mahkeme kararının icra edilebilir olması durumunda, icra müdürlüğüne başvurularak çocuğun belirlenen gün ve saatlerde teslimi talep edilir. İcra memuru ve pedagog eşliğinde teslim işlemi gerçekleştirilir.
+
+### Çocuğu göstermeme eyleminin hukuki yaptırımı var mıdır?
+
+Evet, mahkeme kararına rağmen çocuğu göstermeme eylemi, Türk Medeni Kanunu ve İcra ve İflas Kanunu'nda belirtilen hükümler çerçevesinde hukuki yaptırımlara tabidir. Bu durum, tazyik hapsi gibi sonuçlar doğurabilir.
+
+### Velayet davası açmak bir çözüm müdür?
+
+Eğer kişisel ilişki kurma sorunu sürekli hale gelmişse ve velayet hakkının kötüye kullanıldığı düşünülüyorsa, velayetin değiştirilmesi davası açılması da değerlendirilebilecek hukuki bir yoldur.
+
+### Avukat desteği almak neden önemlidir?
+
+Çocuğu göstermeme gibi hassas bir konuda hukuki süreç karmaşık olabilir. Hak kaybı yaşamamak ve süreci doğru yönetmek adına alanında uzman bir avukattan hukuki destek almak önemlidir.
+
+## Sonuç
+
+Çocuğun gösterilmemesi durumu, ebeveynler ve çocuk için yıpratıcı olabilir. Ancak yasal haklarınızı bilmek ve doğru hukuki adımları atmak, bu sürecin sağlıklı bir şekilde yönetilmesine yardımcı olacaktır. Haklarınızı korumak için gerekli başvuruları zamanında yapmanız önemlidir.
