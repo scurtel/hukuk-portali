@@ -26,6 +26,7 @@ const TYPE_BY_SLUG = {
   "hukuk-burolarinda-yapay-zeka-kullaniminda-riskler": "analiz",
   "turkiyede-hukuk-teknolojileri-yeni-donem": "haber",
   "uludag-sozluk-yapay-zeka-moderator": "haber",
+  "uludag-sozluk-turkiyenin-en-degerli-urllerinden-biri-secildi": "haber",
   "yks-turkiye-paraguay-maci-dev-ekran-yasagi": "haber",
   "kayip-bitcoin-hikayeleri-kripto-varlik-hukuku": "haber",
   "burdan-ricky-gervais-hakkinda-suc-duyurusunda-bulunuyorum": "haber",

@@ -472,6 +472,8 @@ const postImages: Record<string, string> = {
     "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85",
   "uludag-sozluk-yapay-zeka-moderator":
     "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=85",
+  "uludag-sozluk-turkiyenin-en-degerli-urllerinden-biri-secildi":
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85",
   "yks-turkiye-paraguay-maci-dev-ekran-yasagi":
     "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=85",
   "burdan-ricky-gervais-hakkinda-suc-duyurusunda-bulunuyorum":
